@@ -7,7 +7,7 @@
   "display": "standalone",
   "Scope": "/",
   "id": "/",
-  "start_url": "/",
+  "start_url": "/static/pwa/",
   "orientation": "portrait",
   "icons": [
     {

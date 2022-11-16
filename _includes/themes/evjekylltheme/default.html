@@ -2,8 +2,8 @@
 <html itemscope itemtype="http://schema.org/Blog">
   <head>
     <meta charset="utf-8">
-	<link rel="manifest" href="/pwa/manifest.json">
-	<title>{% if page.url == "/index.html" %} {{ site.title }} {% else %} {% if page.title %}{{ page.title }}{% endif %} | {{ site.title }} {% endif %}</title>
+	<link rel="manifest" href="/static/pwa/manifest.json">
+	<title>{% if page.url == "/static/index.html" %} {{ site.title }} {% else %} {% if page.title %}{{ page.title }}{% endif %} | {{ site.title }} {% endif %}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">
     <meta itemprop="description" content="{{ page.description }}">{% endif %}
 		{% if post.excerpt %}<meta name="description" content="{{ post.excerpt | strip_html }}">{% endif %}
@@ -12,7 +12,7 @@
 	<meta name="theme-color" content="#2196F3">
 	<meta name="google-site-verification" content="puZt0ZyqB-t67BYdYAgLUyIPBeismG68J0dmEc01QeY" />
 
-	{% if page.url == "/404.html" %}
+	{% if page.url == "/static/404.html" %}
 		<meta http-equiv = "refresh" content = "3;url=/">
 	{% endif %}
     <script>
@@ -41,26 +41,26 @@
     <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="{{ BASE_PATH }}/images/favicon.ico">
+    <link rel="shortcut icon" href="{{ BASE_PATH }}/static/images/favicon.ico">
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.feed_path }}" type="application/atom+xml" rel="alternate" title="Jekyll auto generate ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Site RSS Feed">
 	<link rel="stylesheet" href="{{ ASSET_PATH }}/font-awesome-4.4.0/css/font-awesome.min.css">
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-W2LDG64');</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8529425670069509"
-						crossorigin="anonymous"></script>
-	<script async src="https://cdn.splitbee.io/sb.js"></script>
+	})(window,document,'script','dataLayer','GTM-W2LDG64');</script> -->
+		<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8529425670069509"
+						crossorigin="anonymous"></script> -->
+	<!-- <script async src="https://cdn.splitbee.io/sb.js"></script> -->
   </head>
 
   <body>
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2LDG64"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2LDG64"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <div class="navbar navbar-default navbar-fixed-top">
 				<div class="container">
           <div class="row mobilepadding">
