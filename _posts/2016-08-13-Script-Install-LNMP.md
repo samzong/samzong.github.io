@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Script Install LNMP
+title: Use Script Install LNMP
 tags: 
     - Shell
     - CentOS
