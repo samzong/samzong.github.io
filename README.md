@@ -1,3 +1,6 @@
+[![build-deploy](https://github.com/SAMZONG/samzong.me/actions/workflows/ci.yml/badge.svg)](https://github.com/SAMZONG/samzong.me/actions/workflows/ci.yml)  [![pages-build-deployment](https://github.com/SAMZONG/samzong.me/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/SAMZONG/samzong.me/actions/workflows/pages/pages-build-deployment)
+
+
 # 前言
 
 > 大大的感谢：
