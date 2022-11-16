@@ -14,8 +14,8 @@ const CACHE_NAMESPACE = 'main-'
 const CACHE = CACHE_NAMESPACE + 'precache-then-runtime';
 const PRECACHE_LIST = [
   "./",
-  "./offline.html",
-  "./images/favicon.ico",
+  "./static/offline.html",
+  "./static/images/favicon.ico",
   "./assets/themes/evjekylltheme/css/style.css",
   "./assets/themes/evjekylltheme/bootstrap-3.3.5/css/bootstrap.min.css",
   "./assets/themes/evjekylltheme/font-awesome-4.4.0/css/font-awesome.min.css",
@@ -192,7 +192,7 @@ self.addEventListener('fetch', event => {
     event.respondWith(
       Promise.race([fetched.catch(_ => cached), cached])
         .then(resp => resp || fetched)
-        .catch(_ => caches.match('offline.html'))
+        .catch(_ => caches.match('static/offline.html'))
     );
 
     // Update the cache with the version we fetched (only for ok status)
