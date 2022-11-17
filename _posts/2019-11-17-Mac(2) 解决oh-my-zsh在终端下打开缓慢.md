@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mac(2) 解决oh-my-zsh在终端下打开缓慢
+title: Mac 下解决oh-my-zsh在终端下打开缓慢
 tags:
   - Mac
 category:
