@@ -229,7 +229,7 @@ def func():
         "6·18 必备话术大全": "2022-10-04",
         "四阶魔方特殊情况之处理": "2022-11-17"
         }
-    os.chdir('/Users/samzonglu/deploy/yuque/yuque-exporter/storage/果粉日记/')
+    os.chdir('/Users/samzonglu/deploy/yuque/yuque-exporter/storage/旧书摘/')
     files = [f for f in os.listdir('.') if os.path.isfile(f)]
 
     for file in files:
