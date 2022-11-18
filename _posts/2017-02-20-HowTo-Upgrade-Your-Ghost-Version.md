@@ -6,7 +6,6 @@ tags:
 categories: 
     - Blog
     - Ghost
-abbrlink: 20884
 date: 2017-02-20 14:39:15
 ---
 
@@ -16,7 +15,6 @@ date: 2017-02-20 14:39:15
 ```
 curl -LOk https://ghost.org/zip/ghost-latest.zip
 ```
-
 
 
 #### 2. 创建临时目录，并解压ghost-latest.zip到此

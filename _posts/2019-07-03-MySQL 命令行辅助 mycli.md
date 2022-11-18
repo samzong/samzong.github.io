@@ -6,10 +6,8 @@ tags:
 categories: 
     - 数据库
     - MySQL
-abbrlink: 5144
 date: 2019-07-03 13:17:04
 ---
-
 
 
 ##### Install
@@ -17,7 +15,6 @@ date: 2019-07-03 13:17:04
 Mycli is tested on macOS and Linux. It runs on Python 2.7 and 3.4+.
 
 > NOTE: Python 2.6 support was dropped in mycli 1.9.0. If you're running Python 2.6, you'll want to install mycli 1.8.1.
-
 
 
 ######Python Package:

@@ -6,7 +6,6 @@ tags:
 categories: 
     - Git
     - TortoiseGit
-abbrlink: 10524
 ---
 
 Git是目前最先进的版本控制系统，越来越多的业务场景都在使用Git，风靡全球的Github更是让Git版本控制系统名声大震，但是GitHub旨在建立一个开源的生态环境，所以不适合企业内部的管理系统，在之前的文章中，我也讲到了如何搭建GitLab，可以在企业内部自建一套功能完善的Git版本控制系统。

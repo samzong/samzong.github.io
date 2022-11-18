@@ -5,7 +5,6 @@ toc: true
 author: samzong.lu
 author_id: defaultAuthorId
 language: zh
-abbrlink: 5023
 tags:
   - Git
 categories:
@@ -120,11 +119,6 @@ git push --force origin {branch_name}
 ```
 
 在多人协作的场景可能会出现覆盖他人代码的情况，请注意协商并 fetch 分支的变更，确保最新状态
-
-
-
-
-
 
 
 

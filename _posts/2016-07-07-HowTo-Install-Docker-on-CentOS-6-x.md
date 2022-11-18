@@ -6,7 +6,6 @@ tags:
 categories: 
     - 虚拟化
     - Docker
-abbrlink: 11081
 date: 2016-07-07 08:03:28
 ---
 

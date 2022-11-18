@@ -2,7 +2,6 @@
 layout: post
 title: Awsome Telegram Bot
 toc: true
-abbrlink: 49185
 date: 2022-04-10 22:20:25
 tags:
     - Telegram

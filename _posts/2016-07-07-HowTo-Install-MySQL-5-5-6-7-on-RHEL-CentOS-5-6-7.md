@@ -6,7 +6,6 @@ tags:
 categories: 
     - 数据库
     - MySQL
-abbrlink: 39424
 date: 2016-07-07 05:35:32
 ---
 
@@ -190,9 +189,6 @@ This will issue a password prompt for the user. If you don't have a root user pa
 ```
 mysql_secure_installation
 ```
-
-
-
 
 
 

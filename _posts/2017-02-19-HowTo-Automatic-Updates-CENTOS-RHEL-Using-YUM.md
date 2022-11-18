@@ -6,12 +6,10 @@ tags:
 categories: 
     - Linux
     - CentOS
-abbrlink: 60468
 date: 2017-02-19 09:56:42
 ---
 
 大家若工作遇到需要管理的Linux集群机器较多时，同时我们知道系统的安全更新补丁维护这些非常重要，无论你在安装时优化维护做的再好，随着时间的推移，如果不去更新的话，系统早晚都会不安全，所以定期更新我们的系统补丁是一个运维人员的基本工作内容
-
 
 
 ### Install yum-cron
@@ -33,7 +31,6 @@ rpm -ql yum-cron
 /usr/share/doc/yum-cron-3.2.29/COPYING
 /usr/share/man/man8/yum-cron.8.gz
 ```
-
 
 
 ### Configure “/etc/sysconfig/yum-cron”
@@ -63,7 +60,6 @@ CHECK_ONLY=yes
 ```
 DOWNLOAD_ONLY=yes
 ```
-
 
 
 ### Automatic Starting yum-cron

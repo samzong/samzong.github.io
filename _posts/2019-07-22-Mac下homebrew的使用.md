@@ -3,7 +3,6 @@ layout: post
 title: Mac 下 Homebrew 的使用
 tags: Mac
 Categroies: Mac
-abbrlink: 64321
 ---
 
 

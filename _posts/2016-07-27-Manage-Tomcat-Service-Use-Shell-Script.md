@@ -8,7 +8,6 @@ tags:
 categories: 
     - Linux
     - Shell
-abbrlink: 45780
 date: 2016-07-27 02:18:24
 ---
 

@@ -7,7 +7,6 @@ tags:
 categories:
     - OpenSource
     - Zabbix
-abbrlink: 24506
 date: 2017-01-18 23:28:44
 ---
 
@@ -208,9 +207,6 @@ Starting zabbix server:              [  OK  ]
 
 #### 5. View the Head Memory Monitoring.
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/12/zabbix-view-monitor.png)
-
-
-
 
 
 

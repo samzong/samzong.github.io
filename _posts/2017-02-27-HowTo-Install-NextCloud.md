@@ -5,7 +5,6 @@ tags:
   - NextCloud
 categories: 
   - OpenSource
-abbrlink: 39841
 date: 2017-02-27 14:57:00
 ---
 
@@ -249,7 +248,6 @@ mysql> FLUSH PRIVILEGES;
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/yx34e.png)
 
 
-
 #### **Other**
 
 ##### 修改默认data目录
@@ -300,7 +298,6 @@ datadirectory' => '/nextcloud/data
 [root@ultraera ~]# service php-fpm restart
 [root@ultraera ~]# service nginx restart
 ```
-
 
 
 我的NextCloud配置如下：

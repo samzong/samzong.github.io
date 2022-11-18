@@ -5,7 +5,6 @@ tags:
     - Fabric
 categories: 
     - OpenSource
-abbrlink: 33365
 date: 2016-05-05 05:54:08
 ---
 

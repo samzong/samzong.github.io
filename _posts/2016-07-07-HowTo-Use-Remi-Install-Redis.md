@@ -8,7 +8,6 @@ tags:
 categories: 
     - 数据库
     - Redis
-abbrlink: 37375
 date: 2016-07-07 03:49:02
 ---
 
@@ -144,8 +143,5 @@ redis-cli> info
 * slow log
 
 ### <font color=blackm,sis size=45 >Wait ... </font>
-
-
-
 
 

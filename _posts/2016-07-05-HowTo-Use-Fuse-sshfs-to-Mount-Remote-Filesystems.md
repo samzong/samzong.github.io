@@ -7,7 +7,6 @@ tags:
 categories: 
     - Linux
     - CentOS
-abbrlink: 7119
 date: 2016-07-05 01:58:03
 ---
 
@@ -42,8 +41,6 @@ root@192.168.16.230:/home/ on /home/cent/mnt type fuse.sshfs (rw,nosuid,nodev,us
 -o cache=yes
 -o allow_other 这个参数最重要，必须写，否则任何文件都是Permission Deny
 ```
-
-
 
 
 ###  缺点

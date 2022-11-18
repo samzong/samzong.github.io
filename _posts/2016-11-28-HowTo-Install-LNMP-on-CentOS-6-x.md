@@ -6,7 +6,6 @@ tags:
 categories: 
   - Linux
   - CentOS
-abbrlink: 50402
 date: 2016-11-28 10:33:09
 ---
 

@@ -5,11 +5,10 @@ tags:
     - Tomcat
 categories: 
     - Tomcat
-abbrlink: 49734
 date: 2016-09-19 10:25:53
 ---
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本文件是采用的模板是CentOS 6，同样适用于CentOS 系列其他发行版本。
+本文件是采用的模板是CentOS 6，同样适用于CentOS 系列其他发行版本。
 
 #### 1. 测试环境
 * VMware Fushion 8 Pro # windows Use [VirtualBox](https://www.virtualbox.org/wiki/Downloads)

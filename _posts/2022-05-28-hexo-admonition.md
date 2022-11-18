@@ -2,7 +2,6 @@
 layout: post
 title: "Hexo 增加admonition样式支持"
 toc: true
-abbrlink: 37733
 date: 2022-05-28 22:27:18
 tags:
     - Hexo

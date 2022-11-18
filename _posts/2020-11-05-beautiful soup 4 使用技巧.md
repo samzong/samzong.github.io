@@ -18,9 +18,7 @@ soup = BeautifulSoup(res.content, 'lxml')
 ```
 
 
-
 `select` 使用技巧
-
 
 
 ```python
@@ -47,7 +45,6 @@ soup.select("body h6 a")
 ```
 
 
-
 ```html
 <div class="top-nav">
     <ul>
@@ -68,9 +65,6 @@ for tag in li:
 ```
 
 
-
-
-
 # `select` 返回的是一个 `list` 
 
 通过过下标，可以获取到对应的内容
@@ -82,7 +76,6 @@ for user in list:
 
 - 比如要打印出上述的user-id，可以使用  `print(user['user-id'])` 
 - 比如要打印出上述的title，可以使用  `print(user['title'])`
-
 
 
 # 打印HTML Tag 内的文本

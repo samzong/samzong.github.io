@@ -7,7 +7,6 @@ tags:
 categories:
   - 云服务 
   - Aliyun
-abbrlink: 8935
 date: 2016-12-20 06:17:08
 ---
 

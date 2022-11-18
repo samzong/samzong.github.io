@@ -14,7 +14,6 @@ url: https://www.yuque.com/samzong/code/python-version-manage-tool-pyenv
 在 MacOS 的使用方式： brew install pyenv
 
 
-
 使用 pyenv 还是挺方便的，但是在Linux云服务器上配置网络的话就比较麻烦了，比如我在用的阿里云ECS，中间有些曲折，所以编写下文档记录下来，以防后续使用遇到问题 
 
 ## 安装 `pyenv`
@@ -56,9 +55,6 @@ echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 echo 'eval "$(pyenv virtualenv-init -)"'  >> ~/.bashrc
 ```
-
-
-
 
 
 ## 使用 `pyenv` 安装特定版本的python

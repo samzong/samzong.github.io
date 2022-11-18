@@ -6,7 +6,6 @@ tags:
     - CentOS
 categories: 
     - Python
-abbrlink: 36731
 date: 2016-12-08 20:12:37
 ---
 

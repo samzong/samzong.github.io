@@ -11,7 +11,6 @@ url: https://www.yuque.com/samzong/code/gy3x67
 打印堆栈信息，方便调试
 
 
-
 ## 方式一:
 
 ```python
@@ -26,7 +25,6 @@ def test(self):
     finally:
         pass
 ```
-
 
 
 ### 方式二：

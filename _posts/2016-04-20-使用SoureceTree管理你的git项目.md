@@ -7,7 +7,6 @@ tags:
 categories: 
     - Git
     - SourceTree
-abbrlink: 15933
 date: 2016-04-20 21:31:49
 ---
 

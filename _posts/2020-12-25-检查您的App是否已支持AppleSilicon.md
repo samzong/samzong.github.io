@@ -17,7 +17,6 @@ url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-apples
 - 完全不支持 (包括崩溃、无法启动等各种症状)
 
 
-
 ## 网友整理 Games on Apple Sillicon
 
 <https://docs.google.com/spreadsheets/d/1er-NivvuIheDmIKBVRu3S_BzA_lZT5z3Z-CxQZ-uPVs/>
@@ -25,7 +24,6 @@ url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-apples
 > 目前已补充了 App 清单
 
 ***
-
 
 
 ## <https://isapplesiliconready.com/>
@@ -39,7 +37,6 @@ url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-apples
 ***
 
 
-
 ## <https://doesitarm.com/>
 
 ![](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-143231.png?x-oss-process=image/resize,w_960,m_lfit)
@@ -47,7 +44,6 @@ url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-apples
 如果你想要关注某一个软件的适配进度，可以在  `Tell me with this changes `输入你的邮箱，这样当软件有适配变更时，会第一时间邮件通知你
 
 ![](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-143450.png?x-oss-process=image/resize,w_960,m_lfit)
-
 
 
 ## 如何在命令行使用 `rosseta 2` 

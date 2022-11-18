@@ -6,12 +6,8 @@ tags:
 categories: 
     - 数据库
     - MySQL
-abbrlink: 62741
 date: 2016-09-22 15:20:12
 ---
-
-
-
 
 
 ### 1. 简介

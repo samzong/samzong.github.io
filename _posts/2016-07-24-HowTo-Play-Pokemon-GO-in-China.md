@@ -1,7 +1,6 @@
 ---
 layout: post
 title: HowTo Play Pokemon GO in China
-abbrlink: 27511
 tags: 
     - iPhone
 date: 2016-07-24 21:42:01

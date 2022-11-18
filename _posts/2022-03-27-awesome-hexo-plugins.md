@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Awesome Hexo Plugin
-abbrlink: 52483
 date: 2022-03-27 21:45:17
 tags:
   - Hexo
