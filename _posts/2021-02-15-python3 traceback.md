@@ -10,8 +10,7 @@ url: https://www.yuque.com/samzong/code/gy3x67
 
 打印堆栈信息，方便调试
 
-
-## 方式一:
+## 方式一
 
 ```python
 import traceback
@@ -26,8 +25,7 @@ def test(self):
         pass
 ```
 
-
-### 方式二：
+### 方式二
 
 ```python
 import logging

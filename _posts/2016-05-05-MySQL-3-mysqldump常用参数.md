@@ -12,6 +12,7 @@ date: 2016-05-05 04:30:11
 常用的mysqldump命令组合。
 
 ## 备份数据库
+
 ```
 mysqldump db_name > bak_name.sql
 mysqldump -A -u [dbuser] -p db_name > bak_name.sql
@@ -19,38 +20,46 @@ mysqldump -d -A --add-drop-table -uroot -p >xxx.sql
 ```
 
 ## 备份所有库到一个单独的文件
+
 ```shell
 mysql -e 'show databases' | sed -n '2,$p' | xargs -I DB 'mysqldump DB > DB.sql'
 ```
 
 ### 1. 导出结构不导出数据
+
 ```
 mysqldump　--opt　-d　db_name　-u　root　-p　>　xxx.sql
 ```
 
 ### 2. 导出数据不导出结构
+
 ```
 mysqldump　-t　db_name　-uroot　-p　>　xxx.sql
 ```
 
 ### 3. 导出数据和表结构
+
 ```
 mysqldump　db_name　-uroot　-p　>　xxx.sql
 ```
 
 ### 4. 导出特定表的结构
+
 ```
 mysqldump　-uroot　-p　-B　db_name　--table　tb_name　>　xxx.sql
 ```
 
 ## 导入数据
+
  因为mysqldump导出的是完整的SQL语句，所以用mysql客户程序很容易就能把数据导入了：
+
 ```
 mysql -u db_user -p db_name  < xxx.sql
 mysql> source /path/xxx.sql
 ```
 
-## mysqldump参数详解：
+## mysqldump参数详解
+
 <code>–all-databases , -A </code>
 导出全部数据库<br>
 mysqldump -uroot -p –all-databases
@@ -129,7 +138,6 @@ mysqldump -uroot -p –all-databases –flush-logs
 在导出mysql数据库之后，发出一条FLUSH PRIVILEGES 语句。为了正确恢复，该选项应该用于导出mysql数据库和依赖mysql数据库数据的任何时候。<br>
 mysqldump -uroot -p –all-databases –flush-privileges
 
-
 <code>–force</code>
 在导出过程中忽略出现的SQL错误<br>
 mysqldump -uroot -p –all-databases –force
@@ -144,7 +152,6 @@ mysqldump -uroot -p –host=localhost –all-databases
 指定忽略多个表时，需要重复多次，每次一个表。每个表必须同时指定数据库和表名.
 例如：<br>–ignore-table=database.table1 –ignore-table=database.table2 ……<br>
 mysqldump -uroot -p –host=localhost –all-databases –ignore-table=mysql.user
-
 
 <code>–lock-all-tables, -x</code>
 提交请求锁定所有数据库中的所有表，以保证数据的一致性。

@@ -51,7 +51,7 @@ date: 2017-02-22 12:30:36
 
 ##### 更换gem源
 
-默认gem的源站点是https://rubygems.org 由于国内的网络原因导致无法连接，所以导致无法使用gem安装，这里换成国内淘宝的gem镜像站点
+默认gem的源站点是<https://rubygems.org> 由于国内的网络原因导致无法连接，所以导致无法使用gem安装，这里换成国内淘宝的gem镜像站点
 
 ```
 [root@localhost ~]# gem sources -l
@@ -152,7 +152,6 @@ production:
 
 > 默认运行3000端口，默认管理员admin/admin
 
-
 #### 配置Redmine在Nginx上运行
 
 Redmine常用的解决办法是使用passenger+nginx，但是Nginx不支持装载模块，所以需要重新编译安装Nginx，安装Nginx的Passenger有两种方式
@@ -191,7 +190,7 @@ passenger_root /usr/local/rvm/gems/ruby-2.2.6/gems/passenger-5.1.2
 
 ```
 # ...
-server	{
+server {
   # ...
   passenger_enabled on;
   location / {
@@ -212,18 +211,15 @@ server	{
 
 到这里，所有的安装都完成了，过程中我遇到这些问题，你也注意下：
 
-##### 7.1 Could not find gem 'mysql2 (~> 0.3.11)' in any of the gem sources listed in your Gemfile.
+##### 7.1 Could not find gem 'mysql2 (~> 0.3.11)' in any of the gem sources listed in your Gemfile
 
 ```
 [root@localhost redmine-3.3.2]# rm -f Gemfile.lock
 [root@localhost redmine-3.3.2]# bundle install
 ```
 
-
 ##### 7.2 curl-tools
 
 ```
 yum install libcurl-devel
 ```
-
-

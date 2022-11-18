@@ -10,6 +10,7 @@ date: 2016-12-04 09:57:23
 ---
 
 #### 1. 处理的状态
+
  首先确认服务器出于安全的状态，也就是没有人能够任意地连接MySQL数据库。
 因为在重新设置MySQL的root密码的期间，MySQL数据库完全出于没有密码保护的
 状态下，其他的用户也可以任意地登录和修改MySQL的信息。可以采用将MySQL对
@@ -19,6 +20,7 @@ date: 2016-12-04 09:57:23
 #### 2. 重置密码
 
 1. 修改mysql配置文件，增加skip-grant-tables
+
 ```
 [root@demo ~]# vim /etc/my.cnf
 [mysqld]
@@ -26,6 +28,7 @@ skip-grant-tables
 ```
 
 2. 重启mysqld
+
 ```
 [root@demo ~]# service mysqld restart
 Stopping mysqld:                                           [  OK  ]
@@ -33,6 +36,7 @@ Starting mysqld:                                           [  OK  ]
 ```
 
 3. 登录mysql，并修改root密码.
+
 ```
 [root@demo ~]# mysql -u root
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -58,12 +62,14 @@ Rows matched: 5  Changed: 5  Warnings: 0
 ```
 
 4. 配置文件去除skip-grant-tables，并重启服务器.
+
 ```
 [root@demo ~]# vim /etc/my.cnf
 [root@demo ~]# service mysqld restart
 ```
 
 5. 使用新密码登录到mysql
+
 ```
 [root@demo ~]# mysql -h localhost -u root -p
 ```

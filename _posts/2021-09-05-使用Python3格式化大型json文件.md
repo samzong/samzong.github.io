@@ -14,7 +14,6 @@ url: https://www.yuque.com/samzong/code/zoedwm
 Python 自带json-tool 在转换是会导致中文乱码，以下在原有基础上进行了优化，并增加中文支持
 :::
 
-
 ### No BB, Show Code
 
 ```python
@@ -67,7 +66,6 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
 
 ### RUNNING
 

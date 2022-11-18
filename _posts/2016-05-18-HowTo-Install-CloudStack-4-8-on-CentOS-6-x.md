@@ -89,7 +89,7 @@ binlog-format = 'ROW'
 
 service mysqld start
 chkconfig mysqld on
-mysql_secure_installation 	# remeber the root pass.
+mysql_secure_installation  # remeber the root pass.
 
 # Cloudstack-management
 yum -y install cloudstack-management

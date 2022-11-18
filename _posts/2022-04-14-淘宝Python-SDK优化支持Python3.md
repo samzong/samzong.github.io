@@ -13,8 +13,8 @@ date: 2022-04-14 10:43:00
 ---
 淘宝开放平台的SDK，Python的 SDK 是在2012年，仅支持Python2.7 及以上，但不支持Python3；二现在是2102年了，像我这样的新手都是直接从Python3开始的
 
-- 我已经把这个项目开放在 GitHub https://github.com/SAMZONG/taobao-openapi
-- 同时放在了 Python pypi 软件仓库 https://pypi.org/project/taobao-openapi/
+- 我已经把这个项目开放在 GitHub <https://github.com/SAMZONG/taobao-openapi>
+- 同时放在了 Python pypi 软件仓库 <https://pypi.org/project/taobao-openapi/>
 
 ## Install & Usage
 
@@ -28,7 +28,6 @@ import taobao-openapi as tbapi
 
 ```
 
-
 ## 持续补充SDK能力
 
 淘宝开放平台后台下载获取到的SDK文件，会根据应用的权限生产对应的SDK包，所以你可能获取到的是几十个或者上百个
@@ -41,9 +40,7 @@ NOTE: **如果你有其他的SDK没有在文档中找到，可以反馈给我或
 - v1.0.2 添加 Wdt QimenCloud-openapi
 - v1.0.1 适配 taobao-openapi
 
-
 ## 使用说明
-
 
 ```python3
 
@@ -55,34 +52,31 @@ app_secret =
 session_key = 
 
 def trade_rates_get_request():
-	req = top.api.TraderatesGetRequest()
-	req.set_app_info(top.appinfo(app_key, app_secret))
-	
-	req.fields = "tid,oid,role,nick,result,created,rated_nick,item_title,item_price,content,reply,num_iid"
-	req.rate_type = "get"
-	req.role = "buyer"
-	
-	try:
-		resp = req.getResponse(session_key)
-	except Exception as e:
-		print(e)
+ req = top.api.TraderatesGetRequest()
+ req.set_app_info(top.appinfo(app_key, app_secret))
+ 
+ req.fields = "tid,oid,role,nick,result,created,rated_nick,item_title,item_price,content,reply,num_iid"
+ req.rate_type = "get"
+ req.role = "buyer"
+ 
+ try:
+  resp = req.getResponse(session_key)
+ except Exception as e:
+  print(e)
 
 
 if __name__ == '__main__':
-	result = trade_rates_get_request()
-	print(result)
+ result = trade_rates_get_request()
+ print(result)
 
 ```
 
-
 ## 适配部分介绍
 
-
-> 以下为了省时间，基本引用了 https://blog.csdn.net/starryhwj/article/details/103026402 补充了8
+> 以下为了省时间，基本引用了 <https://blog.csdn.net/starryhwj/article/details/103026402> 补充了8
 > 同时感谢 [@ymj4023](https://github.com/ymj4023)
 
 ### 1. Python3 int替代了long
-
 
 ```python3
 FROM: str(long(time.time() * 1000))
@@ -150,7 +144,6 @@ if "error_response" in jsonobj:
 if P_CODE in jsonobj["error_response"]:
 ```
 
-
 ### 8. is not 修改为 !=
 
 在if 需要使用反向时，应该是 != ，而不是使用  is not ；这个也是 PyCharm 给的建议，所以在使用时，所以简单调整下就好了
@@ -165,14 +158,12 @@ TO: if response.status != 200:
 
 以上调整之后，基本就可以正常跑起来了，基本是可以支持Python3的使用，我试过了Python3.6-3.9，都是OK的。
 
-
 ## pypi HowTo
 
 把你的库上传到pypi 之前，主要依赖的是 setup.py，下方是对应的demo
 
 - 打包 python3 steup.py sdist
 - twine upload dist/*
-
 
 > 注意： 需要先安装 setuptools twine
 
@@ -187,50 +178,50 @@ import os
 import sys
 
 try:
-	from setuptools import setup, find_packages
+ from setuptools import setup, find_packages
 except:
-	from distutils import setup
+ from distutils import setup
 
 with open('README.md', 'r', encoding="utf-8") as fp:
-	readme = fp.read()
+ readme = fp.read()
 
 VERSION = "1.0.0"
 LICENSE = "MIT"
 
 setup(
-	name='taobao-openapi',
-	version=VERSION,
-	description=(
-		'集合了淘宝开放平台的商铺OPEN API，并适配了Python3'
-	),
-	long_description=readme,
-	long_description_content_type='text/markdown',
-	author='samzong.lu',
-	author_email='samzong.lu@gmail.com',
-	maintainer='samzong.lu',
-	maintainer_email='samzong.lu@gmail.com',
-	license=LICENSE,
-	packages=find_packages(),
-	platforms=["all"],
-	url='https://github.com/SAMZONG/taobao-sdk-python3',
-	install_requires=[
-		"requests"
-		],
-	classifiers=[
-		'Development Status :: 4 - Beta',
-		'Operating System :: OS Independent',
-		'Intended Audience :: Developers',
-		'License :: OSI Approved :: BSD License',
-		'Programming Language :: Python',
-		'Programming Language :: Python :: Implementation',
-		'Programming Language :: Python :: 3',
-		'Programming Language :: Python :: 3.4',
-		'Programming Language :: Python :: 3.5',
-		'Programming Language :: Python :: 3.6',
-		'Programming Language :: Python :: 3.7',
-		'Programming Language :: Python :: 3.8',
-		'Programming Language :: Python :: 3.9',
-		'Topic :: Software Development :: Libraries'
-		],
-	)
+ name='taobao-openapi',
+ version=VERSION,
+ description=(
+  '集合了淘宝开放平台的商铺OPEN API，并适配了Python3'
+ ),
+ long_description=readme,
+ long_description_content_type='text/markdown',
+ author='samzong.lu',
+ author_email='samzong.lu@gmail.com',
+ maintainer='samzong.lu',
+ maintainer_email='samzong.lu@gmail.com',
+ license=LICENSE,
+ packages=find_packages(),
+ platforms=["all"],
+ url='https://github.com/SAMZONG/taobao-sdk-python3',
+ install_requires=[
+  "requests"
+  ],
+ classifiers=[
+  'Development Status :: 4 - Beta',
+  'Operating System :: OS Independent',
+  'Intended Audience :: Developers',
+  'License :: OSI Approved :: BSD License',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: Implementation',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.4',
+  'Programming Language :: Python :: 3.5',
+  'Programming Language :: Python :: 3.6',
+  'Programming Language :: Python :: 3.7',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Topic :: Software Development :: Libraries'
+  ],
+ )
 ```

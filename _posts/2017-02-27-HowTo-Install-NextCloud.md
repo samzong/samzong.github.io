@@ -86,13 +86,13 @@ group=nginx
 ```
 [root@ultraera ~]# vim /etc/nginx/conf.d/nextcloud.conf
  upstream php-handler {
-  	# 这里是你php-fpm的服务端口，默认是9000
+   # 这里是你php-fpm的服务端口，默认是9000
     server 127.0.0.1:9000;
     #server unix:/var/run/php5-fpm.sock;
 }
 
 server {
-  	# 你的域名
+   # 你的域名
     listen pan.ultraera.org:80;
     server_name pan.ultraera.org;
     # enforce https
@@ -104,7 +104,7 @@ server {
     listen pan.ultraera.org:443 ssl;
     server_name pan.ultraera.org;
 
-  	# 以下是你的ssl证书文件存放路径
+   # 以下是你的ssl证书文件存放路径
     ssl_certificate /etc/nginx/ssl/1_pan.ultraera.org_bundle.crt;
     ssl_certificate_key /etc/nginx/ssl/2_pan.ultraera.org.key;
 
@@ -119,7 +119,7 @@ server {
     add_header X-Robots-Tag none;
     add_header X-Download-Options noopen;
     add_header X-Permitted-Cross-Domain-Policies none;
-	add_header Strict-Transport-Security "max-age=15552000; includeSubdomains; ";
+ add_header Strict-Transport-Security "max-age=15552000; includeSubdomains; ";
 
     # 设定你的NextCloud的根目录，请根据实际修改
     root /opt/nextcloud/;
@@ -247,7 +247,6 @@ mysql> FLUSH PRIVILEGES;
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/yx34e.png)
 
-
 #### **Other**
 
 ##### 修改默认data目录
@@ -298,7 +297,6 @@ datadirectory' => '/nextcloud/data
 [root@ultraera ~]# service php-fpm restart
 [root@ultraera ~]# service nginx restart
 ```
-
 
 我的NextCloud配置如下：
 

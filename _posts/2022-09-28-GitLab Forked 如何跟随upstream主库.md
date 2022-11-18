@@ -14,7 +14,7 @@ url: https://www.yuque.com/samzong/code/vfu56m
 
 一般情况下，我们的操作是，在需要贡献时，Fork 一份项目，然后自己修改以 PR 的方式提交贡献请求。
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1664330743895-9b2e0dc6-527e-4bcd-8b63-c223aa634b8f.png?x-oss-process=image/resize,w_960,m_lfit "一份完整的 Github贡献指南") 
+![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1664330743895-9b2e0dc6-527e-4bcd-8b63-c223aa634b8f.png?x-oss-process=image/resize,w_960,m_lfit "一份完整的 Github贡献指南")
 
 ## Github 的实现方式
 
@@ -24,14 +24,12 @@ url: https://www.yuque.com/samzong/code/vfu56m
 
 > Tips Github 的方式，仅在 Web端 和 Github CLI 官方提供的 GH 才可以使用这样的功能
 
-
 ## No Github, When Gitlab ?
 
 Github 更多在开源项目时贡献，实际上，在我们日常的工作当中，更多会有自建的Gitlab或者其他的代码 Hub，这里以 Gitlab 为例
 
 ![CleanShot 2022-09-28 at 10.19.20.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1664331575915-853554f5-c047-4f14-8e79-67e2214429bc.jpeg?x-oss-process=image/resize,w_960,m_lfit "gitlab 默认项目首页")
 Gitlab 并未提供 Sync fork 的功能，所以我们需要自行解决同步的需求
-
 
 ## 为仓库添加 upstream 源仓库
 

@@ -30,22 +30,26 @@ openssh-server-5.3p1-104.el6.i686
 ### 2. 实验步骤
 
 ##### 2.1 增加一个sftpusers用户组
+
 ```
 [root@test ~]# groupadd sftpusers
 ```
 
 ##### 2.2 创建一个用户user01，并分配给sftpusers用户组
+
 ```
 [root@test ~]# useradd -g sftpusers user01
 ```
 
 ##### 2.3 修改用户家目录及指定不能登录shell
+
 ```
 [root@test ~]# mkdir /sftp/
 [root@test ~]# usermod -s /sbin/nologin -d /sftp/user01 -m user01
 ```
 
 ##### 2.4 给用户创建密码（注意密码不明文显示）
+
 ```
 [root@test ~]# passwd user01
 Changing password for user user01.
@@ -58,6 +62,7 @@ passwd: all authentication tokens updated successfully.
 ```
 
 #### 2.5 修改ssh的配置文件，如下设置
+
 ```
 [root@test ~]# ll /etc/ssh/sshd_config
 -rw-------. 1 root root 3879 Oct 15  2014 /etc/ssh/sshd_config
@@ -76,6 +81,7 @@ Match Group sftpusers        #指定一下参数仅适用的用户组sftpusers
 ```
 
 ##### 2.6 重启ssh服务
+
 ```
 [root@test ~]# /etc/init.d/sshd restart
 Stopping sshd:                                             [  OK  ]
@@ -83,13 +89,15 @@ Starting sshd:                                             [  OK  ]
 ```
 
 ##### 2.7 设置用户家目录权限,(注意权限不能大于0755)
+
 ```
 [root@test ~]# chmod 0755 /sftp/user01/
 [root@test ~]# chown root /sftp/user01/
 [root@test ~]# chgrp -R sftpusers /sftp/user01/
 ```
 
-##### 2.8 关于上传,根目录无法上传文件。
+##### 2.8 关于上传,根目录无法上传文件
+
 因为用户家目录属主是root，并且权限最大0755，所以没法写，我的解决方法是在在家目录建立一个文件夹，作为上传目录，并把属主给user01即可。
 
 ```
@@ -97,9 +105,10 @@ Starting sshd:                                             [  OK  ]
 [root@test ~]# chown user01:sftpusers /sftp/user01/upload/
 ```
 
-
 ### 3. 测试验证
+
 ##### 3.1 Linux 登录测试
+
 ```
 [root@test ~]# su - user01
 This account is currently not available.    #su - 切换失败
@@ -128,6 +137,5 @@ sftp>
 ```
 
 ##### 3.2 SFTP 工具测试
+
 我这里使用的是Mac，但是传统的文件传输工具都差不多，Windows下有Winscp、Xftp等。
-
-

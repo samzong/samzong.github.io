@@ -16,8 +16,7 @@ Mycli is tested on macOS and Linux. It runs on Python 2.7 and 3.4+.
 
 > NOTE: Python 2.6 support was dropped in mycli 1.9.0. If you're running Python 2.6, you'll want to install mycli 1.8.1.
 
-
-######Python Package:
+###### Python Package
 
 If you already know how to install python packages, then you can do:
 
@@ -53,7 +52,7 @@ $ sudo yum install python-pip python-devel
 $ sudo pip install mycli
 ```
 
-##### Install Error QA.
+##### Install Error QA
 
 ```bash
 Cannot uninstall 'configobj'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
@@ -64,4 +63,3 @@ Cannot uninstall 'configobj'. It is a distutils installed project and thus we ca
 ```bash
 pip install --ignore-installed mycli
 ```
-

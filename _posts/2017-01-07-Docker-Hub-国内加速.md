@@ -14,13 +14,16 @@ date: 2017-01-07 15:32:23
 但是Docker Hub有着非常丰富的镜像资源，所以我这一直是个问题困扰着我，一次偶然机会发现了[DaoCloud](https://www.daocloud.io)提供了国内镜像加速服务，并且提供的Docker Hub Mirror详细的文档。
 
 #### 1. 注册DaoCloud账号
+
 首先，你需要到一DaoCloud账号，注册很方便，点击地址：[signup](https://account.daocloud.io/signup)
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/o6wh3.jpg)
 
 #### 2. 登录到你的DaoCloud账号内，然后入下图操作
+
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/n9mt7.jpg)
 
 #### 3. 查看你的DaoCloud加速器地址
+
 [链接](https://www.daocloud.io/mirror#accelerator-doc)
 
 选择你相对应平台的的加速器设置

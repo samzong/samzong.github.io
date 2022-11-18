@@ -18,13 +18,13 @@ TortoiseGit 是 TortoiseSVN 的 Git 版本，TortoiseGit用于迁移 TortoiseSVN
 
 #### 下载
 
-TortoiseGit的官方下载地址是这里：https://tortoisegit.org/download/ ，下载时请注意与你系统的兼容性。
+TortoiseGit的官方下载地址是这里：<https://tortoisegit.org/download/> ，下载时请注意与你系统的兼容性。
 
 > 注意TortoiseGit 1.8.16之后的版本不在支持Windows XP 和 Server 2003
 
 因为TortoiseGit官网不在国内，所以在访问下载时速度非常的慢，我将目前的稳定版本2.4上传到我的百度云盘，但是以后我可能不能及时更新，所以如果你对版本要求不是很高，可以点击下面链接下载。
 
-链接: https://pan.baidu.com/s/1eScNjA6 密码: 31hu
+链接: <https://pan.baidu.com/s/1eScNjA6> 密码: 31hu
 
 > 如链接失效，您可以通过本页面右下角展开通过邮箱，与我取得联系。
 
@@ -34,11 +34,11 @@ TortoiseGit的官方下载地址是这里：https://tortoisegit.org/download/ �
 
 首先，我们需要安装Git在你的电脑上，这保证你的TortoiseGit运行时所需要的依赖环境。
 
-下载地址：https://git-for-windows.github.io/
+下载地址：<https://git-for-windows.github.io/>
 
 同样，因为某些网络的原因，导致我们在下载时也会很慢，所以我也将目前最新2.13版本上传到了我的百度云盘：
 
-链接: https://pan.baidu.com/s/1c12ZvRq 密码: 43yt
+链接: <https://pan.baidu.com/s/1c12ZvRq> 密码: 43yt
 
 安装过程，这里不在展示，通常情况下，你只需要一路点击Next即可，但是如果你想要修改一些设置，例如默认的安装位置，那么你需要注意下，在TortoiseGit初次启动时，你需要手动设置Git.exe的位置。
 
@@ -130,19 +130,19 @@ GitHub和GitLab都提供了通过使用HTTPS和SSH的方式，这两种方式有
 
 当我们点击推送之后，会要求输入对应的GitHub用户名和密码：
 
-[1]:	https://tortoisegit.org/
+[1]: https://tortoisegit.org/
 
-[image-1]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/q39b4.jpg
-[image-2]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/educ5.jpg
-[image-3]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/afmvd.jpg
-[image-4]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/ot84j.jpg
-[image-5]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/dh1fb.jpg
-[image-6]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/2uyf3.jpg
-[image-7]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/stgw9.jpg
-[image-8]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/y7dsh.jpg
-[image-9]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/bltrs.jpg
-[image-10]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/07sxd.jpg
-[image-11]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/wid9v.jpg
-[image-12]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/givvr.jpg
-[image-13]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/ata4r.jpg
-[image-14]:	https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/q4cq7.jpg
+[image-1]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/q39b4.jpg
+[image-2]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/educ5.jpg
+[image-3]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/afmvd.jpg
+[image-4]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/ot84j.jpg
+[image-5]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/dh1fb.jpg
+[image-6]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/2uyf3.jpg
+[image-7]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/stgw9.jpg
+[image-8]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/y7dsh.jpg
+[image-9]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/bltrs.jpg
+[image-10]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/07sxd.jpg
+[image-11]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/wid9v.jpg
+[image-12]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/givvr.jpg
+[image-13]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/ata4r.jpg
+[image-14]: https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/q4cq7.jpg

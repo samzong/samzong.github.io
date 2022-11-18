@@ -11,6 +11,7 @@ date: 2016-09-19 10:25:53
 本文件是采用的模板是CentOS 6，同样适用于CentOS 系列其他发行版本。
 
 #### 1. 测试环境
+
 * VMware Fushion 8 Pro # windows Use [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [CentOS-6.8-x86_64-minimal.iso](http://mirrors.aliyun.com/centos/6.8/isos/x86_64/CentOS-6.8-x86_64-minimal.iso)
 * [JDK 7](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
@@ -32,7 +33,9 @@ Unpacking JAR files...
         localedata.jar...
         jfxrt.jar...
 ```
-#### 3. Build Java Environment.
+
+#### 3. Build Java Environment
+
 ```
 [root@ultraera ~]# vi /etc/profile
 # add follows to the end
@@ -45,9 +48,11 @@ java version "1.7.0_75"
 Java(TM) SE Runtime Environment (build 1.7.0_75-b13)
 Java HotSpot(TM) 64-Bit Server VM (build 24.75-b04, mixed mode)
 ```
+
 #### 4. Download Tomcat7
+
 Make sure the latest one and download it from the site below.
-=》 http://ftp.riken.jp/net/apache/tomcat/tomcat-7/
+=》 <http://ftp.riken.jp/net/apache/tomcat/tomcat-7/>
 
 ```
 [root@ultraera ~]# wget http://ftp.riken.jp/net/apache/tomcat/tomcat-7/v7.0.70/bin/apache-tomcat-7.0.70.tar.gz
@@ -56,7 +61,9 @@ Make sure the latest one and download it from the site below.
 [root@ultraera ~]# useradd -M -d /usr/tomcat7 tomcat7
 [root@ultraera ~]# chown -R tomcat7. /usr/tomcat7
 ```
+
 #### 5. create a script , use service manage tomcat7
+
 ```
 [root@ultraera ~]# cat /etc/rc.d/init.d/tomcat7
  #!/bin/bash
@@ -111,6 +118,7 @@ case "$1" in
 esac
 exit $?
 ```
+
 #### 6. Add tomcat7 to system service
 
 ```shell
@@ -132,10 +140,13 @@ tomcat7       6326  8.3 85.6 5229768 2910176 ?     Sl   Aug22 3216:38 /usr/bin/j
 [root@ultraera ~]# chkconfig --add tomcat7
 [root@ultraera ~]# chkconfig tomcat7 on
 ```
+
 #### 7. 打开浏览器测试Tomcat Server搭建完成，默认页面如下
+
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/09/tomcat7.jpg)
 
 #### 8. 使用curl 测试
+
 ```
 [root@ultraera ~]# curl -I http://localhost:8080
 HTTP/1.1 200 OK

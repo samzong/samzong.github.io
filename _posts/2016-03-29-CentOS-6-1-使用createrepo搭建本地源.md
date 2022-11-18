@@ -22,7 +22,6 @@ date: 2016-03-29 03:37:31
 
 ### 2. 实验步骤
 
-
 ```
 # 2.1 因为配置本地yum源需要修改/目录下的文件及/etc下面的配置文件，建议更换到root用户。
 [adam@ultraera ~]$ su -
@@ -59,11 +58,11 @@ Sqlite DBs complete
 [root@ultraera yumload]#
 
 # 2.6 在/etc/yum.repo.d/下创建一个repo文件，文件名可以自定义，但一定要以repo结尾，并添加一下内容：
-[ultraera.org]	#仓库名称可以自定义
-name=This is a local repo	#描述信息
-baseurl=file:///yumload/	#这里填写仓库的url，注意 有三个正斜线
-enabled=1	#是否开启仓库，1为开启，0为关闭
-gpgcheck=0	#是否检查gpgkey，1为开启，0为关闭
+[ultraera.org] #仓库名称可以自定义
+name=This is a local repo #描述信息
+baseurl=file:///yumload/ #这里填写仓库的url，注意 有三个正斜线
+enabled=1 #是否开启仓库，1为开启，0为关闭
+gpgcheck=0 #是否检查gpgkey，1为开启，0为关闭
 
 # 2.7 另外如果想要添加软件包group的信息，可以把DVD1中的repodata文件中的*-comps.xml文件，使用ceraterepo -g 加载本地仓库即可，代码如下：
 [root@ultraera repodata]# createrepo -g [字符可能不一样，后缀正确就行]c6-i386-comps.xml /yumload/
@@ -78,10 +77,10 @@ Cleaning up list of fastest mirrors
 [root@ultraera repodata]# yum makecache
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Determining fastest mirrors
-ultraera.org	| 2.9 kB	00:00 ...
-ultraera.org/filelists_db	| 4.9 MB	00:00 ...
-ultraera.org/primary_db	| 3.5 MB	00:00 ...
-ultraera.org/other_db	| 2.1 MB	00:00 ...
+ultraera.org | 2.9 kB 00:00 ...
+ultraera.org/filelists_db | 4.9 MB 00:00 ...
+ultraera.org/primary_db | 3.5 MB 00:00 ...
+ultraera.org/other_db | 2.1 MB 00:00 ...
 Metadata Cache Created
 
 # 2.9 测试group信息是否添加正确可以用如下代码，只要有正确输出信息就表示成功了

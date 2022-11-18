@@ -17,9 +17,7 @@ from bs4 import BeautifulSoup
 soup = BeautifulSoup(res.content, 'lxml')
 ```
 
-
 `select` 使用技巧
-
 
 ```python
 # 查询某一个特定的 HTML Tag 的方法
@@ -44,7 +42,6 @@ soup.select("head p")
 soup.select("body h6 a")
 ```
 
-
 ```html
 <div class="top-nav">
     <ul>
@@ -64,19 +61,17 @@ for tag in li:
     print(tag)
 ```
 
-
-# `select` 返回的是一个 `list` 
+# `select` 返回的是一个 `list`
 
 通过过下标，可以获取到对应的内容
 
 ```python
 for user in list:
-	print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠</a>
+ print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠</a>
 ```
 
-- 比如要打印出上述的user-id，可以使用  `print(user['user-id'])` 
+- 比如要打印出上述的user-id，可以使用  `print(user['user-id'])`
 - 比如要打印出上述的title，可以使用  `print(user['title'])`
-
 
 # 打印HTML Tag 内的文本
 
@@ -84,7 +79,7 @@ for user in list:
 # .string   在获取到的tag后面增加
 
 for user in list:
-	print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠</a>
+ print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠</a>
 
     print(user.string)
 ```

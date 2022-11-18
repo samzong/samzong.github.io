@@ -11,6 +11,7 @@ date: 2016-05-20 07:24:58
 ---
 
 ## 安装插件包
+
 ```
 yum install http://www.percona.com/downloads/percona-release/redhat/0.1-3/percona-release-0.1-3.noarch.rpm -y
 yum install percona-zabbix-templates.noarch -y
@@ -26,6 +27,7 @@ ConfigurationTemplatesImport(在右上角)
 ![](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/05/zabbix-mysql01.png)
 
 ## 安装Agent
+
 ```
 rpm -ivh http://repo.zabbix.com/zabbix/2.4/rhel/6/x86_64/zabbix-release-2.4-1.el6.noarch.rpm
 yum install zabbix-agent
@@ -45,13 +47,13 @@ service zabbix-agent restart
 grant select on *.* to 'percona'@'localhost' identified by 'percona';
 flush tables;
 
-
 ## 配置Percona插件
+
 修改插件使用的mysql用户名密码
 sed -i s/cactiuser/percona/g /var/lib/zabbix/percona/scripts/ss_get_mysql_stats.php
 
-
 ## 测试
+
 测试是否可以获取到值
 cd /var/lib/zabbix/percona/scripts/
 ./get_mysql_stats_wrapper.sh gg

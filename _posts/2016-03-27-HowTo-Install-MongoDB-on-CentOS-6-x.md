@@ -38,8 +38,7 @@ date: 2016-03-27 05:55:28
 
     这个包里包含了下列mongodb 的工具：mongoimport bsondump, mongodump, mongoexport, mongofiles, mongooplog, mongoperf, mongorestore, mongostat, and mongotop 。
 
-
-## 3. 添加相对应版本的Mongodb repo file.
+## 3. 添加相对应版本的Mongodb repo file
 
 ### 3.1 Mongodb 2.6 + OS x64
 
@@ -117,8 +116,8 @@ SELinux 默认为开启状态，会导致我们的Mongodb 无法使用，解决�
 semanage port -a -t mongod_port_t -p tcp 27017
 
 ```
-> Tips: 在CentOS 7 ，SELinux 会限定你去修改Mongodb的data目录及lib目录。
 
+> Tips: 在CentOS 7 ，SELinux 会限定你去修改Mongodb的data目录及lib目录。
 
 ### 5.2 Start MongoDB
 
@@ -128,6 +127,7 @@ Starting mongod:                                           [  OK  ]
 [root@vm02 ~]#
 
 ```
+
 ### 5.3 检查MongoDB日志文件验证服务正常启动， /var/log/mongodb/mongodb.log
 
 ```
@@ -223,11 +223,8 @@ Server has startup warnings:
 
 ```
 
-
 ## 8. FAQ
 
 Q : Mongodb 占用99%CPU并且查询速度很慢?
 
 A : 数据库需要首先建立索引，类似图书的目录文件，否则当你在数据库内查找数据的时候，就类似于在整本字典一页页翻查一个字如此。
-
-

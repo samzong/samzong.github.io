@@ -18,11 +18,11 @@ date: 2016-04-08 16:12:30
 
 ➜  ~ sudo du -sh /private/var/log/asl/
 Password:
-2.7G	/private/var/log/asl/
+2.7G /private/var/log/asl/
 
 ➜  ~ sudo rm -rf /private/var/log/asl/*.asl
 ➜  ~ sudo du -sh /private/var/log/asl/
-208M	/private/var/log/asl/
+208M /private/var/log/asl/
 
 ```
 

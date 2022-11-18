@@ -14,15 +14,19 @@ categories:
 因为目的是让自建DNS服务器解析公司内部的自定义域名，所以当客户端需要访问外网域名时，DNS服务器会将解析请求转发给ISP的DNS服务器，并会将解析结果缓存，并且只对内网主机的解析请求进行转发，而不会对公网的主机解析请求进行转发。
 
 #### DNS服务介绍
+
 DNS服务由BIND提供，启动后服务名为`named`，管理工具为`rndc`，debug工具为`dig`，主要配置文件在`/etc/named.conf`。
 
 #### 安装
+
 推荐选择`bind-chroot`来安装，提高服务的安全性：
+
 ```shell
 ➜  ~ yum install -y bind-chroot
 ```
 
 安装完成之后，启动`named-chroot`服务，并设置为开机自启动：
+
 ```shell
 ➜  ~ systemctl enable named-chroot.service
 Created symlink from /etc/systemd/system/multi-user.target.wants/named-chroot.service to /usr/lib/systemd/system/named-chroot.service.
@@ -33,7 +37,9 @@ tcp        0      0 127.0.0.1:953           0.0.0.0:*               LISTEN      
 ```
 
 #### 配置
+
 首先备份DNS服务端的主配置文件，然后修改其中的内容：
+
 ```shell
 ➜  ~ cp /etc/named.conf /etc/named.conf.bak
 ➜  ~ vim /etc/named.conf
@@ -87,12 +93,16 @@ include "/etc/named.root.key";
 ```
 
 #### 编辑samzong.local.zone配置文件
+
 首先创建samzong.local.zone文件：
+
 ```
 ➜  ~ cd /var/named
 ➜  named touch samzong.local.zone;
 ```
+
 然后编辑文件内容新增：
+
 ```shell
 $TTL 86400
 @ IN SOA @ root.samzong.local. (
@@ -109,23 +119,28 @@ www     A       192.168.16.100
 a   IN  CNAME   www.baidu.com.
 b       A       192.168.16.101
 ```
+
 编辑完成之后，重新启动named-chroot让服务生效：
+
 ```shell
 ➜  named systemctl restart named-chroot.service
 ```
 
 #### 客户端验证
+
 ```shell
 ➜  named nslookup www.samzong.local
-Server:		192.168.16.6
-Address:	192.168.16.6#53
+Server:  192.168.16.6
+Address: 192.168.16.6#53
 
-Name:	www.samzong.local
+Name: www.samzong.local
 Address: 192.168.16.100
 ```
 
 #### 使用rndc管理DNS解析记录
+
 rndc 常用指令：
+
 ```shell
 status          显示bind服务器的工作状态
 reload          重新加载配置文件和区域文件
@@ -135,5 +150,3 @@ querylog        关闭或开启查询日志
 dumpdb          将高速缓存转存到文件,named.conf 有指定文件位置
 freeze          暂停更新所有zone状态
 ```
-
-

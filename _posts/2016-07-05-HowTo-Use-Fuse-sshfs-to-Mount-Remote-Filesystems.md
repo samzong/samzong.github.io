@@ -16,11 +16,14 @@ SSH 是一个强大且安全的工具，我们除了可以用它来远程管理�
 <br>
 
 ### Install fuse-sshfs
+
 ```
 [cent@localhost ~]$ sudo yum install -y epel-relese
 [cent@localhost ~]$ sudo yum --enablerepo=epel install -y fuse-sshfs
 ```
+
 ### 挂载远程 ssh文件系统
+
 ```
 [cent@localhost ~]$ mkdir ./mnt
 [cent@localhost ~]$ sshfs root@192.168.16.230:/home/ ./mnt
@@ -28,11 +31,15 @@ root@192.168.16.230's password:
 [cent@localhost ~]$ mount
 root@192.168.16.230:/home/ on /home/cent/mnt type fuse.sshfs (rw,nosuid,nodev,user=cent)
 ```
+
 ### 卸载远程 ssh文件系统
+
 ```
 [cent@localhost ~]$ fusermount -u ./mnt
 ```
+
 ### 常用参数
+
 ```
 -C 压缩，或者-o compression=yes
 -o reconnect 自动重连
@@ -42,14 +49,14 @@ root@192.168.16.230:/home/ on /home/cent/mnt type fuse.sshfs (rw,nosuid,nodev,us
 -o allow_other 这个参数最重要，必须写，否则任何文件都是Permission Deny
 ```
 
-
 ###  缺点
+
 当然sshfs也不尽是优点，例如远程主机失去响应后本地挂载点卡死并影响本地系统使用，需要手工找出 sshfs进程并杀死，因网速问题造成操作响应缓慢等等，不过一般在稳定快速的网络中不太会遇上，对比其强大的功能，还是可以接受的，正所谓暇不掩瑜。
 
 1. 所以sshfs适合内部网络比较稳定的地方
 2. 配合ssh免密登录使用会更好哦
 3. 可以看到的是sshfs默认挂载是rw的权限，但是通过sshfs --help 可以看到有非常详尽的参数配置可以选择，大家可以仔细研究下。
 
+### 附1
 
-### 附1.
 [Link](http://igikorn.com/sshfs-windows-8/) 在windows下可以使用sshfs.

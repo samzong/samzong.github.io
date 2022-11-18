@@ -12,13 +12,13 @@ date: 2022-05-03 13:57:28
 
 > 截止 2022.5 `youtube-dl` 已经较长时间未更新了，建议采用 [`yt-dlp`](https://github.com/yt-dlp/yt-dlp), 将命令进行替换即可
 
-## 安装新版本的 `yt-dlp` 
+## 安装新版本的 `yt-dlp`
 
 ```sh
 brew install yt-dlp/taps/yt-dlp
 ```
 
-`yt-dlp` 是从 `youtube-dl` 分支出来的版本，提供持续更新和向前兼容，在友好型上做了优化；仅需要将所有安装命令中 `youtube-dl` 替换为 `yt-dlp` 
+`yt-dlp` 是从 `youtube-dl` 分支出来的版本，提供持续更新和向前兼容，在友好型上做了优化；仅需要将所有安装命令中 `youtube-dl` 替换为 `yt-dlp`
 
 如果你还是喜欢使用 youtube-dl，可以使用以下命令将程序默认替换，同时不影响你的使用:
 
@@ -32,7 +32,6 @@ brew install yt-dlp/taps/yt-dlp
 ---
 
 ## youtube-dl 下载 YouTube 视频
-
 
 视频下载命令行工具里，网友推荐通常都是『国外视频用 youtube-dl』，有这两个工具国内外主流视频网站的视频基本就横扫了，适合想收藏或者喜欢下载后用本地播放器的 Geek 群体。
 
@@ -66,14 +65,13 @@ xcode-select: error: command line tools are already installed, use "Software Upd
 
 > 更多关于 Homebrew 的使用相关，可以查看我的另一篇文章  [Mac 下 Homebrew 的使用](https://samzong.me/2022/05/03/Mac%E4%B8%8Bhomebrew%E7%9A%84%E4%BD%BF%E7%94%A8/)
 
-
 ## 安装 youtube-dl
 
 上面刚学习到的命令可以先用起来，先看看 youtube-dl 的软件信息，在终端里输入 `brew info youtube-dl`，了解一下 youtube-dl 的依存环境和需要搭档的其他应用。
 
 <img src="http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/S4sQmN.png?x-oss-process=image/resize,w_960,m_lfit" />
 
-从终端运行的反馈能看到，youtube-dl 的使用环境是 Python3，合并视频片断还会用到 `ffmpeg`  这个组件，也就是说安装完 youtube-dl，还要再运行一次 `brew install ffmpeg` 
+从终端运行的反馈能看到，youtube-dl 的使用环境是 Python3，合并视频片断还会用到 `ffmpeg`  这个组件，也就是说安装完 youtube-dl，还要再运行一次 `brew install ffmpeg`
 
 ```sh
 brew install youtube-dl
@@ -150,13 +148,13 @@ format code  extension  resolution note
 
 ### 仅导出音频文件
 
-:::information_source: 经常拿过来做个人的歌曲库导出，`youtube-dl -x` 提供了 -x 参数来进行指定 仅导出音频，`--extract-audio` 这里需要使用到 `ffmpeg` 。 
+:::information_source: 经常拿过来做个人的歌曲库导出，`youtube-dl -x` 提供了 -x 参数来进行指定 仅导出音频，`--extract-audio` 这里需要使用到 `ffmpeg` 。
 
 ```sh
 youtube-dl -x https://www.youtube.com/watch?v=Ga4UCK627nU -o "~/Downloads/%(title)s.%(ext)s"
 ```
 
-默认下载的音频文件类型，可能无法满足你，这个时候，可以使用 `--audio-format` 参数，来指定对应的音频格式（使用 ffmpeg 自动转码），目前支持个格式类型有： 
+默认下载的音频文件类型，可能无法满足你，这个时候，可以使用 `--audio-format` 参数，来指定对应的音频格式（使用 ffmpeg 自动转码），目前支持个格式类型有：
 
 ```sh
 Specify audio format: "best", "aac","flac", "mp3", "m4a", "opus", "vorbis",or "wav"; "best" by default

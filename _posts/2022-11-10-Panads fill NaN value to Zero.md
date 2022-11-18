@@ -14,4 +14,3 @@ df = pandas.read_csv('somefile.txt')
 
 df = df.fillna(0)
 ```
-

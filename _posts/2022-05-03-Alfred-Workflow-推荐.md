@@ -15,7 +15,6 @@ Alfred 是 Mac 上一款著名的效率应用，强大的功能和众多的扩�
 
 ![](https://cdn.sspai.com/attachment/origin/2016/02/19/311872.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1)
 
-
 ## Workflow 介绍
 
 Workflow 工作流；将一件事情的多个步骤，通过一个的规则相连，并依次执行，最终完成，这个方式就是工作流； Alfred Workflow 就是一个将我们日常工作流 实现的一个工具，可以让我们在 Alfred 中更加方便的完成我们的工作；现实生活中的工作流可能更为复杂，但本质还是如此。正是基于这种现实背景，alfred 从 2.0 版本起加入了 workflow，简单的示例说明。
@@ -33,8 +32,8 @@ Workflow 工作流；将一件事情的多个步骤，通过一个的规则相�
 - [https://www.packal.org/workflow/mac-app-store-search](https://www.packal.org/workflow/mac-app-store-search)
 - [https://github.com/xiaotu9639/alfred-yuque-workflow](https://github.com/xiaotu9639/alfred-yuque-workflow)
 - [https://github.com/whyliam/whyliam.workflows.youdao](https://github.com/whyliam/whyliam.workflows.youdao) 有道翻译
-   - zhiyu_id: 12ba82650be566f5
-   - zhiyu_key:XWkQjLboE4llgQuWZMR1e0d03Au9w8ob
+  - zhiyu_id: 12ba82650be566f5
+  - zhiyu_key:XWkQjLboE4llgQuWZMR1e0d03Au9w8ob
 
 ---
 
@@ -44,17 +43,15 @@ Workflow 工作流；将一件事情的多个步骤，通过一个的规则相�
 - [https://www.packal.org/workflow/pretty-json](https://www.packal.org/workflow/pretty-json)
 - [https://www.packal.org/workflow/who](https://www.packal.org/workflow/who)
 
-
 ## 如何获取 Workflow ?
 
-可以到这个网站 https://www.packal.org/  有非常丰富的 Workflow 或者 主题可以选择，丰富你的 Alfred 使用
+可以到这个网站 <https://www.packal.org/>  有非常丰富的 Workflow 或者 主题可以选择，丰富你的 Alfred 使用
 
 如果你有能力制作一些优秀的 Workflow ，也可以在这里分享
 
 ## 更多关于 Alfred 的使用教程
 
 网络上已经有大量的 视频和文本的使用教程了，所以我这里直接引用我学习时使用的教程
-
 
 ## 视频教程
 

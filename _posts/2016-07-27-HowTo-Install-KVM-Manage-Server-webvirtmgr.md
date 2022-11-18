@@ -10,40 +10,44 @@ date: 2016-07-27 17:34:01
 
 生产环境的KVM宿主机越来越多，需要对宿主机的状态进行调控。这里用webvirtmgr进行管理。图形化的WEB，让人能更方便的查看kvm 宿主机的情况和操作.
 
-
 ***[GitHub Project.](https://github.com/retspen/webvirtmgr)***
 
-
-###  Install
+### Install
 
 #### 安装支持的软件源
+
 ```
 yum install -y epel-release
 ```
 
 #### 安装相关软件
+
 ```
 yum -y install git python-pip libvirt-python libxml2-python python-websockify supervisor nginx
 ```
 
 #### 从git-hub中下载相关的webvirtmgr代码
+
 ```
 cd /usr/local/src/
 git clone git://github.com/retspen/webvirtmgr.git
 ```
 
 #### 安装webvirtmgr
+
 ```
 cd webvirtmgr/
 pip install -r requirements.txt
 ```
 
 #### 安装数据库
+
 ```
 yum install python-sqlite2
 ```
 
 #### 对django进行环境配置
+
 ```
 ./manage.py syncdb
 
@@ -59,6 +63,7 @@ Password (again):*********
 ```
 
 #### 拷贝web到 相关目录
+
 ```
 cd ..
 rm -rf /var/www
@@ -67,6 +72,7 @@ cp -Rv webvirtmgr /var/www/webvirtmgr
 ```
 
 #### 设置ssh
+
 ```
 ssh-keygen
 ssh-copy-id 192.168.2.32
@@ -74,6 +80,7 @@ ssh 192.168.2.32 -L localhost:8000:localhost:8000 -L localhost:6080:localhost:60
 ```
 
 #### 编辑nginx配置文件
+
 ```
 mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak
 vim /etc/nginx/conf.d/webvirtmgr.conf  #添加下面内容到文件中
@@ -104,16 +111,19 @@ server {
 ```
 
 #### 启动nginx
+
 ```
 service nginx start
 ```
 
 #### 修改防火墙规则 ( 如果关闭selinux，此步可省略)
+
 ```
 /usr/sbin/setsebool httpd_can_network_connect true
 ```
 
 #### 设置 supervisor
+
 ```
 chown -R nginx:nginx /var/www/webvirtmgr
 vim /etc/supervisord.conf #在文件末尾添加
@@ -141,6 +151,7 @@ bind = "0:8000"
 ```
 
 #### 设置开机启动
+
 ```
 chkconfig supervisord on
 chkconfig nginx on
@@ -149,13 +160,14 @@ vim /etc/rc.local
 ```
 
 #### 启动进程
+
 ```
 service nginx start
 service supervisord start
 ```
 
 #### 访问
+
 ```
 http://$server_ip/login/
 ```
-

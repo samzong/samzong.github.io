@@ -16,22 +16,22 @@ date: 2016-08-13 06:12:43
 #
 
 if [[ $1 == "uninstall" ]];then
-	echo "starting backup data..."
-	mkdir -p /www/backup
-	service mysqld stop
-	service nginxd stop
-	service httpd stop
-	service wdapache stop
-	service pureftpd stop
-	tar zcvf /www/backup/mysqldatdbk.tar.gz /www/wdlinux/mysql/var
-	tar zcvf /www/backup/ngconfbk.tar.gz /www/wdlinux/nginx/conf
-	tar zcvf /www/backup/apconfbk.tar.gz /www/wdlinux/apache/conf
-	rpm -e lanmp_wdcp --nodeps
-	rm -fr /www/wdlinux
-	echo
-	echo "	lanmp,wdcp remove is OK"
-	echo
-	exit 0
+ echo "starting backup data..."
+ mkdir -p /www/backup
+ service mysqld stop
+ service nginxd stop
+ service httpd stop
+ service wdapache stop
+ service pureftpd stop
+ tar zcvf /www/backup/mysqldatdbk.tar.gz /www/wdlinux/mysql/var
+ tar zcvf /www/backup/ngconfbk.tar.gz /www/wdlinux/nginx/conf
+ tar zcvf /www/backup/apconfbk.tar.gz /www/wdlinux/apache/conf
+ rpm -e lanmp_wdcp --nodeps
+ rm -fr /www/wdlinux
+ echo
+ echo " lanmp,wdcp remove is OK"
+ echo
+ exit 0
 fi
 
 echo "Turn off selinux..."
@@ -43,24 +43,24 @@ yum install -y gcc gcc-c++ make autoconf libtool-ltdl-devel gd-devel freetype-de
 #echo "Check the network..."
 #ping -c 2 113.105.167.1
 #if [[ $? != 0 ]];then
-#	echo
-#	echo "network err"
-#	exit 1
+# echo
+# echo "network err"
+# exit 1
 #fi
 ping -c 3 dl.wdlinux.cn
 if [[ $? == 2 ]];then
-	echo
-	echo "dns error"
-	exit 1
+ echo
+ echo "dns error"
+ exit 1
 fi
 
 if [[ ! -d /www/wdlinux ]];then
-	echo
-	echo "rpm remove..."
-	rpm -e php --nodeps
-	rpm -e httpd --nodeps
-	rpm -e mysql-server --nodeps
-	rpm -e mysql --nodeps
+ echo
+ echo "rpm remove..."
+ rpm -e php --nodeps
+ rpm -e httpd --nodeps
+ rpm -e mysql-server --nodeps
+ rpm -e mysql --nodeps
 fi
 
 echo "yum update..."
@@ -69,7 +69,7 @@ yum install -y make autoconf sudo wget libtool-ltdl-devel gd-devel freetype-deve
 arch=i386
 Aurl="http://dl.wdlinux.cn:5180/rpms"
 if [[ `uname -m` == "x86_64" ]];then
-	arch="x86_64"
+ arch="x86_64"
 fi
 
 function in_finsh {
@@ -100,28 +100,28 @@ v1=$?
 grep -E 'wdOS 2|6\.' /etc/redhat-release > /dev/null 2>&1
 v2=$?
 if [ $v1 == 0 ];then
-	RF="lanmp_wdcp-2-5.$arch.rpm";
+ RF="lanmp_wdcp-2-5.$arch.rpm";
 elif [ $v2 == 0 ];then
-	RF="lanmp_wdcp-2-5.el6.$arch.rpm";
-	if [ $arch == "x86_64" ];then
-		wget -c http://dl.wdlinux.cn:5180/soft/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm
-		rpm -ivh rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm
-	else
-		wget -c http://dl.wdlinux.cn:5180/soft/rpmforge-release-0.5.2-2.el6.rf.i686.rpm
-		rpm -ivh rpmforge-release-0.5.2-2.el6.rf.i686.rpm
-	fi
-	yum install -y mhash-devel libmcrypt-devel
+ RF="lanmp_wdcp-2-5.el6.$arch.rpm";
+ if [ $arch == "x86_64" ];then
+  wget -c http://dl.wdlinux.cn:5180/soft/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm
+  rpm -ivh rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm
+ else
+  wget -c http://dl.wdlinux.cn:5180/soft/rpmforge-release-0.5.2-2.el6.rf.i686.rpm
+  rpm -ivh rpmforge-release-0.5.2-2.el6.rf.i686.rpm
+ fi
+ yum install -y mhash-devel libmcrypt-devel
 else
-	echo
-	echo "The current system does not support"
-	echo
-	exit
+ echo
+ echo "The current system does not support"
+ echo
+ exit
 fi
 wget -c http://dl.wdlinux.cn:5180/rpms/$RF
 rpm -ivh $RF --nodeps
 I_F=$?
 if [ $I_F == 0 ];then
-	echo
+ echo
 fi
 in_check $I_F lanmp_wdcp
 
