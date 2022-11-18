@@ -208,5 +208,3 @@ Starting zabbix server:              [  OK  ]
 #### 5. View the Head Memory Monitoring.
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/12/zabbix-view-monitor.png)
 
-
-

@@ -190,5 +190,3 @@ This will issue a password prompt for the user. If you don't have a root user pa
 mysql_secure_installation
 ```
 
-
-

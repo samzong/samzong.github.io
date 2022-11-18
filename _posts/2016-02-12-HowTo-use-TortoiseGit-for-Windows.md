@@ -14,8 +14,6 @@ GitLab是一个非常成熟的服务端应用，但是作为一名开发人员�
 
 目前在众多Git Client之中做的比较好的是SourceTree，并且同时支持Mac和Windows双平台，但是有一个问题，当我们在初次安装时需要验证Atlassian账号，但是Atlassian的注册页面用了requirejs，而且是用了Google的CDN服务，所以必须翻墙，这对很多中国用户的使用造成了不变；所以，今天我在这里推荐一个在Windows平台下同样可以作为Git图形化客户端工具的：[TortoiseGit][1]
 
-
-
 TortoiseGit 是 TortoiseSVN 的 Git 版本，TortoiseGit用于迁移 TortoiseSVN 到 TortoiseGit，解决了在Windows平台之上没有合适Git图形化客户端的问题，TortoiseGit不仅免费，而且同样支持丰富的语言包，但是需要独立下载语言包安装，默认只有英文，注意语言包与程序版本一定要匹配。
 
 #### 下载
@@ -56,8 +54,6 @@ TortoiseGit的官方下载地址是这里：https://tortoisegit.org/download/ �
 
 ![][image-2]
 
-
-
 ##### 修改程序语言为中文
 
 如果英文你的使用不会有影响，你可以略过这一步骤，同样你也不需要下载上面的LanguagePack包。
@@ -65,8 +61,6 @@ TortoiseGit的官方下载地址是这里：https://tortoisegit.org/download/ �
 ![][image-3]
 
 好了，按照如上图中操作，你应该已经修改了程序语言为中文，再次到空白区域单击测试就可以看到了。
-
-
 
 #### 使用TortoiseGit克隆你的项目
 
@@ -112,8 +106,6 @@ GitHub和GitLab都提供了通过使用HTTPS和SSH的方式，这两种方式有
 
 ![][image-11]
 
-
-
 ##### HTTPS or HTTP
 
 在使用GitLab为公司内部仓库时，可以不开通HTTPS验证，HTTP也不会影响我们的验证方式，但是从安全的角度上来说，强烈建议启用HTTPS，HTTPS加密传输可以给我们的代码和用户信息的安全提供更好的保护。
@@ -124,13 +116,9 @@ GitHub和GitLab都提供了通过使用HTTPS和SSH的方式，这两种方式有
 
 **如果你的项目在GitLab上**，并且这个项目是一个私有项目，那么这里就会要求你输入你的GitLab用户名和密码，输入正确的用户和密码就可以成功克隆了。
 
-
-
 但是，由于我的测试项目在GitHub上，GitHub上的项目默认都是公开项目，所以在这一步骤不会询问我的用户名和密码，只有在我需要将本地更新推送到GitHub时才会验证；所以接下来我在项目目录下新增文件newfile2.txt，
 
 > 注意，Git不同SVN，Git的提交不会将更新推送到远端服务器，所以我们在提交成功之后，再去手动推送
-
-
 
 右键选择Git提交，会弹出提交页面，我们需要这里，输入提交说明信息，和需要提交的文件。
 
