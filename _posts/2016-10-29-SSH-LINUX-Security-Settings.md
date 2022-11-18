@@ -5,7 +5,6 @@ tags:
     - SSH
 categories: 
     - Linux
-abbrlink: 34358
 date: 2016-10-29 06:23:59
 ---
 

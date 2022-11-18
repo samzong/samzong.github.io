@@ -6,12 +6,11 @@ tags:
 categories: 
     - 数据库
     - MySQL
-abbrlink: 23376
 date: 2016-03-29 08:22:14
 ---
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 ## 1. 测试环境
 *  MacBook Pro 15‘ i7 16GB
@@ -187,7 +186,6 @@ mysql>  alter  table  ultraera  modify  name  varchar(200);
 e.重命名一个列
 mysql>  alter  table  ultraera  change  column  NAME  name  varchar(200);
 ```
-
 
 
 ### 2.8 向表格中插入数据

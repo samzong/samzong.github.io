@@ -5,7 +5,6 @@ toc: true
 author: samzong.lu
 author_id: defaultAuthorId
 language: en
-abbrlink: 52078
 tags:
   - Python
 categories:
@@ -165,7 +164,6 @@ TO: if response.status != 200:
 ---
 
 以上调整之后，基本就可以正常跑起来了，基本是可以支持Python3的使用，我试过了Python3.6-3.9，都是OK的。
-
 
 
 ## pypi HowTo

@@ -6,7 +6,6 @@ tags:
 categories: 
     - OpenSource
     - Jmeter
-abbrlink: 25216
 ---
 
 之前一直使用阿里云的PTS服务作为测试，但是今天发现阿里云的PTS服务正在升级无法使用，所以打算用Jmeter来做压力测试，并使用Chrome插件BlazeMeter来录制.jmx脚本。
@@ -26,13 +25,11 @@ BlazeMeter限制需要登录才能导出jmx脚本，所以首先需要注册账�
 填写测试脚本名称后，点击开始录制，执行一系列操作后，点停止录制，然后到处jmx文件到本地。
 
 
-
 #### 导入脚本到Jmeter
 
 在Jmeter中"File-Open"导入你jmx脚本，为了方便观察结果，我们需要增加一些察看报告。
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/uxe75.jpg)
-
 
 
 ##### 聚合报告(Aggregate Report)

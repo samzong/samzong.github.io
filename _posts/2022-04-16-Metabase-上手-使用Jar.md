@@ -10,7 +10,6 @@ tags:
 categories:
   - OpenSource
   - Metabase
-abbrlink: 49743
 date: 2022-04-16 02:40:00
 ---
 

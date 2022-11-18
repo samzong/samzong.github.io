@@ -7,7 +7,6 @@ tags:
 categories: 
     - OpenSource
     - Zabbix
-abbrlink: 332
 date: 2016-05-20 07:24:58
 ---
 

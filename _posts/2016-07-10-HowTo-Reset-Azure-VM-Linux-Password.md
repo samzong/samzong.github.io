@@ -7,7 +7,6 @@ tags:
 categories: 
     - 云服务
     - Azure
-abbrlink: 30472
 date: 2016-07-10 11:21:47
 ---
 

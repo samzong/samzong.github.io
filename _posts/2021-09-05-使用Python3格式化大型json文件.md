@@ -15,7 +15,6 @@ Python 自带json-tool 在转换是会导致中文乱码，以下在原有基础
 :::
 
 
-
 ### No BB, Show Code
 
 ```python
@@ -68,7 +67,6 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
 
 
 ### RUNNING

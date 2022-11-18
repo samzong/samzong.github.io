@@ -6,7 +6,6 @@ tags:
 categories: 
   - OpenSource
   - Redmine
-abbrlink: 47344
 ---
 
 ```
@@ -70,6 +69,5 @@ touch /var/data/redmine/tmp/restart.txt
 # configure email service
 vim /var/data/redmine/config/configuration.yml
 ```
-
 
 

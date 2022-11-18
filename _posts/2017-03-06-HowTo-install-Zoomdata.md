@@ -5,7 +5,6 @@ tags:
     - Zoomdata
 categories: 
     - Bigdata
-abbrlink: 45723
 date: 2017-03-06 09:44:47
 ---
 

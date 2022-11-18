@@ -6,7 +6,6 @@ tags:
 categories: 
     - 虚拟化
     - CloudStack
-abbrlink: 61629
 date: 2016-05-18 02:38:59
 ---
 
@@ -124,7 +123,6 @@ kvm                   337772  1 kvm_intel
 
 ##### UI Setting ####
 http://[ip]:8080/client
-
 
 
 ```

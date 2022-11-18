@@ -12,9 +12,6 @@ url: https://www.yuque.com/samzong/code/kfrygp
 **暗坑很多**
 
 
-
-
-
 ## 部署过程
 
 1. 需要自行维护一个 env 作为配置文件.
@@ -50,9 +47,6 @@ url: https://www.yuque.com/samzong/code/kfrygp
 - postgres 权限问题 <https://stackoverflow.com/a/25051632/5067657>
 - <https://techoverflow.net/2021/05/07/how-to-fix-alpine-linux-ash-sudo-not-found/>
 - <https://discuss.redash.io/t/error-99-connecting-to-localhost-6379-cannot-assign-requested-address/9716/7>
-
-
-
 
 
 ## 启动的服务介绍

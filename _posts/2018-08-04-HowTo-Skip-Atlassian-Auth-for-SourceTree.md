@@ -7,7 +7,6 @@ tags:
 categories: 
   - Git
   - SourceTree
-abbrlink: 20795
 ---
 
 #### 问题
@@ -21,7 +20,6 @@ abbrlink: 20795
 #### 解决思路
 
 我的想法是通过增加`account`信息，让`SourceTree`跳过验证；经过测试`2.0.19`及以下版本都支持，但是SourceTree在最新版本2.0.20时可能修订验证方式，所以导致我的这个方式不适用，大家可以在我的百度云盘共享中下载2.0.19，功能上并没发生多少变化。
-
 
 
 链接: https://pan.baidu.com/s/1qYsHKWs 密码: wnc3

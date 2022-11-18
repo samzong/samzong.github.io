@@ -6,7 +6,6 @@ categories:
   - AWS
 tags:
   - AWS
-abbrlink: 49072
 date: 2016-11-30 23:45:54
 ---
 

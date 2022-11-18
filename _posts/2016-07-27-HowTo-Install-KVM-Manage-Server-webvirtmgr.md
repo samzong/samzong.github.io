@@ -5,7 +5,6 @@ tags:
     - KVM
 categories: 
     - 虚拟化
-abbrlink: 20811
 date: 2016-07-27 17:34:01
 ---
 

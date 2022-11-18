@@ -9,7 +9,6 @@ url: https://www.yuque.com/samzong/ap/aof3re
 ---
 
 
-
 ### 安装 Homebrew
 
 MacOS 首先需要安装下基础依赖:
@@ -21,7 +20,6 @@ MacOS 首先需要安装下基础依赖:
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 
-
 ### 增加Homebrew安装图形化软件库
 
     brew tap caskroom/cask
@@ -29,7 +27,6 @@ MacOS 首先需要安装下基础依赖:
 安装 iTerm 2 ，当然也可以用来安装其他很多软件
 
     brew cask install iterm2
-
 
 
 ### 安装Zsh
@@ -43,13 +40,11 @@ Mac的默认shell还是bash，所以需要将其修改为zsh
     chsh -s /usr/local/bin/zsh
 
 
-
 ### 安装oh-my-zsh
 
 执行以下命令即可，耐心等待
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 
 
 ### 结语

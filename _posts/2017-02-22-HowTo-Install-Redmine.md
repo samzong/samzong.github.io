@@ -6,7 +6,6 @@ tags:
 categories:
   - OpenSource
   - Redmine
-abbrlink: 52896
 date: 2017-02-22 12:30:36
 ---
 
@@ -154,7 +153,6 @@ production:
 > 默认运行3000端口，默认管理员admin/admin
 
 
-
 #### 配置Redmine在Nginx上运行
 
 Redmine常用的解决办法是使用passenger+nginx，但是Nginx不支持装载模块，所以需要重新编译安装Nginx，安装Nginx的Passenger有两种方式
@@ -222,14 +220,10 @@ server	{
 ```
 
 
-
-
-
 ##### 7.2 curl-tools
 
 ```
 yum install libcurl-devel
 ```
-
 
 

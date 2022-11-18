@@ -7,7 +7,6 @@ tags:
 categories: 
     - Tools
     - VPN
-abbrlink: 31237
 permalink: /2017/11/15/howto-user-ssr-on-mac/
 ---
 
@@ -19,7 +18,7 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 2. MacOS 版本 10.12.6，经过实测OS版本对实际使用影响并不大。
 3. SSR Client， [下载](http://www.ssglobal.co/wp/wp-content/uploads/2017/02/ShadowsocksX-NG-R8.dmg)
 
-##  SSR服务
+## SSR服务
 
 如果你需要科学上网的话，非常愿意给你推荐我正在使用的SSR服务商，但是由于其官方网站和客户沟通工具TG需要科学上网才能使用，所以你可以联系到我来介绍你们。
 
@@ -29,7 +28,7 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 * Plan-B：**¥15.00元**，3个月，6G流量包，不限速，可自助切换节点。
 * 增加线路：**¥8.00元**，1个月，1条。
 
->  注：增加线路仅支持Plan-A用户配套购买，不超过主线路最长期限，不足1个月剩余时限用户不支持购买
+> 注：增加线路仅支持Plan-A用户配套购买，不超过主线路最长期限，不足1个月剩余时限用户不支持购买
 
 ### 注册账号
 
@@ -61,15 +60,11 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 > 上图中”切换“，用来切换不同服务器节点，注意，切换后要到客户端内刷新订阅信息，下面会讲到。
 
-
-
-
-
 ## SSR Client 安装
 
 在本文最上面已经有了，如何下载SSR 客户端的地方，细心的朋友，应该已经在SSGlobal官网上找到了对应下载页面，其中包含全平台的客户端工具。
 
-### 下载 
+### 下载
 
 [立即下载](http://www.ssglobal.co/wp/wp-content/uploads/2017/02/ShadowsocksX-NG-R8.dmg)
 
@@ -78,10 +73,6 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 下载完成后，找到你的下载文件，双击打开，将程序拖到Mac程序目录即完成安装，和Mac其他软件安装并无不同。
 
 ![02](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/p7wkf.jpg)
-
-
-
-
 
 ## 启动程序
 
@@ -101,8 +92,6 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 然后选择手动更新订阅，这里在你的服务列表内，就有了你的服务器节点信息，选择对应节点即可开启科学上网
 
-
-
 ### PAC 规则
 
 首次使用PAC需要更新一次PAC规则，操作如下图。
@@ -115,9 +104,7 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 > || domain , 这里表示匹配所有代理
 
-更多关于用户规则，可以查看这里，[使用手册](https://adblockplus.org/en/filter-cheatsheet) 
-
-
+更多关于用户规则，可以查看这里，[使用手册](https://adblockplus.org/en/filter-cheatsheet)
 
 ## 结语
 

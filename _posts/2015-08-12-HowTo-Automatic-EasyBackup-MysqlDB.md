@@ -6,7 +6,6 @@ tags:
 categories: 
     - 数据库
     - MySQL
-abbrlink: 55656
 ---
 
 mysql是一个免费、开源中一款非常优秀关系型数据库，在现在的互联网中使用的非常广泛，无论是大型IT项目还是个人开发者的小项目，mysql都能很好的协助人们处理数据库相关的工作，同时数据库对于我们来说是非常重要，所以经常备份数据库是一个基本的操作，这会为你或者你的团队，减少非常多不必要的麻烦。
@@ -108,8 +107,6 @@ total 780K
 ➜  ~
 ```
 
-
-
 #### 安装命令行邮件工具mailx
 
 安装mailx 在CentOS/RehHat:
@@ -126,7 +123,7 @@ total 780K
 
 ![](http://ww2.sinaimg.cn/large/006tKfTcgy1ffogc7wksdj30ms03t3ym.jpg)
 
-####  安装计划任务工具Crontab
+#### 安装计划任务工具Crontab
 
 crontab命令常见于Unix和类Unix的操作系统之中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于“crontab”文件中。通常，crontab储存的指令被守护进程激活， crond常常在后台运行，每一分钟检查是否有预定的作业需要执行。这类作业一般称为cron jobs。
 
@@ -211,8 +208,6 @@ crontab 的一些例子：
 */30 * * * * /usr/sbin/ntpdate 210.72.145.44
 ```
 
-
-
 #### 编写备份脚本
 
 好了，以上我们测试需要用到的各个模块，下面我们要编写备份脚本：
@@ -238,15 +233,15 @@ find /mysqlbak/ -mtime +7 -exec rm -f {} \;
 # send mial to admin'mial
 if [ $? -eq 0 ]
 then
-	echo "ghost SQL dump is successfully. At time: `date` " | mail -s ghost-dump-successfully  samzong.lu@gmail.com
+ echo "ghost SQL dump is successfully. At time: `date` " | mail -s ghost-dump-successfully  samzong.lu@gmail.com
 else
-	echo " Error Error ghost SQL dump is Error. At time: `date` " | mail -s ghost-dump-error samzong.lu@gmail.com
+ echo " Error Error ghost SQL dump is Error. At time: `date` " | mail -s ghost-dump-error samzong.lu@gmail.com
 fi
 ```
 
 注意脚本中的以下内容要根据你的实际情况修改:
 
-* -h " " 	这是数据库所在的主机
+* -h " "  这是数据库所在的主机
 * -u " "       这是数据库可备份的用户名
 * -p" "        备份用户的密码
 
@@ -266,6 +261,5 @@ fi
 Stopping crond:                                            [  OK  ]
 Starting crond:                                            [  OK  ]
 ➜  ~ chkconfig --list | grep crond
-crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+crond           0:off 1:off 2:on 3:on 4:on 5:on 6:off
 ```
-
