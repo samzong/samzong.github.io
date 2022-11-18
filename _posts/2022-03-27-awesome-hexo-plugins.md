@@ -18,7 +18,7 @@ About my blog use hexo plugin
 ### Installation
 
 ``` bash
-$ npm install hexo-hide-posts --save
+npm install hexo-hide-posts --save
 ```
 
 Usage
@@ -59,7 +59,6 @@ hide_posts:
   # Add "noindex" meta tag to prevent hidden posts from being indexed by search engines
   noindex: true
 ```
-
 
 ## hexo-generator-restful
 

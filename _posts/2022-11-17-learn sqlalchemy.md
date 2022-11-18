@@ -24,8 +24,8 @@ import MySQLdb
 from sqlalchemy import create_engine, MetaData
 
 def connect_db ():
-	# connect db:
-	engine = create_engine("mysql://user:pass@localhost/db", echo = True)
+ # connect db:
+ engine = create_engine("mysql://user:pass@localhost/db", echo = True)
 
     meta = MetaData()
     conn = engine.connect()

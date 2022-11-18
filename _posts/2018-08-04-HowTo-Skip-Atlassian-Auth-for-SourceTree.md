@@ -21,8 +21,7 @@ categories:
 
 我的想法是通过增加`account`信息，让`SourceTree`跳过验证；经过测试`2.0.19`及以下版本都支持，但是SourceTree在最新版本2.0.20时可能修订验证方式，所以导致我的这个方式不适用，大家可以在我的百度云盘共享中下载2.0.19，功能上并没发生多少变化。
 
-
-链接: https://pan.baidu.com/s/1qYsHKWs 密码: wnc3
+链接: <https://pan.baidu.com/s/1qYsHKWs> 密码: wnc3
 
 #### 解决步骤
 
@@ -30,7 +29,7 @@ categories:
 
 SourceTree 依赖的.NET环境最低是4.5.2，当然在你安装的过程中，会提示你下载安装，你只需要确认即可，不过这样下载会比较慢，所以建议你使用Offline的形式安装，下面是微软官方下载地址：
 
-https://www.microsoft.com/en-us/download/confirmation.aspx?id=42642
+<https://www.microsoft.com/en-us/download/confirmation.aspx?id=42642>
 
 ##### SourceTree
 

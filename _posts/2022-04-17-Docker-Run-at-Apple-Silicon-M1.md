@@ -18,13 +18,11 @@ date: 2022-04-17 20:32:00
 
 在使用了 Apple M1 的笔记本后，在 docker 使用遇到了一些问题，这里做些笔记记录下来
 
-
 ## pull image error
 
 > Error "no matching manifest for linux/arm64/v8 in the manifest list entries"
 
 在我尝试想要 pull 下来时，得到上面的一个错误；同样的问题，我在编写 Dockerfile 和 docker-compose.yml 都遇到这样的问题
-
 
 ### docker-compose.yml
 

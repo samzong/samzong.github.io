@@ -17,17 +17,20 @@ date: 2016-12-20 06:17:08
 ossfs 是通过磁盘挂载的形式，将oss存储挂载到linux、类unix等操作系统，而且不仅仅可以挂载阿里云内的ECS上，理论上所有网络能到达oss的都可以挂载，但还是要以实际问题为准。
 
 ##### 1.Download & Install
+
 [官方版本发布页面](https://github.com/aliyun/ossfs/releases)，请根据你的系统类型进行选择，我这演示的环境是CentOS 6.8；ossfs目前最新的版本是v1.79.9，您可以根据自己当时版本进行选择，建议选择最新版本。
+
 ```
 # 请先将包上传到服务器上
  sudo yum localinstall ossfs_1.79.9_centos6.5_x86_64.rpm
 ```
->注意使用localinstall，因为在安装过程，yum 可以很好的解决依赖关系，会节省我们很多时间
 
+>注意使用localinstall，因为在安装过程，yum 可以很好的解决依赖关系，会节省我们很多时间
 
 ##### 2. OSS & Bucket
 
  需要获取以下信息，在后面我们都会用到的：<br>
+
 1. Bucket 名称
   ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/11/QQ20161111-0.jpg)
   <br>
@@ -52,8 +55,10 @@ sudo chmod 640 /etc/passwd-ossfs
 # 我碰到安装后找不到ossfs命令，查看下因为ossfs没有x权限，目录路径为/usr/local/bin，如果您也碰到这个问题，可以增加x权限后再测试
 sudo ossfs my-bucket /mnt/ossdir -ourl=http://oss-location.aliyuncs.com
 
-# 如果使用ossfs的机器是阿里云ECS，可以使用内网域名来避免流量收费和 提高速度：
-sudo ossfs my-bucket /tmp/ossfs -ourl=http://oss-location-internal.aliyuncs.com
+# 如果使用ossfs的机器是阿里云ECS，可以使用内网域名来避免流量收费和 提高速度
+
+sudo ossfs my-bucket /tmp/ossfs -ourl=<http://oss-location-internal.aliyuncs.com>
+
 ```
 磁盘空间达到上百T：
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/11/0B78E099-5488-4839-AE48-09A074E7415D.png)
@@ -61,16 +66,22 @@ sudo ossfs my-bucket /tmp/ossfs -ourl=http://oss-location-internal.aliyuncs.com
 
  umount：
 ```
+
 # 注意用户身份
+
 umount /tmp/ossfs # root user
 sudo fusermount -u /tmp/ossfs # non-root user
+
 ```
 <br>
 ##### 4. Debug & FAQ
 当遇到错误的时候，可以试着打开Debug日志信息，然后分析问题原因：
 ```
+
 # 使用 -o dbglevel=debug -f -d参数打印日志信息
-sudo ossfs my-bucket /tmp/ossfs -ourl=http://oss-location-internal.aliyuncs.com -o dbglevel=debug -f -d > /mnt/ossfs.log 2>&1
+
+sudo ossfs my-bucket /tmp/ossfs -ourl=<http://oss-location-internal.aliyuncs.com> -o dbglevel=debug -f -d > /mnt/ossfs.log 2>&1
+
 ```
 
 更多的问题，请移步查看[官方的FAQ文档](https://github.com/aliyun/ossfs/wiki/FAQ)。

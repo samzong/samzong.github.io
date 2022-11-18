@@ -21,7 +21,6 @@ django-admin startproject mysite
   - wsgi.py
 ```
 
-
 ### 项目初始化
 
 ```shell
@@ -37,7 +36,6 @@ cd mysite
 python3 manage.py migrate  # 初始化数据库
 python3 manage.py createsuperuser  # 创建超级管理员账号
 ```
-
 
 ### 常见项目配置
 
@@ -68,7 +66,6 @@ TIME_ZONE = 'Asia/Shanghai'  # Default UTC
 LANGUAGE_CODE = 'zh-Hans'  # 简体中文
 ```
 
-
 ### 导出项目的依赖库
 
 ```python
@@ -76,7 +73,6 @@ pip freeze > requirements.txt   # 将目前虚拟环境的 依赖库，导出到
 
 pip install -r requirements.txt # 从 requirements.txt 中读取依赖库，并进行安装
 ```
-
 
 ### modules 变更后，需要同步变更数据库表
 

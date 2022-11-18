@@ -17,10 +17,10 @@ url: https://www.yuque.com/samzong/ap/mac-2-jie-jueohmyzsh-zai-zhong-duan-xia-da
     
     ➜  ~ sudo du -sh /private/var/log/asl/
     Password:
-    2.7G	/private/var/log/asl/
+    2.7G /private/var/log/asl/
     
     ➜  ~ sudo rm -rf /private/var/log/asl/*.asl
     ➜  ~ sudo du -sh /private/var/log/asl/
-    208M	/private/var/log/asl/
+    208M /private/var/log/asl/
 
 关闭终端，再次打开，问题解决。

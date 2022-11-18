@@ -11,11 +11,11 @@ date: 2016-03-29 08:22:14
 
 
 ## 1. 测试环境
-*  MacBook Pro 15‘ i7 16GB
-*  VMware Fushion 8 Pro
-*  MySQL Version 5.1
-*  CentOS Linux 6.x
 
+* MacBook Pro 15‘ i7 16GB
+* VMware Fushion 8 Pro
+* MySQL Version 5.1
+* CentOS Linux 6.x
 
 ## 2. 实验步骤
 
@@ -26,17 +26,15 @@ date: 2016-03-29 08:22:14
 
 ```
 
-
 ### 2.2 启动mysql，并设置开机自启动
 
 ```
 [root@ultraera  ~]#  service  mysqld  start
 [root@ultraera  ~]#  chkconfig  mysqld  on
 [root@ultraera  ~]#  chkconfig  --list  |  grep  mysqld
-mysqld	0:off  1:off  2:on  3:on  4:on  5:on  6:off
+mysqld 0:off  1:off  2:on  3:on  4:on  5:on  6:off
 
 ```
-
 
 ### 2.3 相关配置
 
@@ -47,7 +45,6 @@ port:3306           mysql默认端口
 
 # Tips : MySQL 绝大对数语句都是以分号结尾，注意是英文模式下的分号。字符和字符串用 '' 引起；
 ```
-
 
 ### 2.4 mysql初始化及登录
 
@@ -124,7 +121,6 @@ Cleaning up...
 [root@ultraera  ~]# mysql  -u  root  -p  -h  localhost “-h” 指定服务器地址
 ```
 
-
 ### 2.5 创建、查看及删除当前数据库
 
 ```
@@ -132,12 +128,12 @@ mysql>  CREATE  DATABASE  ultraera;
 Query  OK,  1  row  affected  (0.00  sec)
 mysql>  SHOW  DATABASES;
 +--------------------+
-|  Database	|
+|  Database |
 +--------------------+
 |  information_schema  |
-|  mysql	|
-|  test	|
-|  ultraera	|
+|  mysql |
+|  test |
+|  ultraera |
 +--------------------+
 4  rows  in  set  (0.00  sec)
 mysql>  DROP  DATABASE  ultraera;
@@ -151,25 +147,26 @@ Query  OK,  0  rows  affected  (0.00  sec)
 #创建表格之前要先选择数据库
 mysql>  use  ultraera;
 Database  changed
-mysql>  CREATE  TABLE  ultraera(	#create 创建表格，至少1列
-->  id  int  NOT  NULL,	#NOT  NULL	不为空,int 整型
-->  name  char(20)  NOT  NULL,	#char() 字符型  ,()内定义字符长度
+mysql>  CREATE  TABLE  ultraera( #create 创建表格，至少1列
+->  id  int  NOT  NULL, #NOT  NULL 不为空,int 整型
+->  name  char(20)  NOT  NULL, #char() 字符型  ,()内定义字符长度
 ->  age  int  NOT  NULL
 ->  );
 Query  OK,  0  rows  affected  (0.01  sec)
 mysql>  DESC  ultraera;
 +-------+----------+------+-----+---------+----------------+
-|  Field  |  Type	|  Null  |  Key  |  Default  |  Extra	|
+|  Field  |  Type |  Null  |  Key  |  Default  |  Extra |
 +-------+----------+------+-----+---------+----------------+
-|  id	|  int(11)  |  NO  |	|  NULL	|	|
-|  name  |  char(20)  |  NO  |	|  NULL	|	|
-|  age	|  int(11)  |  NO  |	|  NULL	|	|
+|  id |  int(11)  |  NO  | |  NULL | |
+|  name  |  char(20)  |  NO  | |  NULL | |
+|  age |  int(11)  |  NO  | |  NULL | |
 +-------+----------+------+-----+---------+----------------+
 3  rows  in  set  (0.00  sec)
 mysql>  DROP  TABLE  ultraera  ;
 Query  OK,  0  rows  affected  (0.00  sec)
 
 ```
+
 ### 2.7 修改表格信息
 
 ```
@@ -185,7 +182,6 @@ e.重命名一个列
 mysql>  alter  table  ultraera  change  column  NAME  name  varchar(200);
 ```
 
-
 ### 2.8 向表格中插入数据
 
 ```
@@ -194,12 +190,12 @@ mysql>  insert  into  ultraera  values(1,'name',18);
 b.  根据列插入
 mysql>  insert  into  ultraera(id,name,age)  values(2,'john',19);
 ### 2.9 查看表格中的数据：
-mysql>  select  *  from  ultraera;	#  *匹配所有列，也可以只查询单个列，
+mysql>  select  *  from  ultraera; #  *匹配所有列，也可以只查询单个列，
 mysql>  select  name  from  ultraera;
 
 ```
 
-### 2.10 where运算符：条件判断查询，查询使用方法：where  列  运算符  值；
+### 2.10 where运算符：条件判断查询，查询使用方法：where  列  运算符  值
 
 ```
 where支持的运算符：=等于；>大于；<小于；<>不等于；>=大于等于；<=小于等于；BETWEEN在某范围之内；
@@ -212,14 +208,14 @@ mysql> select * from ultraera where id  between  1  and  4;
 
 ```
 
-
 ### 2.11 删除表格中的一条记录（同样可以匹配where运算符）
 
 ```
 mysql>  delete  from  ultraera  where  id  =  4;
-mysql>  delete  *  from  ultraera ；	#清空一个表格的数据；
+mysql>  delete  *  from  ultraera ； #清空一个表格的数据；
 
 ```
+
 ### 2.12 更新表中的一个数据
 
 ```
@@ -227,15 +223,13 @@ mysql>  update  ultraera  set  age=30  where  id=3;
 
 ```
 
-
 ### 2.13 MySQL增加删除一个用户
 
 ```
-mysql>  create  user  user1  identified  by  '123456';	#user1，密码123456，新用户没有权限，无法登录数据库
-mysql>  drop  user  user1;	#删除用户user1
+mysql>  create  user  user1  identified  by  '123456'; #user1，密码123456，新用户没有权限，无法登录数据库
+mysql>  drop  user  user1; #删除用户user1
 
 ```
-
 
 ### 2.14 给用户添加、删除权限
 
@@ -248,7 +242,6 @@ mysql>  revoke  all  privileges  from  user1;
 ### 2.15 使用mysqldump进行数据库备份
 
 数据库重命名：mysql不能直接对数据库重命名，所以如果想要重名数据库的话，要先导出，接着创建一个新的数据库，然后将导出的sql文件再导入到新的数据库中
-
 
 ```
 [adam@ultraera  ~]$  mysqldump  -u  root  -p  ultraera  >  ultraera.sql     #备份

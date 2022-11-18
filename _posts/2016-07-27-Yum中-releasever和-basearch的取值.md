@@ -47,6 +47,7 @@ CentOS release files
 [root@ultraera /]# arch
 i386
 ```
+
 但是，当我在命令行查看是却发现<code>$releasever</code>和<code>$basearch</code>是空的。
 <br>
 Google 一下之后，说明Yum变量的说明可以在这里（5.3.3. Using Yum Variables）找到，说明如下：
@@ -97,7 +98,8 @@ distroverpkg=centos-release 代表什么？ 去哪找 centos-release 。找到�
 distroverpkg 和 releasever 名字不同，且看不出什么联系
 distroverpkg 的值，并不是明文，而是“redhat-release”。不知道大家看到这个会有什么想法，反正我是首先想到了 /etc/redhat-release 文件，但我错了。实际上指的是 redhat-release 这个RPM包。所谓“distroverpkg=redhat-release”的意思，其实是将 $releasever 设置为 redhat-release 这个RPM包的版本号.
 
-#####  小结：<br>
+##### 小结：<br>
+
 yum中的$releasever变量是取redhat-release-server rpm包的属性值( %{version})。
 [root@ldap01 ~]# rpm -q --qf %{version} redhat-release-server;echo
 6Server

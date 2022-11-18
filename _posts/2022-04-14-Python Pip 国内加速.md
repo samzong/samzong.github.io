@@ -12,14 +12,12 @@ url: https://www.yuque.com/samzong/code/python-pip-guo-nei-jia-su
 
 - <https://pypi.tuna.tsinghua.edu.cn/simple>
 
-
 ## 安装特定包时加速
 
 ```bash
 
 pip install pandas -i http://pypi.douban.com/simple
 ```
-
 
 ## 修改默认的pip源
 

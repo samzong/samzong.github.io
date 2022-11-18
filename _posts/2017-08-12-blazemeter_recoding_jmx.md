@@ -24,13 +24,11 @@ BlazeMeter限制需要登录才能导出jmx脚本，所以首先需要注册账�
 
 填写测试脚本名称后，点击开始录制，执行一系列操作后，点停止录制，然后到处jmx文件到本地。
 
-
 #### 导入脚本到Jmeter
 
 在Jmeter中"File-Open"导入你jmx脚本，为了方便观察结果，我们需要增加一些察看报告。
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/uxe75.jpg)
-
 
 ##### 聚合报告(Aggregate Report)
 
@@ -59,6 +57,3 @@ BlazeMeter限制需要登录才能导出jmx脚本，所以首先需要注册账�
 通过查看结果树，可以看到每个事务的返回结果，其中红色是出错，绿色则为正常。建议在测试开始前将log/Display Only中Errors打上勾即可，不然会输出很多东西，不方便查看。
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/moo9h.png)
-
- 
-

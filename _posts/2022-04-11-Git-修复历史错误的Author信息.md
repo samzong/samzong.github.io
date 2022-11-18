@@ -19,7 +19,6 @@ date: 2022-04-11 08:19:00
 - 个人软件仓库使用了公司的 author 信息 [信息泄漏的风险]
 - 和其他开发者使用了相同的 author 信息 [影响commit追踪]
 
-
 ## ✅ 修改为正确的 author 信息
 
 > 注意修改全局需要增加 `--global` 参数
@@ -50,7 +49,6 @@ git commit --amend --author="{user.name} <{user.email}>"
 以上变更完成后，你会发现最近一次的提交被修正成功了，可以使用 `git log -1` 来对比前后的 author 信息的变更；确认无误后，将你的修改推送到目标仓库中即可；
 
 > 如果修改后的结果不满意，是可以再次修订
-
 
 ## 修改更早之前的提交 (谨慎使用)
 
@@ -93,7 +91,6 @@ git commit --amend --author="{user.name} <{user.email}>"
 
 最后使用 `git rebase --coutine` 继续完成剩余的提交
 
-
 ## 更高级做法 `filter-branch`
 
 `filter-branch` 虽然被官方推荐，但也不是可以轻易使用的工具；本次的目的只是修改 author 中邮箱，所以一定要加上 `--commit-filter`，官方的脚本实例我直接copy在下方了
@@ -119,4 +116,3 @@ git push --force origin {branch_name}
 ```
 
 在多人协作的场景可能会出现覆盖他人代码的情况，请注意协商并 fetch 分支的变更，确保最新状态
-

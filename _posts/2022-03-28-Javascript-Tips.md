@@ -66,12 +66,11 @@ function showMessage() {
 
 - 函数中变量的作用域：这部分与Python和C一致， 分别为 内部变量 和 外部变量； 关系存在在继承的概念
 - 函数的参数， 入参定义在 () 内，当函数声明了入参后，在对应调用时，就需要传递符合条件的参数
-   - 支持函数的默认值的设定
+  - 支持函数的默认值的设定
 - 函数的返回值，同样使用 return 作为返回值处理
 - 函数 function is  an action, 所以函数的命名通常是 使用动词； javascipt 的命名方式 官方建议为 驼峰的方式
 
 > 函数的特殊部分
-
 
 - 函数表达式   let  sayHi = function () { alert('Hi')}  利用声明 `let` 创建了一个函数，并把他赋值给了变量 sayHi
 - 回调函数
@@ -88,7 +87,6 @@ function showMessage() {
 ### 开发行为规范
 
 > BDD
-
 
 在 BDD 中，规范先行，实现在后。最后我们同时拥有了规范和代码。
 
@@ -129,17 +127,16 @@ let user = {}     构造 "字面量的语法"
 在对象中，包含的是 一个个属性， 这些属性又以 键值对 的形式出现在 {} 中
 
 - 定义一个有属性的对象  let user = {name:'alex', age: 18}
-   - 增加属性 user.city = 'Shanghai'  =>   user['love package'] = 'Apple'
-   - 删除一个属性 delete user.age
+  - 增加属性 user.city = 'Shanghai'  =>   user['love package'] = 'Apple'
+  - 删除一个属性 delete user.age
 - 计算属性  ： 当创建一个对象时，我可以在对象字面量中使用方括号，这叫做计算属性；计算属性的含义是 [fruit] 是从 变量 fruit 中获取的
 - 判断一个 属性是否在对象中    "key" in Object  ，这里的 key 需要时一个值，否则会被认为一个变量
 - 遍历一个对象采用的方式是  for  (let key in Object) : 这里的做法是 声明[let] 变量key ，并且把Object 中的每一个key的值遍历赋予key
 - 取出对象中一个key的值可以采用的方式 Object[key] 或者 Object.key；但是Object.key 会出现对 `多词属性`
-   - 单词属性   name , age
-   - 多词属性   "like birds" ， 这时使用 Object.key 的方式就不可行了
+  - 单词属性   name , age
+  - 多词属性   "like birds" ， 这时使用 Object.key 的方式就不可行了
 
 > JavaScirpt 中的垃圾回收机制
-
 
 当一个对象中的属性被建立后，如果这些属性被多个对象引用时，其他一个对象被重新赋值了，那么这些属性还是可以被访问的；但是当所有对象被重置后，这些无法被访问的属性 就变得不可以，这也会占用我们内存，而这类也会被 回收。
 
@@ -160,8 +157,8 @@ this 设计到编程的一种形式 ： **面向对象编程** OOP ; 当我们�
 #### 对象的 构造和操作符 `new`
 
 - 构造函数在技术上，也是属于常规函数，不过有2个约定：
-   - 命名以大写字母开头， 这是一个共同的约定，用来标明一个函数将被使用 `new` 来运行
-   - 他们只能有 `new` 操作符来执行
+  - 命名以大写字母开头， 这是一个共同的约定，用来标明一个函数将被使用 `new` 来运行
+  - 他们只能有 `new` 操作符来执行
 
 构造器不能被再次调用，因为他保存在任何地址，知识被创建后 后续 调用使用；所以 构造函数的封装一个 单一对象的代码，而无需将来重用
 
@@ -202,22 +199,23 @@ Symbol 的另外一个特性是不会被自动转化为字符串；其实在java
 数组方法备忘单：
 
 - 添加/删除元素：
-   - **push(...items) —— 向尾端添加元素**
-   - **pop() —— 从尾端提取一个元素**
-   - **shift() —— 从首端提取一个元素**
-   - **unshift(...items) —— 向首端添加元素**
-   - splice(pos, deleteCount, ...items) 从 pos 开始删除 deleteCount 个元素，并插入 items。 `用来控制数组的增删改查`
-   - slice(start, end) —— 创建一个新数组，将从索引 start 到索引 end（但不包括 end）的元素复制进去 `取出部分数组的内容产生新数组`
-   - concat(...items) —— 返回一个新数组：复制当前数组的所有元素，并向其中添加 items。如果 items 中的任意一项是一个数组，那么就取其元素。 `拼接多个数组，产生一个新的数组`
+  - **push(...items) —— 向尾端添加元素**
+  - **pop() —— 从尾端提取一个元素**
+  - **shift() —— 从首端提取一个元素**
+  - **unshift(...items) —— 向首端添加元素**
+  - splice(pos, deleteCount, ...items) 从 pos 开始删除 deleteCount 个元素，并插入 items。 `用来控制数组的增删改查`
+  - slice(start, end) —— 创建一个新数组，将从索引 start 到索引 end（但不包括 end）的元素复制进去 `取出部分数组的内容产生新数组`
+  - concat(...items) —— 返回一个新数组：复制当前数组的所有元素，并向其中添加 items。如果 items 中的任意一项是一个数组，那么就取其元素。 `拼接多个数组，产生一个新的数组`
 
 *搜索元素：
-* indexOf/lastIndexOf(item, pos) —— 从索引 pos 开始搜索 item，搜索到则返回该项的索引，否则返回 -1。
-* includes(value) —— 如果数组有 value，则返回 true，否则返回 false。
-* find/filter(func) —— 通过 func 过滤元素，返回使 func 返回 true 的第一个值/所有值。
-* findIndex 和 find 类似，但返回索引而不是值。
+
+- indexOf/lastIndexOf(item, pos) —— 从索引 pos 开始搜索 item，搜索到则返回该项的索引，否则返回 -1。
+- includes(value) —— 如果数组有 value，则返回 true，否则返回 false。
+- find/filter(func) —— 通过 func 过滤元素，返回使 func 返回 true 的第一个值/所有值。
+- findIndex 和 find 类似，但返回索引而不是值。
 
 - 遍历元素：
-   - forEach(func) —— 对每个元素都调用 func，不返回任何内容。
+  - forEach(func) —— 对每个元素都调用 func，不返回任何内容。
 
 ```javascript
 
@@ -231,13 +229,13 @@ for (let i = 0; i <= fruits.length; i++ ) {alert(fruits[i])}
 ```
 
 - 转换数组：
-   - map(func) —— 根据对每个元素调用 func 的结果创建一个新数组。
-   - sort(func) —— 对数组进行原位（in-place）排序，然后返回它。
-   - reverse() —— 原位（in-place）反转数组，然后返回它。
-   - split/join —— 将字符串转换为数组并返回。
-   - reduce/reduceRight(func, initial) —— 通过对每个元素调用 func 计算数组上的单个值，并在调用之间传递中间结果。
+  - map(func) —— 根据对每个元素调用 func 的结果创建一个新数组。
+  - sort(func) —— 对数组进行原位（in-place）排序，然后返回它。
+  - reverse() —— 原位（in-place）反转数组，然后返回它。
+  - split/join —— 将字符串转换为数组并返回。
+  - reduce/reduceRight(func, initial) —— 通过对每个元素调用 func 计算数组上的单个值，并在调用之间传递中间结果。
 - 其他：
-   - Array.isArray(arr) 检查 arr 是否是一个数组。
+  - Array.isArray(arr) 检查 arr 是否是一个数组。
 
 请注意，sort，reverse 和 splice 方法修改的是数组本身； 这些是最常用的方法，它们覆盖 99％ 的用例。但是还有其他几个：
 

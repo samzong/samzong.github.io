@@ -10,10 +10,15 @@ date: 2016-08-02 15:44:20
 ---
 
 #### **1. 安装CentOS 7.x**
+
     略。
+
 #### **2. 安装docker**
+
 详见： [How to Install Docker on CentOS 6.x](https://samzong.me/2016/07/07/HowTo-Install-Docker-on-CentOS-6-x/)
+
 #### **3. 基础docker命令**
+
 ```
 ＃ 获取centos6 docker镜像
 [root@docker ~]# docker pull centos6
@@ -68,7 +73,9 @@ Deleted: sha256:ea9f151abb7e06353e73172dad421235611d4f6d0560ec95db26e0dc240642c1
 ```
 
 #### **4. 运行一个docker镜像**
+
 #### 进入交互式程序
+
 ```
 [root@docker ~]# docker run  -it centos:centos6 /bin/bash
 [root@c1d190f95562 /]# cat /etc/redhat-release
@@ -93,6 +100,7 @@ registry            latest              c6c14b3960bd        3 days ago          
 ```
 
 #### **5. 编辑Dockerfile**
+
 ```
 # dockfile的第一行一定是FROM，指定了父镜像
 FROM centos:centos6
@@ -121,6 +129,7 @@ CMD ["/usr/sbin/sshd", "-D"]
 ```
 
 #### **6. 生成自定义docker镜像**
+
 ```
 # build 编译镜像
 [root@docker ~]# docker build -f dockerfile3 -t centos:centos6-ssh .
@@ -182,6 +191,7 @@ b4211f7a304d9e34b72b510230be2c7a76b276886b488f08f3e12896a4d3c172
 ```
 
 #### **7. ssh登陆到docker容器内，部署项目环境**
+
 ```
 # inspect 查看docker 容器IP地址
 [root@docker ~]# docker inspect sshd | grep IPAddress

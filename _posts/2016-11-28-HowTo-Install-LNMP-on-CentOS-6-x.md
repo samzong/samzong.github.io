@@ -9,9 +9,10 @@ categories:
 date: 2016-11-28 10:33:09
 ---
 
-> egrep -v "^ *#|^ *$"     去除所有以#号开头的文件
+> egrep -v "^ *#|^*$"     去除所有以#号开头的文件
 
 #### Demo system
+
 ```
 [Alex@Test01 ~]$ uname -a
 Linux Test01 2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
@@ -21,6 +22,7 @@ Linux Test01 2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014 x86_64 x8
 ```
 
 #### Install httpd
+
 ```
 [Alex@Test01 yum.repos.d]$ sudo yum install -y httpd
 [Alex@Test01 ~]$ rpm -qa | grep httpd
@@ -33,7 +35,8 @@ httpd-tools-2.2.15-39.el6.centos.x86_64
 [Alex@Test01 yum.repos.d]$ sudo rm -f /var/www/error/noindex.html
 ```
 
-#### Configure httpd . Replace the server name to you own one.
+#### Configure httpd . Replace the server name to you own one
+
 ```
 [Alex@Test01 ~]# sudo vi /etc/httpd/conf/httpd.conf
 # line 44: change
@@ -56,14 +59,18 @@ httpd-tools-2.2.15-39.el6.centos.x86_64
  Starting httpd:[  OK  ]
 [Alex@Test01 ~]# sudo chkconfig httpd on     # set httpd start with system.
 ```
+
 #### create a HTML test page
+
 ```
 [Alex@Test01 ~]# sudo vi /var/www/html/index.html
 it's ok.
 ```
+
 ![](http://s3.51cto.com/wyfs02/M00/70/DE/wKioL1XAUfuQoFfwAACC5LJWQgg039.jpg)
 
-#### Install PHP.
+#### Install PHP
+
 ```
 [Alex@Test01 ~]$ sudo yum install -y php php-mbstring php-pear
 [Alex@Test01 ~]$ rpm -qa | grep php
@@ -84,7 +91,8 @@ date.timezone = "Asia/Shanghai"
  Starting httpd:[  OK  ]
 ```
 
-#### create a php test page.
+#### create a php test page
+
 ```
 [Alex@Test01 ~]# sudo vi /var/www/html/index.php
 
@@ -92,9 +100,11 @@ date.timezone = "Asia/Shanghai"
     phpinfo();
 ?>
 ```
+
 ![](http://s3.51cto.com/wyfs02/M02/70/DE/wKioL1XAUguwJCl2AARE16t4hyw682.jpg)
 
 #### Install MySQL
+
 ```
 [Alex@Test01 ~]$ sudo -y install mysql-server
 [Alex@Test01 ~]$ rpm -qa | grep mysql-server
@@ -136,6 +146,7 @@ Starting mysqld:                      [  OK  ]
 ```
 
 #### Initial settings for MySQL
+
 ```
 [root@www ~]#mysql_secure_installation
 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MySQL

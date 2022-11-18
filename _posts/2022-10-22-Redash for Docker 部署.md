@@ -11,7 +11,6 @@ url: https://www.yuque.com/samzong/code/kfrygp
 
 **暗坑很多**
 
-
 ## 部署过程
 
 1. 需要自行维护一个 env 作为配置文件.
@@ -48,17 +47,16 @@ url: https://www.yuque.com/samzong/code/kfrygp
 - <https://techoverflow.net/2021/05/07/how-to-fix-alpine-linux-ash-sudo-not-found/>
 - <https://discuss.redash.io/t/error-99-connecting-to-localhost-6379-cannot-assign-requested-address/9716/7>
 
-
 ## 启动的服务介绍
 
-    v10-redashio_adhoc_worker_1					# 执行查询任务的 worker
-    v10-redashio_postgres_1							# 数据库
-    v10-redashio_redis_1								# 缓存
-    v10-redashio_scheduled_worker_1			# 执行计划任务的 worker
-    v10-redashio_scheduler_1						# 计划任务管理 server
-    v10-redashio_server_1								# 主体 server
+    v10-redashio_adhoc_worker_1     # 执行查询任务的 worker
+    v10-redashio_postgres_1       # 数据库
+    v10-redashio_redis_1        # 缓存
+    v10-redashio_scheduled_worker_1   # 执行计划任务的 worker
+    v10-redashio_scheduler_1      # 计划任务管理 server
+    v10-redashio_server_1        # 主体 server
 
-以上主要会设计到 3 个镜像，redis、pgsql、redash，其中核心是 redash，所以关注镜像版本也是这个 
+以上主要会设计到 3 个镜像，redis、pgsql、redash，其中核心是 redash，所以关注镜像版本也是这个
 
 ## 版本升级
 
@@ -74,7 +72,7 @@ redash 的版本升级较为方便，更换 server 的镜像；然后升级数�
 3. 执行数据库升级
    1. `docker-compose run --rm server manage db upgrade`
 4. 启动全部服务即可
-   1. `docker-compse up -d` 
+   1. `docker-compse up -d`
 
 ## 解决 ES 的HTTPS问题
 

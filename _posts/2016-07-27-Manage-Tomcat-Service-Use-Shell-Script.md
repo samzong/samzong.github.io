@@ -11,12 +11,12 @@ categories:
 date: 2016-07-27 02:18:24
 ---
 
-#### Tomcat 项目管理交互式脚本.
+#### Tomcat 项目管理交互式脚本
 
 * Install pssh
 * Use Key Login Server Hosts
 * ~/.ssh/config 配置使用host名登录服务
-*  指定 Server Group Files 存放位置
+* 指定 Server Group Files 存放位置
 
 ```
 

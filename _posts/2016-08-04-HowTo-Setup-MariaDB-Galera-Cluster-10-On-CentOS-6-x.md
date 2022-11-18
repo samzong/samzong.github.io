@@ -10,7 +10,8 @@ categories:
 date: 2016-08-04 13:14:15
 ---
 
-####  介绍
+#### 介绍
+
 <p>
 MariaDB Galera Cluster 是一套在MySQL InnoDB存储引擎上面实现multi-master及数据实时同步的系统架构，业务层面无需做读写分离工作，数据库读写压力都能按照既定的规则分发到 各个节点上去。在数据方面完全兼容 MariaDB 和 MySQL。使用MariaDB Galera的解决方案，可以方便快速的搭建出高可用的数据库Cluster，不是主备模式，而是双活模式，也就是说，没有主节点和备份节点，每个节点都可以看做是主节点，都可以进行读写，由Galera来实现底层的数据同步。
 </p>
@@ -20,7 +21,7 @@ MariaDB Galera Cluster 是一套在MySQL InnoDB存储引擎上面实现multi-mas
 * 紧密耦合，所有节点均保持相同状态
 * 自动节点配置，无需手工备份当前数据库并拷贝至新节点
 
-####  实验环境
+#### 实验环境
 
 * Cluster node4 IP address 172.16.102.168
 * Cluster node5 IP address 172.16.102.165
@@ -30,7 +31,8 @@ MariaDB Galera Cluster 是一套在MySQL InnoDB存储引擎上面实现multi-mas
 
 > 使用vmware 测试需注意:克隆机器需要删除 <code>/etc/udev/rules.d/70-persistent-net.rules</code> 以及<code>/etc/sysconfig/network-scripts/ifcfg-eth0</code>中的网卡mac地址选项，不然网卡起不来
 
-####  环境检测
+#### 环境检测
+
 * 检查iptables状态：/etc/init.d/iptables status;chkconfig --list | grep iptables
 * 检查selinux状态：getenforce
 * 检查openssh-client包是否安装：系统中是否有ssh命令
@@ -38,7 +40,9 @@ MariaDB Galera Cluster 是一套在MySQL InnoDB存储引擎上面实现multi-mas
 * 检查网络是否通畅：ping www.baidu.com
 
 #### 安装
+
 ##### 1. 在所有节点编辑/etc/hosts
+
 ```
 [root@node4 ~]# vi /etc/hosts
 
@@ -56,6 +60,7 @@ MariaDB Galera Cluster 是一套在MySQL InnoDB存储引擎上面实现multi-mas
 ```
 
 ##### 2. 在所有node上安装 MariaDB Galera
+
 ```
 [root@node4 ~]# vi /etc/yum.repos.d/mariadb.repo
  # MariaDB 10.0 CentOS repository list
@@ -75,6 +80,7 @@ enabled=0
 > <i>注意安装完成之后，不要启动mysql</i>
 
 ##### 3. 在其中一个节点上编辑/etc/my.cnf.d/server.cnf配置文件
+
 ```
 [root@node4 ~]# vi /etc/my.cnf.d/server.cnf
 # 19 行，取消下面的注释，并修改为需求
@@ -107,6 +113,7 @@ Starting MySQL. SUCCESS!
 ##### 4. 在其它节点上编辑/etc/my.cnf.d/server.cnf配置文件
 
 ##### node5
+
 ```
 [root@node5 ~]# vi /etc/my.cnf.d/server.cnf
 # 19 行，取消下面的注释，并修改为需求
@@ -135,6 +142,7 @@ Starting MySQL...SST in progress, setting sleep higher. SUCCESS!
 ```
 
 ##### node6
+
 ```
 [root@node6 ~]# vi /etc/my.cnf.d/server.cnf
 # 19 行，取消下面的注释，并修改为需求
@@ -167,6 +175,7 @@ Starting MySQL...SST in progress, setting sleep higher. SUCCESS!
 #### 登陆各个节点数据库检查配置是否成功
 
 server.cnf的配置如果没有问题，那么wsrep\_local\_state_comment的状态应该是Synced。
+
 ```
 [root@node4 ~]# mysql -u root -p
 Enter password:
@@ -189,6 +198,6 @@ MariaDB [(none)]> show status like 'wsrep_local_state_comment';
 MariaDB [(none)]>
 ```
 
-####  结论
+#### 结论
 
 MariaDB Galera没有主节点和备份节点，配置成功之后，可以在任何一个node节点上操作会自动同步到其他节点，任何一个节点宕机不会影响其他节点的数据和稳定性，配置HAProxy设置VIP的方式来实现负载均衡，提高服务的高可用性，另外，当宕机节点上线之后，事务会自动同步不丢失。
