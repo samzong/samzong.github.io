@@ -11,25 +11,25 @@ categories:
 date: 2016-07-07 03:49:02
 ---
 
-## **Setup 1. Install**
+## Setup 1. Install
 
 Frist, To install remi Repo and epel Repo.
 
-#### **Remi EL6 for CentOS/RHEL 6.x**
+#### Remi EL6 for CentOS/RHEL 6.x
 
 ```
 rpm -Uvh https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 ```
 
-#### **Remi EL5 for CentOS/RHEL 5.x**
+#### Remi EL5 for CentOS/RHEL 5.x
 
 ```
 rpm -Uvh https://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
 rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-5.rpm
 ```
 
-#### 有时间我们会碰到remi.repo无法使用报错，就像这样
+#### 有时间我们会碰到 remi.repo 无法使用报错，就像这样
 
 ```
 http://remi.schlundtech.de/enterprise/latest/remi/x86_64/repodata/repomd.xml: [Errno 14] PYCURL ERROR 22 - "The requested URL returned error: 404 Not Found"
@@ -42,7 +42,7 @@ baseurl=http://rpms.famillecollet.com/enterprise/5/remi/$basearch/
 #mirrorlist=http://rpms.famillecollet.com/enterprise/5/remi/mirror/$basearch/
 ```
 
-#### 如果发现安装后yum makecache没看到相应的源站点，请检查repo文件的enable参数是否为1，1为开启，0为关闭状态
+#### 如果发现安装后 yum makecache 没看到相应的源站点，请检查 repo 文件的 enable 参数是否为 1，1 为开启，0 为关闭状态
 
 ```
 [repoName]
@@ -52,7 +52,7 @@ gpgcheck=0                # 是否启用gpgkey检查
 enabled=0                 # 是否启用该源
 ```
 
-#### **Install Redis**
+#### Install Redis
 
 ```
 yum install -y redis
@@ -77,11 +77,11 @@ URL         : http://redis.io
 Summary     : A persistent key-value database
 ```
 
-## **Setup 2. 基本配置项**
+## Setup 2. 基本配置项
 
 #### Redis 配置默认文件/etc/redis.conf
 
- ＃ 设置Redis的运行模式，yes表示后台运行，no表示不开启后台运行。
+ ＃ 设置 Redis 的运行模式，yes 表示后台运行，no 表示不开启后台运行。
 
 ```
 daemonize yes
@@ -93,7 +93,7 @@ daemonize yes
 port 6379
 ```
 
-＃ 设置bind_ip，默认监听接口，默认是监听本地，如果未配置的情况下，只有本地可以访问redis，如果取消，则默认监听所有接口
+＃ 设置 bind_ip，默认监听接口，默认是监听本地，如果未配置的情况下，只有本地可以访问 redis，如果取消，则默认监听所有接口
 
 ```
 # bind 127.0.0.1
@@ -110,7 +110,7 @@ port 6379
 loglevel verbose
 ```
 
-＃ 配置 log 文件名称和全路径地址，默认为stdout，即标准输出，输出到/dev/null，可以手动指定redis日志文件地址，建议级别不要太高，否则会产生大量日志，注意避免磁盘因此撑满。
+＃ 配置 log 文件名称和全路径地址，默认为 stdout，即标准输出，输出到/dev/null，可以手动指定 redis 日志文件地址，建议级别不要太高，否则会产生大量日志，注意避免磁盘因此撑满。
 
 ```
 logfile stdout
@@ -124,8 +124,8 @@ database 16
 ```
 
 ＃ 安全限定，要求客户端在处理任何命令时都要验证身份和设置密码。<br>
-＃ 默认不启用，若要启用，需要将下行取消注释，并将foobared设置自定一的密码接即可。<br>
-＃ **因为redis加密是通过配置文件进行，所以目前各大云厂家的redis PAAS 服务，都不支持redis加密，在程序开发时需要注意。**
+＃ 默认不启用，若要启用，需要将下行取消注释，并将 foobared 设置自定一的密码接即可。<br>
+＃ 因为 redis 加密是通过配置文件进行，所以目前各大云厂家的 redis PAAS 服务，都不支持 redis 加密，在程序开发时需要注意。
 
 ```
 # requirepass foobared
@@ -134,25 +134,25 @@ database 16
 redis-cli> auth foobared
 ```
 
-＃ 向redis内插入一条数据
+＃ 向 redis 内插入一条数据
 
 ```
 redis-cli>  set [key] [values]
 ```
 
-＃ 获取key的值
+＃ 获取 key 的值
 
 ```
 redis-cli> get key
 ```
 
-＃ 查看redis的db信息
+＃ 查看 redis 的 db 信息
 
 ```
 redis-cli> info
 ```
 
-## **Setup 3. Others**
+## Setup 3. Others
 
 * redis-dump
 * master/slave

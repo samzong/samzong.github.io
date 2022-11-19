@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 检查您的App是否已支持AppleSilicon
+title: 检查您的 App 是否已支持 AppleSilicon
 tags:
   - Mac
 category:
@@ -8,12 +8,12 @@ category:
 url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-applesilicon
 ---
 
-![](assets/check-you-favorites-app-is-ready-on-applesilicon)这里带来2个网站，方便大家来检查您所使用和关注的App是否已经支持了最新的Apple M1 芯片
+![](assets/check-you-favorites-app-is-ready-on-applesilicon)这里带来 2 个网站，方便大家来检查您所使用和关注的 App 是否已经支持了最新的 Apple M1 芯片
 
 > **目前支持的形式有：**
 
 - 已原生支持
-- 使用Rosetta 2 支持运行的 适配 Intel 引用
+- 使用 Rosetta 2 支持运行的 适配 Intel 引用
 - 完全不支持 (包括崩溃、无法启动等各种症状)
 
 ## 网友整理 Games on Apple Sillicon
@@ -46,7 +46,7 @@ url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-apples
 
 `arch -x86_64` 后面追加你需要执行的命令，注意每一个都需要哦
 
-```shell
+```bash
 # 安装 Homebrew
 arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 

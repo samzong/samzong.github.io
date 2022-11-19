@@ -17,7 +17,7 @@ date: 2022-04-11 08:19:00
 一般情况下 git 仓库，都是通过 author 中的 `user.email` 的判定提交者的身份；而这个配置一般在新电脑上需要初始化配置，否则还是容易出错。
 
 - 个人软件仓库使用了公司的 author 信息 [信息泄漏的风险]
-- 和其他开发者使用了相同的 author 信息 [影响commit追踪]
+- 和其他开发者使用了相同的 author 信息 [影响 commit 追踪]
 
 ## ✅ 修改为正确的 author 信息
 
@@ -39,7 +39,7 @@ git config user.email "samzong.lu@gmail.com"
 
 ## 修订最近一次提交 (--amend)
 
-`git commit` 提供了 --amend 的参数，作用是对commit进行修正，如果你是最近一次提交出错，那么可以直接使用下方命令完成补救。
+`git commit` 提供了 --amend 的参数，作用是对 commit 进行修正，如果你是最近一次提交出错，那么可以直接使用下方命令完成补救。
 
 ```bash
 # 📢 注意替换 user.name & user.email 为正确的选项
@@ -52,7 +52,7 @@ git commit --amend --author="{user.name} <{user.email}>"
 
 ## 修改更早之前的提交 (谨慎使用)
 
-写在前面的话，如果你知道rebase的作用，请谨慎使用的同时记住，可以在任何过程中终止你的操作，这非常重要，使用如下命令
+写在前面的话，如果你知道 rebase 的作用，请谨慎使用的同时记住，可以在任何过程中终止你的操作，这非常重要，使用如下命令
 
 ```bashe
 git rebase --abort
@@ -77,7 +77,7 @@ Author: samzong.lu <samzong.lu@gmail.com>
 Date:   Sun Mar 20 22:19:48 2022 +0800
 ```
 
-找到你想要更新的commit_id, 然后使用rebase 命令来进行处理
+找到你想要更新的 commit_id, 然后使用 rebase 命令来进行处理
 
 ```bash
 git rebase -i {commit_id}
@@ -93,7 +93,7 @@ git commit --amend --author="{user.name} <{user.email}>"
 
 ## 更高级做法 `filter-branch`
 
-`filter-branch` 虽然被官方推荐，但也不是可以轻易使用的工具；本次的目的只是修改 author 中邮箱，所以一定要加上 `--commit-filter`，官方的脚本实例我直接copy在下方了
+`filter-branch` 虽然被官方推荐，但也不是可以轻易使用的工具；本次的目的只是修改 author 中邮箱，所以一定要加上 `--commit-filter`，官方的脚本实例我直接 copy 在下方了
 
 ```bash
 git filter-branch --commit-filter '
@@ -109,7 +109,7 @@ git filter-branch --commit-filter '
 
 ## push 到 repo 的注意事项
 
-注意以上的消息会导致提交包含了 “它们父提交的SHA-1校验” 和 “这个命令修改历史中的每一个提交的SHA-1校验”， 再加上修改后的 author 信息，所以在push时会遇到警告，可以使用下方命令强制提交
+注意以上的消息会导致提交包含了“它们父提交的 SHA-1 校验”和“这个命令修改历史中的每一个提交的 SHA-1 校验”，再加上修改后的 author 信息，所以在 push 时会遇到警告，可以使用下方命令强制提交
 
 ```bash
 git push --force origin {branch_name}

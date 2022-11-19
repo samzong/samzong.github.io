@@ -12,19 +12,19 @@ date: 2016-09-22 15:20:12
 
 ### 1. 简介
 
-索引可以我们更快速的执行查询，但是肯定存在不合理的索引，如果想找到那些索引不是很合适的查询，并在它们成为问题前进行优化，则可以使用pt-query-digest的查询审查“review”功能，分析其EXPLAIN出来的执行计划。
+索引可以我们更快速的执行查询，但是肯定存在不合理的索引，如果想找到那些索引不是很合适的查询，并在它们成为问题前进行优化，则可以使用 pt-query-digest 的查询审查“review”功能，分析其 EXPLAIN 出来的执行计划。
 
-pt-query-digest是用于分析mysql慢查询的一个工具，它可以分析binlog、General log、slowlog，也可以通过SHOWPROCESSLIST或者通过tcpdump抓取的MySQL协议数据来进行分析。可以把分析结果输出到文件中，分析过程是先对查询语句的条件进行参数化，然后对参数化以后的查询进行分组统计，统计出各查询的执行时间、次数、占比等，可以借助分析结果找出问题进行优化。
+pt-query-digest 是用于分析 mysql 慢查询的一个工具，它可以分析 binlog、General log、slowlog，也可以通过 SHOWPROCESSLIST 或者通过 tcpdump 抓取的 MySQL 协议数据来进行分析。可以把分析结果输出到文件中，分析过程是先对查询语句的条件进行参数化，然后对参数化以后的查询进行分组统计，统计出各查询的执行时间、次数、占比等，可以借助分析结果找出问题进行优化。
 
 ### 2. Install Percona Toolkit & pt-query-digest
 
-percona-toolkit是一组高级命令行工具的集合，用来执行各种通过手工执行非常复杂和麻烦的mysql和系统任务。这些任务包括：
+percona-toolkit 是一组高级命令行工具的集合，用来执行各种通过手工执行非常复杂和麻烦的 mysql 和系统任务。这些任务包括：
 
-* 检查master和slave数据的一致性
+* 检查 master 和 slave 数据的一致性
 * 有效地对记录进行归档
 * 查找重复的索引
 * 对服务器信息进行汇总
-* 分析来自日志和tcpdump的查询
+* 分析来自日志和 tcpdump 的查询
 * 当系统出问题的时候收集重要的系统信息
 
 ```
@@ -71,7 +71,7 @@ Installing /usr/local/bin/pt-query-digest
 Appending installation info to /usr/lib64/perl5/perllocal.pod
 ```
 
-> 运行工具可能会遇到下面的错误: Can't locate Time/HiRes.pm in @INC
+> 运行工具可能会遇到下面的错误：Can't locate Time/HiRes.pm in @INC
 
 ```
 # 解决办法：
@@ -80,9 +80,9 @@ Appending installation info to /usr/lib64/perl5/perllocal.pod
 pt-query-digest 2.2.19
 ```
 
-### 3. 开启 mysql慢日志
+### 3. 开启 mysql 慢日志
 
-##### a. 查看当前‘slow_query_log’ 状态
+##### a. 查看当前‘slow_query_log’状态
 
 ```
 mysql> show variables like '%query%';
@@ -114,7 +114,7 @@ mysql> show variables like 'log_queries_not_using_indexes';
 1 row in set (0.00 sec)
 ```
 
-##### b. 启动slow_log, 配置
+##### b. 启动 slow_log, 配置
 
 ```
 # 设定记录大于2s的sql
@@ -134,11 +134,11 @@ mysql> set global log_queries_not_using_indexes=on;
 Query OK, 0 rows affected (0.00 sec)
 ```
 
-> 等待一段时间，slow.log 增大的非常快，实际生产中，注意不要被slow.log将磁盘撑满，影响到正常生产使用。
+> 等待一段时间，slow.log 增大的非常快，实际生产中，注意不要被 slow.log 将磁盘撑满，影响到正常生产使用。
 
 ### 4. 分析
 
-pt-query-digest可以从普通MySQL日志，慢查询日志以及二进制日志中分析查询，甚至可以从SHOW PROCESSLIST和MySQL协议的tcpdump中进行分析，如果没有指定文件，它从标准输入流（STDIN）中读取数据。
+pt-query-digest 可以从普通 MySQL 日志，慢查询日志以及二进制日志中分析查询，甚至可以从 SHOW PROCESSLIST 和 MySQL 协议的 tcpdump 中进行分析，如果没有指定文件，它从标准输入流（STDIN）中读取数据。
 
 ##### a. 简单使用方法
 
@@ -153,26 +153,26 @@ pt-query-digest slow.logs
 </div>
 
 <ul>
-1. Overall这个部分是一个大致的概要信息(类似loadrunner给出的概要信息)，通过它可以对当前MySQL的查询性能做一个初步的评估，比如各个指标的最大值(max)，平均值(min)，95%分布值，中位数(median)，标准偏差(stddev)
+1. Overall 这个部分是一个大致的概要信息 (类似 loadrunner 给出的概要信息)，通过它可以对当前 MySQL 的查询性能做一个初步的评估，比如各个指标的最大值 (max)，平均值 (min)，95% 分布值，中位数 (median)，标准偏差 (stddev)
 <li>查询的执行时间（Exec time）</li>
 <li>锁占用的时间（Lock time）</li>
-<li>MySQL执行器需要检查的行数（Rows examine）</li>
+<li>MySQL 执行器需要检查的行数（Rows examine）</li>
 <li>最后返回给客户端的行数（Rows sent）</li>
 <li>查询的大小。</li>
 </ul>
 <ul>
 2. Profile
-<li>Rank ： 整个分析中该“语句”的排名，一般也就是性能最慢的</li>
-<li>Query ID ：每个查询都有一个</li>
-<li>Response time ： “语句”的响应时间以及整体占比情况。</li>
-<li>Calls ：“语句”的执行次数</li>
-<li>R/Call ：每次执行的平均响应时间。 </li>
+<li>Rank：整个分析中该“语句”的排名，一般也就是性能最慢的</li>
+<li>Query ID：每个查询都有一个</li>
+<li>Response time： “语句”的响应时间以及整体占比情况。</li>
+<li>Calls：“语句”的执行次数</li>
+<li>R/Call：每次执行的平均响应时间。 </li>
 <li>V/M</li>
 </ul>
 ##### 详细信息
-<p>列出上面Profile中每个Query ID的详细信息</p>
+<p>列出上面 Profile 中每个 Query ID 的详细信息</p>
 
-##### b. 从tcpdump包中分析：通过tcpdump命令抓取一定时间网络数据包，然后进行分析
+##### b. 从 tcpdump 包中分析：通过 tcpdump 命令抓取一定时间网络数据包，然后进行分析
 
 ```
 pt-query-digest --type tcpdump mysql.tcp.txt
@@ -182,11 +182,11 @@ pt-query-digest --type tcpdump mysql.tcp.txt
 
 > 更多的帮助文档，请查看官方文档：<http://www.percona.com/doc/percona-toolkit/2.2/pt-query-digest.html>
 
-### 5. 使用Anemometer将pt-query-digest的MySQL慢查询可视化
+### 5. 使用 Anemometer 将 pt-query-digest 的 MySQL 慢查询可视化
 
-* 需要安装php 5.3 and over
-* 需要预先配置mysql数据库
-* 需要预先安装好pt-query-digest
+* 需要安装 php 5.3 and over
+* 需要预先配置 mysql 数据库
+* 需要预先安装好 pt-query-digest
 
 ##### 5.1 安装
 
@@ -215,7 +215,7 @@ pt-query-digest --type tcpdump mysql.tcp.txt
 
 ##### 5.3 导入
 
-将pt-query-digest 的分析结果到anemometer；
+将 pt-query-digest 的分析结果到 anemometer；
 
 > pt-query-digest version < 2.2
 

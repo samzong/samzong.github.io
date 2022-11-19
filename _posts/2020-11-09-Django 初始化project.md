@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Django 初始化project
+title: Django 初始化 project
 tags:
   - Python
 category:
@@ -8,7 +8,7 @@ category:
 url: https://www.yuque.com/samzong/code/qyemh3
 ---
 
-```shell
+```bash
 # 初始化 mysite 项目
 
 django-admin startproject mysite
@@ -23,7 +23,7 @@ django-admin startproject mysite
 
 ### 项目初始化
 
-```shell
+```bash
 python3 manage.py --help # 用于管理项目以及服务
 python3 manage.py runserver  # 启动服务
 python3 manage.py startapp 'blog'  # 用于在项目下创建一个app
@@ -55,7 +55,7 @@ DATABASES = {
     }
 }
 
-# !需要安装插件 pip install mysql
+# ! 需要安装插件 pip install mysql
 
 ---
 
@@ -77,7 +77,7 @@ pip install -r requirements.txt # 从 requirements.txt 中读取依赖库，并�
 ### modules 变更后，需要同步变更数据库表
 
 ```python
-# 修改module.py后，需要执行以下命令，将变更同步到数据库，否则不生效
+# 修改 module.py 后，需要执行以下命令，将变更同步到数据库，否则不生效
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```

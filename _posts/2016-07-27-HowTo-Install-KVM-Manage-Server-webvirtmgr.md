@@ -8,7 +8,7 @@ categories:
 date: 2016-07-27 17:34:01
 ---
 
-生产环境的KVM宿主机越来越多，需要对宿主机的状态进行调控。这里用webvirtmgr进行管理。图形化的WEB，让人能更方便的查看kvm 宿主机的情况和操作.
+生产环境的 KVM 宿主机越来越多，需要对宿主机的状态进行调控。这里用 webvirtmgr 进行管理。图形化的 WEB，让人能更方便的查看 kvm 宿主机的情况和操作。
 
 ***[GitHub Project.](https://github.com/retspen/webvirtmgr)***
 
@@ -26,14 +26,14 @@ yum install -y epel-release
 yum -y install git python-pip libvirt-python libxml2-python python-websockify supervisor nginx
 ```
 
-#### 从git-hub中下载相关的webvirtmgr代码
+#### 从 git-hub 中下载相关的 webvirtmgr 代码
 
 ```
 cd /usr/local/src/
 git clone git://github.com/retspen/webvirtmgr.git
 ```
 
-#### 安装webvirtmgr
+#### 安装 webvirtmgr
 
 ```
 cd webvirtmgr/
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 yum install python-sqlite2
 ```
 
-#### 对django进行环境配置
+#### 对 django 进行环境配置
 
 ```
 ./manage.py syncdb
@@ -62,7 +62,7 @@ Password (again):*********
 ./manage.py createsuperuser #添加管理员账号
 ```
 
-#### 拷贝web到 相关目录
+#### 拷贝 web 到 相关目录
 
 ```
 cd ..
@@ -71,7 +71,7 @@ mkdir -pv /var/www
 cp -Rv webvirtmgr /var/www/webvirtmgr
 ```
 
-#### 设置ssh
+#### 设置 ssh
 
 ```
 ssh-keygen
@@ -79,7 +79,7 @@ ssh-copy-id 192.168.2.32
 ssh 192.168.2.32 -L localhost:8000:localhost:8000 -L localhost:6080:localhost:6080
 ```
 
-#### 编辑nginx配置文件
+#### 编辑 nginx 配置文件
 
 ```
 mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak
@@ -110,13 +110,13 @@ server {
 }
 ```
 
-#### 启动nginx
+#### 启动 nginx
 
 ```
 service nginx start
 ```
 
-#### 修改防火墙规则 ( 如果关闭selinux，此步可省略)
+#### 修改防火墙规则 ( 如果关闭 selinux，此步可省略)
 
 ```
 /usr/sbin/setsebool httpd_can_network_connect true

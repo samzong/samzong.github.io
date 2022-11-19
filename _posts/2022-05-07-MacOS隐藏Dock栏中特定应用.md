@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MacOS隐藏Dock栏中特定应用
+title: MacOS 隐藏 Dock 栏中特定应用
 toc: true
 tags:
   - Mac
@@ -15,15 +15,15 @@ MacOS Dock 栏的空间是有限的，而且绝大部分应用都会占用一个
 
 <p style="color:red;font-size=16px">为不具备隐藏 Dock Icon 的应用附加隐藏能力</p>
 
-> 符合这类特征的软件： a. 常驻应用，开机自启动，基本不会打开； b. 像我这样的 Alfred 爱好者
+> 符合这类特征的软件：a. 常驻应用，开机自启动，基本不会打开；b. 像我这样的 Alfred 爱好者
 
 之前了解到一些软件对系统的影响都比较大，基本上都是要接管 整个`Dock`，要关闭 `SIP`，使用成本太好，基本不值得采用。
 
 ## 全球同性交友网站
 
-下午在闲逛的时候，发现了这个仓库： <https://github.com/FirePanther/MacOS-Hide-Dock-Icon> ，一个非常简单的 PHP 脚本，貌似可以提供这个能力，于是我就简单的 Download ，按照 README.md 的方法执行了一下。
+下午在闲逛的时候，发现了这个仓库： <https://github.com/FirePanther/MacOS-Hide-Dock-Icon> ，一个非常简单的 PHP 脚本，貌似可以提供这个能力，于是我就简单的 Download，按照 README.md 的方法执行了一下。
 
-很神奇的！ 满足了我的需求！ 所以，我在这里记录和分享给大家，如果你也需要的话。
+很神奇的！满足了我的需求！所以，我在这里记录和分享给大家，如果你也需要的话。
 
 ## 操作步骤
 
@@ -43,7 +43,7 @@ MacOS Dock 栏的空间是有限的，而且绝大部分应用都会占用一个
 brew install php   # just one command
 ```
 
-接下就是操作步骤了： 在此之前，你需要完全退出被隐藏的软件**
+接下就是操作步骤了：在此之前，你需要完全退出被隐藏的软件**
 
 ![image-20220507152104232](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/image-20220507152104232.png?x-oss-process=image/resize,w_960,m_lfit)
 
@@ -61,9 +61,9 @@ Signing ------
 Finished  # 看到这个就是成功了
 ```
 
-执行成功后，再次打开App，App会先在Dock栏跳动加载，加载完后图标自动消失，但App依旧在运行。
+执行成功后，再次打开 App，App 会先在 Dock 栏跳动加载，加载完后图标自动消失，但 App 依旧在运行。
 
-以上，你就成功的隐藏这个需要的软件，经过在测试，脚本的健壮性很好:
+以上，你就成功的隐藏这个需要的软件，经过在测试，脚本的健壮性很好：
 
 支持的 PC : **2022 年 M1 Max MacOS12.3.1**
 
@@ -75,7 +75,7 @@ Finished  # 看到这个就是成功了
 
 ### 恢复被隐藏的应用
 
-**首先 >** 还是要退出App，这时Dock栏也不显示了，菜单栏也没有，所以不好使用 `邮件退出的方式`，那么接下来我们要找到下方这个软件：
+**首先 >** 还是要退出 App，这时 Dock 栏也不显示了，菜单栏也没有，所以不好使用 `邮件退出的方式`，那么接下来我们要找到下方这个软件：
 
 ![image-20220507153525040](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/image-20220507153525040.png?x-oss-process=image/resize,w_960,m_lfit)
 
@@ -85,7 +85,7 @@ Finished  # 看到这个就是成功了
 
 然后使用上方的，`X` 关闭按钮，在弹窗中，选择 `Quit`
 
-然后 > 再去执行下 `hideDockIcon.php` 这个脚本:
+然后 > 再去执行下 `hideDockIcon.php` 这个脚本：
 
 ```sh
 ➜  sudo php hideDockIcon.php

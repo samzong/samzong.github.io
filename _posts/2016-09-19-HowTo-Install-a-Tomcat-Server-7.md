@@ -8,7 +8,7 @@ categories:
 date: 2016-09-19 10:25:53
 ---
 
-本文件是采用的模板是CentOS 6，同样适用于CentOS 系列其他发行版本。
+本文件是采用的模板是 CentOS 6，同样适用于 CentOS 系列其他发行版本。
 
 #### 1. 测试环境
 
@@ -121,7 +121,7 @@ exit $?
 
 #### 6. Add tomcat7 to system service
 
-```shell
+```bash
 [root@ultraera ~]# chmod 755 /etc/rc.d/init.d/tomcat7
 [root@ultraera ~]# /etc/rc.d/init.d/tomcat7 start
 Starting Tomcat7:
@@ -141,11 +141,11 @@ tomcat7       6326  8.3 85.6 5229768 2910176 ?     Sl   Aug22 3216:38 /usr/bin/j
 [root@ultraera ~]# chkconfig tomcat7 on
 ```
 
-#### 7. 打开浏览器测试Tomcat Server搭建完成，默认页面如下
+#### 7. 打开浏览器测试 Tomcat Server 搭建完成，默认页面如下
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/09/tomcat7.jpg)
 
-#### 8. 使用curl 测试
+#### 8. 使用 curl 测试
 
 ```
 [root@ultraera ~]# curl -I http://localhost:8080

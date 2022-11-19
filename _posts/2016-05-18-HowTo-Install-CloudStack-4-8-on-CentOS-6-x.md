@@ -9,8 +9,7 @@ categories:
 date: 2016-05-18 02:38:59
 ---
 
-```
-
+```bash
 #!/bin/bash
 
 # Install  CloudStack.sh

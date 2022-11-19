@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hexo 增加admonition样式支持"
+title: "Hexo 增加 admonition 样式支持"
 toc: true
 date: 2022-05-28 22:27:18
 tags:
@@ -10,9 +10,9 @@ categories:
 
 ## 背景
 
-除了在 Hexo 维护个人博客之外，目前经常用到的 2 个文档工具： 语雀和 Mkdocs 都是支持 admonition样式，所以也在考虑如何给 Hexo 博客文章也增加这样的能力。
+除了在 Hexo 维护个人博客之外，目前经常用到的 2 个文档工具：语雀和 Mkdocs 都是支持 admonition 样式，所以也在考虑如何给 Hexo 博客文章也增加这样的能力。
 
-保证写作习惯的一致性，好在有人开发出对应的插件，感谢.
+保证写作习惯的一致性，好在有人开发出对应的插件，感谢。
 
 - <https://github.com/lxl80/hexo-admonition>
 
@@ -102,7 +102,7 @@ p.admonition-title {
 
 ## 使用说明
 
-Hexo-admonition 遵循一种简单的语法：每个块都以 `!!!` 开头，然后是代表提示类型的关键字（`type`）及标题（`title`）。例如:
+Hexo-admonition 遵循一种简单的语法：每个块都以 `!!!` 开头，然后是代表提示类型的关键字（`type`）及标题（`title`）。例如：
 
 ```text
 !!! note Hexo-admonition 插件使用示例
@@ -137,7 +137,7 @@ Hexo-admonition 遵循一种简单的语法：每个块都以 `!!!` 开头，然
 
 ### 设置/隐藏标题
 
-标题 `title` 是可选的，当未设置时，将以 `type` 作为默认值:
+标题 `title` 是可选的，当未设置时，将以 `type` 作为默认值：
 
 ```text
 !!! warning

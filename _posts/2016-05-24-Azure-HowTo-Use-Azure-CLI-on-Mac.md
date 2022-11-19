@@ -9,7 +9,7 @@ categories:
 date: 2016-05-24 07:00:12
 ---
 
-```
+```bash
 ## Install azure-cli on Mac and CentOS
 
 ### In Mac

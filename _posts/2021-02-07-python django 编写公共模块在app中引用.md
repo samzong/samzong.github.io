@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python django 编写公共模块在app中引用
+title: python django 编写公共模块在 app 中引用
 tags:
   - Python
 category:

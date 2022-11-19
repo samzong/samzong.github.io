@@ -8,7 +8,7 @@ category:
 url: https://www.yuque.com/samzong/code/zyil6u
 ---
 
-- strip() 删除字符串中的内容，删除后仍旧是str
+- strip() 删除字符串中的内容，删除后仍旧是 str
 - split() 分割字符串，根据特定的标识，分割后=list
 
 > 两者处理过程中都不会修改原字符串的内容

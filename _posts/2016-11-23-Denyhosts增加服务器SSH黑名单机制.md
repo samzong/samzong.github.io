@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Denyhosts增加服务器SSH黑名单机制
+title: Denyhosts 增加服务器 SSH 黑名单机制
 tags: 
     - DenyHosts
     - Tools
@@ -95,7 +95,7 @@ DAEMON_PURGE = 1h
 
 ##### FAQ
 
-1. 如果想删除一个已经禁止的主机IP，并加入到允许主机例表，只在 /etc/hosts.deny 删除是没用的,还需要以下：
+1. 如果想删除一个已经禁止的主机 IP，并加入到允许主机例表，只在 /etc/hosts.deny 删除是没用的，还需要以下：
 
 ```
 /var/lib/denyhosts 目录，进入以下操作：
@@ -124,5 +124,5 @@ sudo echo IP_addr >>/usr/share/denyhosts/data/allowed-hostsps
 
 ##### Tips
 
-* 尽量是用key验证登录服务器
-* 尽量从固定IP点登录服务器，然后将该地址加入白名单
+* 尽量是用 key 验证登录服务器
+* 尽量从固定 IP 点登录服务器，然后将该地址加入白名单

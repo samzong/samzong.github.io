@@ -19,13 +19,13 @@ date: 2016-08-02 16:04:48
 yum -y install wget java glibc.i686
 ```
 
-#### 下载openfire 3.8 到本地
+#### 下载 openfire 3.8 到本地
 
 ```
 wget http://download.igniterealtime.org/openfire/openfire-3.8.1-1.i386.rpm
 ```
 
-#### 安装openfire 3.8
+#### 安装 openfire 3.8
 
 ```
 yum -y install ./openfire*rpm
@@ -42,7 +42,7 @@ chkconfig openfire on
 
 详见： [How to Install MySQL 5.5/6/7 on RHEL/CentOS 5/6/7](http://blog.ultraera.org/how-to-install-mysql-5-6-on-centos/)
 
-#### 创建openfire数据库
+#### 创建 openfire 数据库
 
 ```
 mysql -u root -p
@@ -51,7 +51,7 @@ create database openfire character set utf8;
 grant all privileges on openfire.* to 'openfire'@'127.0.0.1' identified by 'openfire' with grant option;
 ```
 
-#### 启动openfire
+#### 启动 openfire
 
 ```
 http://Host:9090
@@ -61,7 +61,7 @@ http://Host:9090
 
 #### FAQ
 
-openfire安装完毕后无法登录控制台
+openfire 安装完毕后无法登录控制台
 
 ```
 报错：Login failed:make sure your username and password are correct and that you’re an admin or moderator

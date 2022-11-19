@@ -9,9 +9,9 @@ url: https://www.yuque.com/samzong/code/python-flask-form
 ---
 
 ```python
-form_data = request.form  # 获取表单中的提交的数据，这个是定义了一个post接口，入参会放在form_data 这里接口可以在 Google Chrome DevTools 中的 Doc
-args_data = request.args # 获取的是url中的参数 tips: ?method=12312&token=123121 > 这里获取到的是一个 List
-json_data = request.get_json() # 获取的是从 `POST` 收到的对应 json， 这里的接口文档会放在 Google Chrome DevTools 中的 XHR
+form_data = request.form  # 获取表单中的提交的数据，这个是定义了一个 post 接口，入参会放在 form_data 这里接口可以在 Google Chrome DevTools 中的 Doc
+args_data = request.args # 获取的是 url 中的参数 tips: ?method=12312&token=123121 > 这里获取到的是一个 List
+json_data = request.get_json() # 获取的是从 `POST` 收到的对应 json，这里的接口文档会放在 Google Chrome DevTools 中的 XHR
 
 
 def func(method int):   # 这里是定义一个函数的入参时，指定了对应的类型

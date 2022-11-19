@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Django 修改modules时出错
+title: Django 修改 modules 时出错
 tags:
   - Python
 category:

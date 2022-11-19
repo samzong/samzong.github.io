@@ -15,15 +15,15 @@ tags:
 
 #### 准备
 
-网上较多的解决办法是使用 Fiddler+iTunes 是在 Windows 平台，因为我只有 Mac ，所以用Charles 代替 Fiddler，这里需要注意的是iTunes的版本，在笔者写这篇教程的前一天 iTunes 更新到12.7，在 12.7 中有一个很大的变化移除了 App store ，所以请使用低于 12.7 版本的 iTunes 。
+网上较多的解决办法是使用 Fiddler+iTunes 是在 Windows 平台，因为我只有 Mac，所以用 Charles 代替 Fiddler，这里需要注意的是 iTunes 的版本，在笔者写这篇教程的前一天 iTunes 更新到 12.7，在 12.7 中有一个很大的变化移除了 App store，所以请使用低于 12.7 版本的 iTunes。
 
 ##### Charles 安装
 
-对于 Charles 版本并没有特殊要求，我这边是通过brew安装，你也可以到 Charles 官网下载安装， Charles 是需要付费的软件，但是有30天免费使用期限，如果你有长期使用打算，建议购买正版授权。
+对于 Charles 版本并没有特殊要求，我这边是通过 brew 安装，你也可以到 Charles 官网下载安装，Charles 是需要付费的软件，但是有 30 天免费使用期限，如果你有长期使用打算，建议购买正版授权。
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/x4dkc.jpg)
 
-##### Charles SSL证书导入系统
+##### Charles SSL 证书导入系统
 
 从 Charles 中导出证书文件
 
@@ -37,11 +37,11 @@ tags:
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/xoalz.jpg)
 
-#### “虾米音乐” 的三次下载
+#### “虾米音乐”的三次下载
 
 ##### 第一次下载
 
-打开 Charles ，开启监听，然后使用搜索虾米音乐，点击 Downloads 按钮。
+打开 Charles，开启监听，然后使用搜索虾米音乐，点击 Downloads 按钮。
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/6dt52.jpg)
 
@@ -57,7 +57,7 @@ tags:
 
 ##### 第三次下载
 
-再次重新搜索虾米音乐，并点击下载，在这次Charles弹出窗口中我们需要直接修改 'Edit Requset' - 'XML Text' ，将如下图中的 'appExtVrsid' 对应的值修改为，我们上一步中记录的序列数字，然后就一直在每次弹出选择时，选择 'Execute' ，直到下载完成记录。
+再次重新搜索虾米音乐，并点击下载，在这次 Charles 弹出窗口中我们需要直接修改 'Edit Requset' - 'XML Text' ，将如下图中的 'appExtVrsid' 对应的值修改为，我们上一步中记录的序列数字，然后就一直在每次弹出选择时，选择 'Execute' ，直到下载完成记录。
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/h7zzu.jpg)
 

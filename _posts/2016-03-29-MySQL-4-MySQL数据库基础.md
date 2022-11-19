@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MySQL数据库使用基础
+title: MySQL 数据库使用基础
 tags: 
     - MySQL
 categories: 
@@ -12,21 +12,21 @@ date: 2016-03-29 08:22:14
 
 ## 1. 测试环境
 
-* MacBook Pro 15‘ i7 16GB
+* MacBook Pro 15' i7 16GB
 * VMware Fushion 8 Pro
 * MySQL Version 5.1
 * CentOS Linux 6.x
 
 ## 2. 实验步骤
 
-### 2.1 安装mysql
+### 2.1 安装 mysql
 
 ```
 [root@ultraera  ~]#  yum  install  mysql  mysql-server  mysql-devel
 
 ```
 
-### 2.2 启动mysql，并设置开机自启动
+### 2.2 启动 mysql，并设置开机自启动
 
 ```
 [root@ultraera  ~]#  service  mysqld  start
@@ -46,7 +46,7 @@ port:3306           mysql默认端口
 # Tips : MySQL 绝大对数语句都是以分号结尾，注意是英文模式下的分号。字符和字符串用 '' 引起；
 ```
 
-### 2.4 mysql初始化及登录
+### 2.4 mysql 初始化及登录
 
 ```
 
@@ -195,7 +195,7 @@ mysql>  select  name  from  ultraera;
 
 ```
 
-### 2.10 where运算符：条件判断查询，查询使用方法：where  列  运算符  值
+### 2.10 where 运算符：条件判断查询，查询使用方法：where  列  运算符  值
 
 ```
 where支持的运算符：=等于；>大于；<小于；<>不等于；>=大于等于；<=小于等于；BETWEEN在某范围之内；
@@ -208,7 +208,7 @@ mysql> select * from ultraera where id  between  1  and  4;
 
 ```
 
-### 2.11 删除表格中的一条记录（同样可以匹配where运算符）
+### 2.11 删除表格中的一条记录（同样可以匹配 where 运算符）
 
 ```
 mysql>  delete  from  ultraera  where  id  =  4;
@@ -223,7 +223,7 @@ mysql>  update  ultraera  set  age=30  where  id=3;
 
 ```
 
-### 2.13 MySQL增加删除一个用户
+### 2.13 MySQL 增加删除一个用户
 
 ```
 mysql>  create  user  user1  identified  by  '123456'; #user1，密码123456，新用户没有权限，无法登录数据库
@@ -239,9 +239,9 @@ mysql>  revoke  all  privileges  from  user1;
 
 ```
 
-### 2.15 使用mysqldump进行数据库备份
+### 2.15 使用 mysqldump 进行数据库备份
 
-数据库重命名：mysql不能直接对数据库重命名，所以如果想要重名数据库的话，要先导出，接着创建一个新的数据库，然后将导出的sql文件再导入到新的数据库中
+数据库重命名：mysql 不能直接对数据库重命名，所以如果想要重名数据库的话，要先导出，接着创建一个新的数据库，然后将导出的 sql 文件再导入到新的数据库中
 
 ```
 [adam@ultraera  ~]$  mysqldump  -u  root  -p  ultraera  >  ultraera.sql     #备份

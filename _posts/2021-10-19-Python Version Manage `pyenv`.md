@@ -11,9 +11,9 @@ url: https://www.yuque.com/samzong/code/python-version-manage-tool-pyenv
 > to\_url : <http://pyenv.run/>
 > github offical site <https://github.com/pyenv/pyenv>
 
-在 MacOS 的使用方式： brew install pyenv
+在 MacOS 的使用方式：brew install pyenv
 
-使用 pyenv 还是挺方便的，但是在Linux云服务器上配置网络的话就比较麻烦了，比如我在用的阿里云ECS，中间有些曲折，所以编写下文档记录下来，以防后续使用遇到问题
+使用 pyenv 还是挺方便的，但是在 Linux 云服务器上配置网络的话就比较麻烦了，比如我在用的阿里云 ECS，中间有些曲折，所以编写下文档记录下来，以防后续使用遇到问题
 
 ## 安装 `pyenv`
 
@@ -32,9 +32,9 @@ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer 
 wget https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer -O ~/pyenv-installer
 ```
 
-如果你的服务器环境比较悲催，访问GitHub也是比较麻烦，那么可以看下这个网站  <https://gitclone.com/> ； 只需要对 `pyenv-installer` 进行简单的修改就可以实现加速下载了
+如果你的服务器环境比较悲催，访问 GitHub 也是比较麻烦，那么可以看下这个网站  <https://gitclone.com/> ；只需要对 `pyenv-installer` 进行简单的修改就可以实现加速下载了
 
-```shell
+```bash
 # ......
 if [ -n "${USE_GIT_URI}" ]; then
   GITHUB="git://github.com"
@@ -55,7 +55,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 echo 'eval "$(pyenv virtualenv-init -)"'  >> ~/.bashrc
 ```
 
-## 使用 `pyenv` 安装特定版本的python
+## 使用 `pyenv` 安装特定版本的 python
 
 在网络好的情况下，可以直接通过 `pyenv install 3.9.6` 安装对应的版本了，但是因为网络的问题，你会发现一直在下载 Python 包这一步，问题就是 www.python.org/ftp 网络的访问问题
 

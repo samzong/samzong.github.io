@@ -9,9 +9,9 @@ category:
 url: https://www.yuque.com/samzong/code/rey62i
 ---
 
-在 Windows 和 Linux 中使用 Docker ，可以通过 docker0 这个网络 IP，在容器内访问宿主机的端口及服务
+在 Windows 和 Linux 中使用 Docker，可以通过 docker0 这个网络 IP，在容器内访问宿主机的端口及服务
 
-```shell
+```bash
 ➜  ~ ifconfig
 docker0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255

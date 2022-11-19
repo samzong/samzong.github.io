@@ -25,10 +25,10 @@ date: 2022-04-16 02:40:00
 
 Metabase 的安装方式有三种：
 
-- 以Jar包的形式，在本地运行，只需要简单的步骤即可 **(本文)**
+- 以 Jar 包的形式，在本地运行，只需要简单的步骤即可 **(本文)**
 - 以 Docker 容器的形式，部署到服务器上
 
-以Jar的方式来运行相对简单，对环境依赖也是比较少，只要的电脑上有 JDK 就可以了。
+以 Jar 的方式来运行相对简单，对环境依赖也是比较少，只要的电脑上有 JDK 就可以了。
 
 ### 检查 Java 环境
 
@@ -74,9 +74,9 @@ nohup java -jar metabase.jar > metabase.log 2>&1 &
 
 ### 配置 Metabase 的数据库
 
-Metabase 默认的采用的是H2的作为数据库存储，会存放在程序运行目录下的 `data` 目录下；但对于在正式环境中启用 Metabase，我们建议使用 MySQL 来作为数据库存储。
+Metabase 默认的采用的是 H2 的作为数据库存储，会存放在程序运行目录下的 `data` 目录下；但对于在正式环境中启用 Metabase，我们建议使用 MySQL 来作为数据库存储。
 
-而指定 Metabase 的数据库配置，可以很方便的加载到系统的默认环境中:
+而指定 Metabase 的数据库配置，可以很方便的加载到系统的默认环境中：
 
 ```bash
 
@@ -121,13 +121,13 @@ server {
 
 Metabase 默认支持非常丰富数据库驱动，这些都会预置在 Jar 内，例如 MySQL、Oracle、SQL Server；但是 ClickHouse 不在其中，所以我们需要独立进行安装。
 
-ClickHouse 驱动: <https://github.com/enqueue/metabase-clickhouse-driver#readme>=
+ClickHouse 驱动：<https://github.com/enqueue/metabase-clickhouse-driver#readme>=
 
 - 下载 **合适的** 驱动版本，放在 Metabase 的目录下的 plugin 文件夹下
 - 重新启动 Metabase 即可
 - 在 Metabase 的数据库管理中新增数据库，选择类型为 ClickHouse
 
-> 更多三方驱动: <https://www.metabase.com/docs/latest/developers-guide-drivers.html#how-to-use-a-community-built-driver>
+> 更多三方驱动：<https://www.metabase.com/docs/latest/developers-guide-drivers.html#how-to-use-a-community-built-driver>
 
 ## Tips
 
@@ -135,7 +135,7 @@ ClickHouse 驱动: <https://github.com/enqueue/metabase-clickhouse-driver#readme
 
 直接杀掉进程即可，如果为了以后方便，可以将下述命令保存为 stop.sh 放在目录下，后续直接执行
 
-```shell
+```bash
 APP_NAME="metabase"
 
 ps aux | grep python | grep ${APP_NAME} | awk '{print $2}' | xargs kill -9
