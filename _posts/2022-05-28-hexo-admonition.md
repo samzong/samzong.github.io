@@ -114,9 +114,9 @@ Hexo-admonition 遵循一种简单的语法：每个块都以 `!!!` 开头，然
 
 ```html
 <div class="admonition note ">
-  <p class="admonition-title">Hexo-admonition 插件使用示例</p>
-  <p>这是基于 hexo-admonition 插件渲染的一条提示信息。类型为 note，并设置了自定义标题。</p>
-  <p>提示内容开头留 4 个空格，可以有多行，最后用空行结束此标记。</p>
+  <p class="admonition-title">Hexo-admonition 插件使用示例
+  这是基于 hexo-admonition 插件渲染的一条提示信息。类型为 note，并设置了自定义标题。
+  提示内容开头留 4 个空格，可以有多行，最后用空行结束此标记。
 </div>
 ```
 
@@ -165,6 +165,7 @@ Hexo-admonition 遵循一种简单的语法：每个块都以 `!!!` 开头，然
 
 > 主要四种类型：info, warning, error, note
 
+```markdown
 !!! note Hexo-admonition 插件使用示例
     这是基于 hexo-admonition 插件渲染的一条提示信息。类型为 note，并设置了自定义标题。
 

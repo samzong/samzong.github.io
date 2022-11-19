@@ -13,7 +13,7 @@ date: 2022-05-03 20:14:49
 
 Alfred 是 Mac 上一款著名的效率应用，强大的功能和众多的扩展能让你在实际操作中大幅提升工作效率，网络上也有大量关于的 Alfred 的评测和技巧的文章。
 
-![](https://cdn.sspai.com/attachment/origin/2016/02/19/311872.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1)
+![image](https://cdn.sspai.com/attachment/origin/2016/02/19/311872.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1)
 
 ## Workflow 介绍
 

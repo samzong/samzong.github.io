@@ -19,7 +19,7 @@ date: 2016-09-19 10:25:53
 
 #### 2. Install Java SE Development Kit 7 (JDK7)
 
-```
+```bash
 [root@ultraera ~]# curl -LO -H "Cookie: oraclelicense=accept-securebackup-cookie" \
 "http://download.oracle.com/otn-pub/java/jdk/7u75-b13/jdk-7u75-linux-x64.rpm"
 [root@ultraera ~]# rpm -Uvh jdk-7u75-linux-x64.rpm
@@ -36,7 +36,7 @@ Unpacking JAR files...
 
 #### 3. Build Java Environment
 
-```
+```bash
 [root@ultraera ~]# vi /etc/profile
 # add follows to the end
 export JAVA_HOME=/usr/java/default
@@ -54,7 +54,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 24.75-b04, mixed mode)
 Make sure the latest one and download it from the site below.
 =》 <http://ftp.riken.jp/net/apache/tomcat/tomcat-7/>
 
-```
+```bash
 [root@ultraera ~]# wget http://ftp.riken.jp/net/apache/tomcat/tomcat-7/v7.0.70/bin/apache-tomcat-7.0.70.tar.gz
 [root@ultraera ~]# tar zxvf apache-tomcat-7.0.70.tar.gz
 [root@ultraera ~]# mv apache-tomcat-7.0.70 /usr/tomcat7
@@ -64,7 +64,7 @@ Make sure the latest one and download it from the site below.
 
 #### 5. create a script , use service manage tomcat7
 
-```
+```bash
 [root@ultraera ~]# cat /etc/rc.d/init.d/tomcat7
  #!/bin/bash
 
@@ -143,11 +143,11 @@ tomcat7       6326  8.3 85.6 5229768 2910176 ?     Sl   Aug22 3216:38 /usr/bin/j
 
 #### 7. 打开浏览器测试 Tomcat Server 搭建完成，默认页面如下
 
-![](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/09/tomcat7.jpg)
+![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/09/tomcat7.jpg)
 
 #### 8. 使用 curl 测试
 
-```
+```bash
 [root@ultraera ~]# curl -I http://localhost:8080
 HTTP/1.1 200 OK
 Server: Apache-Coyote/1.1
@@ -158,7 +158,7 @@ Date: Sun, 18 Sep 2016 11:14:06 GMT
 
 #### 9. Tomcat 文件树
 
-```
+```bash
 [root@ultraera /usr/tomcat7]# tree
 .
 ├── bin

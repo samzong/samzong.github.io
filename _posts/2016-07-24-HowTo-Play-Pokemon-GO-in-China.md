@@ -12,12 +12,9 @@ date: 2016-07-24 21:42:01
 * [VPN](https://shadowsocks.biz/?ref=518)
 * [Google Account ID](https://accounts.google.com)
 
-<p>最近看到身边朋友都在玩 Pokemon GO, 心痒难耐，于是跟同事请教琢磨了，终于在自己的手机上玩起来了，由于我的手机是 iPhone 5s，身边朋友也都是 iPhone，所以不确定是 Android 是否可以玩耍，想来应该是没有问题话，Android 平台做破解等操作一直以来比 iPhone 更加方便。
-</p>
+最近看到身边朋友都在玩 Pokemon GO, 心痒难耐，于是跟同事请教琢磨了，终于在自己的手机上玩起来了，由于我的手机是 iPhone 5s，身边朋友也都是 iPhone，所以不确定是 Android 是否可以玩耍，想来应该是没有问题话，Android 平台做破解等操作一直以来比 iPhone 更加方便。
 
-<div align="center">
-<img src=http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo1.jpg>
-</div>
+![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo1.jpg)
 
 1. 点击上面的 TuTuAPP，可以打开兔兔助手的网站，用手机扫描首页的二维码 (可以用微信等，带有二维码扫描的都可以)，注意如果你的 iPhone 已经越狱，请切换标签页到越狱版本。
 
@@ -29,24 +26,18 @@ date: 2016-07-24 21:42:01
 
 5. 注册 Google Account ID，[点击](https://account.google.com)
 
-<div align="center">
-<img src=http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo2.jpg width="360" height="640">
-</div>
+    ![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo2.jpg)
+
 6. 进入游戏，登录 Google ID，然后授权，进入游戏。
-<div align="center">
-<img src=http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo3.png width="360" height="640">
-</div>
+
+    ![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo3.png>)
+
 7. 开始捕捉你的小精灵吧，手动微笑。
 
 > Tips：这款游戏会大量耗电发热，因为打开摄像头捕捉小精灵；另外很容易入迷，在室外玩耍时一定要注意安全。
 
-8. 注意：如果看到了 GPS signal not found，说明是 GPS 信息丢失，这是根据 GPS 定位的游戏，所以这很重要，记得选择美国的 VPN 代理。
+注意：如果看到了 GPS signal not found，说明是 GPS 信息丢失，这是根据 GPS 定位的游戏，所以这很重要，记得选择美国的 VPN 代理。
 
-<div align="center">
-<img src=http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo4.png
-width="360" height="640">
-<img src=http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo5.png
-width="360" height="640">
-<img src=http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo6.png
-width="360" height="640">
-</div>
+    ![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo4.png)
+    ![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo5.png)
+    ![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo6.png)

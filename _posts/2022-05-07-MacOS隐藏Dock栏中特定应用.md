@@ -13,13 +13,13 @@ categories:
 
 MacOS Dock 栏的空间是有限的，而且绝大部分应用都会占用一个 Dock 的槽位；但并不是所有软件都提供了 `Hidden  in Dock` 的能力，所以从来不点击，但一直存在，挺痛苦的。
 
-<p style="color:red;font-size=16px">为不具备隐藏 Dock Icon 的应用附加隐藏能力</p>
+为不具备隐藏 Dock Icon 的应用附加隐藏能力
 
 > 符合这类特征的软件：a. 常驻应用，开机自启动，基本不会打开；b. 像我这样的 Alfred 爱好者
 
 之前了解到一些软件对系统的影响都比较大，基本上都是要接管 整个`Dock`，要关闭 `SIP`，使用成本太好，基本不值得采用。
 
-## 全球同性交友网站
+## Github 全球同性交友网站
 
 下午在闲逛的时候，发现了这个仓库： <https://github.com/FirePanther/MacOS-Hide-Dock-Icon> ，一个非常简单的 PHP 脚本，貌似可以提供这个能力，于是我就简单的 Download，按照 README.md 的方法执行了一下。
 

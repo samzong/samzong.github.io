@@ -42,7 +42,7 @@ date: 2016-03-27 05:55:28
 
 ### 3.1 Mongodb 2.6 + OS x64
 
-```
+```bash
 [root@vm02 ~]# vim /etc/yum.repos.d/mongodb-org-2.6.repo
 
 [mongodb-org-2.6]
@@ -55,7 +55,7 @@ enabled=1
 
 ### 3.2 Mongodb 2.6 + OS i686
 
-```
+```bash
 [root@vm02 ~]# vim /etc/yum.repos.d/mongodb-org-2.6.repo
 
 [mongodb-org-2.6]
@@ -68,7 +68,7 @@ enabled=1
 
 ### 3.3 Mongodb 3.2  + OS x64
 
-```
+```bash
 [root@vm02 ~]# vim /etc/yum.repos.d/mongodb-org-3.2.repo
 
 [mongodb-org-3.2]
@@ -81,7 +81,7 @@ enabled=1
 
 ### 3.4 Mongodb 3.2  + OS i686
 
-```
+```bash
 [root@vm02 ~]# vim /etc/yum.repos.d/mongodb-org-3.2.repo
 
 [mongodb-org-3.2]
@@ -96,7 +96,7 @@ enabled=1
 
 安装最新版本的 Mongodb，安装都方式一样，请注意安装相对应的源保证正确安装 Mongodb，请使用如下命令：
 
-```
+```bash
 [root@vm02 ~]# yum clean all
 [root@vm02 ~]# yum makecache
 [root@vm02 ~]# yum install mongodb-org
@@ -112,7 +112,7 @@ SELinux 默认为开启状态，会导致我们的 Mongodb 无法使用，解决
 1. [关闭 SELinux](http://blog.ultraera.org/centos6-x-base-settings/)
 2. 添加 Mongodb 通过 SELinux 设定，指令如下：
 
-```
+```bash
 semanage port -a -t mongod_port_t -p tcp 27017
 
 ```
@@ -121,7 +121,7 @@ semanage port -a -t mongod_port_t -p tcp 27017
 
 ### 5.2 Start MongoDB
 
-```
+```bash
 [root@vm02 ~]# sudo service mongod start
 Starting mongod:                                           [  OK  ]
 [root@vm02 ~]#
@@ -130,7 +130,7 @@ Starting mongod:                                           [  OK  ]
 
 ### 5.3 检查 MongoDB 日志文件验证服务正常启动， /var/log/mongodb/mongodb.log
 
-```
+```bash
 [root@vm02 ~]# cat /var/log/mongodb/mongod.log  # 看到如下内容表示mongodb启动成功了。
 2016-03-24T04:09:28.582+0800 I NETWORK  [initandlisten] waiting for connections on port 27017
 
@@ -138,7 +138,7 @@ Starting mongod:                                           [  OK  ]
 
 ### 5.4 设置 MongoDB 开机自启动
 
-```
+```bash
 [root@vm02 ~]# chkconfig mongod on
 
 ```
@@ -147,7 +147,7 @@ Starting mongod:                                           [  OK  ]
 
 默认情况下，mongodb 只监听 127.0.0.1，但是实际生产环境中可能需要其他服务器访问，所以这里添加监听其他网络端口，修改 mongodb 的配置文件：/etc/mongodb.conf
 
-```
+```bash
 [root@vm02 ~]# vim /etc/mongodb.conf
 
 # line 29 增加一行：
@@ -161,7 +161,7 @@ Starting mongod:                                           [  OK  ]
 
 ### 6.1 检查 mongodb 状态
 
-```
+```bash
 [root@vm02 ~]# service mongod status
 mongod (pid 6502) is running...
 [root@vm02 ~]#
@@ -170,7 +170,7 @@ mongod (pid 6502) is running...
 
 ### 6.2 mongodb 自带检测工具
 
-```
+```bash
 [root@vm02 ~]# mongostat
 insert query update delete getmore command % dirty % used flushes  vsize   res qr|qw ar|aw netIn netOut conn                      time
     *0    *0     *0     *0       0     1|0     0.0    0.0       0 388.0M 68.0M   0|0   0|0   79b    18k    1 2016-03-24T04:25:09+08:00
@@ -181,7 +181,7 @@ insert query update delete getmore command % dirty % used flushes  vsize   res q
 
 ### 6.3 进入 mongodb 命令行模式
 
-```
+```bash
 [root@vm02 ~]# mongo
 MongoDB shell version: 3.2.4
 connecting to: test
@@ -203,21 +203,21 @@ Server has startup warnings:
 
 ### 7.1 关闭 mongodb
 
-```
+```bash
 [root@vm02 ~]# service mongod stop
 
 ```
 
 ### 7.2 卸载 mongodb 软件包
 
-```
+```bash
 [root@vm02 ~]# yum erase $(rpm -qa | grep mongodb-org)
 
 ```
 
 ### 7.3 删除 mongodb 文件：数据库文件和日志文件
 
-```
+```bash
 [root@vm02 ~]# rm -rf /var/log/mongodb
 [root@vm02 ~]# rm -rf /var/lib/mongo
 

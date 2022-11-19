@@ -1,24 +1,24 @@
 ---
 layout: post
-title: HowTo Automatic EasyBackup MysqlDB
+title: CentOS 修改系统主机名
 tags: 
-    - MySQL
+    - CentOS
 categories: 
-    - 数据库
-    - MySQL
+    - Linux
+    - CentOS
+date: 2016-05-05 05:41:39
 ---
 
-mysql 是一个免费、开源中一款非常优秀关系型数据库，在现在的互联网中使用的非常广泛，无论是大型 IT 项目还是个人开发者的小项目，mysql 都能很好的协助人们处理数据库相关的工作，同时数据库对于我们来说是非常重要，所以经常备份数据库是一个基本的操作，这会为你或者你的团队，减少非常多不必要的麻烦。
+## CentOS 7 修改主机名
 
-<code>mysqldump</code>是一个简单而且非常流行的 mysql 全量备份方式，配合<code>crontab</code>添加自动备份任务，很好的完成了我们针对数据库备份的需求，下面我会通过一个例子来说明如何完成这项操作。
+### 方法 1: `hostname 主机名`
 
-> mysqldump 是 mysql 自带的备份工具，所以只要你安装 mysql 应用包，就无需单独安装 mysqldump
+这种方式，只能修改临时的主机名，当重启机器后，主机名称又变回来了。
 
-#### 测试环境
+### 方法 2: `hostnamectl set-hostname <主机名>`
 
-我搭建了一个 Ghost 博客环境，数据库采用是的 Mysql，接下来我想在每天 00:00 执行数据库备份操作，并在备份完成之后，告诉我是否备份成功。
-
-![](http://ww1.sinaimg.cn/large/006tKfTcgy1ffogclgk9dj30f00cq3zf.jpg)
+使用这种方式修改，可以永久性的修改主机名称！
+![image](http://ww1.sinaimg.cn/large/006tKfTcgy1ffogclgk9dj30f00cq3zf.jpg)
 
 所以我们的步骤应该：
 
@@ -37,7 +37,7 @@ mysql> grant select on ghost.* to 'ghost_backuser'@'localhost' identified by 'ba
 Query OK, 0 rows affected (0.00 sec)
 ```
 
-因为我只在本地执行备份操作，所以我只赋予了<code>localhost</code>的权限，你的权限应该要是执行备份工作的服务器主机信息。
+因为我只在本地执行备份操作，所以我只赋予了`localhost`的权限，你的权限应该要是执行备份工作的服务器主机信息。
 
 ```mysql
 # 创建仅授权本地访问的用户
@@ -93,7 +93,7 @@ mysql> select name from users;
 1 row in set (0.00 sec)
 ```
 
-测试<code>mysqldump</code>备份命令，注意 mysqldump 备份会锁表，但对于正在工作的数据库，锁表会影响到正常业务，所以我们可以使用<code>--single-transaction</code>参数，不锁表备份。
+测试`mysqldump`备份命令，注意 mysqldump 备份会锁表，但对于正在工作的数据库，锁表会影响到正常业务，所以我们可以使用`--single-transaction`参数，不锁表备份。
 
 ```bash
 ➜  ~ mysqldump -u ghost_backuser -pbackupPass ghost > ghost.bak.sql
@@ -121,7 +121,7 @@ total 780K
 ➜  ~ echo "test" | mail -s "this a test email" samzong.lu@gmail.com
 ```
 
-![](http://ww2.sinaimg.cn/large/006tKfTcgy1ffogc7wksdj30ms03t3ym.jpg)
+![image](http://ww2.sinaimg.cn/large/006tKfTcgy1ffogc7wksdj30ms03t3ym.jpg)
 
 #### 安装计划任务工具 Crontab
 

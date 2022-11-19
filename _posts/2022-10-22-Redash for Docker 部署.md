@@ -9,28 +9,29 @@ category:
 url: https://www.yuque.com/samzong/code/kfrygp
 ---
 
-**暗坑很多**
+> 暗坑很多
 
 ## 部署过程
 
-1. 需要自行维护一个 env 作为配置文件。
+1. 需要自行维护一个 env 作为配置文件
 
-<!---->
+```text
+REDASH_COOKIE_SECRET=a07cca441ab9f28b66c589f3118e0de48469b1bc6a5036eade7badbed305d96e
+POSTGRES_HOST_AUTH_METHOD=trust
+REDASH_REDIS_URL=redis://redis:6379/0
+REDASH_DATABASE_URL=postgresql://postgres
+```
 
-    REDASH_COOKIE_SECRET=a07cca441ab9f28b66c589f3118e0de48469b1bc6a5036eade7badbed305d96e
-    POSTGRES_HOST_AUTH_METHOD=trust
-    REDASH_REDIS_URL=redis://redis:6379/0
-    REDASH_DATABASE_URL=postgresql://postgres
+- 需要创建一个 postgres-data 并配置 docker-compose.yml 的路径，数据库持久化
 
-2. 需要创建一个 postgres-data 并配置 docker-compose.yml 的路径，数据库持久化
-3. 需要给 postgres 容器增加 sudo 命令
-   1. apk add sudo
-4. 需要手工进入到 postgresql 容器内创建 role 和 database
-   1. createuser -U postgres redash
-   2. createdb -U postgres redash
-5. 执行数据库初始化动作
-6. docker-compose run --rm server create\_db
-7. 然后重启 redash 全部服务即可 docker-compose down 后重启
+- 需要给 postgres 容器增加 sudo 命令
+  - apk add sudo
+- 需要手工进入到 postgresql 容器内创建 role 和 database
+  - createuser -U postgres redash
+  - createdb -U postgres redash
+- 执行数据库初始化动作
+- docker-compose run --rm server create\_db
+- 然后重启 redash 全部服务即可 docker-compose down 后重启
 
 > postgresql 在执行 psql 命令时，默认会读取当前系统用户作为执行 role；但 psql 默认用户是 postgres
 
@@ -49,12 +50,12 @@ url: https://www.yuque.com/samzong/code/kfrygp
 
 ## 启动的服务介绍
 
-    v10-redashio_adhoc_worker_1     # 执行查询任务的 worker
-    v10-redashio_postgres_1       # 数据库
-    v10-redashio_redis_1        # 缓存
-    v10-redashio_scheduled_worker_1   # 执行计划任务的 worker
-    v10-redashio_scheduler_1      # 计划任务管理 server
-    v10-redashio_server_1        # 主体 server
+- v10-redashio_adhoc_worker_1     # 执行查询任务的 worker
+- v10-redashio_postgres_1       # 数据库
+- v10-redashio_redis_1        # 缓存
+- v10-redashio_scheduled_worker_1   # 执行计划任务的 worker
+- v10-redashio_scheduler_1      # 计划任务管理 server
+- v10-redashio_server_1        # 主体 server
 
 以上主要会设计到 3 个镜像，redis、pgsql、redash，其中核心是 redash，所以关注镜像版本也是这个
 
@@ -81,18 +82,20 @@ redash 的版本升级较为方便，更换 server 的镜像；然后升级数�
 
 > 带来的问题，页面上无法选择到 Elasticsearch 作为数据源，没时间去研究了
 
-看了下还是可以使用 redash 的 API 去创建的 `/api/data_sources`
+看了下还是可以使用 redash 的 API 去创建的 `/api/data_sources`:
+
+## 配置
 
 ```json
 {
-    "options": {
-        "basic_auth_password": "-----",
-        "basic_auth_user": "elastic",
-        "server": "https://10.6.51.101:31001/",
-        "skip_tls_verification": true
-    },
-    "type": "elasticsearch",
-    "name": "test-es"
+  "options": {
+    "basic_auth_password": "-----",
+    "basic_auth_user": "elastic",
+    "server": "https://10.6.51.101:31001/",
+    "skip_tls_verification": true
+  },
+  "type": "elasticsearch",
+  "name": "test-es"
 }
 ```
 

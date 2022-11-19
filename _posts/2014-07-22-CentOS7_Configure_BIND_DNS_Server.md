@@ -96,7 +96,7 @@ include "/etc/named.root.key";
 
 首先创建 samzong.local.zone 文件：
 
-```
+```bash
 ➜  ~ cd /var/named
 ➜  named touch samzong.local.zone;
 ```

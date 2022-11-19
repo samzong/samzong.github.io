@@ -12,9 +12,9 @@ date: 2016-12-03 18:41:13
 
 > demo: CentOS 6.6 & Tomcat 7 & JDK 1.7
 
-#### 1. 生成 keystore
+## 生成 keystore
 
-```
+```bash
 [root@test conf]# keytool -genkey -v -alias tomcat -keyalg RSA -keystore mykeystore
 Enter keystore password:              #设置密码
 Re-enter new password:                #重复一次
@@ -45,17 +45,17 @@ Catalina  catalina.policy  catalina.properties  context.xml  logging.properties 
 > 注意：-keystore 是用来指定 keystore 保存位置，如果不加参数默认保存的当前用户家目录为~/.keystore
        -validity 可以用来指定证书有效期，单位为天，缺省值为 90 天。
 
-#### 2. 备份$tomcatdir/conf/server.xml
+## 2. 备份$tomcatdir/conf/server.xml
 
-```
+```bash
 cp $tomcatdir/conf/server.xml $tomcatdir/conf/server.xml
 ```
 
-#### 3. 修改 server.xml
+## 3. 修改 server.xml
 
-###### a. 注释以下：（tomcat 注释用：<\!\-\- XXXX \-\-\> ）,如何也想保留 http 访问，可以不注释
+### a. 注释以下：（tomcat 注释用：<\!\-\- XXXX \-\-\> ）,如何也想保留 http 访问，可以不注释
 
-```
+```xml
 <!--
 <Connector executor="tomcatThreadPool"
                 port="80" protocol="HTTP/1.1"
@@ -64,17 +64,17 @@ cp $tomcatdir/conf/server.xml $tomcatdir/conf/server.xml
 -->
 ```
 
-###### b. 取消下面注释
+### b. 取消下面注释
 
-```
+```xml
 <Connector port="443" protocol="HTTP/1.1" SSLEnabled="true"
                 maxThreads="150" scheme="https" secure="true"
                 clientAuth="false" sslProtocol="TLS" />
 ```
 
-###### c. 增加 keystoreFile 和 keystorePass
+### c. 增加 keystoreFile 和 keystorePass
 
-```
+```xml
 <Connector port="443" protocol="HTTP/1.1" SSLEnabled="true"
                maxThreads="150" scheme="https" secure="true"
                clientAuth="false" sslProtocol="TLS"
@@ -84,9 +84,9 @@ cp $tomcatdir/conf/server.xml $tomcatdir/conf/server.xml
 > keystoreFile=跟 keystore 文件位置
 > keystorePass=跟当时 keytool 命令执行时输入的密码
 
-#### 4. 重启 tomcat
+## 4. 重启 tomcat
 
-```
+```bash
 [root@test conf]# ../bin/catalina.sh stop && ../bin/catalina.sh start
 Using CATALINA_BASE:   /home/pms/apache-tomcat-6.0.44
 Using CATALINA_HOME:   /home/pms/apache-tomcat-6.0.44

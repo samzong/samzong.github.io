@@ -6,23 +6,23 @@ Categroies: Mac
 ---
 
 
-mac系统也是基于unix的系统，所以也继承类很多unix的特性，包括软件的编译，安装等。ubuntu下有快捷命令`apt install`来快速安装软件。centos下有`yum install`来快速安装。所以，mac下也有一种方式，就是使用`brew`。
+mac 系统也是基于 unix 的系统，所以也继承类很多 unix 的特性，包括软件的编译，安装等。ubuntu 下有快捷命令`apt install`来快速安装软件。centos 下有`yum install`来快速安装。所以，mac 下也有一种方式，就是使用`brew`。
 
 并且，在 Homebrew 和 Cask 的支持下，基本可以全面接待 MacOS 的所有软件安装和更新功能。
 
-`brew`是Mac下的一个包管理工具，它从下载源码解压然后 `./configure && make install` ，同时会包含相关依存库。并自动配置好各种环境变量，而且非常易于卸载。 这个对程序员来说简直是福音，简单的指令，就能快速安装和升级本地的各种开发环境。
+`brew`是 Mac 下的一个包管理工具，它从下载源码解压然后 `./configure && make install` ，同时会包含相关依存库。并自动配置好各种环境变量，而且非常易于卸载。这个对程序员来说简直是福音，简单的指令，就能快速安装和升级本地的各种开发环境。
 
 home brew 官网是 <http://brew.sh/index_zh-cn.html>
 
 ## 安装 brew
 
-打开 itrem 。输入一条命令即可安装好 brew。
+打开 itrem。输入一条命令即可安装好 brew。
 
 ```sh
 ➜  ~ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-这样一个简单的命令，我们就安装好来brew 。来验证一下，输入brew命令：
+这样一个简单的命令，我们就安装好来 brew。来验证一下，输入 brew 命令：
 
 ```sh
 ➜  ~ brew
@@ -55,13 +55,13 @@ Further help:
 
 ## 用 brew 安装程序
 
-安装好了brew之后，我们就可以用这个命令安装各种源码了。比如安装一下`wget`工具。这个工具能在命令行中帮我们下载各种数据。
+安装好了 brew 之后，我们就可以用这个命令安装各种源码了。比如安装一下`wget`工具。这个工具能在命令行中帮我们下载各种数据。
 
 ```sh
 brew install git
 ```
 
-这样一个简单的命令就可以了。它会帮我们下载好 git ，并且编译执行安装，还会下载各种依赖包，设置好各种配置和参数。
+这样一个简单的命令就可以了。它会帮我们下载好 git，并且编译执行安装，还会下载各种依赖包，设置好各种配置和参数。
 
 安装好的 `git` 会被安装到`/usr/local/Cellar/git/`下。并且将`wget`命令软链接至 `/usr/local/bin` 目录下。这样全局就都可以使用`git`命令了。
 
@@ -102,12 +102,12 @@ Rosetta 2: false
 
 ## brew cask
 
-![](https://camo.githubusercontent.com/f8b75a5e461338a90db6acf4db8f5bc9cf620bfba65a5a490ed10bd08f457b52/68747470733a2f2f692e696d6775722e636f6d2f464e4e4d36574c2e676966)
+![image](https://camo.githubusercontent.com/f8b75a5e461338a90db6acf4db8f5bc9cf620bfba65a5a490ed10bd08f457b52/68747470733a2f2f692e696d6775722e636f6d2f464e4e4d36574c2e676966)
 
-brew cask 是在 brew 的基础上一个增强的工具，用来安装Mac上的Gui程序应用包（.dmg/.pkg）, 比如 Chrome 、WeChat 等。它先下载解压到统一的目录中（`/opt/homebrew-cask/Caskroom`），省掉了自己去下载、解压、拖拽（安装）等蛋疼步骤，同样，卸载相当容易与干净。然后再软链到`~/Applications/`目录下, 一气呵成。非常方便，而且还包含很多在 AppStore 里没有的常用软件。
+brew cask 是在 brew 的基础上一个增强的工具，用来安装 Mac 上的 Gui 程序应用包（.dmg/.pkg）, 比如 Chrome、WeChat 等。它先下载解压到统一的目录中（`/opt/homebrew-cask/Caskroom`），省掉了自己去下载、解压、拖拽（安装）等蛋疼步骤，同样，卸载相当容易与干净。然后再软链到`~/Applications/`目录下，一气呵成。非常方便，而且还包含很多在 AppStore 里没有的常用软件。
 
-- brew cask的官网是：[http://caskroom.io](http://caskroom.io/)
-- github地址是：<https://github.com/caskroom/homebrew-cask>
+- brew cask 的官网是：[http://caskroom.io](http://caskroom.io/)
+- github 地址是：<https://github.com/caskroom/homebrew-cask>
 
 :::information_desk_person: Cask 目前已经内置到 brew 官方安装包内了，无需单独安装；并且官方集成的非常好，大部分情况下，不需要特殊标记就可以看到到对应的软件了
 
@@ -285,7 +285,7 @@ Do you want to upgrade 9 apps or enter [i]nteractive mode [y/i/N]?
 
 ## brew mas
 
-mas 是一个帮助在命令行下完成 Mac App Store 软件安装和查询的工具，使用起来也是非常的简单，但相对于 cask 低了很多，可以作为了解， 安装方式如下：
+mas 是一个帮助在命令行下完成 Mac App Store 软件安装和查询的工具，使用起来也是非常的简单，但相对于 cask 低了很多，可以作为了解，安装方式如下：
 
 ```sh
 ➜  ~ brew install mas
@@ -305,7 +305,7 @@ mas 是一个帮助在命令行下完成 Mac App Store 软件安装和查询的�
 
 ## brew 软件的备份和恢复
 
- 随着对系统使用的不断加深，我们已经在一台电脑上建立一套对自己来说的软件生态，所以在更换电脑时，需要安装那些软件是非常头疼的一个事情； 如果都是 GUI 软件还好，但研发同学的电脑其实会有大量的 forumal 软件，重装起来还是非常麻烦的。
+ 随着对系统使用的不断加深，我们已经在一台电脑上建立一套对自己来说的软件生态，所以在更换电脑时，需要安装那些软件是非常头疼的一个事情；如果都是 GUI 软件还好，但研发同学的电脑其实会有大量的 forumal 软件，重装起来还是非常麻烦的。
 
 所以，这里给大家推荐 `homebrew-bundle` 来帮助迁移电脑时，快速备份和恢复你的软件环境；整个使用的过程也是非常的便捷。
 
@@ -358,7 +358,7 @@ mas "Bridge Constructor+", id: 1587908263
 
 ### 快速恢复软件
 
-以下是你的新 Mac 上要做的事情，你需要把自己的 `Brewfile` 转移到新的 Mac 上，软件需要安装基础的工具:
+以下是你的新 Mac 上要做的事情，你需要把自己的 `Brewfile` 转移到新的 Mac 上，软件需要安装基础的工具：
 
 ```sh
 # 安装 Homebrew

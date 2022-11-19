@@ -15,7 +15,7 @@ date: 2016-11-10 02:53:13
 
 在很多情况，我们对于 delete 的应用更多，因为它支持更多的匹配模式，我们可以使用 where 条件语句，清理一些特定的数据，关于 delete 的操作，这里不做过多解释，有空就专门写写 delete 的使用和原理。delete 在清空表时，如果表内有自增 ID 的设定，那么在 delete 清空之后，再插入数据时，自增 ID 不会从 1 开始，默认会继续增加; 除非我们使用 OPTIMIZE TABLE，重置表属性；
 
-```
+```sql
 mysql> delete from piwik_tmp;
 Query OK, 0 rows affected (0.00 sec)
 ```
@@ -24,7 +24,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 truncate 在清空表时，会同时将自增 ID 重置，再插入新数据时会从 1 开始，而且 truncate 在清空表时，不关心表的行数，所以执行效率会高于 delete；
 
-```
+```sql
 mysql> truncate table piwik_tmp;
 Query OK, 0 rows affected (0.01 sec)
 
@@ -34,7 +34,7 @@ Query OK, 0 rows affected (0.01 sec)
 
 但是在 truncate 清空表数据时，myisam 的表和 innodb 的表在使用上有一定的区别；myisam 表会清空所有数据，并释放表空间，即硬盘空间会得到释放。innodb 表也会清空所有数据，但不释放表空间。Innodb 数据库对于已经删除的数据只是标记为删除，并不真正释放所占用的磁盘空间，这就导致 InnoDB 数据库文件不断增长。如果想彻底释放这些已经删除的数据，需要把数据库导出，删除 InnoDB 数据库文件，然后再导入。
 
-```
+```sql
 # 备份数据库：
 mysqldump -u -p --quick --force --all-databases > mysqldump.sql
 
@@ -64,6 +64,6 @@ mysql -uroot -proot < mysqldump.sql
 
 通过 mysql 语句可以查看该变量的值：
 
-```
+```sql
 mysql> show variables like '%per_table%';
 ```

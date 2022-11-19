@@ -19,25 +19,25 @@ date: 2016-12-04 09:57:23
 
 #### 2. 重置密码
 
-1. 修改 mysql 配置文件，增加 skip-grant-tables
+修改 mysql 配置文件，增加 skip-grant-tables
 
-```
+```bash
 [root@demo ~]# vim /etc/my.cnf
 [mysqld]
 skip-grant-tables
 ```
 
-2. 重启 mysqld
+重启 mysqld
 
-```
+```bash
 [root@demo ~]# service mysqld restart
 Stopping mysqld:                                           [  OK  ]
 Starting mysqld:                                           [  OK  ]
 ```
 
-3. 登录 mysql，并修改 root 密码。
+登录 mysql，并修改 root 密码。
 
-```
+```bash
 [root@demo ~]# mysql -u root
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 3
@@ -61,15 +61,15 @@ Query OK, 5 rows affected (0.00 sec)
 Rows matched: 5  Changed: 5  Warnings: 0
 ```
 
-4. 配置文件去除 skip-grant-tables，并重启服务器。
+配置文件去除 skip-grant-tables，并重启服务器。
 
-```
+```bash
 [root@demo ~]# vim /etc/my.cnf
 [root@demo ~]# service mysqld restart
 ```
 
-5. 使用新密码登录到 mysql
+使用新密码登录到 mysql
 
-```
+```bash
 [root@demo ~]# mysql -h localhost -u root -p
 ```

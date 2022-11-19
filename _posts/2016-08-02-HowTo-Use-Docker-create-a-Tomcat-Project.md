@@ -9,19 +9,20 @@ categories:
 date: 2016-08-02 15:44:20
 ---
 
-#### **1. 安装 CentOS 7.x**
+## 1. 安装 CentOS 7.x
 
     略。
 
-#### **2. 安装 docker**
+## 2. 安装 docker
 
 详见： [How to Install Docker on CentOS 6.x](https://samzong.me/2016/07/07/HowTo-Install-Docker-on-CentOS-6-x/)
 
-#### **3. 基础 docker 命令**
+## 3. 基础 docker 命令
 
-```
-＃ 获取centos6 docker镜像
-[root@docker ~]# docker pull centos6
+获取 centos6 docker 镜像
+
+```bash
+root@docker ~ docker pull centos6
 Using default tag: latest
 latest: Pulling from library/centos:centos6
 
@@ -32,14 +33,21 @@ latest: Pulling from library/centos:centos6
 183b0bfcd10e: Pull complete
 Digest: sha256:c6674c44c6439673bf56536c1a15916639c47ea04c3d6296c5df938add67b54b
 Status: Downloaded newer image for centso:centos6
+```
 
-＃ 查看当前服务器上的docker镜像
+查看当前服务器上的 docker 镜像
+
+```bash
 [root@docker ~]# docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 centos6-visionet    latest              aeed37612ecb        6 hours ago         1.916 GB
 centos              centos6             a3c09d36ab4a        2 days ago          194.6 MB
 registry            latest              c6c14b3960bd        3 days ago          33.28 MB
-＃ 查找docker镜像
+```
+
+查找 docker 镜像
+
+```bash
 [root@docker ~]# docker search centos:centos6
 NAME                                     DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
 imagine10255/centos6-lnmp-php56          centos6-lnmp-php56                              10                   [OK]
@@ -49,15 +57,24 @@ guyton/centos6                           From official centos6 container with fu
 paijp/centos6-apache-php-sqlite2         php5.3.3 with sqlite2 and apache on CentOS...   1                    [OK]
 edrans/centos6                                                                           1                    [OK]
 mohri1219/centos6.7-ruby2.2.2-mysql5.6   centos6.7-ruby2.2.2-mysql5.6                    1                    [OK]
-...
-...
+```
 
-＃ 删除 centos6 docker镜像
+删除 centos6 docker 镜像
+
+```bash
 [root@docker ~]# docker rmi IMAGES_NAME
 [root@docker ~]# docker rmi centos:centos6
-# 报错无法删除
+```
+
+报错如下
+
+```text
 Error response from daemon: conflict: unable to remove repository reference "centos" (must force) - container 705a30cbc002 is using its referenced image 42118e3df429
-# 这是因为之间的运行的进程没有清楚导致该images正在使用中，使用一下命令查看占有的进程
+```
+
+这是因为之间的运行的进程没有清楚导致该 images 正在使用中，使用一下命令查看占有的进程
+
+```bash
 [root@docker ~]# docker ps -a ＃ 查看所有的docker进程
 CONTAINER ID        IMAGE               COMMAND               CREATED             STATUS                     PORTS               NAMES
 705a30cbc002        centos:centos6              "/bin/bash"           6 minutes ago       Exited (0) 6 minutes ago                       centos6
@@ -72,21 +89,25 @@ Deleted: sha256:8945af30572845a904adce2aeaf73402c842d86e99e8f10688b25cb27834110b
 Deleted: sha256:ea9f151abb7e06353e73172dad421235611d4f6d0560ec95db26e0dc240642c1
 ```
 
-#### **4. 运行一个 docker 镜像**
+## 4. 运行一个 docker 镜像
 
-#### 进入交互式程序
+### 进入交互式程序
 
-```
+```bash
 [root@docker ~]# docker run  -it centos:centos6 /bin/bash
 [root@c1d190f95562 /]# cat /etc/redhat-release
 CentOS release 6.8 (Final)
+
 # Install openssh-server and httpd
+
 root@d8c122dbe09d:/# yum install -y openssh-sever httpd
 root@d8c122dbe09d:/# exit
 
-# 注意当你执行exit，从容器之中退出时，容器也会随着关闭，这时如果还继续执行上条命令
-# 你会发现之前所有的操作都被还原，因为相对于docker，又是新开了一个进程
-# 在exit退出之后，使用一下命令查看上次提交，然后commit修改，便可保存之前的修改
+# 注意当你执行 exit，从容器之中退出时，容器也会随着关闭，这时如果还继续执行上条命令
+
+# 你会发现之前所有的操作都被还原，因为相对于 docker，又是新开了一个进程
+
+# 在 exit 退出之后，使用一下命令查看上次提交，然后 commit 修改，便可保存之前的修改
 
 [root@docker ~]# docker ps -l
 [root@docker ~]# docker commit c1d190f95562 centos:centos6-httpd
@@ -99,39 +120,43 @@ centos              centos6             a3c09d36ab4a        2 days ago          
 registry            latest              c6c14b3960bd        3 days ago          33.28 MB
 ```
 
-#### **5. 编辑 Dockerfile**
+## 5. 编辑 Dockerfile
 
-```
-# dockfile的第一行一定是FROM，指定了父镜像
+```conf
+# dockfile 的第一行一定是 FROM，指定了父镜像
+
 FROM centos:centos6
 
 # RUN 指的是运行的命令
+
 RUN yum install -y epel-release
 RUN yum install -y bash-completion
 RUN yum install -y openssh-server openssh-client sudo
 RUN sed -i 's/UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-# 增加一个用户，并赋予sudo权限
+# 增加一个用户，并赋予 sudo 权限
+
 RUN useradd visionet
 RUN echo "visionet:visionet" | chpasswd
 RUN echo "visionet   ALL=(ALL)       ALL" >> /etc/sudoers
 
-＃ 注意，如果没有执行一下两个命令，sshd是无法远程登陆的
+＃ 注意，如果没有执行一下两个命令，sshd 是无法远程登陆的
 RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 
-＃ EXPOSE 22， 将22端口暴露出来，方便ssh远程连接
+＃ EXPOSE 22，将 22 端口暴露出来，方便 ssh 远程连接
 RUN mkdir /var/run/sshd
 EXPOSE 22
 ＃ CMD 为系统内部执行命令
 CMD ["/usr/sbin/sshd", "-D"]
 ```
 
-#### **6. 生成自定义 docker 镜像**
+## 6. 生成自定义 docker 镜像
 
-```
+```bash
 # build 编译镜像
+
 [root@docker ~]# docker build -f dockerfile3 -t centos:centos6-ssh .
 Sending build context to Docker daemon 44.54 kB
 Step 1 : FROM centos:centos6
@@ -184,22 +209,25 @@ centos6-visionet    latest              aeed37612ecb        6 hours ago         
 centos              centos6             a3c09d36ab4a        2 days ago          194.6 MB
 registry            latest              c6c14b3960bd        3 days ago          33.28 MB
 
-# 后台运行docker容器，并指定nat端口转发
+# 后台运行 docker 容器，并指定 nat 端口转发
+
 [root@docker ~]# docker run -d -p 2222:22 -P --name=sshd centos:centos6-ssh
 b4211f7a304d9e34b72b510230be2c7a76b276886b488f08f3e12896a4d3c172
 
 ```
 
-#### **7. ssh 登陆到 docker 容器内，部署项目环境**
+## 7. ssh 登陆到 docker 容器内，部署项目环境
 
-```
-# inspect 查看docker 容器IP地址
+```bash
+# inspect 查看 docker 容器 IP 地址
+
 [root@docker ~]# docker inspect sshd | grep IPAddress
 [root@docker ~]# ssh visionet@172.17.0.2
 visionet@172.17.0.2's password:
 [visionet@b4211f7a304d ~]$
 
 # Install mysql
+
 # Install tomcat server
 
 [visionet@b4211f7a304d ~]$ exit
@@ -218,7 +246,8 @@ centos6-visionet    latest              aeed37612ecb        7 hours ago         
 centos              centos6-ssh         d6dccb483fa6        9 hours ago         363 MB
 centos              centos6             a3c09d36ab4a        2 days ago          194.6 MB
 registry            latest              c6c14b3960bd        3 days ago          33.28 MB
-
 ```
 
-#### **8. 推送 centos:centos6-tomcat 到私有 docker 仓库**
+## 8. 推送 centos:centos6-tomcat 到私有 docker 仓库
+
+> docker push

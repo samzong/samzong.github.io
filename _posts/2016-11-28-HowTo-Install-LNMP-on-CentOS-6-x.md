@@ -13,7 +13,7 @@ date: 2016-11-28 10:33:09
 
 #### Demo system
 
-```
+```bash
 [Alex@Test01 ~]$ uname -a
 Linux Test01 2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 [Alex@Test01 ~]$ ip addr | grep eth0
@@ -23,7 +23,7 @@ Linux Test01 2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014 x86_64 x8
 
 #### Install httpd
 
-```
+```bash
 [Alex@Test01 yum.repos.d]$ sudo yum install -y httpd
 [Alex@Test01 ~]$ rpm -qa | grep httpd
 httpd-2.2.15-39.el6.centos.x86_64
@@ -37,7 +37,7 @@ httpd-tools-2.2.15-39.el6.centos.x86_64
 
 #### Configure httpd . Replace the server name to you own one
 
-```
+```bash
 [Alex@Test01 ~]# sudo vi /etc/httpd/conf/httpd.conf
 # line 44: change
  ServerTokens Prod
@@ -62,16 +62,16 @@ httpd-tools-2.2.15-39.el6.centos.x86_64
 
 #### create a HTML test page
 
-```
+```bash
 [Alex@Test01 ~]# sudo vi /var/www/html/index.html
 it's ok.
 ```
 
-![](http://s3.51cto.com/wyfs02/M00/70/DE/wKioL1XAUfuQoFfwAACC5LJWQgg039.jpg)
+![image](http://s3.51cto.com/wyfs02/M00/70/DE/wKioL1XAUfuQoFfwAACC5LJWQgg039.jpg)
 
 #### Install PHP
 
-```
+```bash
 [Alex@Test01 ~]$ sudo yum install -y php php-mbstring php-pear
 [Alex@Test01 ~]$ rpm -qa | grep php
 php-common-5.3.3-46.el6_6.x86_64
@@ -93,7 +93,7 @@ date.timezone = "Asia/Shanghai"
 
 #### create a php test page
 
-```
+```bash
 [Alex@Test01 ~]# sudo vi /var/www/html/index.php
 
 <?php
@@ -101,11 +101,11 @@ date.timezone = "Asia/Shanghai"
 ?>
 ```
 
-![](http://s3.51cto.com/wyfs02/M02/70/DE/wKioL1XAUguwJCl2AARE16t4hyw682.jpg)
+![image](http://s3.51cto.com/wyfs02/M02/70/DE/wKioL1XAUguwJCl2AARE16t4hyw682.jpg)
 
 #### Install MySQL
 
-```
+```bash
 [Alex@Test01 ~]$ sudo -y install mysql-server
 [Alex@Test01 ~]$ rpm -qa | grep mysql-server
 mysql-server-5.1.73-5.el6_6.x86_64
@@ -147,7 +147,7 @@ Starting mysqld:                      [  OK  ]
 
 #### Initial settings for MySQL
 
-```
+```bash
 [root@www ~]#mysql_secure_installation
 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MySQL
       SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!

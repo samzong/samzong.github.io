@@ -20,7 +20,7 @@ s3cmd 是非常优秀的 S3 命令行管理工具，用 python 编写，支持 p
 
 ### 1. 无论是 Denbian 系还是 Rehat 系列，软件仓库内已经加入了 s3cmd
 
-```
+```bash
 # 1.1 Ubuntu & Debian
 $ sudo apt-get install -y s3cmd
 
@@ -34,7 +34,7 @@ $ sudo yum install s3cmd
 
 ### 1. 第一次运行 s3cmd 需要首先预配置相关 s3 信息
 
-```
+```bash
 s3cmd --configure
 ```
 
@@ -51,7 +51,7 @@ s3cmd --configure
 
 笔者在第一次运行时，始终无法添加成功，报错信息如下：
 
-```
+```bash
  ERROR: Test failed: 403 (InvalidAccessKeyId): The AWS Accecc Key Id you provided does not exist in our records.
 ```
 
@@ -61,7 +61,7 @@ s3cmd --configure
 - Save settings? [y/N] 选择“y”
 - 保存设置之后，编辑配置文件（~/.s3cfg ) 修改其中的如下字段，并将其中%(bucket)s 用您实际的某一个存储桶名字代替掉
 
-```
+```bash
 bucket_location = %(location)
 host_base = s3.cn-north-1.amazonaws.com.cn
 host_bucket = %(bucket)s.s3.cn-north-1.amazonaws.com.cn
@@ -70,7 +70,7 @@ website_endpoint = http://%(bucket)s.s3-website-%(location)s.amazonaws.com.cn/
 
 例如，你的存储桶的名字为 s3chinatest: 地域为北京。
 
-```
+```bash
 bucket_location = cn-north-1
 host_base = s3.cn-north-1.amazonaws.com.cn
 host_bucket = s3chinatest.s3.cn-north-1.amazonaws.com.cn
@@ -79,7 +79,7 @@ website_endpoint = http://s3chinatest.s3-website.amazonaws.com.cn/
 
 ### 3. 保存配置文件，然后用命令测试一下，确认 s3cmd 可以正常工作
 
-```
+```bash
 $ s3cmd ls
 2016-11-18 22:30 s3://s3chinatest
 2016-10-29 00:14 s3://bucket2
@@ -89,7 +89,7 @@ $ s3cmd ls
 
 ### 1. 查看当前账户下所有现有的桶 (bucket)
 
-```
+```bash
 $ s3cmd ls
 2016-11-18 22:30 s3://s3chinatest
 2016-10-29 00:14 s3://bucket2
@@ -97,7 +97,7 @@ $ s3cmd ls
 
 ### 2. 创建新的 bucket
 
-```
+```bash
 $ s3cmd mb s3://s3chinatest2
 
 Bucket ’s3://s3chinatest2/’ created
@@ -105,7 +105,7 @@ Bucket ’s3://s3chinatest2/’ created
 
 ### 3. 上传文件到 bucket
 
-```
+```bash
 $ s3cmd put file1.txt file2.txt file3.txt s3://s3chinatest2
 upload: 'file1.txt' -> 's3://s3chinatest2/file1.txt'  [1 of 3]
  2432 of 2432   100% in    0s    43.27 kB/s  done
@@ -120,10 +120,10 @@ upload: 'file3.txt' -> 's3://s3chinatest2/file3.txt'  [3 of 3]
 2016-11-18 15:11      2432   s3://s3chinatest2/file3.txt
 ```
 
-上传的文件默认访问权限为私有 (private)，只能用户自己可以访问，使用正确的访问和安全密码即可。<br>
+上传的文件默认访问权限为私有 (private)，只能用户自己可以访问，使用正确的访问和安全密码即可。
 如果要上传公开访问权限的文件，需要添加 --acl-public 参数。
 
-```
+```bash
 $ s3cmd put  --acl-public file4.txt s3://s3chinatest2
 upload: 'file4.txt' -> 's3://s3chinatest2/file1.txt'  [1 of 1]
  2432 of 2432   100% in    0s    43.27 kB/s  done
@@ -131,7 +131,7 @@ upload: 'file4.txt' -> 's3://s3chinatest2/file1.txt'  [1 of 1]
 
 ### 4. 下载 bucket 内的文件
 
-```
+```bash
 $ s3cmd get s3://s3chinatest2/file1.txt
 download: 's3://s3chinatest2/file1.txt' -> './file1.txt'  [1 of 1]
  2432 of 2432   100% in    0s    27.65 kB/s  done
@@ -150,7 +150,7 @@ download: 's3://s3chinatest2/file3.txt' -> './file3.txt'  [3 of 3]
 
 ### 5. 删除 bucket 内的文件
 
-```
+```bash
 # del 与 rm 都可以使用.
 $ s3cmd del s3://s3chinatest2/file1.txt
 delete: 's3://s3chinatest2/file1.txt'
@@ -158,7 +158,7 @@ delete: 's3://s3chinatest2/file1.txt'
 
 ### 6. 获取当前 bucket 信息
 
-```
+```bash
 # bucket的存储位置及访问权限设置
 s3cmd info s3://s3chinatest2
 s3://s3chinatest2/ (bucket):
@@ -174,7 +174,7 @@ s3://s3chinatest2/ (bucket):
 
 当用 s3cmd 下载一个加密过的文件时，它会自动检测加密并在下载过程解密，因此下载和访问加密文件时，就像通常所做的一样
 
-```
+```bash
 $ s3cmd -e put t_result.java s3://s3chinatest2
 upload: '/tmp/tmpfile-S9lUXERAEUdnNaz5zHba' -> 's3://s3chinatest2/t_result.java'  [1 of 1]
  3355 of 3355   100% in    0s    39.25 kB/s  done
@@ -182,14 +182,14 @@ upload: '/tmp/tmpfile-S9lUXERAEUdnNaz5zHba' -> 's3://s3chinatest2/t_result.java'
 
 ### 8. 查看 bucket 使用情况
 
-```
+```bash
 $ s3cmd du s3://s3chinatest2
 8219     3 objects s3://s3chinatest2/
 ```
 
 ### 9. 删除一个 bucket
 
-```
+```bash
 $ s3cmd rb s3://s3chinatest2
 ERROR: S3 error: 409 (BucketNotEmpty): The bucket you tried to delete is not empty
 # 默认不能删除非空的bucket，所以要先清空存储桶内数据

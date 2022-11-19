@@ -10,58 +10,54 @@ categories:
 date: 2016-04-20 21:31:49
 ---
 
-###### Update
+## Update
 
-* <font color=red>update: Windows 用户在初始化 Souretree 工具时，需要用到 Atlassian ID，新建用户时需要加载 google 验证码，这一步需要 VPN 的支持，请注意。</font>
+* update: Windows 用户在初始化 Souretree 工具时，需要用到 Atlassian ID，新建用户时需要加载 google 验证码，这一步需要 VPN 的支持，请注意。
 * 找到一个版本的 SourceTree 工具可以不需要以上验证也能使用，下载链接：[SourceTreeSetup_1.6.14.exe](http://pan.baidu.com/s/1eRDMgEY) 密码：c5l4
 
-<br>
-
-##### 补充 1：Git 学习网站
+### 补充 1：Git 学习网站
 
 1. [猴子都能学会的 git 教程](http://backlogtool.com/git-guide/cn/)
 2. [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
 3. [廖雪峰的 git 教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 4. [Why Git is Better than X](http://zoomq.qiniudn.com/ZQScrapBook/ZqFLOSS/data/20081210180347/)
 
-##### 补充 2：利用 Git 协同开发
+### 补充 2：利用 Git 协同开发
 
 1. [团队中的 Git 实践](https://ourai.ws/posts/working-with-git-in-team/)
 2. [Git 使用规范流程](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
 3. [Git 分支管理模型](http://nvie.com/files/Git-branching-model.pdf)
 4. [图解 Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
 
-<hr>
+## 关于 SourceTree
 
-## 1. 关于 SourceTree
-
-#### SourceTree 是一款免费且同时支持 Windows 和 Mac 的 git 项目管理软件，本文旨在给大家介绍这款应用的基础使用，并用它来管理你的项目
+SourceTree 是一款免费且同时支持 Windows 和 Mac 的 git 项目管理软件，本文旨在给大家介绍这款应用的基础使用，并用它来管理你的项目
 
 >官网： <https://www.sourcetreeapp.com/>
 
-## 2. git 帐号建立
+## git 帐号建立
 
-### 1. 新员工入职之后，你的公司邮箱内会收到一封来自 Gitlab 的邮件，如下图
+### 新员工入职之后，你的公司邮箱内会收到一封来自 Gitlab 的邮件，如下图
 
 ![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016%2F04%2Fsourcetree02.jpg)
 
-### 2. 点击邮件中的“Click here to set your password”，设置 gitlab 登陆密码
+### 点击邮件中的“Click here to set your password”，设置 gitlab 登陆密码
 
 ![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016%2F04%2Fsouretree03.jpg)
 
-### 3. 登陆 gitlab 帐号，将会出现这个界面
+### 登陆 gitlab 帐号，将会出现这个界面
 
 ![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016%2F04%2Fsourcetree05.jpg)
 
-### 4. 设定个人信息
+### 设定个人信息
 
 ![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016%2F04%2Fsouretree06.jpg)
 
-### 5. sshKey
+### sshKey
 
-#### 5.1 在 Linux 和 Mac 上生成 sshkey
+#### 在 Linux 和 Mac 上生成 sshkey
 
-```
+```bash
 ➜  ~ ssh-keygen -t rsa
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/Alex/.ssh/id_rsa):

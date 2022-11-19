@@ -10,7 +10,7 @@ categories:
 date: 2016-08-13 06:12:43
 ---
 
-```
+```shell
 #!/bin/bash
 
 #

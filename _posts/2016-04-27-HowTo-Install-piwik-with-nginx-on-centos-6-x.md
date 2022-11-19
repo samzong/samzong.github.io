@@ -12,7 +12,7 @@ date: 2016-04-27 16:00:44
 
 ### This is my nginx config
 
-```
+```conf
 server {
  listen blog.ultraera.org:80;
  server_name blog.ultraera.org;

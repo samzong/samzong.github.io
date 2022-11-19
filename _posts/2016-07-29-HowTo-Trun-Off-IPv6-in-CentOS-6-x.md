@@ -60,11 +60,9 @@ NETWORKING_IPV6=no
 #::1   localhost localhost6 localhost6.localdomain6
 ```
 
-<br>
-
 ## 2. CentOS 7.x
 
-#### Setup 1. 修改 grub 文件，在启动引导时不加载 ipv6
+### Setup 1. 修改 grub 文件，在启动引导时不加载 ipv6
 
 ```bash
 [root@ultraera ~]# vim /etc/default/grub
@@ -93,5 +91,4 @@ reboot
 ```
 
 > IPv6 是默认支持的，所以当你要重新开起 IPv6 支持时，将以上添加的指令注释掉即可。
-
-> <font color=red><b>之前碰到过安装某些服务时，不能启动，后来检查原因是因为关闭 ipv6 的问题，因为在这些服务的 conf 文件，指定了类似监听 ipv6，因为关闭了 ipv6 导致服务无法启动，将其关闭即可。<b></font>
+> **之前碰到过安装某些服务时，不能启动，后来检查原因是因为关闭 ipv6 的问题，因为在这些服务的 conf 文件，指定了类似监听 ipv6，因为关闭了 ipv6 导致服务无法启动，将其关闭即可。**

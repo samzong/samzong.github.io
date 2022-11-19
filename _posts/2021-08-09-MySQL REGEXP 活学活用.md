@@ -10,15 +10,15 @@ url: https://www.yuque.com/samzong/code/gc1atk
 
 `REGEXP` 在 MySQL 中使用的正则表达式标识符，有着非常丰富的使用路径，代替`like`将有非常大的使用空间
 
-## 梅里埃强制增加定位域名备案
+## 强制增加定位域名备案
 
 > 增加域名备案到页脚
 
 ```html
 <div style="width: 100%; text-align: center; position:absolute; bottom:0; margin: auto;">
-   <p>
-       Copyright 2021 © 上海微企信息技术股份有限公司。<a href="https://beian.miit.gov.cn">沪 ICP 备 12042952 号 -18</a>  All Rights Reserved
-   </p>
+   
+       Copyright 2021 © 上海微企信息技术股份有限公司。<a href="https://beian.miit.gov.cn">沪 ICP 备 12042952 号 -18`  All Rights Reserved
+   
 </div>
 ```
 

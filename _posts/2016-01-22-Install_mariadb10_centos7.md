@@ -13,7 +13,7 @@ CentOS 7.x 默认的 MariaDB 版本是 5.5，但是在有些情况我们需要�
 
 #### 创建 MariaDB 10.1 的 Yum 源
 
-```
+```bash
 cat <<EOF | sudo tee -a /etc/yum.repos.d/MariaDB.repo
 # MariaDB 10.1 CentOS repository list
 # http://downloads.mariadb.org/mariadb/repositories/
@@ -29,20 +29,20 @@ EOF
 
 #### 使用 Yum 安装 MariaDB 10.1 即可
 
-```
+```bash
 sudo yum install MariaDB-server MariaDB-client -y
 ```
 
 #### 启动 MariaDB 并设置为开机自启动
 
-```
+```bash
 sudo systemctl start mariadb.service
 sudo systemctl enable mariadb.service
 ```
 
 #### 初始化 MariaDB 设置
 
-```
+```bash
 sudo /usr/bin/mysql_secure_installation
 
 # 回答以下问题，请记住你的数据库root用户密码:

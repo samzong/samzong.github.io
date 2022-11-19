@@ -58,7 +58,7 @@ docker search ubuntu
 
 ### **1. Faild to start docker on CentOS 6.x**
 
-<code>***/usr/bin/docker: relocation error: /usr/bin/docker: symbol dm_task_get_info_with_deferred_remove, version Base not defined in file libdevmapper.so.1.02 with link time reference***</code>
+`***/usr/bin/docker: relocation error: /usr/bin/docker: symbol dm_task_get_info_with_deferred_remove, version Base not defined in file libdevmapper.so.1.02 with link time reference***`
 
 ```bash
 the lib-device-mapper that you have isn't exporting a symbol ("Base") that Docker needs.
@@ -71,7 +71,7 @@ sudo yum install device-mapper-event-libs
 
 ### **2. Faild to use docker**
 
-<code>***Get <http:///var/run/docker.sock/v1.19/info>: dial unix /var/run/docker.sock: no such file or directory. Are you trying to connect to a TLS-enabled daemon without TLS?***</code>
+`***Get <http:///var/run/docker.sock/v1.19/info>: dial unix /var/run/docker.sock: no such file or directory. Are you trying to connect to a TLS-enabled daemon without TLS?***`
 
 ```bash
 # this is because docker no restart ok.
