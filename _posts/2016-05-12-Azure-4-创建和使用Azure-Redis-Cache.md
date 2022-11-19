@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 创建和使用Azure Redis Cache
+title: 创建和使用 Azure Redis Cache
 tags: 
     - Azure
 categories: 
@@ -10,9 +10,9 @@ date: 2016-05-12 06:12:02
 ---
 
 
-我们以管理员身份，运行PowerShell，执行以下命令。实现创建Standard类型，大小为13GB的Redis Cache
+我们以管理员身份，运行 PowerShell，执行以下命令。实现创建 Standard 类型，大小为 13GB 的 Redis Cache
 
-```
+```bash
 #弹出界面输入用户名密码
 Add-AzureAccount -Environment AzureChinaCloud
 

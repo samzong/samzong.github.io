@@ -10,25 +10,25 @@ categories:
 permalink: /2017/11/15/howto-user-ssr-on-mac/
 ---
 
-应邀制作一份关于Mac SSR的连接使用。
+应邀制作一份关于 Mac SSR 的连接使用。
 
 ## 准备
 
-1. SSR 服务提供商，[SSGlobal](http://www.ssglobal.co/wp/) ，你可以到Telegram加入我们。[SSGlobal Group](https://t.me/joinchat/ESwgR0Ckp_zXMCuRKqykqA)
-2. MacOS 版本 10.12.6，经过实测OS版本对实际使用影响并不大。
+1. SSR 服务提供商，[SSGlobal](http://www.ssglobal.co/wp/) ，你可以到 Telegram 加入我们。[SSGlobal Group](https://t.me/joinchat/ESwgR0Ckp_zXMCuRKqykqA)
+2. MacOS 版本 10.12.6，经过实测 OS 版本对实际使用影响并不大。
 3. SSR Client， [下载](http://www.ssglobal.co/wp/wp-content/uploads/2017/02/ShadowsocksX-NG-R8.dmg)
 
-## SSR服务
+## SSR 服务
 
-如果你需要科学上网的话，非常愿意给你推荐我正在使用的SSR服务商，但是由于其官方网站和客户沟通工具TG需要科学上网才能使用，所以你可以联系到我来介绍你们。
+如果你需要科学上网的话，非常愿意给你推荐我正在使用的 SSR 服务商，但是由于其官方网站和客户沟通工具 TG 需要科学上网才能使用，所以你可以联系到我来介绍你们。
 
 最新定价计划：
 
-* Plan-A：**¥15.00元**，1个月，无限流量，不限速，可自助切换节点。
-* Plan-B：**¥15.00元**，3个月，6G流量包，不限速，可自助切换节点。
-* 增加线路：**¥8.00元**，1个月，1条。
+* Plan-A：**¥15.00 元**，1 个月，无限流量，不限速，可自助切换节点。
+* Plan-B：**¥15.00 元**，3 个月，6G 流量包，不限速，可自助切换节点。
+* 增加线路：**¥8.00 元**，1 个月，1 条。
 
-> 注：增加线路仅支持Plan-A用户配套购买，不超过主线路最长期限，不足1个月剩余时限用户不支持购买
+> 注：增加线路仅支持 Plan-A 用户配套购买，不超过主线路最长期限，不足 1 个月剩余时限用户不支持购买
 
 ### 注册账号
 
@@ -36,7 +36,7 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 ![05](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/x6fbl.jpg)
 
-> 这里alexman@mac.local 仅仅是演示邮箱，请填写对应属于你的邮箱.
+> 这里 alexman@mac.local 仅仅是演示邮箱，请填写对应属于你的邮箱。
 
 当你点击提交完成后，在你的邮箱会收到一封激活邮件，点击其中链接或将链接复制到浏览器中即可激活。
 
@@ -62,7 +62,7 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 ## SSR Client 安装
 
-在本文最上面已经有了，如何下载SSR 客户端的地方，细心的朋友，应该已经在SSGlobal官网上找到了对应下载页面，其中包含全平台的客户端工具。
+在本文最上面已经有了，如何下载 SSR 客户端的地方，细心的朋友，应该已经在 SSGlobal 官网上找到了对应下载页面，其中包含全平台的客户端工具。
 
 ### 下载
 
@@ -70,13 +70,13 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 ![01](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/bc4jy.jpg)
 
-下载完成后，找到你的下载文件，双击打开，将程序拖到Mac程序目录即完成安装，和Mac其他软件安装并无不同。
+下载完成后，找到你的下载文件，双击打开，将程序拖到 Mac 程序目录即完成安装，和 Mac 其他软件安装并无不同。
 
 ![02](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/p7wkf.jpg)
 
 ## 启动程序
 
- 在Launchpad中找到最近安装的 Shadowsocks NG R8，点击启动后，Mac右上角导航栏中会有一个小飞机的图标，点击可以看到以下信息：
+ 在 Launchpad 中找到最近安装的 Shadowsocks NG R8，点击启动后，Mac 右上角导航栏中会有一个小飞机的图标，点击可以看到以下信息：
 
 ![03](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/iycjw.jpg)
 
@@ -84,21 +84,21 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 ## 编辑订阅信息
 
-选择编辑订阅信息，然后将你在SSGlobal 网站后台拿到的订阅信息添加到其中
+选择编辑订阅信息，然后将你在 SSGlobal 网站后台拿到的订阅信息添加到其中
 
 ![09](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/7bbj6.jpg)
 
-> 注意只要添加URL信息即可，不需要修改其他。
+> 注意只要添加 URL 信息即可，不需要修改其他。
 
 然后选择手动更新订阅，这里在你的服务列表内，就有了你的服务器节点信息，选择对应节点即可开启科学上网
 
 ### PAC 规则
 
-首次使用PAC需要更新一次PAC规则，操作如下图。
+首次使用 PAC 需要更新一次 PAC 规则，操作如下图。
 
 ![10](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/gzrb5.jpg)
 
-这里的PAC规则是从GFWLists更新的，由于其更新速度较慢，所以如果日常使用发现某些网站无法使用，可以手动添加到PAC规则内
+这里的 PAC 规则是从 GFWLists 更新的，由于其更新速度较慢，所以如果日常使用发现某些网站无法使用，可以手动添加到 PAC 规则内
 
 ![11](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/9rhe6.jpg)
 

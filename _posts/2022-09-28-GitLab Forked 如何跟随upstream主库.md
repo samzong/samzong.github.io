@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GitLab Forked 如何跟随upstream主库
+title: GitLab Forked 如何跟随 upstream 主库
 tags:
   - Git
 category:
@@ -18,15 +18,15 @@ url: https://www.yuque.com/samzong/code/vfu56m
 
 ## Github 的实现方式
 
-熟悉 Github 的同学会发现，在 Github 上最近更新了 `Sync fork`的功能，通过简单的点击操作，即可完成对源库(upstream) 的更新同步。
+熟悉 Github 的同学会发现，在 Github 上最近更新了 `Sync fork`的功能，通过简单的点击操作，即可完成对源库 (upstream) 的更新同步。
 ![CleanShot 2022-09-28 at 10.01.33.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1664330528512-563a5536-1734-4fd0-b41c-9c5d121327e0.jpeg?x-oss-process=image/resize,w_960,m_lfit "当 upstream 超前时，提示 update branch")
 通过以上方式，我们可以方便在跟随主库的更新
 
-> Tips Github 的方式，仅在 Web端 和 Github CLI 官方提供的 GH 才可以使用这样的功能
+> Tips Github 的方式，仅在 Web 端 和 Github CLI 官方提供的 GH 才可以使用这样的功能
 
 ## No Github, When Gitlab ?
 
-Github 更多在开源项目时贡献，实际上，在我们日常的工作当中，更多会有自建的Gitlab或者其他的代码 Hub，这里以 Gitlab 为例
+Github 更多在开源项目时贡献，实际上，在我们日常的工作当中，更多会有自建的 Gitlab 或者其他的代码 Hub，这里以 Gitlab 为例
 
 ![CleanShot 2022-09-28 at 10.19.20.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1664331575915-853554f5-c047-4f14-8e79-67e2214429bc.jpeg?x-oss-process=image/resize,w_960,m_lfit "gitlab 默认项目首页")
 Gitlab 并未提供 Sync fork 的功能，所以我们需要自行解决同步的需求

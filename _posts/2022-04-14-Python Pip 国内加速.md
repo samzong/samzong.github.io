@@ -19,7 +19,7 @@ url: https://www.yuque.com/samzong/code/python-pip-guo-nei-jia-su
 pip install pandas -i http://pypi.douban.com/simple
 ```
 
-## 修改默认的pip源
+## 修改默认的 pip 源
 
 ```bash
 
@@ -33,4 +33,4 @@ trusted-host = pypi.tuna.tsinghua.edu.cn
 EOF
 ```
 
-文件保存后，pip的源就更新成功了，使用 `pip config list` 确认下是否切换成功
+文件保存后，pip 的源就更新成功了，使用 `pip config list` 确认下是否切换成功

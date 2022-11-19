@@ -29,16 +29,16 @@ soup.select(class="class_name")
 # 查询某个特定的 id 的方法，查询条件前加上#
 soup.select("#id_name")
 
-# 通过使用类名来进行查找，查询条件前加上.
+# 通过使用类名来进行查找，查询条件前加上。
 soup.select(".class_name")
 
 
 --- 组合条件查询，用于缩小范围 ---
 
-# 仅在Head内查询p标签
+# 仅在 Head 内查询 p 标签
 soup.select("head p")
 
-# 仅在body中的h6标签中查找a标签
+# 仅在 body 中的 h6 标签中查找 a 标签
 soup.select("body h6 a")
 ```
 
@@ -70,13 +70,13 @@ for user in list:
  print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠</a>
 ```
 
-- 比如要打印出上述的user-id，可以使用  `print(user['user-id'])`
-- 比如要打印出上述的title，可以使用  `print(user['title'])`
+- 比如要打印出上述的 user-id，可以使用  `print(user['user-id'])`
+- 比如要打印出上述的 title，可以使用  `print(user['title'])`
 
-# 打印HTML Tag 内的文本
+# 打印 HTML Tag 内的文本
 
 ```python
-# .string   在获取到的tag后面增加
+# .string   在获取到的 tag 后面增加
 
 for user in list:
  print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠</a>

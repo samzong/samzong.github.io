@@ -8,29 +8,29 @@ categories:
     - MySQL
 ---
 
-mysql是一个免费、开源中一款非常优秀关系型数据库，在现在的互联网中使用的非常广泛，无论是大型IT项目还是个人开发者的小项目，mysql都能很好的协助人们处理数据库相关的工作，同时数据库对于我们来说是非常重要，所以经常备份数据库是一个基本的操作，这会为你或者你的团队，减少非常多不必要的麻烦。
+mysql 是一个免费、开源中一款非常优秀关系型数据库，在现在的互联网中使用的非常广泛，无论是大型 IT 项目还是个人开发者的小项目，mysql 都能很好的协助人们处理数据库相关的工作，同时数据库对于我们来说是非常重要，所以经常备份数据库是一个基本的操作，这会为你或者你的团队，减少非常多不必要的麻烦。
 
-<code>mysqldump</code>是一个简单而且非常流行的mysql全量备份方式，配合<code>crontab</code>添加自动备份任务，很好的完成了我们针对数据库备份的需求，下面我会通过一个例子来说明如何完成这项操作。
+<code>mysqldump</code>是一个简单而且非常流行的 mysql 全量备份方式，配合<code>crontab</code>添加自动备份任务，很好的完成了我们针对数据库备份的需求，下面我会通过一个例子来说明如何完成这项操作。
 
-> mysqldump是mysql自带的备份工具，所以只要你安装mysql应用包，就无需单独安装mysqldump
+> mysqldump 是 mysql 自带的备份工具，所以只要你安装 mysql 应用包，就无需单独安装 mysqldump
 
 #### 测试环境
 
-我搭建了一个Ghost博客环境，数据库采用是的Mysql，接下来我想在每天00:00执行数据库备份操作，并在备份完成之后，告诉我是否备份成功。
+我搭建了一个 Ghost 博客环境，数据库采用是的 Mysql，接下来我想在每天 00:00 执行数据库备份操作，并在备份完成之后，告诉我是否备份成功。
 
 ![](http://ww1.sinaimg.cn/large/006tKfTcgy1ffogclgk9dj30f00cq3zf.jpg)
 
 所以我们的步骤应该：
 
 1. 测试备份命令是否可以正常执行
-2. 安装测试命令行邮件工具mailx
-3. 安装计划任务工具Crontab
+2. 安装测试命令行邮件工具 mailx
+3. 安装计划任务工具 Crontab
 4. 编写备份脚本
 5. 添加计划任务
 
 #### 测试备份命令
 
-首先你要获得你要备份的数据库对应的select权限，仅需要select权限即可，mysql在管理方面，应该坚持只赋予必须权限的原则。
+首先你要获得你要备份的数据库对应的 select 权限，仅需要 select 权限即可，mysql 在管理方面，应该坚持只赋予必须权限的原则。
 
 ```mysql
 mysql> grant select on ghost.* to 'ghost_backuser'@'localhost' identified by 'backupPass';
@@ -93,9 +93,9 @@ mysql> select name from users;
 1 row in set (0.00 sec)
 ```
 
-测试<code>mysqldump</code>备份命令，注意mysqldump备份会锁表，但对于正在工作的数据库，锁表会影响到正常业务，所以我们可以使用<code>--single-transaction</code>参数，不锁表备份。
+测试<code>mysqldump</code>备份命令，注意 mysqldump 备份会锁表，但对于正在工作的数据库，锁表会影响到正常业务，所以我们可以使用<code>--single-transaction</code>参数，不锁表备份。
 
-```shell
+```bash
 ➜  ~ mysqldump -u ghost_backuser -pbackupPass ghost > ghost.bak.sql
 Warning: Using a password on the command line interface can be insecure.
 mysqldump: Got error: 1044: Access denied for user 'ghost_backuser'@'localhost' to database 'ghost' when using LOCK TABLES
@@ -107,36 +107,36 @@ total 780K
 ➜  ~
 ```
 
-#### 安装命令行邮件工具mailx
+#### 安装命令行邮件工具 mailx
 
-安装mailx 在CentOS/RehHat:
+安装 mailx 在CentOS/RehHat:
 
-```shell
+```bash
 ➜  ~ yum install -y mailx
 ```
 
 测试发送邮件：
 
-```shell
+```bash
 ➜  ~ echo "test" | mail -s "this a test email" samzong.lu@gmail.com
 ```
 
 ![](http://ww2.sinaimg.cn/large/006tKfTcgy1ffogc7wksdj30ms03t3ym.jpg)
 
-#### 安装计划任务工具Crontab
+#### 安装计划任务工具 Crontab
 
-crontab命令常见于Unix和类Unix的操作系统之中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于“crontab”文件中。通常，crontab储存的指令被守护进程激活， crond常常在后台运行，每一分钟检查是否有预定的作业需要执行。这类作业一般称为cron jobs。
+crontab 命令常见于 Unix 和类 Unix 的操作系统之中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于“crontab”文件中。通常，crontab 储存的指令被守护进程激活，crond 常常在后台运行，每一分钟检查是否有预定的作业需要执行。这类作业一般称为 cron jobs。
 
 ```bash
 ➜  ~ yum install vixie-cron
 ➜  ~ yum install crontabs
 ```
 
-> vixie-cron软件包是cron的主程序；
+> vixie-cron 软件包是 cron 的主程序；
 >
-> crontabs软件包是用来安装、卸装、或列举用来驱动 cron 守护进程的表格的程序。
+> crontabs 软件包是用来安装、卸装、或列举用来驱动 cron 守护进程的表格的程序。
 
-启动crond并设置为开机自启动：
+启动 crond 并设置为开机自启动：
 
 ```bash
 ➜  ~ service crond start
@@ -212,7 +212,7 @@ crontab 的一些例子：
 
 好了，以上我们测试需要用到的各个模块，下面我们要编写备份脚本：
 
-```shell
+```bash
 #!/bin/bash
 #  mysqldump scripts.
 # filepath: /usr/local/bin/ghost_sqldump.sh
@@ -239,7 +239,7 @@ else
 fi
 ```
 
-注意脚本中的以下内容要根据你的实际情况修改:
+注意脚本中的以下内容要根据你的实际情况修改：
 
 * -h " "  这是数据库所在的主机
 * -u " "       这是数据库可备份的用户名
@@ -247,14 +247,14 @@ fi
 
 #### 添加计划任务
 
-经过以上测试，已经很好的完成备份脚本，接下来将脚本添加到crontab内，并设置自动执行的时间：
+经过以上测试，已经很好的完成备份脚本，接下来将脚本添加到 crontab 内，并设置自动执行的时间：
 
 ```bash
 ➜  ~ crontab -e
 00 00 * * * sh /usr/local/bin/ghost_sqldump.sh
 ```
 
-重启crontab服务，并确认crontab已经设置为开机自启动
+重启 crontab 服务，并确认 crontab 已经设置为开机自启动
 
 ```bash
 ➜  ~ service crond restart

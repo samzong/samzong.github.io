@@ -20,7 +20,7 @@ brew install yt-dlp/taps/yt-dlp
 
 `yt-dlp` 是从 `youtube-dl` 分支出来的版本，提供持续更新和向前兼容，在友好型上做了优化；仅需要将所有安装命令中 `youtube-dl` 替换为 `yt-dlp`
 
-如果你还是喜欢使用 youtube-dl，可以使用以下命令将程序默认替换，同时不影响你的使用:
+如果你还是喜欢使用 youtube-dl，可以使用以下命令将程序默认替换，同时不影响你的使用：
 
 ```sh
 ➜  ~ alias youtube-dl=yt-dlp
@@ -53,7 +53,7 @@ xcode-select: error: command line tools are already installed, use "Software Upd
 
 ## Homebrew 依赖
 
-[Homebrew](https://brew.sh/index_zh-cn.html) 是一个macOS 上的软件包管理工具，通过命令行的方式安装和卸载软件，大部分的流行软件都提供了 Homebrew 的安装方式，也是开源世界里安装和更新软件的主流方式；
+[Homebrew](https://brew.sh/index_zh-cn.html) 是一个 macOS 上的软件包管理工具，通过命令行的方式安装和卸载软件，大部分的流行软件都提供了 Homebrew 的安装方式，也是开源世界里安装和更新软件的主流方式；
 
 ### [Homebrew](https://brew.sh/index_zh-cn.html)
 
@@ -80,7 +80,7 @@ brew install ffmpeg
 
 ## youtube-dl 的基本用法
 
-前 3 步结束已经可以用命令行下载视频了，这里介绍几个常用的命令，更多的命令用法在官网都有介绍 ，查看 Github 更全的操作指引 [Document](https://github.com/ytdl-org/youtube-dl/blob/master/README.md#description)
+前 3 步结束已经可以用命令行下载视频了，这里介绍几个常用的命令，更多的命令用法在官网都有介绍，查看 Github 更全的操作指引 [Document](https://github.com/ytdl-org/youtube-dl/blob/master/README.md#description)
 
 ```sh
 ➜  ~ youtube-dl -h | grep Options

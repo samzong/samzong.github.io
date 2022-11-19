@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用Python3格式化大型json文件
+title: 使用 Python3 格式化大型 json 文件
 tags:
   - Python
 category:
@@ -8,10 +8,10 @@ category:
 url: https://www.yuque.com/samzong/code/zoedwm
 ---
 
-当单个甚至单行Json文件大小超过100M时，无论是哪个文本编辑器在处理时都会显得吃力，接下来介绍一种非常方便的方式，快速格式化大型Json文件。
+当单个甚至单行 Json 文件大小超过 100M 时，无论是哪个文本编辑器在处理时都会显得吃力，接下来介绍一种非常方便的方式，快速格式化大型 Json 文件。
 
 :::info
-Python 自带json-tool 在转换是会导致中文乱码，以下在原有基础上进行了优化，并增加中文支持
+Python 自带 json-tool 在转换是会导致中文乱码，以下在原有基础上进行了优化，并增加中文支持
 :::
 
 ### No BB, Show Code
@@ -71,6 +71,6 @@ if __name__ == '__main__':
 
 将以上代码文件保存为 json-tool.json，然后使用 Python3 运行即可
 
-```shell
+```bash
 python3 json-tool.json 190720_190730.json 06.json
 ```

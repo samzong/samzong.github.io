@@ -13,7 +13,7 @@ date: 2016-08-04 13:14:15
 #### 介绍
 
 <p>
-MariaDB Galera Cluster 是一套在MySQL InnoDB存储引擎上面实现multi-master及数据实时同步的系统架构，业务层面无需做读写分离工作，数据库读写压力都能按照既定的规则分发到 各个节点上去。在数据方面完全兼容 MariaDB 和 MySQL。使用MariaDB Galera的解决方案，可以方便快速的搭建出高可用的数据库Cluster，不是主备模式，而是双活模式，也就是说，没有主节点和备份节点，每个节点都可以看做是主节点，都可以进行读写，由Galera来实现底层的数据同步。
+MariaDB Galera Cluster 是一套在 MySQL InnoDB 存储引擎上面实现 multi-master 及数据实时同步的系统架构，业务层面无需做读写分离工作，数据库读写压力都能按照既定的规则分发到 各个节点上去。在数据方面完全兼容 MariaDB 和 MySQL。使用 MariaDB Galera 的解决方案，可以方便快速的搭建出高可用的数据库 Cluster，不是主备模式，而是双活模式，也就是说，没有主节点和备份节点，每个节点都可以看做是主节点，都可以进行读写，由 Galera 来实现底层的数据同步。
 </p>
 
 * 真正的多主架构，任何节点都可以进行读写
@@ -26,17 +26,17 @@ MariaDB Galera Cluster 是一套在MySQL InnoDB存储引擎上面实现multi-mas
 * Cluster node4 IP address 172.16.102.168
 * Cluster node5 IP address 172.16.102.165
 * Cluster node6 IP address 172.16.102.164
-* setenforce 0；sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
+* setenforce 0. sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 * /etc/init.d/iptables stop;chkconfig iptables off
 
-> 使用vmware 测试需注意:克隆机器需要删除 <code>/etc/udev/rules.d/70-persistent-net.rules</code> 以及<code>/etc/sysconfig/network-scripts/ifcfg-eth0</code>中的网卡mac地址选项，不然网卡起不来
+> 使用 vmware 测试需注意：克隆机器需要删除 <code>/etc/udev/rules.d/70-persistent-net.rules</code> 以及<code>/etc/sysconfig/network-scripts/ifcfg-eth0</code>中的网卡 mac 地址选项，不然网卡起不来
 
 #### 环境检测
 
-* 检查iptables状态：/etc/init.d/iptables status;chkconfig --list | grep iptables
-* 检查selinux状态：getenforce
-* 检查openssh-client包是否安装：系统中是否有ssh命令
-* 检查是否系统中含有mysql相关的包：rpm -qa | grep mysql，有的话都需要卸载掉
+* 检查 iptables 状态：/etc/init.d/iptables status;chkconfig --list | grep iptables
+* 检查 selinux 状态：getenforce
+* 检查 openssh-client 包是否安装：系统中是否有 ssh 命令
+* 检查是否系统中含有 mysql 相关的包：rpm -qa | grep mysql，有的话都需要卸载掉
 * 检查网络是否通畅：ping www.baidu.com
 
 #### 安装
@@ -59,7 +59,7 @@ MariaDB Galera Cluster 是一套在MySQL InnoDB存储引擎上面实现multi-mas
 # 依次在node5和node6上编辑/etc/hosts
 ```
 
-##### 2. 在所有node上安装 MariaDB Galera
+##### 2. 在所有 node 上安装 MariaDB Galera
 
 ```
 [root@node4 ~]# vi /etc/yum.repos.d/mariadb.repo
@@ -77,7 +77,7 @@ enabled=0
 # 依次在node5和node6上安装 MariaDB-Galera-server
 ```
 
-> <i>注意安装完成之后，不要启动mysql</i>
+> <i>注意安装完成之后，不要启动 mysql</i>
 
 ##### 3. 在其中一个节点上编辑/etc/my.cnf.d/server.cnf配置文件
 
@@ -170,11 +170,11 @@ wsrep_node_name="node6"
 Starting MySQL...SST in progress, setting sleep higher. SUCCESS!
 ```
 
-> 注意：只需要初始化第一个节点服务器的数据库，其他数据的配置文件会自动同步，所以你给node4设置的root可以在node5和node6直接使用，当然这是安装正确的前提。
+> 注意：只需要初始化第一个节点服务器的数据库，其他数据的配置文件会自动同步，所以你给 node4 设置的 root 可以在 node5 和 node6 直接使用，当然这是安装正确的前提。
 
 #### 登陆各个节点数据库检查配置是否成功
 
-server.cnf的配置如果没有问题，那么wsrep\_local\_state_comment的状态应该是Synced。
+server.cnf 的配置如果没有问题，那么 wsrep\_local\_state_comment 的状态应该是 Synced。
 
 ```
 [root@node4 ~]# mysql -u root -p
@@ -200,4 +200,4 @@ MariaDB [(none)]>
 
 #### 结论
 
-MariaDB Galera没有主节点和备份节点，配置成功之后，可以在任何一个node节点上操作会自动同步到其他节点，任何一个节点宕机不会影响其他节点的数据和稳定性，配置HAProxy设置VIP的方式来实现负载均衡，提高服务的高可用性，另外，当宕机节点上线之后，事务会自动同步不丢失。
+MariaDB Galera 没有主节点和备份节点，配置成功之后，可以在任何一个 node 节点上操作会自动同步到其他节点，任何一个节点宕机不会影响其他节点的数据和稳定性，配置 HAProxy 设置 VIP 的方式来实现负载均衡，提高服务的高可用性，另外，当宕机节点上线之后，事务会自动同步不丢失。

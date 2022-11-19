@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mac:使用命令关闭和启动AirPort
+title: Mac:使用命令关闭和启动 AirPort
 tags:
   - Mac
 category:
@@ -8,7 +8,7 @@ category:
 url: https://www.yuque.com/samzong/ap/mactips-shi-yong-ming-ling-guan-bi-he-qi-dongairpo-4701029
 ---
 
-在调试新的MacBookAir 13’时遇到一个问题，无法检测到她家的WiFi，一开始怀疑是不是无线路由器长时间未重启导致，所以重启了路由器，但是问题依然没有解决，于是我们将问题转向排查设备，因我们基本正好有iPad，iPhone，MacBook这些设备，发现唯独他的这个Macbook无法识别WiFi，后来在Google的帮助下，发现多个版本的Mac OS X都出现了类似的问题，可以通过重启AirPort解决问题，但是AirPort在System Preferences找不到选项，所以需要使用命令行来重启。
+在调试新的 MacBookAir 13’时遇到一个问题，无法检测到她家的 WiFi，一开始怀疑是不是无线路由器长时间未重启导致，所以重启了路由器，但是问题依然没有解决，于是我们将问题转向排查设备，因我们基本正好有 iPad，iPhone，MacBook 这些设备，发现唯独他的这个 Macbook 无法识别 WiFi，后来在 Google 的帮助下，发现多个版本的 Mac OS X 都出现了类似的问题，可以通过重启 AirPort 解决问题，但是 AirPort 在 System Preferences 找不到选项，所以需要使用命令行来重启。
 
 ##### **查看网络接口**
 
@@ -21,9 +21,9 @@ url: https://www.yuque.com/samzong/ap/mactips-shi-yong-ming-ling-guan-bi-he-qi-d
      media: autoselect
      status: active
 
-##### **关闭AirPort**
+##### **关闭 AirPort**
 
-有时候设备的名称是en0、en1这样，所以，可以用过设备名称来重启airport，例如en0
+有时候设备的名称是 en0、en1 这样，所以，可以用过设备名称来重启 airport，例如 en0
 
     networksetup -setairportpower en0 off
 
@@ -31,6 +31,6 @@ url: https://www.yuque.com/samzong/ap/mactips-shi-yong-ming-ling-guan-bi-he-qi-d
 
     networksetup -getairportpower en0
 
-##### **关闭AirPort**
+##### **关闭 AirPort**
 
     networksetup -setairportpower en0 on

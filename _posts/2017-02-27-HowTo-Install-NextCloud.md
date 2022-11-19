@@ -9,14 +9,14 @@ date: 2017-02-27 14:57:00
 ---
 
 
-随着最近一个云盘厂家不再提供个人服务，或者开始各种收费限速，自己存放在第三方云盘厂商的数据被盗取，数据的安全性和数据的稳定性都得不到保证，而且随着智能终端的普及，我也有一些更加高质量的图片文件需要大量储存，所以我想到了自建存储服务的方式，在甄别了OwnCloud，Seafiles和NextCloud，最后选择了NextCloud作为自己今后数据存储节点，NextCloud源自OwnCloud，但是近些年来OwnCloud的发展进度几乎停滞，多数开发者也转战NextCloud，当然NextCloud也继承了搭建简单，依赖于PHP环境的特性。
+随着最近一个云盘厂家不再提供个人服务，或者开始各种收费限速，自己存放在第三方云盘厂商的数据被盗取，数据的安全性和数据的稳定性都得不到保证，而且随着智能终端的普及，我也有一些更加高质量的图片文件需要大量储存，所以我想到了自建存储服务的方式，在甄别了 OwnCloud，Seafiles 和 NextCloud，最后选择了 NextCloud 作为自己今后数据存储节点，NextCloud 源自 OwnCloud，但是近些年来 OwnCloud 的发展进度几乎停滞，多数开发者也转战 NextCloud，当然 NextCloud 也继承了搭建简单，依赖于 PHP 环境的特性。
 
 #### **运行环境**
 
-* 阿里云ECS CentOS 6.x
-* 免费SSL证书(腾讯云申请)
+* 阿里云 ECS CentOS 6.x
+* 免费 SSL 证书 (腾讯云申请)
 
-#### **搭建LNMP环境**
+#### **搭建 LNMP 环境**
 
 ##### 软件版本
 
@@ -62,7 +62,7 @@ date: 2017-02-27 14:57:00
 [root@ultraera ~]# service nginx restart
 ```
 
-##### 下载NextCloud
+##### 下载 NextCloud
 
 ```
 [root@ultraera ~]# wget https://download.nextcloud.com/server/releases/nextcloud-11.0.1.tar.bz2
@@ -70,9 +70,9 @@ date: 2017-02-27 14:57:00
 [root@ultraera ~]# mv nextcloud-11.0.1 /opt/nextcloud
 ```
 
-##### 配置Nginx和php-fpm
+##### 配置 Nginx 和 php-fpm
 
-因为php-fpm默认运行的用户身份是apache，我们这里使用的环境是nginx，所有要修改php-fpm配置文件的用户和组，注意不要为了省事直接改为root，这在php-fpm中是不允许的
+因为 php-fpm 默认运行的用户身份是 apache，我们这里使用的环境是 nginx，所有要修改 php-fpm 配置文件的用户和组，注意不要为了省事直接改为 root，这在 php-fpm 中是不允许的
 
 ```
 [root@ultraera ~]# vim /etc/php-fpm.d/www.conf
@@ -81,7 +81,7 @@ group=nginx
 [root@ultraera ~]# service php-fpm restart
 ```
 
-因为NextCloud默认是以Apache的身份运行的，所以我们需要单独配置NextCloud的Nginx配置文件，以下配置文件，你可以直接拿去用，注意在文件中说明了，需要修改的地方：
+因为 NextCloud 默认是以 Apache 的身份运行的，所以我们需要单独配置 NextCloud 的 Nginx 配置文件，以下配置文件，你可以直接拿去用，注意在文件中说明了，需要修改的地方：
 
 ```
 [root@ultraera ~]# vim /etc/nginx/conf.d/nextcloud.conf
@@ -219,13 +219,13 @@ server {
 
 ##### 文件权限调整
 
-因为NextCloud运行是以nginx程序，注意修改目录所属用户和组为nginx
+因为 NextCloud 运行是以 nginx 程序，注意修改目录所属用户和组为 nginx
 
 ```
 [root@ultraera ~]# chown -R nginx:nginx /opt/nextcloud
 ```
 
-##### 创建MySQL数据库
+##### 创建 MySQL 数据库
 
 ```
 mysql> CREATE DATABASE nextcloud CHARACTER SET UTF-8;
@@ -233,9 +233,9 @@ mysql> GRANT ALL PRIVILEGES ON nextcloud.* TO 'nextcloud'@'localhost' IDENTIFIED
 mysql> FLUSH PRIVILEGES;
 ```
 
-#### 初始化NextCloud
+#### 初始化 NextCloud
 
-在浏览器打开你在nginx中配置的域名，NextCloud初始化非常简单，设定一个管理员账户和密码，然后设定数据库即可，按照我们上一步针对MySQL的设定，你会非常清楚地知道你的数据库信息：
+在浏览器打开你在 nginx 中配置的域名，NextCloud 初始化非常简单，设定一个管理员账户和密码，然后设定数据库即可，按照我们上一步针对 MySQL 的设定，你会非常清楚地知道你的数据库信息：
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/jjkqh.png)
 
@@ -243,15 +243,15 @@ mysql> FLUSH PRIVILEGES;
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/7n28v.png)
 
-你可以在登录之后，在你的右上角点击头像选择Admin进入管理界面查看和修改你的服务器设置，你还可以在浏览器上方看到你的服务器现有哪些问题，会有对应文档提醒你如何解决这些问题。
+你可以在登录之后，在你的右上角点击头像选择 Admin 进入管理界面查看和修改你的服务器设置，你还可以在浏览器上方看到你的服务器现有哪些问题，会有对应文档提醒你如何解决这些问题。
 
 ![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/yx34e.png)
 
 #### **Other**
 
-##### 修改默认data目录
+##### 修改默认 data 目录
 
-在我们首次打开NextCloud网页时，需要我们设定datadir目录，这里有个默认目录在nextcloud项目包，这其实是不安全的，我们最后将目录路径修改为其他位置:
+在我们首次打开 NextCloud 网页时，需要我们设定 datadir 目录，这里有个默认目录在 nextcloud 项目包，这其实是不安全的，我们最后将目录路径修改为其他位置：
 
 ```
 [root@ultraera ~]# mkdir /nextcloud_files/
@@ -264,7 +264,7 @@ datadirectory' => '/nextcloud/data
 
 ##### 无法登陆到个人用户界面
 
-我在安装时碰到这个问题，折腾了很久才解决，因为我们是使用nginx程序，但是php-fpm默认用户身份为apache，所以<code>/var/lib/php/session</code>目录的所属用户和组都是apache，导致我们没有权限去写入session，所以无法登入系统，报错信息可以在NextCloud的log文件下看到：
+我在安装时碰到这个问题，折腾了很久才解决，因为我们是使用 nginx 程序，但是 php-fpm 默认用户身份为 apache，所以<code>/var/lib/php/session</code>目录的所属用户和组都是 apache，导致我们没有权限去写入 session，所以无法登入系统，报错信息可以在 NextCloud 的 log 文件下看到：
 
 ```
 [root@ultraera ~]# tail -n 1 /usr/nextcloud/data/nextcloud.log
@@ -274,9 +274,9 @@ datadirectory' => '/nextcloud/data
 [root@ultraera ~]# chgrp -R nginx /var/lib/php
 ```
 
-##### 增加redis组件，提高性能
+##### 增加 redis 组件，提高性能
 
-关于如何安装redis我在之前的文章中也有讲到，大家可以去看下 [安装教程](https://samzong.me/redis01/)
+关于如何安装 redis 我在之前的文章中也有讲到，大家可以去看下 [安装教程](https://samzong.me/redis01/)
 
 ```
 [root@ultraera ~]# yum --enablerepo=remi install -y redis
@@ -298,7 +298,7 @@ datadirectory' => '/nextcloud/data
 [root@ultraera ~]# service nginx restart
 ```
 
-我的NextCloud配置如下：
+我的 NextCloud 配置如下：
 
 ```
 <?php
@@ -336,10 +336,10 @@ $CONFIG = array (
 );
 ```
 
-##### SSL证书
+##### SSL 证书
 
-现国内提供免费的SSL证书的服务商很多，作为个人站点，免费SSL证书是个挺不错的选择，我在之前nginx配置时将ssl的配置方式写在了配置文件中了，注意如果不启用ssl时，不要启用https的虚拟主机，当然你可以自己生成一个ssl证书来提供服务，但这样在别人访问你的网站时，会不提示不受信任的证书，具体如何获取的证书的方式，因各个厂家方式有些区别，这里就不赘述，可以联系对应的厂商的技术人员咨询。
+现国内提供免费的 SSL 证书的服务商很多，作为个人站点，免费 SSL 证书是个挺不错的选择，我在之前 nginx 配置时将 ssl 的配置方式写在了配置文件中了，注意如果不启用 ssl 时，不要启用 https 的虚拟主机，当然你可以自己生成一个 ssl 证书来提供服务，但这样在别人访问你的网站时，会不提示不受信任的证书，具体如何获取的证书的方式，因各个厂家方式有些区别，这里就不赘述，可以联系对应的厂商的技术人员咨询。
 
 #### **使用现状**
 
-在将服务搭建完成之后，对于存储的文件加密，现在通过jobs，每日凌晨将文件推送到oss内，保存2天的数据，避免因为服务器宕机导致文件丢失；使用端，自己的电脑和手机，还有家人的手机，都安装了应用，后台自动将拍照图片等自动上传到云盘，使用起来目前很稳定，只是iOS应用是收费的，因为NextCloud源于OwnCloud，如果你之前购买了OwnCloud的App也可以直接使用，当然NextCloud也有很多其他功能，可以根据你的实际需求发掘。
+在将服务搭建完成之后，对于存储的文件加密，现在通过 jobs，每日凌晨将文件推送到 oss 内，保存 2 天的数据，避免因为服务器宕机导致文件丢失；使用端，自己的电脑和手机，还有家人的手机，都安装了应用，后台自动将拍照图片等自动上传到云盘，使用起来目前很稳定，只是 iOS 应用是收费的，因为 NextCloud 源于 OwnCloud，如果你之前购买了 OwnCloud 的 App 也可以直接使用，当然 NextCloud 也有很多其他功能，可以根据你的实际需求发掘。

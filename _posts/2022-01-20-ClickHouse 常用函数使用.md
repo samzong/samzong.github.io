@@ -22,9 +22,9 @@ toString(toDateTime(event_time), 'Asia/Shanghai') AS event_time
 SELECT  CONVERT_TZ('2020-04-06 02:00:00','UTC','Asia/Hong_Kong') as event_time
 ```
 
-#### 2. 提前Json中的字符串
+#### 2. 提前 Json 中的字符串
 
-通过 `JSONExtractRaw`对多层Json结构的数据进行 `精准提取`
+通过 `JSONExtractRaw`对多层 Json 结构的数据进行 `精准提取`
 
 ```sql
 -- clickhouse
@@ -48,7 +48,7 @@ json_unquote(json_extract(_data,'$.app_env')) as app_env
 
 #### 3. 判断字段不为空
 
-使用在where条件中，判断字段 为空或者不为空
+使用在 where 条件中，判断字段 为空或者不为空
 
 ```sql
 where

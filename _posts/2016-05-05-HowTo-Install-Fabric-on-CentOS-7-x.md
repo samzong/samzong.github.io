@@ -8,8 +8,8 @@ categories:
 date: 2016-05-05 05:54:08
 ---
 
-```
-Installed CentOS 7.
+```bash
+# Installed CentOS 7.
 
 yum update -y
 reboot

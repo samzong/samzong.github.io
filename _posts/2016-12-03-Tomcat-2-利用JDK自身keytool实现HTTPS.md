@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tomcat 利用JDK自身keytool实现HTTPS
+title: Tomcat 利用 JDK 自身 keytool 实现 HTTPS
 tags: 
   - Tomcat
 categories: 
@@ -8,7 +8,7 @@ categories:
 date: 2016-12-03 18:41:13
 ---
 
-因为一个偶然机会，想把自己的webserver通过https加密访问，这里就采用JDK自带的keytool工具实现，tomcat官方也推荐这种方式，英文好的同学走这里：[官方配置](https://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html)
+因为一个偶然机会，想把自己的 webserver 通过 https 加密访问，这里就采用 JDK 自带的 keytool 工具实现，tomcat 官方也推荐这种方式，英文好的同学走这里：[官方配置](https://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html)
 
 > demo: CentOS 6.6 & Tomcat 7 & JDK 1.7
 
@@ -42,8 +42,8 @@ Enter key password for <tomcat>
 Catalina  catalina.policy  catalina.properties  context.xml  logging.properties  mykeystore  server.xml  tomcat-users.xml  web.xml
 ```
 
-> 注意：-keystore是用来指定keystore保存位置，如果不加参数默认保存的当前用户家目录为~/.keystore
-       -validity 可以用来指定证书有效期，单位为天，缺省值为90天。
+> 注意：-keystore 是用来指定 keystore 保存位置，如果不加参数默认保存的当前用户家目录为~/.keystore
+       -validity 可以用来指定证书有效期，单位为天，缺省值为 90 天。
 
 #### 2. 备份$tomcatdir/conf/server.xml
 
@@ -51,9 +51,9 @@ Catalina  catalina.policy  catalina.properties  context.xml  logging.properties 
 cp $tomcatdir/conf/server.xml $tomcatdir/conf/server.xml
 ```
 
-#### 3. 修改server.xml
+#### 3. 修改 server.xml
 
-###### a. 注释以下：（tomcat注释用：<\!\-\- XXXX \-\-\> ）,如何也想保留http访问，可以不注释
+###### a. 注释以下：（tomcat 注释用：<\!\-\- XXXX \-\-\> ）,如何也想保留 http 访问，可以不注释
 
 ```
 <!--
@@ -72,7 +72,7 @@ cp $tomcatdir/conf/server.xml $tomcatdir/conf/server.xml
                 clientAuth="false" sslProtocol="TLS" />
 ```
 
-###### c. 增加keystoreFile和keystorePass
+###### c. 增加 keystoreFile 和 keystorePass
 
 ```
 <Connector port="443" protocol="HTTP/1.1" SSLEnabled="true"
@@ -81,10 +81,10 @@ cp $tomcatdir/conf/server.xml $tomcatdir/conf/server.xml
                keystoreFile="conf/mykeystore" keystorePass="123456"/>
 ```
 
-> keystoreFile=跟keystore文件位置
-> keystorePass=跟当时keytool命令执行时输入的密码
+> keystoreFile=跟 keystore 文件位置
+> keystorePass=跟当时 keytool 命令执行时输入的密码
 
-#### 4. 重启tomcat
+#### 4. 重启 tomcat
 
 ```
 [root@test conf]# ../bin/catalina.sh stop && ../bin/catalina.sh start

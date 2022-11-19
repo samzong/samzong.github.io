@@ -9,15 +9,15 @@ categories:
 date: 2016-08-02 15:44:20
 ---
 
-#### **1. 安装CentOS 7.x**
+#### **1. 安装 CentOS 7.x**
 
     略。
 
-#### **2. 安装docker**
+#### **2. 安装 docker**
 
 详见： [How to Install Docker on CentOS 6.x](https://samzong.me/2016/07/07/HowTo-Install-Docker-on-CentOS-6-x/)
 
-#### **3. 基础docker命令**
+#### **3. 基础 docker 命令**
 
 ```
 ＃ 获取centos6 docker镜像
@@ -72,7 +72,7 @@ Deleted: sha256:8945af30572845a904adce2aeaf73402c842d86e99e8f10688b25cb27834110b
 Deleted: sha256:ea9f151abb7e06353e73172dad421235611d4f6d0560ec95db26e0dc240642c1
 ```
 
-#### **4. 运行一个docker镜像**
+#### **4. 运行一个 docker 镜像**
 
 #### 进入交互式程序
 
@@ -99,7 +99,7 @@ centos              centos6             a3c09d36ab4a        2 days ago          
 registry            latest              c6c14b3960bd        3 days ago          33.28 MB
 ```
 
-#### **5. 编辑Dockerfile**
+#### **5. 编辑 Dockerfile**
 
 ```
 # dockfile的第一行一定是FROM，指定了父镜像
@@ -128,7 +128,7 @@ EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
 ```
 
-#### **6. 生成自定义docker镜像**
+#### **6. 生成自定义 docker 镜像**
 
 ```
 # build 编译镜像
@@ -190,7 +190,7 @@ b4211f7a304d9e34b72b510230be2c7a76b276886b488f08f3e12896a4d3c172
 
 ```
 
-#### **7. ssh登陆到docker容器内，部署项目环境**
+#### **7. ssh 登陆到 docker 容器内，部署项目环境**
 
 ```
 # inspect 查看docker 容器IP地址
@@ -221,4 +221,4 @@ registry            latest              c6c14b3960bd        3 days ago          
 
 ```
 
-#### **8. 推送centos:centos6-tomcat到私有docker仓库**
+#### **8. 推送 centos:centos6-tomcat 到私有 docker 仓库**

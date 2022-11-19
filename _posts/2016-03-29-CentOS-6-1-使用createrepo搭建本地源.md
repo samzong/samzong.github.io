@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CentOS 使用createrepo搭建本地源
+title: CentOS 使用 createrepo 搭建本地源
 tags: 
     - Yum
 categories: 
@@ -10,7 +10,7 @@ date: 2016-03-29 03:37:31
 ---
 
 
-> Tips: 本地搭建本地yum源采用的rpm全部来自CentOS-6.7-bin-DVD1&DVD2
+> Tips: 本地搭建本地 yum 源采用的 rpm 全部来自 CentOS-6.7-bin-DVD1&DVD2
 
 ### 1. 测试环境
 

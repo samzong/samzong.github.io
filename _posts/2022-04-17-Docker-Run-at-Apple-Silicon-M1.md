@@ -47,7 +47,7 @@ services:
 
 ### 解决思路
 
-需要指定下 `plaform` ，当我运行在 Apple M1上，变更部分如下：
+需要指定下 `plaform` ，当我运行在 Apple M1 上，变更部分如下：
 
 ```
 services:

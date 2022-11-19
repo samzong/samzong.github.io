@@ -19,12 +19,15 @@ yum groupinstall -y 'development tools'
 ```
 
 Also you need the packages below to enable SSL, bz2, zlib for Python and some utils:
+
 ```
 yum install -y zlib-devel bzip2-devel openssl-devel xz-libs wget
 ```
 
 ## Installing Python 2.7.8 from source
+
 Download Python and extract it
+
 ```
 wget http://www.python.org/ftp/python/2.7.8/Python-2.7.8.tar.xz
 xz -d Python-2.7.8.tar.xz
@@ -32,7 +35,9 @@ tar -xvf Python-2.7.8.tar
 ```
 
 ## Installation process
+
 Since we already installed all the dependencies we are ready to go:
+
 ```
 # Enter the directory:
 cd Python-2.7.8
@@ -48,15 +53,19 @@ make altinstall
 [root@nicetry ~]# python2.7 -V
 Python 2.7.8
 ```
+
 If you need set <code>PATH</code> variable check the line below:
+
 ```
 export PATH="/usr/local/bin:$PATH"
 ```
 
 ## Installing pip and virtualenv
+
 Now we have Python installed, but something is missing isn't? Yes! We need pip and virtualenv.
 
 ### Install setuptools
+
 ```
 wget --no-check-certificate https://pypi.python.org/packages/source/s/setuptools/setuptools-1.4.2.tar.gz
 
@@ -69,11 +78,13 @@ python2.7 setup.py install
 ```
 
 ### Install pip
+
 ```
 curl https://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py | python2.7 -
 ```
 
 ### And finally virtualenv
+
 ```
 pip2.7 install virtualenv
 ```

@@ -13,7 +13,7 @@ url: https://www.yuque.com/samzong/code/kfrygp
 
 ## 部署过程
 
-1. 需要自行维护一个 env 作为配置文件.
+1. 需要自行维护一个 env 作为配置文件。
 
 <!---->
 
@@ -42,7 +42,7 @@ url: https://www.yuque.com/samzong/code/kfrygp
 
 <https://mp.weixin.qq.com/s?src=11&timestamp=1660682601&ver=3986&signature=h8m0RzEX3qWsKcUo6Ee3azdsnzLQqUf3N8FdLhyWNa52U4vAvlbEaBFUCrTZnh54tT-YS2mODfkp-6Hemmzt3n*hzGHlEmXP-HO5830W0Fzmn4MMfnsOPBKLrcjaiU0h&new=1>
 
-- redash env 配置: <https://redash.io/help/open-source/admin-guide/env-vars-settings>
+- redash env 配置：<https://redash.io/help/open-source/admin-guide/env-vars-settings>
 - postgres 权限问题 <https://stackoverflow.com/a/25051632/5067657>
 - <https://techoverflow.net/2021/05/07/how-to-fix-alpine-linux-ash-sudo-not-found/>
 - <https://discuss.redash.io/t/error-99-connecting-to-localhost-6379-cannot-assign-requested-address/9716/7>
@@ -62,7 +62,7 @@ url: https://www.yuque.com/samzong/code/kfrygp
 
 redash 的版本升级较为方便，更换 server 的镜像；然后升级数据库即可。
 
-> 测试过从 v8 升级到 v10 , 和 v9 升级到 v10 ，都是 ok 的.
+> 测试过从 v8 升级到 v10 , 和 v9 升级到 v10，都是 ok 的。
 
 1. 关闭 Redash 服务
    1. `docker-compose stop server scheduler scheduled_worker adhoc_worker`
@@ -74,9 +74,9 @@ redash 的版本升级较为方便，更换 server 的镜像；然后升级数�
 4. 启动全部服务即可
    1. `docker-compse up -d`
 
-## 解决 ES 的HTTPS问题
+## 解决 ES 的 HTTPS 问题
 
-由于我们的 es 地址访问地址采用 https，但为自签证书，所以在 request 之中会有些问题， 所以我在这里更新了 elasticsearch 的插件，然后将其上传到我个人的 docker hub.
+由于我们的 es 地址访问地址采用 https，但为自签证书，所以在 request 之中会有些问题，所以我在这里更新了 elasticsearch 的插件，然后将其上传到我个人的 docker hub.
 <https://hub.docker.com/r/samzong/redash>
 
 > 带来的问题，页面上无法选择到 Elasticsearch 作为数据源，没时间去研究了

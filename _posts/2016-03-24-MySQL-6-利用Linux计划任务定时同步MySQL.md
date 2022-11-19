@@ -11,30 +11,30 @@ categories:
 date: 2016-03-24 08:03:32
 ---
 
- 说下实际项目场景，公司一个应用已部署主从数据库，业务也正式上线；现在客户公司领导希望可以看到每天的业务数据报表，本设定直接到从库拿数据，然后进行数据处理，生成报表，但是Java同事提出需求新增用户和权限表，这样一来，如果直接使用生产库的表会导致后台系统管理人员与领导的账户和权限混淆，经过讨论决定，按照生产库的表结构新增特殊用户表和权限表；这样操作实际是可以在从库上新增表单，且不影响主从库之间的数据同步，但是从安全性的考虑，新增表单设计需要给用户Insert权限，为了保证从库只有利用主库同步写入数据，则只能给其他用户select权限。
+ 说下实际项目场景，公司一个应用已部署主从数据库，业务也正式上线；现在客户公司领导希望可以看到每天的业务数据报表，本设定直接到从库拿数据，然后进行数据处理，生成报表，但是 Java 同事提出需求新增用户和权限表，这样一来，如果直接使用生产库的表会导致后台系统管理人员与领导的账户和权限混淆，经过讨论决定，按照生产库的表结构新增特殊用户表和权限表；这样操作实际是可以在从库上新增表单，且不影响主从库之间的数据同步，但是从安全性的考虑，新增表单设计需要给用户 Insert 权限，为了保证从库只有利用主库同步写入数据，则只能给其他用户 select 权限。
 
-<b>最终决定，因为报表系统的使用率低，直接在报表系统的服务器安装本地mysql数据库，通过计划任务定时到从库上同步数据。</b>
+<b>最终决定，因为报表系统的使用率低，直接在报表系统的服务器安装本地 mysql 数据库，通过计划任务定时到从库上同步数据。</b>
 
 ### 1. 测试环境
 
-* MacBook Pro 15‘ i7 16GB
+* MacBook Pro 15' i7 16GB
 * VMware Fushion 8 Pro
 * MySQL Version 5.6
 * CentOS Linux 6.x
-* slave Server ：172.16.102.129
-* local Server ：172.167.102.133
+* slave Server : 172.16.102.129
+* local Server : 172.167.102.133
 
-### 2. 利用mysqldump导出sql文件
+### 2. 利用 mysqldump 导出 sql 文件
 
-需要注意的是，mysqldump时会锁表，需要给mysqldump传递 <i>“--single-transaction”</i>  参数，可以使得mysqldump时不锁表，如下：
+需要注意的是，mysqldump 时会锁表，需要给 mysqldump 传递 <i>“--single-transaction”</i>  参数，可以使得 mysqldump 时不锁表，如下：
 
 ```
 /usr/bin/mysqldump -h 172.168.102.129 -u dbuser -pdbuser --single-transaction slave > slave.sql
 ```
 
-### 3. 使用mysql恢复sql文件到数据库中
+### 3. 使用 mysql 恢复 sql 文件到数据库中
 
-需要注意的是，如果该local server的slave库中有数据表，当表名与slave server的表名相同时，数据表内的数据会被覆盖；如果local server的表在slave.sql中不存在，则不受影响，正是利用这个特性解决用户需求。
+需要注意的是，如果该 local server 的 slave 库中有数据表，当表名与 slave server 的表名相同时，数据表内的数据会被覆盖；如果 local server 的表在 slave.sql 中不存在，则不受影响，正是利用这个特性解决用户需求。
 
 ```
 /usr/bin/mysql -u dbuser -pdbuser report < /home/.mysql/slave.sql
@@ -42,13 +42,13 @@ date: 2016-03-24 08:03:32
 
 ### 4. 编写脚本
 
- 首先在本地某一位置作为临时sql存储地址：
+ 首先在本地某一位置作为临时 sql 存储地址：
 
 ```
 [root@report ~]# mkdir /home/.mysql     # 这个目录可以自定义
 ```
 
-  脚本1：
+  脚本 1：
 
 ```
 #!/bin/bash
@@ -65,7 +65,7 @@ rm -rf /home/.mysql/*
 
 ### 5. 增加邮件通知功能
 
- 因为前期同事需要得知备份的执行结果，所以希望数据同步成功后获得邮件提醒，这里使用sendmail实现，在CentOS里预装是没有安装sendmail，所以我们需要安装sendmail服务，另外一个安装命令行邮件工具mailx：
+ 因为前期同事需要得知备份的执行结果，所以希望数据同步成功后获得邮件提醒，这里使用 sendmail 实现，在 CentOS 里预装是没有安装 sendmail，所以我们需要安装 sendmail 服务，另外一个安装命令行邮件工具 mailx：
 
 ```
 [root@report ~]# yum install -y sendmail mailx
@@ -79,7 +79,7 @@ Starting sm-client:                                        [  OK  ]
 
 ```
 
-  完整脚本：report_sync.sh ，如下：
+  完整脚本：report_sync.sh，如下：
 
 ```
 #!/bin/bash
@@ -105,11 +105,11 @@ fi
   查看下邮件通知：
 ![](http://blog.ultraera.org:80/content/images/2016/03/24/p01.jpg)
 
-### 6. 计划任务crontab
+### 6. 计划任务 crontab
 
-和同事及客户沟通，确认每天1、5、9、13、17、21整时到从库拉去数据，Linux选择使用crontab做计划任务，crontab命令常见于Unix和类Unix的操作系统之中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于“crontab”文件中。通常，crontab储存的指令被守护进程激活， crond常常在后台运行，每一分钟检查是否有预定的作业需要执行。这类作业一般称为cron jobs。
+和同事及客户沟通，确认每天 1、5、9、13、17、21 整时到从库拉去数据，Linux 选择使用 crontab 做计划任务，crontab 命令常见于 Unix 和类 Unix 的操作系统之中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于“crontab”文件中。通常，crontab 储存的指令被守护进程激活，crond 常常在后台运行，每一分钟检查是否有预定的作业需要执行。这类作业一般称为 cron jobs。
 
-#### 6.1 安装crontab
+#### 6.1 安装 crontab
 
 ```
 [root@report ~]# yum install -y vixie-cron
@@ -132,7 +132,7 @@ cron 是linux的内置服务，但它不自动起来，可以用以下的方法�
 
 ### 7. 添加计划任务
 
-将脚本report_sync.sh 保存到/usr/bin下：
+将脚本 report_sync.sh 保存到/usr/bin下：
 
 ```
 [root@report ~]# mv report_sync.sh /usr/bin
