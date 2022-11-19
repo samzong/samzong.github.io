@@ -9,7 +9,7 @@ url: https://www.yuque.com/samzong/code/emzcai
 ---
 
 
-# django.db.utils.IntegrityError: NOT NULL constraint failed
+## django.db.utils.IntegrityError: NOT NULL constraint failed
 
 ```python
 > python3 manage.py migrate 

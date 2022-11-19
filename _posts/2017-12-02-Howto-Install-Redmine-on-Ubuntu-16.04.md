@@ -8,7 +8,7 @@ categories:
   - Redmine
 ---
 
-```
+```bash
 # base
 apt install mysql-server libmysqlclient-dev git-core subversion imagemagick libmagickwand-dev libcurl4-openssl-dev 
 apt install build-essential mysql-server ruby ruby-dev libmysqlclient-dev imagemagick libmagickwand-dev

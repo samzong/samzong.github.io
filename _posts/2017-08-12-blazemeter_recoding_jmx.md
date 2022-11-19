@@ -14,11 +14,11 @@ categories:
 
 [插件安装](https://chrome.google.com/webstore/search/blazemeter) , 需要能登录到Chrome应用商店，如果不能登录的话，可以在网上搜索下载crx包，手动加载到Chrome中即可。
 
-安装成功之后，在 Chrome 插件栏可以看到程序入口，![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/r0ps7.jpg)
+安装成功之后，在 Chrome 插件栏可以看到程序入口，![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/r0ps7.jpg)
 
 BlazeMeter 限制需要登录才能导出 jmx 脚本，所以首先需要注册账号。成功登陆后，完整界面如图所示：
 
-![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/oamv4.png)
+![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/oamv4.png)
 
 #### 录制过程
 
@@ -28,13 +28,13 @@ BlazeMeter 限制需要登录才能导出 jmx 脚本，所以首先需要注册�
 
 在 Jmeter 中"File-Open"导入你 jmx 脚本，为了方便观察结果，我们需要增加一些察看报告。
 
-![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/uxe75.jpg)
+![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/uxe75.jpg)
 
 ##### 聚合报告 (Aggregate Report)
 
 我们可以在聚合报告中一些非常有用的信息，这有助于对性能测试的分析。
 
-![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/j93gs.png)
+![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/j93gs.png)
 
 * Samples：一共完成了多少事务
 * Averge：平均响应时间
@@ -56,4 +56,4 @@ BlazeMeter 限制需要登录才能导出 jmx 脚本，所以首先需要注册�
 
 通过查看结果树，可以看到每个事务的返回结果，其中红色是出错，绿色则为正常。建议在测试开始前将 log/Display Only 中 Errors 打上勾即可，不然会输出很多东西，不方便查看。
 
-![](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/moo9h.png)
+![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/moo9h.png)

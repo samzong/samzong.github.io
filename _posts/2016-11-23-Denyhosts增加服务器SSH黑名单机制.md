@@ -11,25 +11,25 @@ date: 2016-11-23 16:24:40
 ---
 
 
-##### 查看当前服务器失败登录的统计
+## 查看当前服务器失败登录的统计
 
-```
+```bash
 cat /var/log/secure | awk '/Failed/{print $(NF-3)}' | sort | uniq -c | sort -n |  awk '{print $2" = "$1}'
 ```
 
-##### Install denyhosts
+## Install denyhosts
 
-```
+```bash
 # 需要预先安装epel源
 sudo yum install -y epel-release
 sudo yum install -y denyhosts
 ```
 
-##### 配置文件解析
+## 配置文件解析
 
 默认配置文件/etc/denyhosts。
 
-```
+```bash
 # 查看的sshd日志文件
 SECURE_LOG = /var/log/secure
 
@@ -93,11 +93,11 @@ DAEMON_SLEEP = 30s
 DAEMON_PURGE = 1h
 ```
 
-##### FAQ
+## FAQ
 
 1. 如果想删除一个已经禁止的主机 IP，并加入到允许主机例表，只在 /etc/hosts.deny 删除是没用的，还需要以下：
 
-```
+```bash
 /var/lib/denyhosts 目录，进入以下操作：
 # 停止denyhosts服务
 sudo service denyhosts stop
@@ -122,7 +122,7 @@ sudo echo IP_addr >>/usr/share/denyhosts/data/allowed-hostsps
  service denyhosts start
 ```
 
-##### Tips
+## Tips
 
 * 尽量是用 key 验证登录服务器
 * 尽量从固定 IP 点登录服务器，然后将该地址加入白名单

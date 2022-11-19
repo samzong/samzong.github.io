@@ -27,7 +27,7 @@ percona-toolkit 是一组高级命令行工具的集合，用来执行各种通�
 * 分析来自日志和 tcpdump 的查询
 * 当系统出问题的时候收集重要的系统信息
 
-```
+```bash
 [root@ultrera ~]# wget percona.com/get/percona-toolkit.tar.gz
 --2016-09-22 09:17:00--  http://percona.com/get/percona-toolkit.tar.gz
 Resolving percona.com... 74.121.199.234, 74.121.199.234
@@ -73,7 +73,7 @@ Appending installation info to /usr/lib64/perl5/perllocal.pod
 
 > 运行工具可能会遇到下面的错误：Can't locate Time/HiRes.pm in @INC
 
-```
+```bash
 # 解决办法：
 [root@ultrera ~]# yum install -y perl-Time-HiRes
 [root@ultrera ~]# pt-query-digest --version
@@ -82,9 +82,9 @@ pt-query-digest 2.2.19
 
 ### 3. 开启 mysql 慢日志
 
-##### a. 查看当前‘slow_query_log’状态
+#### a. 查看当前‘slow_query_log’状态
 
-```
+```bash
 mysql> show variables like '%query%';
 +------------------------------+---------------------------------+
 | Variable_name                | Value                           |
@@ -114,9 +114,9 @@ mysql> show variables like 'log_queries_not_using_indexes';
 1 row in set (0.00 sec)
 ```
 
-##### b. 启动 slow_log, 配置
+#### b. 启动 slow_log, 配置
 
-```
+```bash
 # 设定记录大于2s的sql
 mysql> set global long_query_time=2;
 Query OK, 0 rows affected (0.00 sec)
@@ -140,17 +140,15 @@ Query OK, 0 rows affected (0.00 sec)
 
 pt-query-digest 可以从普通 MySQL 日志，慢查询日志以及二进制日志中分析查询，甚至可以从 SHOW PROCESSLIST 和 MySQL 协议的 tcpdump 中进行分析，如果没有指定文件，它从标准输入流（STDIN）中读取数据。
 
-##### a. 简单使用方法
+#### a. 简单使用方法
 
-```
+```bash
 pt-query-digest slow.logs
 ```
 
 输出信息如下：
 
-<div align="left">
-![](http://images.cnitblog.com/blog/288950/201312/14135450-6f7a732598054f7aa311e95cbd4df3b1.png)
-</div>
+![image](http://images.cnitblog.com/blog/288950/201312/14135450-6f7a732598054f7aa311e95cbd4df3b1.png)
 
 <ul>
 1. Overall 这个部分是一个大致的概要信息 (类似 loadrunner 给出的概要信息)，通过它可以对当前 MySQL 的查询性能做一个初步的评估，比如各个指标的最大值 (max)，平均值 (min)，95% 分布值，中位数 (median)，标准偏差 (stddev)
@@ -170,15 +168,15 @@ pt-query-digest slow.logs
 <li>V/M</li>
 </ul>
 ##### 详细信息
-<p>列出上面 Profile 中每个 Query ID 的详细信息</p>
+列出上面 Profile 中每个 Query ID 的详细信息
 
-##### b. 从 tcpdump 包中分析：通过 tcpdump 命令抓取一定时间网络数据包，然后进行分析
+#### b. 从 tcpdump 包中分析：通过 tcpdump 命令抓取一定时间网络数据包，然后进行分析
 
-```
+```bash
 pt-query-digest --type tcpdump mysql.tcp.txt
 ```
 
-##### c. pt-query-digest 还支持很对其他的数据包分析形势，但是我们主要使用的还是针对慢日志进行分析
+#### c. pt-query-digest 还支持很对其他的数据包分析形势，但是我们主要使用的还是针对慢日志进行分析
 
 > 更多的帮助文档，请查看官方文档：<http://www.percona.com/doc/percona-toolkit/2.2/pt-query-digest.html>
 
@@ -188,9 +186,9 @@ pt-query-digest --type tcpdump mysql.tcp.txt
 * 需要预先配置 mysql 数据库
 * 需要预先安装好 pt-query-digest
 
-##### 5.1 安装
+#### 5.1 安装
 
-```
+```bash
 [root@ultrera ~]# git clone https://github.com/box/Anemometer.git anemometer
 
 [root@ultrera ~]# mv anemometer /var/www/html
@@ -199,9 +197,9 @@ pt-query-digest --type tcpdump mysql.tcp.txt
 [root@ultrera anemometer]# mysql -h localhost -u root -p -e "grant all privileges on slow_query_log.* to 'anemometer'@'%' identified by 'anemometer';"
 ```
 
-##### 5.2 配置
+#### 5.2 配置
 
-```
+```bash
 [root@ultrera anemometer]# cp conf/sample.config.inc.php conf/config.inc.php
 [root@ultrera anemometer]# vim conf/config.inc.php
 
@@ -213,13 +211,13 @@ pt-query-digest --type tcpdump mysql.tcp.txt
 设置数据库的用户名和密码;
 ```
 
-##### 5.3 导入
+#### 5.3 导入
 
 将 pt-query-digest 的分析结果到 anemometer；
 
 > pt-query-digest version < 2.2
 
-```
+```bash
 $ pt-query-digest --user=anemometer --password=superSecurePass \
                   --review h=db.example.com,D=slow_query_log,t=global_query_review \
                   --review-history h=db.example.com,D=slow_query_log,t=global_query_review_history \
@@ -230,7 +228,7 @@ $ pt-query-digest --user=anemometer --password=superSecurePass \
 
 > pt-query-digest version >= 2.2
 
-```
+```bash
 pt-query-digest --user=anemometer --password=superSecurePass \
                   --review h=db.example.com,D=slow_query_log,t=global_query_review \
                   --history h=db.example.com,D=slow_query_log,t=global_query_review_history \

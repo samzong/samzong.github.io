@@ -8,7 +8,7 @@ category:
 url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-applesilicon
 ---
 
-![](assets/check-you-favorites-app-is-ready-on-applesilicon)这里带来 2 个网站，方便大家来检查您所使用和关注的 App 是否已经支持了最新的 Apple M1 芯片
+![image](assets/check-you-favorites-app-is-ready-on-applesilicon)这里带来 2 个网站，方便大家来检查您所使用和关注的 App 是否已经支持了最新的 Apple M1 芯片
 
 > **目前支持的形式有：**
 
@@ -26,7 +26,7 @@ url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-apples
 
 ## <https://isapplesiliconready.com/>
 
-![](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-142803.png?x-oss-process=image/resize,w_960,m_lfit)
+![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-142803.png?x-oss-process=image/resize,w_960,m_lfit)
 
 如果你有希望给关注的软件，可以提交给站点维护者，点击页面右上角的 `REQUEST AN APP`
 
@@ -36,11 +36,11 @@ url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-apples
 
 ## <https://doesitarm.com/>
 
-![](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-143231.png?x-oss-process=image/resize,w_960,m_lfit)
+![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-143231.png?x-oss-process=image/resize,w_960,m_lfit)
 
 如果你想要关注某一个软件的适配进度，可以在  `Tell me with this changes`输入你的邮箱，这样当软件有适配变更时，会第一时间邮件通知你
 
-![](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-143450.png?x-oss-process=image/resize,w_960,m_lfit)
+![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-143450.png?x-oss-process=image/resize,w_960,m_lfit)
 
 ## 如何在命令行使用 `rosseta 2`
 

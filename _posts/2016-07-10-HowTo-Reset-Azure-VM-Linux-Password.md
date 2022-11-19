@@ -15,23 +15,23 @@ date: 2016-07-10 11:21:47
 
 ### 1. 指定虚拟机
 
-```
+```conf
 $vm = Get-AzureVM -ServiceName '云服务名称' -Name '虚拟机名称'
 $vm.GetInstance().ProvisionGuestAgent = $true
 ```
 
 ### 2. 输入您当前的用户名和新密码
 
-```
+```conf
 $UserName = "指定用户名"
 $Password = "指定密码"
 
 $PrivateConfig = '{"username":"'+ $UserName + '", "password":"' +  $Password + '"}'
 ```
 
-### 3. 开始执行
+### 开始执行
 
-```
+```conf
 $ExtensionName = 'VMAccessForLinux'
 $Publisher = 'Microsoft.OSTCExtensions'
 $Version =  '1.0'
@@ -42,16 +42,16 @@ Set-AzureVMExtension -ExtensionName $ExtensionName -VM  $vm -Publisher $Publishe
 
 > Setup2: 如果是由于错误修改了 SSH 的配置文件导致无法登录，例如在登录时报错：This service allows sftp connections only.Connection to vm closed.这是因为错误配置了 sftp 导致的，那碰到这种问题需要做的是重置 ssh 服务。
 
-### 1. 指定虚拟机
+### 指定虚拟机
 
-```
+```conf
 $vm = Get-AzureVM -ServiceName 'MyServiceName' -Name 'MyVMName'
 $PrivateConfig = '{"reset_ssh":"True"}''
 ```
 
 ### 2. 开始执行
 
-```
+```conf
 $ExtensionName = 'VMAccessForLinux'
 $Publisher = 'Microsoft.OSTCExtensions'
 $Version =  '1.0'

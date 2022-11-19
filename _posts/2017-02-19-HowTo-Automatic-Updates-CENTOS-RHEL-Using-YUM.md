@@ -17,7 +17,7 @@ date: 2017-02-19 09:56:42
 sudo yum install -y yum-cron
 ```
 
-因为我的服务器系统多为 CentOS 6，6 的配置文件在<code>/etc/sysconfig/yum-cron</code>，你可以用以下命令查看配置文件位置：
+因为我的服务器系统多为 CentOS 6，6 的配置文件在`/etc/sysconfig/yum-cron`，你可以用以下命令查看配置文件位置：
 
 ```
 rpm -ql yum-cron

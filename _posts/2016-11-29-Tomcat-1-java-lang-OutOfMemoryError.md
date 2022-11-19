@@ -15,9 +15,9 @@ PermGen space 的全称是 Permanent Generation space，是指内存的永久保
 
 ### 2. 解决方法
 
-##### 2.1 手动设置 MaxPermSize 大小
+#### 2.1 手动设置 MaxPermSize 大小
 
-```
+```bash
 # 修改$TOMCAT_HOME/bin/catalina.sh，在“echo "Using CATALINA_BASE:   $CATALINA_BASE"”上面加入以下行：
 JAVA_OPTS="-server -Xms256m -Xmx512m -XX:PermSize=64M -XX:MaxPermSize=128m"
 ```

@@ -59,7 +59,7 @@ echo 'eval "$(pyenv virtualenv-init -)"'  >> ~/.bashrc
 
 在网络好的情况下，可以直接通过 `pyenv install 3.9.6` 安装对应的版本了，但是因为网络的问题，你会发现一直在下载 Python 包这一步，问题就是 www.python.org/ftp 网络的访问问题
 
-![](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1630846711398-96703bab-2e76-4f74-8b6d-1dfa212d39b1.jpeg?x-oss-process=image/resize,w_960,m_lfit)
+![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1630846711398-96703bab-2e76-4f74-8b6d-1dfa212d39b1.jpeg?x-oss-process=image/resize,w_960,m_lfit)
 
 遇到这个问题，可以尝试 先下载对应版本的安装包；可以使用国内的镜像站进行下载，或者在网络访问正常的地方进行下载包，然后上传到服务器中，这里推荐使用 淘宝的镜像站，把域名中 <https://www.python.org/ftp> 替换为 <https://npm.taobao.org/mirrors/> ，下载到指定的目录
 
@@ -68,6 +68,6 @@ echo 'eval "$(pyenv virtualenv-init -)"'  >> ~/.bashrc
 export v=3.8.6;  mkdir -p ~/.pyenv/sources/$v; wget https://npm.taobao.org/mirrors/python/$v/Python-$v.tar.xz -P ~/.pyenv/sources/$v; pyenv install $v -k
 ```
 
-![](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1630846711423-9636d877-a9a2-4c9e-8cac-f82aaa3ff5b6.jpeg?x-oss-process=image/resize,w_960,m_lfit)
+![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1630846711423-9636d877-a9a2-4c9e-8cac-f82aaa3ff5b6.jpeg?x-oss-process=image/resize,w_960,m_lfit)
 
 > 在 pyenv 命令的最后增加一个 -k  会在安装时，优先检测本地的文件

@@ -8,6 +8,8 @@ category:
 url: https://www.yuque.com/samzong/code/acam8e
 ---
 
+## Code
+
 ```python
 # import module
 
@@ -47,8 +49,8 @@ soup.select("body h6 a")
     <ul>
         ...
         <li class="cur"><span>网页</span></li>
-        href="http://zhihu.sogou.com/" uigs-id="nav_zhihu" id="zhihu">知乎</a></li>
-        <li><a onclick="st(this,'40030500','pic')" href="http://pic.sogou.com" uigs-id="nav_pic" id="pic">图片</a></li>
+        href="http://zhihu.sogou.com/" uigs-id="nav_zhihu" id="zhihu">知乎`</li>
+        <li><a onclick="st(this,'40030500','pic')" href="http://pic.sogou.com" uigs-id="nav_pic" id="pic">图片`</li>
         ...
     </ul>
 </div>
@@ -61,25 +63,25 @@ for tag in li:
     print(tag)
 ```
 
-# `select` 返回的是一个 `list`
+## `select` 返回的是一个 `list`
 
 通过过下标，可以获取到对应的内容
 
 ```python
 for user in list:
- print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠</a>
+ print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠`
 ```
 
 - 比如要打印出上述的 user-id，可以使用  `print(user['user-id'])`
 - 比如要打印出上述的 title，可以使用  `print(user['title'])`
 
-# 打印 HTML Tag 内的文本
+## 打印 HTML Tag 内的文本
 
 ```python
 # .string   在获取到的 tag 后面增加
 
 for user in list:
- print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠</a>
+ print(user)=<a title="郭大侠" user-id="1802863164" class="J_card" href="/member/1802863164">郭大侠`
 
     print(user.string)
 ```

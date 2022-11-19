@@ -46,19 +46,19 @@ TortoiseGit 的官方下载地址是这里：<https://tortoisegit.org/download/>
 
 我的测试系统是 Windows 7 旗舰版 64 位，并且支持 TortoiseGit 最新的版本。
 
-![][image-1]
+![image][image-1]
 
 请依次安装上图中两个软件，注意 LanguagePack 应该在主程序之后安装，同样，你也只需要一路点击 Next 即可。
 
 在你安装完成之后，在该目录的空白区域，单击鼠标右键，你应该会看到新增了 TortoiseGit 的选项，我们选择"TortoiseGit"\>"Settings"来初始化我们设置。
 
-![][image-2]
+![image][image-2]
 
 ##### 修改程序语言为中文
 
 如果英文你的使用不会有影响，你可以略过这一步骤，同样你也不需要下载上面的 LanguagePack 包。
 
-![][image-3]
+![image][image-3]
 
 好了，按照如上图中操作，你应该已经修改了程序语言为中文，再次到空白区域单击测试就可以看到了。
 
@@ -68,7 +68,7 @@ TortoiseGit 的官方下载地址是这里：<https://tortoisegit.org/download/>
 
 ##### 测试项目
 
-![][image-4]
+![image][image-4]
 
 GitHub 和 GitLab 都提供了通过使用 HTTPS 和 SSH 的方式，这两种方式有些不同，我会在下面分开讲述如何使用。
 
@@ -78,33 +78,33 @@ GitHub 和 GitLab 都提供了通过使用 HTTPS 和 SSH 的方式，这两种�
 
 那在 Windows 如何上生成私钥呢？其实我们在安装 TortoiseGit 时已经默认安装 PuTTYgen 工具，我们可以利用它来创建秘钥。
 
-![][image-5]
+![image][image-5]
 
 打开 PuTTYgen，点击 generate 即可创建密钥，PuTTYgen 其实是按照鼠标运行的轨迹来计算的，所以在点击后，我们不停的使用鼠标移动，等待进度条完成就可以了。
 
-![][image-6]
+![image][image-6]
 
-当创建完成之后，你可以看到以下以下内容，注意不要关闭，我们要点击<code>Save public key</code>和<code>Save private key</code>，并将上 public key 传到你的 GitHub 或 GitLab 账户之中。
+当创建完成之后，你可以看到以下以下内容，注意不要关闭，我们要点击`Save public key`和`Save private key`，并将上 public key 传到你的 GitHub 或 GitLab 账户之中。
 
-![][image-7]
+![image][image-7]
 
 > 注意，我在图中隐去了其他 SSH keys 信息，我建议你在做类似分享时也注意隐去你的重要信息
 
 好了，接下来，我们就要开克隆我们的项目了，在你想要存放项目的目录内，鼠标右键选择”Git 克隆“，然后输入你的项目 URL，并且加载我们刚刚生产私钥文件。
 
-![][image-8]
+![image][image-8]
 
 注意，在你确认都没问题的情况下，点击确认，然后你就会看到如下页面，如果这个过程中出现问题，请注意检查项目 URL 和私钥文件是否正确。
 
-![][image-9]
+![image][image-9]
 
 到这里，我们 SSH 验证仓库的方式就全好，接下来我们就可以使用开始进行我们的工作，但在首次提交我们的项目时，需要设置用户名和密码，这是为了方便验证我们的身份。
 
-![][image-10]
+![image][image-10]
 
 点击”是“，在弹出的窗口中设定用户名和邮箱，保存即可。
 
-![][image-11]
+![image][image-11]
 
 ##### HTTPS or HTTP
 
@@ -112,7 +112,7 @@ GitHub 和 GitLab 都提供了通过使用 HTTPS 和 SSH 的方式，这两种�
 
 如果使用 HTTPS or HTTP 的方式，我们不需要增加任何密钥文件或怎样，只需要使用我们现有的 GitHub 或 GitLab 账号即可；在你想要存放项目的目录内，鼠标右键选择”Git 克隆“，在弹出的窗口中，注意项目 URL 要是用 HTTPS，并且去掉勾选加载密钥选项。
 
-![][image-12]
+![image][image-12]
 
 **如果你的项目在 GitLab 上**，并且这个项目是一个私有项目，那么这里就会要求你输入你的 GitLab 用户名和密码，输入正确的用户和密码就可以成功克隆了。
 
@@ -122,11 +122,11 @@ GitHub 和 GitLab 都提供了通过使用 HTTPS 和 SSH 的方式，这两种�
 
 右键选择 Git 提交，会弹出提交页面，我们需要这里，输入提交说明信息，和需要提交的文件。
 
-![][image-13]
+![image][image-13]
 
 点击”提交之后“，我们会看成功提交的窗口，然后在窗口选择点击推送；
 
-![][image-14]
+![image][image-14]
 
 当我们点击推送之后，会要求输入对应的 GitHub 用户名和密码：
 

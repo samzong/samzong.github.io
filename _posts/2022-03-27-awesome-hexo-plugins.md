@@ -70,11 +70,11 @@ hide_posts:
 npm install hexo-generator-restful --save
 ```
 
-### Config
+### Config Plugin
 
 以下为默认配置，属性值为 `false` 表示不生成。
 
-```yml
+```yaml
 restful:
   # site 可配置为数组选择性生成某些属性
   # site: ['title', 'subtitle', 'description', 'author', 'since', email', 'favicon', 'avatar']
@@ -107,7 +107,7 @@ restful:
 
 > Request
 
-```
+```request
 GET /api/site.json
 ```
 
@@ -121,7 +121,7 @@ GET /api/site.json
 
 > Request
 
-```
+```request
 GET /api/posts.json
 ```
 

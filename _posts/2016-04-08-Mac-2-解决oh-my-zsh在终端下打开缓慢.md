@@ -12,7 +12,7 @@ date: 2016-04-08 16:12:30
 
 代码块：
 
-```
+```bash
 # 日志文件路径
 # /private/var/log/asl/*.asl
 

@@ -16,7 +16,7 @@ categories:
 
 > P.S. 不要过分关注那些黑产、广告和色情信息，它们虽然利用了这个工具，但是也只是其中一小部分
 
-### 我在电报做的事情
+## 我在电报做的事情
 
 - 美剧、电影和图书，所以最新的资源基本在电报群出现了，远比各种关注微信公众号套娃的营销号好很多
 - 技术群，感谢技术群里的各位大佬给的帮助，尤其感谢 Taiwan 的几个技术社群，会有人认真解答你的问题
@@ -30,12 +30,12 @@ categories:
   - 网站服务监控
 - 羊毛群/合租群/VPN群，这里不用详细说明
 
-### 使用的一些技巧
+## 使用的一些技巧
 
 - 你需要一个 !+86 的手机号，保障你与所有的网友的友好交流，可以考虑使用 G 家 Voice 买个美区号方便
 - DO NOT USE CHINESE ! 这会让你发现不一样的 Telegram
 
-### Develop in Telegram
+## Develop in Telegram
 
 ![7a0Bjv](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/7a0Bjv.png)
 

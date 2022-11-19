@@ -21,14 +21,14 @@ date: 2016-03-29 08:22:14
 
 ### 2.1 安装 mysql
 
-```
+```bash
 [root@ultraera  ~]#  yum  install  mysql  mysql-server  mysql-devel
 
 ```
 
 ### 2.2 启动 mysql，并设置开机自启动
 
-```
+```bash
 [root@ultraera  ~]#  service  mysqld  start
 [root@ultraera  ~]#  chkconfig  mysqld  on
 [root@ultraera  ~]#  chkconfig  --list  |  grep  mysqld
@@ -38,7 +38,7 @@ mysqld 0:off  1:off  2:on  3:on  4:on  5:on  6:off
 
 ### 2.3 相关配置
 
-```
+```bash
 /etc/my.cnf         mysql配置文件
 /var/lib/mysql      mysql数据库文件
 port:3306           mysql默认端口
@@ -48,8 +48,7 @@ port:3306           mysql默认端口
 
 ### 2.4 mysql 初始化及登录
 
-```
-
+```bash
 [root@ultraera ~]# mysql_secure_installation
 
 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MySQL
@@ -123,7 +122,7 @@ Cleaning up...
 
 ### 2.5 创建、查看及删除当前数据库
 
-```
+```sql
 mysql>  CREATE  DATABASE  ultraera;
 Query  OK,  1  row  affected  (0.00  sec)
 mysql>  SHOW  DATABASES;
@@ -143,7 +142,7 @@ Query  OK,  0  rows  affected  (0.00  sec)
 
 ### 2.6 创建、查看及删除当前表格
 
-```
+```sql
 #创建表格之前要先选择数据库
 mysql>  use  ultraera;
 Database  changed
@@ -169,7 +168,7 @@ Query  OK,  0  rows  affected  (0.00  sec)
 
 ### 2.7 修改表格信息
 
-```
+```sql
 a.重命名表格
 mysql>  alter  table  ultraera  rename  ultraera_org;
 b.新增列
@@ -184,7 +183,7 @@ mysql>  alter  table  ultraera  change  column  NAME  name  varc
 
 ### 2.8 向表格中插入数据
 
-```
+```sql
 a.  全局插入
 mysql>  insert  into  ultraera  values(1,'name',18);
 b.  根据列插入
@@ -197,7 +196,7 @@ mysql>  select  name  from  ultraera;
 
 ### 2.10 where 运算符：条件判断查询，查询使用方法：where  列  运算符  值
 
-```
+```sql
 where支持的运算符：=等于；>大于；<小于；<>不等于；>=大于等于；<=小于等于；BETWEEN在某范围之内；
 mysql> select * from ultraera where id>1;
 mysql> select * from ultraera where id=2;
@@ -210,7 +209,7 @@ mysql> select * from ultraera where id  between  1  and  4;
 
 ### 2.11 删除表格中的一条记录（同样可以匹配 where 运算符）
 
-```
+```sql
 mysql>  delete  from  ultraera  where  id  =  4;
 mysql>  delete  *  from  ultraera ； #清空一个表格的数据；
 
@@ -218,14 +217,14 @@ mysql>  delete  *  from  ultraera ； #清空一个表格的数据；
 
 ### 2.12 更新表中的一个数据
 
-```
+```sql
 mysql>  update  ultraera  set  age=30  where  id=3;
 
 ```
 
 ### 2.13 MySQL 增加删除一个用户
 
-```
+```sql
 mysql>  create  user  user1  identified  by  '123456'; #user1，密码123456，新用户没有权限，无法登录数据库
 mysql>  drop  user  user1; #删除用户user1
 
@@ -233,7 +232,7 @@ mysql>  drop  user  user1; #删除用户user1
 
 ### 2.14 给用户添加、删除权限
 
-```
+```sql
 mysql>  grant  all  privileges  on  *.*  to  'user1'@'localhost'  identified  by  '123456';
 mysql>  revoke  all  privileges  from  user1;
 
@@ -243,7 +242,7 @@ mysql>  revoke  all  privileges  from  user1;
 
 数据库重命名：mysql 不能直接对数据库重命名，所以如果想要重名数据库的话，要先导出，接着创建一个新的数据库，然后将导出的 sql 文件再导入到新的数据库中
 
-```
+```bash
 [adam@ultraera  ~]$  mysqldump  -u  root  -p  ultraera  >  ultraera.sql     #备份
 [adam@ultraera  ~]$  mysql  -u  root  -p  new_ultraera  <  ultraera.sql     #恢复到指定数据库
 

@@ -13,11 +13,10 @@ Zoomdata 是一个大数据可视化展示的工具，由 ZoomData 企业创建�
 #### **系统要求**
 
 Zoomdata 最新版是 v2.4，支持常见主流的操作系统，并且有非常友好的安装帮助，但是 Zoomdata 不支持安装在 32 位的操作系统之上
-<br>
+
 |biaoti|biaoti|baiiti|
 |------|------|------|
 |list|file|china|
 |letian|zhong|hongkong|
 
-<br>
 [^1]: 这是一个示意的文档

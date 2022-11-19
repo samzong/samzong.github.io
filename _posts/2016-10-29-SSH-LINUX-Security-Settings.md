@@ -9,34 +9,34 @@ date: 2016-10-29 06:23:59
 ---
 
 
-### **SSH 配置安全控制限制登录**
+## **SSH 配置安全控制限制登录**
 
-##### 1. 只允许某个IP登录，拒绝其他所有IP
+### 1. 只允许某个 IP 登录，拒绝其他所有 IP
 
-在 /etc/hosts.allow 增加:
+在 /etc/hosts.allow 增加：
 
-```
+```bash
 sshd: 1.2.3.4
 ```
 
-在 /etc/hosts.deny 增肌:
+在 /etc/hosts.deny 增肌：
 
-```
+```bash
 sshd: ALL
 ```
 
-用 iptables 也行:
+用 iptables 也行：
 
-```
+```bash
 iptables -A INPUT -p tcp --dport 22 -j DROP
 iptables -A INPUT -p tcp --dport 22 -s 1.2.3.4 -j ACCEPT
 ```
 
-##### 2. 禁止某个用户通过ssh登录
+## 2. 禁止某个用户通过 ssh 登录
 
 在/etc/ssh/sshd_conf添加
 
-```
+```bash
 AllowUsers 用户名
 或者
 AllowGroups 组名
@@ -44,17 +44,17 @@ AllowGroups 组名
 DenyUsers 用户名
 ```
 
-##### 3. 设定登录黑名单
+## 3. 设定登录黑名单
 
-```
+```bash
 [root@6 ~]# vim /etc/pam.d/sshd
 auth required /lib/security/pam_listfile.so item=user sense=deny file=/etc/sshd_user_deny_list onerr=succeed
 # 所有/etc/sshd_user_deny_list里面的用户被拒绝ssh登录
 ```
 
-##### 4. sshd_config配置
+## 4. sshd_config 配置
 
-```
+```bash
 # 关于 SSH Server 的整体设定，包含使用的 port 啦，以及使用的密码演算方式
 Port 22　　　　　　　　　　# SSH 预设使用 22 这个 port，您也可以使用多的 port ！
 　　　　　　　　　　　　　 # 亦即重复使用 port 这个设定项目即可！
