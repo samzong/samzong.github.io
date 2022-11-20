@@ -6,7 +6,6 @@ tags:
     - Zabbix
 categories: 
     - OpenSource
-    - Zabbix
 date: 2016-05-20 07:24:58
 ---
 

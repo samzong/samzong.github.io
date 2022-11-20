@@ -3,7 +3,7 @@ layout: post
 title: get current timestamp
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/curllenttimestamp
 ---

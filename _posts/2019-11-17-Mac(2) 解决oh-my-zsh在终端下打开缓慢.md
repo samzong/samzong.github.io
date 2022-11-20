@@ -3,7 +3,7 @@ layout: post
 title: Mac 下解决 oh-my-zsh 在终端下打开缓慢
 tags:
   - Mac
-category:
+categories:
   - Mac
 url: https://www.yuque.com/samzong/ap/mac-2-jie-jueohmyzsh-zai-zhong-duan-xia-da-kai-hua
 ---

@@ -3,7 +3,7 @@ layout: post
 title: python 完成抖店 API 授权
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/oxz7e6
 ---

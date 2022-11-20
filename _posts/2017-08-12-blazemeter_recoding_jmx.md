@@ -5,7 +5,6 @@ tags:
     - Jmeter
 categories: 
     - OpenSource
-    - Jmeter
 ---
 
 之前一直使用阿里云的 PTS 服务作为测试，但是今天发现阿里云的 PTS 服务正在升级无法使用，所以打算用 Jmeter 来做压力测试，并使用 Chrome 插件 BlazeMeter 来录制.jmx 脚本。

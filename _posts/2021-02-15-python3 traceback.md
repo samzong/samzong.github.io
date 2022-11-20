@@ -3,7 +3,7 @@ layout: post
 title: python3 traceback
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/gy3x67
 ---

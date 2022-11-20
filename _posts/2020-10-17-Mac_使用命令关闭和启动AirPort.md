@@ -3,7 +3,7 @@ layout: post
 title: Mac:使用命令关闭和启动 AirPort
 tags:
   - Mac
-category:
+categories:
   - Mac
 url: https://www.yuque.com/samzong/ap/mactips-shi-yong-ming-ling-guan-bi-he-qi-dongairpo-4701029
 ---

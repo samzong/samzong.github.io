@@ -2,10 +2,9 @@
 layout: post
 title: 创建和使用 Azure Redis Cache
 tags: 
-    - Azure
-categories: 
-  - 云服务
   - Azure
+categories: 
+  - 云平台
 date: 2016-05-12 06:12:02
 ---
 

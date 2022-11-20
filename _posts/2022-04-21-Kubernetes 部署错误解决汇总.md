@@ -2,13 +2,13 @@
 layout: post
 title: Kubernetes 部署错误解决汇总
 tags: Kubernetes
-category: Kubernetes
+categories: Kubernetes
 url: https://www.yuque.com/samzong/dao/kqwdhc
 ---
 
 
 
-### 1. `kubeadm init`失败 ，提示 kubelet 启动失败或 不健康
+### 1. `kubeadm init`失败，提示 kubelet 启动失败或 不健康
 
 解决思路：
 
@@ -51,13 +51,13 @@ Apr 21 00:55:30 master1 systemd[1]: kubelet.service: Main process exited, code=e
 -- The process' exit code is 'exited' and its exit status is 1.
 ```
 
-> 问题原因： 注意看 `**"Failed to run kubelet"** 后面的 err原因 : err=**"failed to run Kubelet: running with swap on is not>**`
+> 问题原因：注意看 `**"Failed to run kubelet"** 后面的 err原因 : err=**"failed to run Kubelet: running with swap on is not>**`
 
-这里是因为 主机上的 swap 还是打开的，所以导致 kubelet 启动失败； 原因是：在 Kubernetes 1.22 之前，节点不支持使用虚拟内存，如果在节点上检测到虚拟内存，kubelet 将默认无法启动。
+这里是因为 主机上的 swap 还是打开的，所以导致 kubelet 启动失败；原因是：在 Kubernetes 1.22 之前，节点不支持使用虚拟内存，如果在节点上检测到虚拟内存，kubelet 将默认无法启动。
 
 > 知识扩展
 
-1. 什么是 swap memory ？ 一般称为虚拟内存，虚拟内存的作用是
+1. 什么是 swap memory？一般称为虚拟内存，虚拟内存的作用是
 
 ### 1. 多次使用 `kubeadm init`时报错，提示文件已存在，端口被占用
 

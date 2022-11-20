@@ -3,7 +3,7 @@ layout: post
 title: requests post data 时对 json 需要特殊注意
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/pfiuwx
 ---

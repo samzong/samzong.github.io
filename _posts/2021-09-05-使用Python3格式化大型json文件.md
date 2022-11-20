@@ -3,7 +3,7 @@ layout: post
 title: 使用 Python3 格式化大型 json 文件
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/zoedwm
 ---

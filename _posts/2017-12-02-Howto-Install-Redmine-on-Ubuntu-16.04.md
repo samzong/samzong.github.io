@@ -5,7 +5,6 @@ tags:
   - Redmine
 categories: 
   - OpenSource
-  - Redmine
 ---
 
 ```bash

@@ -2,9 +2,8 @@
 layout: post
 title: HowTo Install Docker on CentOS 6.x
 tags: 
-    - Docker
+    - CentOS
 categories: 
-    - 虚拟化
     - Docker
 date: 2016-07-07 08:03:28
 ---

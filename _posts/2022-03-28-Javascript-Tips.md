@@ -10,7 +10,7 @@ tags:
     - Javascript
     - HTML
 categories: 
-    - Javascript
+    - 前端
 ---
 
 - alert 弹窗提醒一段文本

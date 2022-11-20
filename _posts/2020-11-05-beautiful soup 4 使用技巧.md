@@ -3,7 +3,7 @@ layout: post
 title: beautiful soup 4 使用技巧
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/acam8e
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Python Version Manage `pyenv`
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/python-version-manage-tool-pyenv
 ---

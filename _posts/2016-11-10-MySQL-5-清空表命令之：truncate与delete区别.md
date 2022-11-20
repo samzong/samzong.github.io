@@ -5,7 +5,6 @@ tags:
     - MySQL
 categories: 
     - 数据库
-    - MySQL
 date: 2016-11-10 02:53:13
 ---
 

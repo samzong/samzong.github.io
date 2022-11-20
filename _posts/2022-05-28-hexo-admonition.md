@@ -4,8 +4,9 @@ title: "Hexo 增加 admonition 样式支持"
 toc: true
 date: 2022-05-28 22:27:18
 tags:
-    - Hexo
+  - Hexo
 categories:
+  - Blog
 ---
 
 ## 背景

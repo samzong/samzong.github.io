@@ -5,7 +5,6 @@ tags:
     - CloudStack
 categories: 
     - 虚拟化
-    - CloudStack
 date: 2016-05-18 02:38:59
 ---
 

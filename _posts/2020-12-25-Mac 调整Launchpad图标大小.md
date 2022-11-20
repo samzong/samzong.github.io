@@ -3,7 +3,7 @@ layout: post
 title: Mac 调整 Launchpad 图标大小
 tags:
   - Mac
-category:
+categories:
   - Mac
 url: https://www.yuque.com/samzong/ap/mac-1-diao-zhenglaunchpad-tu-biao-da-xiao
 ---

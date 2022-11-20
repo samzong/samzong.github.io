@@ -2,7 +2,7 @@
 layout: post
 title: Kubernetes Operator
 tags: Operator
-category: Kubernetes
+categories: Kubernetes
 url: https://www.yuque.com/samzong/dao/khckm3
 ---
 

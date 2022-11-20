@@ -3,7 +3,7 @@ layout: post
 title: python flask form
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/python-flask-form
 ---

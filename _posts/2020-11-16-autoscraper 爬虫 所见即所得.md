@@ -3,7 +3,7 @@ layout: post
 title: autoscraper 爬虫 所见即所得
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/hx1txz
 ---

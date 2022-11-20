@@ -4,7 +4,7 @@ title: Tomcat java.lang.OutOfMemoryError
 tags: 
     - Tomcat
 categories: 
-    - Tomcat
+    - Java
 date: 2016-11-29 02:19:38
 ---
 

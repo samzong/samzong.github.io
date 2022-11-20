@@ -3,7 +3,7 @@ layout: post
 title: 淘宝 Python SDK 优化支持 Python3
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/tao-baopython-sdk-you-hua-zhi-chipython3
 ---

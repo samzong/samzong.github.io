@@ -4,7 +4,7 @@ title: HowTo install Zoomdata
 tags: 
     - Zoomdata
 categories: 
-    - Bigdata
+    - 数据库
 date: 2017-03-06 09:44:47
 ---
 

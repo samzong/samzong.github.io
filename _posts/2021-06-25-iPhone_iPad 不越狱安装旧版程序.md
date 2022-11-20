@@ -3,7 +3,7 @@ layout: post
 title: iPhone/iPad 不越狱安装旧版程序
 tags:
   - Mac
-category:
+categories:
   - Mac
 url: https://www.yuque.com/samzong/ap/iphoneipad-bu-yue-yu-an-zhuang-jiu-ban-cheng-xu
 ---

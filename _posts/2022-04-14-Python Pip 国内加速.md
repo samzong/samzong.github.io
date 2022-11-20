@@ -3,7 +3,7 @@ layout: post
 title: Python Pip 国内加速
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/python-pip-guo-nei-jia-su
 ---

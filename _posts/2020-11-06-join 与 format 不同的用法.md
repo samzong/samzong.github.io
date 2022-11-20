@@ -3,7 +3,7 @@ layout: post
 title: join 与 format 不同的用法
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/wbt7rr
 ---

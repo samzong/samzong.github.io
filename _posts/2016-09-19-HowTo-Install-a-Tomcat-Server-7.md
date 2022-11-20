@@ -4,7 +4,7 @@ title: HowTo Install a Tomcat Server 7
 tags: 
     - Tomcat
 categories: 
-    - Tomcat
+    - Java
 date: 2016-09-19 10:25:53
 ---
 

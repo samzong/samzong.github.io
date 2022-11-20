@@ -2,10 +2,9 @@
 layout: post
 title: CentOS 使用 createrepo 搭建本地源
 tags: 
-    - Yum
+    - CentOS
 categories: 
     - Linux
-    - CentOS
 date: 2016-03-29 03:37:31
 ---
 

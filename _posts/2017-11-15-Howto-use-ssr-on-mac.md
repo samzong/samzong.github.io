@@ -6,7 +6,6 @@ tags:
     - Mac
 categories: 
     - Tools
-    - VPN
 permalink: /2017/11/15/howto-user-ssr-on-mac/
 ---
 

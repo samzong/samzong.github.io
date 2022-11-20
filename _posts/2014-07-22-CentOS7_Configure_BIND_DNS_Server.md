@@ -5,7 +5,6 @@ tags:
    - CentOS
 categories:
    - Linux
-   - CentOS
 ---
 
 

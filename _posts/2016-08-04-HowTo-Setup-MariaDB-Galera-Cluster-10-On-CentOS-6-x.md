@@ -6,7 +6,6 @@ tags:
     - CentOS
 categories: 
     - 数据库
-    - MySQL
 date: 2016-08-04 13:14:15
 ---
 

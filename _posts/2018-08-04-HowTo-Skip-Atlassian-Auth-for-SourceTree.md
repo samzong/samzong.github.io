@@ -2,11 +2,9 @@
 layout: post
 title: HowTo Skip Atlassian Auth for SourceTree
 tags: 
-  - SourceTree
-  - Git
+    - SourceTree
 categories: 
-  - Git
-  - SourceTree
+    - Tools
 ---
 
 ## 问题

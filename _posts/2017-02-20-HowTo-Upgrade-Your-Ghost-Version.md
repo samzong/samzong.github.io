@@ -5,7 +5,6 @@ tags:
     - Ghost
 categories: 
     - Blog
-    - Ghost
 date: 2017-02-20 14:39:15
 ---
 

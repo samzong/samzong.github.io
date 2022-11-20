@@ -2,10 +2,9 @@
 layout: post
 title: HowTo Use Azure CLI on Mac
 tags: 
-    - Azure
-categories: 
-  - 云服务
   - Azure
+categories: 
+  - 云平台
 date: 2016-05-24 07:00:12
 ---
 

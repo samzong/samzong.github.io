@@ -3,7 +3,7 @@ layout: post
 title: 检查您的 App 是否已支持 AppleSilicon
 tags:
   - Mac
-category:
+categories:
   - Mac
 url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-applesilicon
 ---

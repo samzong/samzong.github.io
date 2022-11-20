@@ -3,8 +3,8 @@ layout: post
 title: MySQL REGEXP 活学活用
 tags:
   - SQL
-category:
-  - SQL
+categories:
+  - 数据库
 url: https://www.yuque.com/samzong/code/gc1atk
 ---
 

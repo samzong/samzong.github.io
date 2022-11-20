@@ -3,9 +3,8 @@ layout: post
 title: Redash for Docker 部署
 tags:
   - Redash
-  - BI
-category:
-  - BI
+categories:
+  - 数据库
 url: https://www.yuque.com/samzong/code/kfrygp
 ---
 

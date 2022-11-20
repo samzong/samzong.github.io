@@ -1,8 +1,10 @@
 ---
 layout: post
 title: kubernetes 学习之路
-tags: kubernetes
-category: kubernetes
+tags: 
+  - 基础知识
+categories: 
+  - Kubernetes
 url: https://www.yuque.com/samzong/dao/tv2ql4
 ---
 
@@ -92,7 +94,7 @@ systemctl restart docker
 
 ## Kubernetes 部署机器
 
-- 4核 4G 3台
+- 4 核 4G 3 台
   - 10.211.55.7 **master1**
   - 10.211.55.9 node1
   - 10.211.55.10 node2
@@ -113,7 +115,7 @@ network:
 > 为了防止多台机器之间的 DHCP IP 冲突，全部限定静态 IP
 > < 采用的是 Parallels Desktop Clone pvm 的方式 产生的多台机器
 
-### Kubernetes从k8s.gcr.io仓库拉取镜像失败
+### Kubernetes 从 k8s.gcr.io 仓库拉取镜像失败
 
 这是因为 k8s 部署是在 google 自家的所以... ，好在国内基本都有对应的镜像仓库，这里以 阿里云为例：
 
@@ -152,7 +154,7 @@ registry.aliyuncs.com/google_containers/pause                     3.6       7d46
 
 ```
 
-由于 kubeadm 认的是 `k8s.gcr.io`，所以还需改回去 Tag ，修改方式采用 docker tag 的方式处理
+由于 kubeadm 认的是 `k8s.gcr.io`，所以还需改回去 Tag，修改方式采用 docker tag 的方式处理
 
 ### kubeadm 初始化 k8s 环境
 

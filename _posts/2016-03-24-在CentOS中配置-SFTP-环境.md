@@ -5,7 +5,6 @@ tags:
     - SSH
 categories: 
     - Linux
-    - CentOS
 date: 2016-03-24 14:55:03
 ---
 

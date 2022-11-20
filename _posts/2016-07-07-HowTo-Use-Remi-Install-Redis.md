@@ -7,7 +7,6 @@ tags:
     - CentOS
 categories: 
     - 数据库
-    - Redis
 date: 2016-07-07 03:49:02
 ---
 

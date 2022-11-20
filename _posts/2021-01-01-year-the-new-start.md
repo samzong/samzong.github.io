@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "2021 年 - 全新出发"
-tagline: ""
-description: ""
-category: 随笔
-tags: [随笔, ]
+tags:
+  - 随笔
+categories: 
+  - 故事汇
 last_updated:
 ---
 

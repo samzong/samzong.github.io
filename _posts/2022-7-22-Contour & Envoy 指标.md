@@ -2,7 +2,8 @@
 layout: post
 title: Contour & Envoy 指标
 tags: Contour
-category: Kubrnetes
+categories: 
+  - Kubernetes
 url: https://www.yuque.com/samzong/dao/faugco
 ---
 
