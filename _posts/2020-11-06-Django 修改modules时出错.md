@@ -3,7 +3,7 @@ layout: post
 title: Django 修改 modules 时出错
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/emzcai
 ---

@@ -4,7 +4,7 @@ title: Tomcat 利用 JDK 自身 keytool 实现 HTTPS
 tags: 
   - Tomcat
 categories: 
-  - Tomcat
+  - Java
 date: 2016-12-03 18:41:13
 ---
 

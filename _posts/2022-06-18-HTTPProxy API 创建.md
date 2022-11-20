@@ -2,7 +2,7 @@
 layout: post
 title: HTTPProxy API 创建
 tags: Contour
-category: Kubernetes
+categories: Kubernetes
 url: https://www.yuque.com/samzong/dao/zclg1k
 ---
 

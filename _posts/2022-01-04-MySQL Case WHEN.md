@@ -3,8 +3,8 @@ layout: post
 title: MySQL Case WHEN
 tags:
   - SQL
-category:
-  - SQL
+categories:
+  - 数据库
 url: https://www.yuque.com/samzong/code/mysql-case-when
 ---
 

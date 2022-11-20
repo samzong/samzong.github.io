@@ -3,7 +3,7 @@ layout: post
 title: python xlsxwriter 写入 excel
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/xp5om9
 ---

@@ -5,7 +5,6 @@ tags:
     - MongoDB
 categories: 
     - 数据库
-    - MongoDB
 date: 2016-03-27 05:55:28
 ---
 

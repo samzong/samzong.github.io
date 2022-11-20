@@ -3,7 +3,7 @@ layout: post
 title: python Request install pip error
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/python-request-install-pip-error
 ---

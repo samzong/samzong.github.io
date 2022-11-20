@@ -2,9 +2,8 @@
 layout: post
 title: Docker Hub 国内加速
 tags: 
-    - Docker
+    - DockerHub
 categories: 
-    - 虚拟化
     - Docker
 date: 2017-01-07 15:32:23
 ---

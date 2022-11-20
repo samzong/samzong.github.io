@@ -4,7 +4,7 @@ title: Docker for Mac 网络技巧
 tags:
   - Docker
   - Mac
-category:
+categories:
   - Docker
 url: https://www.yuque.com/samzong/code/rey62i
 ---

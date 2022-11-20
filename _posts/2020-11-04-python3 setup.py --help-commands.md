@@ -3,7 +3,7 @@ layout: post
 title: python3 setup.py --help-commands
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/glywie
 ---

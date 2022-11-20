@@ -2,11 +2,9 @@
 layout: post
 title: HowTo Reset Azure VM Linux Password
 tags: 
-    - Azure
-    - CentOS
+  - Azure
 categories: 
-    - 云服务
-    - Azure
+  - 云平台
 date: 2016-07-10 11:21:47
 ---
 

@@ -4,9 +4,9 @@ title: Use Script Install LNMP
 tags: 
     - Shell
     - CentOS
+    - LNMP
 categories: 
     - Linux
-    - Shell
 date: 2016-08-13 06:12:43
 ---
 

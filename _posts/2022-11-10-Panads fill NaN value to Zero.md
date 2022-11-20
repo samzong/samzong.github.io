@@ -3,8 +3,7 @@ layout: post
 title: Panads fill NaN value to Zero
 tags:
   - Pandas
-  - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/bvadi3
 ---

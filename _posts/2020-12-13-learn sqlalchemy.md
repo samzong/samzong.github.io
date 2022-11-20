@@ -3,7 +3,7 @@ layout: post
 title: learn sqlalchemy
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/qdw35g
 ---

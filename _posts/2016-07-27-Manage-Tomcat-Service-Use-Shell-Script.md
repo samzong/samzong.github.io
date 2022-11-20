@@ -7,7 +7,6 @@ tags:
     - Tomcat
 categories: 
     - Linux
-    - Shell
 date: 2016-07-27 02:18:24
 ---
 

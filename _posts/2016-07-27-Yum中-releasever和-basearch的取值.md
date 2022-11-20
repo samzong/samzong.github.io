@@ -2,10 +2,9 @@
 layout: post
 title: Yum 中$releasever 和$basearch 的取值
 tags: 
-    - Yum
+    - CentOS
 categories: 
     - Linux
-    - CentOS
 date: 2016-07-27 10:27:54
 ---
 

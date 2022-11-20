@@ -3,7 +3,7 @@ layout: post
 title: python3 文本处理 strip() split()
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/zyil6u
 ---

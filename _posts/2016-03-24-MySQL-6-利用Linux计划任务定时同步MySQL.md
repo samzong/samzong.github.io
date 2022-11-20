@@ -7,7 +7,6 @@ tags:
     - Shell
 categories: 
     - 数据库
-    - MySQL
 date: 2016-03-24 08:03:32
 ---
 

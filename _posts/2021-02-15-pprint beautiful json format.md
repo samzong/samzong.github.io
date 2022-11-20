@@ -3,7 +3,7 @@ layout: post
 title: pprint beautiful json format
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/sqoykk
 ---

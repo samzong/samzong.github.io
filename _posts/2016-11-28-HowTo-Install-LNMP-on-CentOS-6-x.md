@@ -5,7 +5,6 @@ tags:
   - LNMP
 categories: 
   - Linux
-  - CentOS
 date: 2016-11-28 10:33:09
 ---
 

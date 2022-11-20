@@ -2,10 +2,9 @@
 layout: post
 title: HowTo use TortoiseGit for Windows
 tags: 
-    - Git
+    - Tools
 categories: 
     - Git
-    - TortoiseGit
 ---
 
 Git 是目前最先进的版本控制系统，越来越多的业务场景都在使用 Git，风靡全球的 Github 更是让 Git 版本控制系统名声大震，但是 GitHub 旨在建立一个开源的生态环境，所以不适合企业内部的管理系统，在之前的文章中，我也讲到了如何搭建 GitLab，可以在企业内部自建一套功能完善的 Git 版本控制系统。

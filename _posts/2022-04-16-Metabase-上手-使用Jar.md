@@ -1,15 +1,11 @@
 ---
 layout: post
 title: Metabase 上手 - 使用 Jar 运行
-toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: zh
 tags:
   - Metabase
 categories:
   - OpenSource
-  - Metabase
+  - 数据库
 date: 2022-04-16 02:40:00
 ---
 

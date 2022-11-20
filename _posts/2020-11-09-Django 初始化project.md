@@ -3,7 +3,7 @@ layout: post
 title: Django 初始化 project
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/qyemh3
 ---

@@ -4,8 +4,8 @@ title: ClickHouse 常用函数使用
 tags:
   - ClickHouse
   - SQL
-category:
-  - ClickHouse
+categories:
+  - 数据库
 url: https://www.yuque.com/samzong/code/qk7wca
 ---
 

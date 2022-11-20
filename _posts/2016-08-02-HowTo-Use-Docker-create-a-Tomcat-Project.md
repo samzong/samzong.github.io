@@ -2,9 +2,8 @@
 layout: post
 title: HowTo Use Docker create a Tomcat Project
 tags: 
-    - Docker
+    - Dockerfile
 categories: 
-    - 虚拟化
     - Docker
 date: 2016-08-02 15:44:20
 ---

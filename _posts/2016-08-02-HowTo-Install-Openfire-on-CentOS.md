@@ -5,7 +5,6 @@ tags:
   - Openfire
 categories: 
   - Linux
-  - CentOS
 date: 2016-08-02 16:04:48
 ---
 

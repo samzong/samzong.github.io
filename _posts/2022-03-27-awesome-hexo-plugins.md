@@ -6,7 +6,6 @@ tags:
   - Hexo
 categories:
   - Blog
-  - Hexo
 ---
 
 About my blog use hexo plugin

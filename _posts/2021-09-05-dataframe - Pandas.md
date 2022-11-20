@@ -4,7 +4,7 @@ title: dataframe - Pandas
 tags:
   - Python
   - Pandas
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/fcs5no
 ---

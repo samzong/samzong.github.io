@@ -7,7 +7,6 @@ tags:
     - Telegram
 categories:
     - Tools
-    - Telegram
 ---
 
 ## 关于电报群

@@ -3,7 +3,7 @@ layout: post
 title: Use devtools encodeurl & decodeurl
 tags:
   - Python
-category:
+categories:
   - Python
 url: https://www.yuque.com/samzong/code/bog0ro
 ---

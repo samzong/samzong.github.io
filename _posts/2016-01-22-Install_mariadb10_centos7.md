@@ -6,7 +6,6 @@ tags:
     - CentOS
 categories: 
     - 数据库
-    - MySQL
 ---
 
 CentOS 7.x 默认的 MariaDB 版本是 5.5，但是在有些情况我们需要用到 10 版本，注意 MariaDB 与 MySQL 版本是不一样的，下面简单降下如何快速安装 MariaDB10.1 到 CentOS 7.x.

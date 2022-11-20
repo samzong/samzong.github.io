@@ -3,10 +3,8 @@ layout: post
 title: 使用 SoureceTree 管理你的 git 项目
 tags: 
     - SourceTree
-    - Git
 categories: 
-    - Git
-    - SourceTree
+    - Tools
 date: 2016-04-20 21:31:49
 ---
 

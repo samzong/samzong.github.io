@@ -6,7 +6,6 @@ tags:
     - CentOS
 categories: 
     - Linux
-    - CentOS
 date: 2016-07-05 01:58:03
 ---
 

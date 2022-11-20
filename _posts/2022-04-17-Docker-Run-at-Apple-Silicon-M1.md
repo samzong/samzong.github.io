@@ -9,7 +9,6 @@ tags:
   - Docker
   - Apple M1
 categories:
-  - 虚拟化
   - Docker
 date: 2022-04-17 20:32:00
 ---
