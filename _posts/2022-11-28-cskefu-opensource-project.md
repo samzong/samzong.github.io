@@ -277,7 +277,7 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _组织结构_ -> _选中一个�
 
 点击该网页中出现的“在线客服”按钮，出现聊天窗口，可以作为访客，与客服聊天了。
 
-【提示】春松客服提供一个测试网页客户端的例子，可以使用 _[http://{{春松春松客服 IP:\[PORT](https://docs.cskefu.com/docs/accountinghttp://%7B%7B%E6%98%A5%E6%9D%BE%E6%98%A5%E6%9D%BE%E5%AE%A2%E6%9C%8DIP:%5BPORT)\]}}/testclient.html_ 进行访问。
+【提示】春松客服提供一个测试网页客户端的例子，可以使用 _[http://IP:PORT](https://docs.cskefu.com/docs/accountinghttp://%7B%7B%E6%98%A5%E6%9D%BE%E6%98%A5%E6%9D%BE%E5%AE%A2%E6%9C%8DIP:%5BPORT)\]}}/testclient.html_ 进行访问。
 
 ### Facebook 渠道
 
