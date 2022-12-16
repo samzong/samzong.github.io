@@ -170,6 +170,8 @@ create unique index idx_name on registry (name, workspace_id);
 ~ helm repo update
 ```
 
+<img src='http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/20221216185921.png?x-oss-process=image/resize,w_960,m_lfit' alt='resize,w_960,m_lfit'/>
+
 重点内容： ** 增加完成后 Skoala-release 之后，常用需要关注的有 2 个 Chart：
 
 - Skoala   是 Skoala 的控制端的服务，
