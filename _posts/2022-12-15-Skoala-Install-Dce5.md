@@ -175,13 +175,13 @@ create unique index idx_name on registry (name, workspace_id);
 重点内容： ** 增加完成后 Skoala-release 之后，常用需要关注的有 2 个 Chart：
 
 - Skoala   是 Skoala 的控制端的服务，
-  - **安装完成后，可以网页看到微服务引擎的入口**
-  - 包含 3 个组件 ui、hive、sesame
-  - 需要安装在全局管理集群
+    - **安装完成后，可以网页看到微服务引擎的入口**
+    - 包含 3 个组件 ui、hive、sesame
+    - 需要安装在全局管理集群
 - Skoala-init 是 Skoala 所有的组件 Operator
-  - **仅安装到指定工作集群即可**
-  - 包含组件有：skoala-agent, nacos, contour, sentinel
-  - **未安装时，创建注册中心和网关时会提示缺少组件**
+    - **仅安装到指定工作集群即可**
+    - 包含组件有：skoala-agent, nacos, contour, sentinel
+    - **未安装时，创建注册中心和网关时会提示缺少组件**
 
 默认情况下，安装完成 skoala 到 kpanda-global-cluster(全局管理集群)，就可以在侧边栏看到对应的微服务引擎的入口了。
 
