@@ -17,9 +17,8 @@ permalink: /friends.html
       {{ friend.name }}
     </a>
     {% if friend.desc != '' %}
-	  <small>{{ friend.desc }}</small>
-	{% endif %}
+   <small>{{ friend.desc }}</small>
+ {% endif %}
   </li>
 {% endfor %}
 </ul>
-

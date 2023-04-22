@@ -2,10 +2,6 @@
 
 # 前言
 
-## 博客主题
-
-- [einverne](https://github.com/einverne/einverne.github.io)
-
 ## 使用说明
 
 ### 创建新文章
