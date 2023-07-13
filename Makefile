@@ -24,5 +24,9 @@ build:
 clean:
 	jekyll clean --incremental -V
 
+push:
+	git add .
+	git commit -s -m "add new post"
+	git push origin main
 
 .PHONY: serve build clean help
