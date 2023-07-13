@@ -7,7 +7,7 @@ help:
 	@echo '    make <command>'
 	@echo
 	@echo "Command:"
-	@echo '    serve        启动服务，默认端口 http://127.0.0.1:4000'
+	@echo '    serve        启动服务，默认端口 http://127.0.0.1:3000'
 	@echo '    build        构建静态文件'
 	@echo '    clean        清理静态文件'
 	@echo '    help         显示帮助信息'
@@ -16,13 +16,13 @@ help:
 	@echo
 
 serve:
-	jekyll serve -w --incremental
+	yarn start
 
 build:
-	jekyll build --incremental -d ${BUILD_PATH}
+	yarn build
 
 clean:
-	jekyll clean --incremental -V
+	yarn clean
 
 push:
 	git add .

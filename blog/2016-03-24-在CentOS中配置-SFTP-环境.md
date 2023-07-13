@@ -1,0 +1,136 @@
+---
+title: 在 CentOS 中配置 SFTP 环境
+tags: [SSH]
+date: 2016-03-24 14:55:03
+---
+
+做运维工作的，应该经常会碰到这样的问题，需要新上一个 web 项目，需要上传文件到服务器上，解决方法有很多种，常见的如 sftp 和 ftp，今天讲如何使用 sftp 让系统用户用户上传项目的权限，并且实现 chroot 和无法使用 ssh 登录到系统。
+
+SFTP 是指 SSH 文件传输协议（SSH File Transfer protocol）或安全文件传输协议（Secure File Transfer Protocol），它提供了可信数据流下的文件访问、文件传输以及文件管理功能。当我们为 SFTP 配置 chroot 环境后，只有被许可的用户可以访问，并被限制到他们的家目录中，换言之：被许可的用户将处于牢笼环境中，在此环境中它们甚至不能切换它们的目录。
+
+## 1. 测试环境
+
+* MacBook Pro 15-inch i7 16GB
+* VMware Fushion 8 Pro
+* Transmit ( SFTP tools for Mac )
+
+```bash
+[root@test ~]# cat /etc/issue
+CentOS release 6.6 (Final)
+Kernel \r on an \m
+[root@test ~]# rpm -qa | grep openssh-server
+openssh-server-5.3p1-104.el6.i686
+```
+
+## 2. 实验步骤
+
+### 2.1 增加一个 sftpusers 用户组
+
+```bash
+[root@test ~]# groupadd sftpusers
+```
+
+### 2.2 创建一个用户 user01，并分配给 sftpusers 用户组
+
+```bash
+[root@test ~]# useradd -g sftpusers user01
+```
+
+### 2.3 修改用户家目录及指定不能登录 shell
+
+```bash
+[root@test ~]# mkdir /sftp/
+[root@test ~]# usermod -s /sbin/nologin -d /sftp/user01 -m user01
+```
+
+### 2.4 给用户创建密码（注意密码不明文显示）
+
+```bash
+[root@test ~]# passwd user01
+Changing password for user user01.
+New password:
+BAD PASSWORD: it is too simplistic/systematic
+BAD PASSWORD: is too simple
+Retype new password:
+passwd: all authentication tokens updated successfully.
+[root@test ~]#
+```
+
+### 2.5 修改 ssh 的配置文件，如下设置
+
+```bash
+[root@test ~]# ll /etc/ssh/sshd_config
+-rw-------. 1 root root 3879 Oct 15  2014 /etc/ssh/sshd_config
+[root@test ~]# vim /etc/ssh/sshd_config
+
+# line 132
+#Subsystem      sftp    /usr/libexec/openssh/sftp-server    #注释
+Subsystem       sftp    internal-sftp        #修改为internal-sftp
+
+# add this lines at the end of file
+Match Group sftpusers        #指定一下参数仅适用的用户组sftpusers
+    X11Forwarding no
+    AllowTcpForwarding no
+    ChrootDirectory %h       #设置chroot将用户锁在家目录，%h=家目录
+    ForceCommand internal-sftp    #该参数强制执行内部sftp
+```
+
+### 2.6 重启 ssh 服务
+
+```bash
+[root@test ~]# /etc/init.d/sshd restart
+Stopping sshd:                                             [  OK  ]
+Starting sshd:                                             [  OK  ]
+```
+
+### 2.7 设置用户家目录权限，(注意权限不能大于 0755)
+
+```bash
+[root@test ~]# chmod 0755 /sftp/user01/
+[root@test ~]# chown root /sftp/user01/
+[root@test ~]# chgrp -R sftpusers /sftp/user01/
+```
+
+### 2.8 关于上传，根目录无法上传文件
+
+因为用户家目录属主是 root，并且权限最大 0755，所以没法写，我的解决方法是在在家目录建立一个文件夹，作为上传目录，并把属主给 user01 即可。
+
+```bash
+[root@test ~]# mkdir /sftp/user01/upload
+[root@test ~]# chown user01:sftpusers /sftp/user01/upload/
+```
+
+## 3. 测试验证
+
+### 3.1 Linux 登录测试
+
+```bash
+[root@test ~]# su - user01
+This account is currently not available.    #su - 切换失败
+
+[root@test ~]# cat /etc/passwd | tail -1
+user01:x:500:500::/sftp/user01:/sbin/nologin
+
+[root@test ~]# ssh user01@localhost
+The authenticity of host 'localhost (::1)' can't be established.
+RSA key fingerprint is f3:fc:31:dc:7d:16:d5:ad:8c:bc:eb:69:8f:b2:0b:c9.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
+user01@localhost's password:
+This service allows sftp connections only.    #ssh登录也失败，ssh设置成功
+Connection to localhost closed.
+
+[root@test ~]# sftp user01@localhost
+Connecting to localhost...
+user01@localhost's password:
+sftp> ls
+upload
+sftp> pwd
+Remote working directory: /
+sftp>
+
+```
+
+### 3.2 SFTP 工具测试
+
+我这里使用的是 Mac，但是传统的文件传输工具都差不多，Windows 下有 Winscp、Xftp 等。

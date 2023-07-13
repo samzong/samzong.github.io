@@ -1,8 +1,6 @@
-[![build-deploy](https://github.com/SAMZONG/samzong.me/actions/workflows/ci.yml/badge.svg)](https://github.com/SAMZONG/samzong.me/actions/workflows/ci.yml)  [![pages-build-deployment](https://github.com/SAMZONG/samzong.me/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/SAMZONG/samzong.me/actions/workflows/pages/pages-build-deployment)
+[![build-deploy](https://github.com/SAMZONG/samzong.me/actions/workflows/deploy.yaml/badge.svg)](https://github.com/SAMZONG/samzong.me/actions/workflows/deploy.yaml)
 
-# 前言
-
-## 使用说明
+## 前言
 
 ### 创建新文章
 
@@ -23,4 +21,4 @@ rake page name="about.html"
 ## 运行 Jekyll
 
 - 目录下运行 `make serve`
-- 本地浏览地址：[http://localhost:4000](http://localhost:4000)
+- 本地浏览地址：[http://localhost:3000](http://localhost:3000)
