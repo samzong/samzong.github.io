@@ -1,6 +1,6 @@
 ---
 title: SSH LINUX Security Settings
-tags: [SSH]
+tags: [Linux]
 date: 2016-10-29 06:23:59
 ---
 

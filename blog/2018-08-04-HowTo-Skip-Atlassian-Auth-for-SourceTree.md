@@ -1,6 +1,6 @@
 ---
 title: HowTo Skip Atlassian Auth for SourceTree
-tags: [SourceTree]
+tags: [Git]
 ---
 
 ## 问题

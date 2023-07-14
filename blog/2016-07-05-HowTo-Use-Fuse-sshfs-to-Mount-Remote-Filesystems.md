@@ -1,6 +1,6 @@
 ---
 title: HowTo Use Fuse-sshfs to Mount Remote Filesystems
-tags: [SSH]
+tags: [Linux]
 date: 2016-07-05 01:58:03
 ---
 

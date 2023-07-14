@@ -1,6 +1,6 @@
 ---
 title: HowTo Use SSR Service on Mac
-tags: [VPN]
+tags: [Google]
 permalink: /2017/11/15/howto-user-ssr-on-mac/
 ---
 

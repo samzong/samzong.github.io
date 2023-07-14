@@ -1,6 +1,6 @@
 ---
 title: Use Script Install LNMP
-tags: [Shell]
+tags: [Linux]
 date: 2016-08-13 06:12:43
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 在 CentOS 中配置 SFTP 环境
-tags: [SSH]
+tags: [Linux]
 date: 2016-03-24 14:55:03
 ---
 

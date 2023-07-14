@@ -1,6 +1,6 @@
 ---
 title: 在 Linux 终端使用 SSR 服务实现科学上网
-tags: [VPN]
+tags: [Google]
 ---
 
 

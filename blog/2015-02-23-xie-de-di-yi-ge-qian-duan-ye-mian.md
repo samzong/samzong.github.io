@@ -1,6 +1,6 @@
 ---
 title: 写的第一个前端页面
-tags: [HTML]
+tags: [Fronted]
 ---
 
 ![ne0Eiv](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/ne0Eiv.png)

@@ -1,6 +1,6 @@
 ---
 title: Docker Hub 国内加速
-tags: [DockerHub]
+tags: [Docker]
 date: 2017-01-07 15:32:23
 ---
 

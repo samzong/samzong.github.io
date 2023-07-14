@@ -1,6 +1,6 @@
 ---
 title: 理解 Linux 的硬链接与软链接
-tags: [基础知识]
+tags: [Linux]
 date: 2016-03-18 14:52:13
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Manage Tomcat Service Use Shell Script
-tags: [Shell]
+tags: [Linux]
 date: 2016-07-27 02:18:24
 ---
 

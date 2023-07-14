@@ -1,6 +1,6 @@
 ---
 title: Kubernetes Operator
-tags: [Operator]
+tags: [Kubernetes]
 ---
 
 <https://www.redhat.com/zh/topics/containers/what-is-a-kubernetes-operator>

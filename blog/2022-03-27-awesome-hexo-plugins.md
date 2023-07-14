@@ -78,8 +78,7 @@ restful:
     title: true
     slug: true
     date: true
-    updated: true
-    comments: true
+        comments: true
     path: true
     excerpt: false
     cover: true      # 封面图，取文章第一张图片

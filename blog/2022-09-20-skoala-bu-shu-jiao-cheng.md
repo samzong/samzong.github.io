@@ -1,6 +1,6 @@
 ---
 title: Skoala 部署教程
-tags: [Skoala]
+tags: [DaoCloud]
 ---
 
 ## 使用之前的话

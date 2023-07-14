@@ -48,7 +48,7 @@ const config = {
           blogTitle: "Samzong blog!",
           blogDescription: "A Docusaurus powered blog!",
           postsPerPage: 1,
-          blogSidebarCount: 50, // or 'ALL'
+          blogSidebarCount: 30, // or 'ALL'
           blogSidebarTitle: "Recent posts",
           tagsBasePath: "tags",
           archiveBasePath: "archives",
@@ -85,19 +85,21 @@ const config = {
           href: 'https://samzong.me',
         },
         items: [
+          { label: "Github", href: "https://github.com/samzong/", position: "right", },
           { to: "/tags", label: "Tags", position: "right" },
-          { to: "/archives", label: "Archives", position: "right" },
+          { type: 'search',position: 'left',}
+          // { to: "/archives", label: "Archives", position: "right" },
         ],
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        content:
-          '⭐️ If you find my articles beneficial, feel free to follow me on <a target="_blank" rel="noopener noreferrer" href="https://github.com/samzong">GitHub</a>! ⭐️',
-      },
+      // announcementBar: {
+      //   content:
+      //     '⭐️ If you find my articles beneficial, feel free to follow me on <a target="_blank" rel="noopener noreferrer" href="https://github.com/samzong">GitHub</a>! ⭐️',
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
@@ -111,7 +113,7 @@ const config = {
         // Optional: see doc section below
         contextualSearch: true,
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: "external\\.com|domain\\.com",
+        // externalUrlRegex: "external\\.com|domain\\.com",
 
         // Optional: Algolia search parameters
         searchParameters: {},
@@ -119,7 +121,10 @@ const config = {
         // Optional: path for search page that enabled by default (`false` to disable it)
         searchPagePath: "search",
       },
-      metadata: [{ name: "keywords", content: "cooking, blog" }],
+      markdown: {
+        mermaid: true,
+      },
+      metadata: [{ name: "keywords", content: "kubernetes, blog" }],
     }),
 };
 

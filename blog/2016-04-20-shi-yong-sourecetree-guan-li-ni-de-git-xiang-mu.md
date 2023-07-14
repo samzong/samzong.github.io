@@ -1,6 +1,6 @@
 ---
 title: 使用 SoureceTree 管理你的 git 项目
-tags: [SourceTree]
+tags: [Git]
 date: 2016-04-20 21:31:49
 ---
 

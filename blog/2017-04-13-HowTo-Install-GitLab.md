@@ -1,6 +1,6 @@
 ---
 title: HowTo Install GitLab
-tags: [Gitlab]
+tags: [Git]
 date: 2017-04-13 11:18:17
 ---
 

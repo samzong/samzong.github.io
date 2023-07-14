@@ -4,7 +4,6 @@ toc: true
 authors: [samzong]
 tags: []
 date: 2022-03-27 21:18:00
-updated: 2022-03-27 21:18:00
 ---
 
 > to_url : [http://pyenv.run/](http://pyenv.run/)

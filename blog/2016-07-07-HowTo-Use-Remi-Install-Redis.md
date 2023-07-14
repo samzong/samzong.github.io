@@ -1,6 +1,6 @@
 ---
 title: HowTo Use Remi Install Redis
-tags: [Yum]
+tags: [CentOS]
 date: 2016-07-07 03:49:02
 ---
 

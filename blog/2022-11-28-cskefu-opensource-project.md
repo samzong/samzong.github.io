@@ -1,8 +1,11 @@
 ---
-title: "开源项目 - 春松客服"
-category: 春松客服
-tags: [开源项目]
+title: 春松客服
+tags: [Projects]
 ---
+
+:::info
+[Cskefu](https://github.com/cskefu/cskefu)
+:::
 
 ## 项目起源
 

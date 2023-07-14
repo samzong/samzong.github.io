@@ -1,6 +1,6 @@
 ---
 title: HowTo Install Fabric on CentOS 7.x
-tags: [Fabric]
+tags: [CentOS]
 date: 2016-05-05 05:54:08
 ---
 

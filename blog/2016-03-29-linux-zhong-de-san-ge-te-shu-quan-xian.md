@@ -1,6 +1,6 @@
 ---
 title: Linux 中的三个特殊权限
-tags: [基础知识]
+tags: [Linux]
 date: 2016-03-29 07:50:36
 ---
 

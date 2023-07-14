@@ -1,6 +1,6 @@
 ---
 title: HowTo Use Docker create a Tomcat Project
-tags: [Dockerfile]
+tags: [Docker]
 date: 2016-08-02 15:44:20
 ---
 

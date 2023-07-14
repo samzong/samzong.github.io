@@ -1,6 +1,6 @@
 ---
 title: 使用 mosh 代替 ssh 连接服务器
-tags: [SSH]
+tags: [Linux]
 date: 2016-06-16 02:28:02
 ---
 

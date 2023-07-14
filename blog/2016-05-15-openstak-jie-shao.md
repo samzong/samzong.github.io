@@ -1,6 +1,6 @@
 ---
 title: OpenStak 介绍
-tags: [OpenStack]
+tags: [Projects]
 date: 2016-05-15 12:52:05
 ---
 
