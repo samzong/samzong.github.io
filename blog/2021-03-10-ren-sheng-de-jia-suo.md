@@ -1,10 +1,6 @@
 ---
 title: 人生的枷锁
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/3c099bea398bbb398d857e2c2d43614d
+tags: []
 ---
 
 英国作家毛姆在《人生的枷锁》中，有一段论述青春的话很好：

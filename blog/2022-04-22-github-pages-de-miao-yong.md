@@ -1,13 +1,7 @@
 ---
 title: GitHub Pages 的妙用
-toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: en
-tags: 
-  - Github
-categories:
-  - Blog
+authors: [samzong]
+tags: []
 date: 2022-04-22 17:23:00
 ---
 

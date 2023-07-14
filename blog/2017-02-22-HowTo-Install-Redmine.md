@@ -1,9 +1,6 @@
 ---
 title: HowTo Install Redmine
-tags: 
-  - Redmine
-categories:
-  - OpenSource
+tags: []
 date: 2017-02-22 12:30:36
 ---
 

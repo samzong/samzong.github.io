@@ -1,10 +1,6 @@
 ---
 title: HowTo Mount OSS Bucket On ECS
-tags: 
-  - Aliyun
-  - CentOS
-categories:
-  - 云平台 
+tags: []
 date: 2016-12-20 06:17:08
 ---
 

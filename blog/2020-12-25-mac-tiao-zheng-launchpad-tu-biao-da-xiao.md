@@ -1,10 +1,6 @@
 ---
 title: Mac 调整 Launchpad 图标大小
-tags: 
-  - Mac
-categories:
-  - Mac
-url: https://www.yuque.com/samzong/ap/mac-1-diao-zhenglaunchpad-tu-biao-da-xiao
+tags: []
 ---
 
 <!-- ![image](assets/mac-1-diao-zhenglaunchpad-tu-biao-da-xiao)  很多人觉得默认 Launchpad 的应用程序图标很大，空间比较拥挤，不过这个其实是可以通过调整 Launchpad 每一行和每一列图标的数量，来调整 Launchpad 图标大小。 -->

@@ -1,11 +1,6 @@
 ---
 title: Creating DataFrame using list
-tags: 
-  - Pandas
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/kp5thy
+tags: []
 ---
 
 ```python

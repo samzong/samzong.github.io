@@ -1,10 +1,6 @@
 ---
 title: Django 修改 modules 时出错
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/emzcai
+tags: []
 ---
 
 

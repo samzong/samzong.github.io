@@ -1,10 +1,6 @@
 ---
 title: python3 str 去除特定内容
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/dhom48
+tags: []
 ---
 
 ```python

@@ -1,8 +1,6 @@
 ---
 title: HowTo Install Python 2.7.8 on CentOS 6.x
-tags:  
-    - Python
-    - CentOS
+tags: []
 date: 2016-05-04 11:04:19
 ---
 

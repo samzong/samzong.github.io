@@ -1,7 +1,6 @@
 ---
 title: Contour & Envoy 指标
 tags: [Contour]
-url: https://www.yuque.com/samzong/dao/faugco
 ---
 
 

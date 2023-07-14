@@ -1,10 +1,7 @@
 ---
 title: 龙族路明非
 tags: [Zero]
-categories:
-  - 故事汇
 date: '2016-03-07 00:34:54'
-updated: '2016-03-07 00:34:54'
 ---
 
 

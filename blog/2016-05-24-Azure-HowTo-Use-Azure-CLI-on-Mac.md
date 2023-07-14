@@ -1,7 +1,6 @@
 ---
 title: HowTo Use Azure CLI on Mac
-tags: 
-  - Azure
+tags: []
 date: 2016-05-24 07:00:12
 ---
 

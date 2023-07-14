@@ -2,7 +2,6 @@
 title: 世界上最没用的东西
 tags: [Zero]
 date: '2016-11-27 22:40:54'
-updated: '2016-11-27 22:40:54'
 ---
 
 [知乎](https://www.zhihu.com/question/21905681/answer/93684468)

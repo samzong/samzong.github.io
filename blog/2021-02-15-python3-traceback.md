@@ -1,10 +1,6 @@
 ---
 title: python3 traceback
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/gy3x67
+tags: []
 ---
 
 打印堆栈信息，方便调试

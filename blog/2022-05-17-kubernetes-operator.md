@@ -1,8 +1,6 @@
 ---
 title: Kubernetes Operator
 tags: [Operator]
-categories: Kubernetes
-url: https://www.yuque.com/samzong/dao/khckm3
 ---
 
 <https://www.redhat.com/zh/topics/containers/what-is-a-kubernetes-operator>

@@ -2,7 +2,6 @@
 title: 路途上
 tags: [Zero]
 date: '2015-04-03 00:34:54'
-updated: '2015-04-03 00:34:54'
 ---
 
 ![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/cqdrw.jpg)

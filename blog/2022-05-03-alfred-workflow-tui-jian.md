@@ -1,10 +1,7 @@
 ---
 title: Alfred Workflow 推荐
 toc: true
-tags: 
-  - Mac
-categories:
-  - Mac
+tags: []
 date: 2022-05-03 20:14:49
 ---
 

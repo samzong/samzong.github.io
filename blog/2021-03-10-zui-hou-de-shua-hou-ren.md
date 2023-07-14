@@ -1,10 +1,6 @@
 ---
 title: 最后的耍猴人
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/547b33b7437501e271cad0e2858b0515
+tags: []
 ---
 
 - 这些耍猴的人这么苦是为什么？他们虽然用的是最底层、最辛苦的方式赚钱，但其中透露出一种骨气，这是河南新野耍猴人的人格力量。

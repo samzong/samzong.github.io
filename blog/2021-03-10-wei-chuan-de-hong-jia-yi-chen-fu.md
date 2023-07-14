@@ -1,10 +1,6 @@
 ---
 title: 未穿的红嫁衣·沉浮
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/8a167fcf3aa51fb2cb290921e681195c
+tags: []
 ---
 
 - 历史学家是一群古怪的动物，吃饱了饭没事儿干，没完没了地咀嚼那逝去的岁月，犹如牛之““反刍””。

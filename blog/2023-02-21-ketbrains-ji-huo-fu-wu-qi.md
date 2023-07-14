@@ -1,11 +1,8 @@
 ---
 title: "在线服务器激活 Ketbrains"
-tagline: ""
-description: ""
 category:
   - Python
 tags: [Pycharm,Python]
-last_updated: 
 ---
 
 ## Ketbrains 激活服务器

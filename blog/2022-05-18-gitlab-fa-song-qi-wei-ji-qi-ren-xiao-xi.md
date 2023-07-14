@@ -1,12 +1,6 @@
 ---
 title: Gitlab 发送企微机器人消息
-tags: 
-  - GitLab
-  - Webhook
-  - Bot
-categories:
-  - Git
-url: https://www.yuque.com/samzong/code/wuza4l
+tags: []
 ---
 
 - 企业微信机器人消息说明： <https://developer.work.weixin.qq.com/document/path/91770>

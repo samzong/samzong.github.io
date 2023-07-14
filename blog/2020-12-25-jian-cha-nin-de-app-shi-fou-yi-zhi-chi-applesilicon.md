@@ -1,10 +1,6 @@
 ---
 title: 检查您的 App 是否已支持 AppleSilicon
-tags: 
-  - Mac
-categories:
-  - Mac
-url: https://www.yuque.com/samzong/ap/check-you-favorites-app-is-ready-on-applesilicon
+tags: []
 ---
 
 <!-- ![image](assets/check-you-favorites-app-is-ready-on-applesilicon)这里带来 2 个网站，方便大家来检查您所使用和关注的 App 是否已经支持了最新的 Apple M1 芯片 -->

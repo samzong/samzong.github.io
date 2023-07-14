@@ -1,10 +1,6 @@
 ---
 title: 愿有人陪你颠沛流离
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/149f78cb5fc4eeba90f6efcc6dae2792
+tags: []
 ---
 
 - 不管昨夜你是多么泣不成声，早晨醒来城市依旧车水马龙。

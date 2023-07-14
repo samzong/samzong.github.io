@@ -1,10 +1,6 @@
 ---
 title: Skoala 部署教程
 tags: [Skoala]
-categories:
-  - Kubernetes
-  - DaoCloud Enterprise
-url: https://www.yuque.com/samzong/dao/gxi2v9
 ---
 
 ## 使用之前的话

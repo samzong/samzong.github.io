@@ -1,10 +1,6 @@
 ---
 title: Use devtools encodeurl & decodeurl
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/bog0ro
+tags: []
 ---
 
 ```javascript

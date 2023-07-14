@@ -1,10 +1,6 @@
 ---
 title: 01 快速了解连接数据库
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/sq7gvv
+tags: []
 ---
 
 SQLAlchemy 是 ORM 框架，目前主流且比较通用，在程序中用来处理数据库相关的能力，本文是用于学习和理解 SQLAlchemy 的记录，主要使用的编程语言是 Python

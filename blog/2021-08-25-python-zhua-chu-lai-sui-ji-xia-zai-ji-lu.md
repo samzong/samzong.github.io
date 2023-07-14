@@ -1,10 +1,6 @@
 ---
 title: Python 抓出来随机下载记录
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/yi4nu9
+tags: []
 ---
 
 ```python

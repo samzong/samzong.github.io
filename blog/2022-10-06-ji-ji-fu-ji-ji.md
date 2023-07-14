@@ -1,10 +1,6 @@
 ---
 title: 唧唧复唧唧
-tags: 
-  - 旧书摘
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/086c3894618ed4df6a8133bf5f49566d
+tags: []
 ---
 
 [王路](https://www.amazon.cn/gp/product/B01951CHO6/ref=as_li_qf_sp_asin_tl?ie=UTF8\&camp=536\&creative=3200\&creativeASIN=B01951CHO6\&linkCode=as2\&tag=llll1-23)

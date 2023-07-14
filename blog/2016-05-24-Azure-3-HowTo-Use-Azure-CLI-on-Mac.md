@@ -1,9 +1,6 @@
 ---
 title: Azure CLI Import AcountInfo
-tags: 
-  - Azure
-categories:
-  - 云平台
+tags: []
 date: 2016-05-24 06:20:43
 ---
 

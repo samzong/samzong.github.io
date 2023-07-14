@@ -1,10 +1,6 @@
 ---
 title: covert timestamp2datetime
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/kgogb9
+tags: []
 ---
 
 ```python

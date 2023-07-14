@@ -1,10 +1,6 @@
 ---
 title: 常用 SQL-拼接日期
-tags: 
-  - SQL
-categories:
-  - 数据库
-url: https://www.yuque.com/samzong/code/cxwzmo
+tags: []
 ---
 
 

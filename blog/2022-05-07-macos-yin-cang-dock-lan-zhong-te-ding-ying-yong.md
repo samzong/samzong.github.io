@@ -1,10 +1,8 @@
 ---
 title: MacOS 隐藏 Dock 栏中特定应用
 toc: true
-tags: 
-  - Mac
+tags: []
 date: 2022-05-07 14:57:54
-categories:
 ---
 
 

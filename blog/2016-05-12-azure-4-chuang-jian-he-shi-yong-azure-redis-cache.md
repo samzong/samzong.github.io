@@ -1,7 +1,6 @@
 ---
 title: 创建和使用 Azure Redis Cache
-tags: 
-  - Azure
+tags: []
 date: 2016-05-12 06:12:02
 ---
 

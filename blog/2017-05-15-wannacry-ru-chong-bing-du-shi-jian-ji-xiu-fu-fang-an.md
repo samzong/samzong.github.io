@@ -1,9 +1,6 @@
 ---
 title: Wannacry 蠕虫病毒事件及修复方案
-tags: 
-   - Windows
-categories: 
-   - 安全
+tags: [Windows]
 ---
 
 ![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/3d0jo.png)

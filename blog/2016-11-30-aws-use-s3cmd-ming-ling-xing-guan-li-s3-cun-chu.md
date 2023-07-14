@@ -1,9 +1,6 @@
 ---
 title: AWS Use s3cmd 命令行管理 S3 存储
-tags: 
-  - AWS
-categories:
-  - 云平台
+tags: []
 date: 2016-11-30 23:45:54
 ---
 

@@ -1,10 +1,8 @@
 ---
 title: 国内环境搭建 MacOS K8s 开发环境
 toc: true
-tags: 
-  - K8s
+tags: []
 date: 2022-05-17 10:09:02
-categories:
 ---
 
 ## Minikube

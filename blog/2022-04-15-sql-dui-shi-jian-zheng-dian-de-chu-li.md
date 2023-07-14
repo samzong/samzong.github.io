@@ -1,13 +1,8 @@
 ---
 title: SQL 对时间整点的处理
 toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: en
-tags: 
-  - ClickHouse
-categories:
-  - 数据库
+authors: [samzong]
+tags: []
 date: 2022-04-15 18:55:00
 ---
 ## 需要取值整点时间

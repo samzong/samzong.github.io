@@ -1,9 +1,6 @@
 ---
 title: What is Hukou
-tags: 
-  - OAuth
-categories:
-  - 安全
+tags: []
 ---
 
 ## 背景

@@ -1,10 +1,6 @@
 ---
 title: dingtalk orgBot sign generate
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/udxbvk
+tags: []
 ---
 
 需要使用到 hmac 以及 time 库

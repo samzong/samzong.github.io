@@ -1,8 +1,6 @@
 ---
 title: kubernetes 学习之路
-tags: 
-  - 基础知识
-url: https://www.yuque.com/samzong/dao/tv2ql4
+tags: []
 ---
 
 

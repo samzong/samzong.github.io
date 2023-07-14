@@ -1,10 +1,6 @@
 ---
 title: python3 setup.py --help-commands
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/glywie
+tags: []
 ---
 
 ```python

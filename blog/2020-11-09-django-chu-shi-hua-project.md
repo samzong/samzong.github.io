@@ -1,10 +1,6 @@
 ---
 title: Django 初始化 project
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/qyemh3
+tags: []
 ---
 
 ```bash

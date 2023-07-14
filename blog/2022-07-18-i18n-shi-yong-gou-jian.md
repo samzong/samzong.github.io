@@ -1,10 +1,6 @@
 ---
 title: i18n 使用构建
-tags: 
-  - i18n
-  - Weblate
-categories: 前端
-url: https://www.yuque.com/samzong/dao/mz8tr5
+tags: []
 ---
 
 

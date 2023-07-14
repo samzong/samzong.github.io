@@ -1,8 +1,6 @@
 ---
 title: Contour 设计理念
 tags: [Contour]
-categories: Kubernetes
-url: https://www.yuque.com/samzong/dao/dqvk7v
 ---
 
 Contour 是一个第 7 层 **HTTP** 中间件反向代理，用于启用 Kubernetes 集群的入口。

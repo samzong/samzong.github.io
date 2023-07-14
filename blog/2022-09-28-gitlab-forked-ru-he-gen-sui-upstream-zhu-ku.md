@@ -1,10 +1,6 @@
 ---
 title: GitLab Forked 如何跟随 upstream 主库
-tags: 
-  - GitLab
-categories:
-  - Git
-url: https://www.yuque.com/samzong/code/vfu56m
+tags: []
 ---
 
 :::info

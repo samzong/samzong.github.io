@@ -1,11 +1,7 @@
 ---
 title: bypy 百度网盘 Python 客户端
-tags: 
-  - Python
-categories:
-  - Python
-author: samzong.lu
-language: zh
+tags: []
+authors: [samzong]
 toc: 'true'
 date: 2017-06-02 12:00:00
 ---

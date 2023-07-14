@@ -1,10 +1,6 @@
 ---
 title: Kafka 调研及功能设计
-tags: 
-  - Kafka
-categories:
-  - 数据库
-url: https://www.yuque.com/samzong/dao/meqiq3
+tags: []
 ---
 
 

@@ -1,9 +1,6 @@
 ---
 title: CentOS 初始安装基本优化操作
-tags: 
-  - CentOS
-categories:
-  - Linux
+tags: []
 date: 2016-03-19 05:54:23
 ---
 

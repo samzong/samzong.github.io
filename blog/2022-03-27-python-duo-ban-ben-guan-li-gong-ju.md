@@ -1,11 +1,8 @@
 ---
 title: Pyenv Python 多版本管理利器
 toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: zh
-tags: 
-  - Python
+authors: [samzong]
+tags: []
 date: 2022-03-27 21:18:00
 updated: 2022-03-27 21:18:00
 ---

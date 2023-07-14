@@ -1,10 +1,7 @@
 ---
 title: "开源项目 - 春松客服"
-tagline: ""
-description: ""
 category: 春松客服
 tags: [开源项目]
-last_updated: 
 ---
 
 ## 项目起源

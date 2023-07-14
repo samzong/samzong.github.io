@@ -1,11 +1,6 @@
 ---
 title: Apollo 如何实现配置热发布
-tags: 
-  - Apollo
-  - 微服务
-categories:
-  - 微服务
-url: https://www.yuque.com/samzong/code/apollo-pei-zhi-zhong-xin-ru-he-shi-xian-pei-zhi-re
+tags: []
 ---
 
 配置中心在微服务架构体系中是非常重要的基础设施服务，承担着分布式配置集中管理、配置热发布以及审计等重要的职责。本文主要探讨 Apollo 配置中心的配置热发布特性如何实现。

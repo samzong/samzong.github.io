@@ -1,8 +1,6 @@
 ---
 title: JWT 内置的方式
-tags: 
-  - Contour
-url: https://www.yuque.com/samzong/dao/gk0ll3
+tags: []
 ---
 
 - 支持为 API 启用 jwt token 解码的能力 ,  读取网关的 jwt key

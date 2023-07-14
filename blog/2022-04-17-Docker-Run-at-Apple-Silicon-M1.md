@@ -1,14 +1,8 @@
 ---
 title: Dockerfile Run at M1 processor build failed
 toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: en
-tags: 
-  - Docker
-  - Apple M1
-categories:
-  - Docker
+authors: [samzong]
+tags: []
 date: 2022-04-17 20:32:00
 ---
 

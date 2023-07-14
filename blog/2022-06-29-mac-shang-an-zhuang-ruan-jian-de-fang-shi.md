@@ -1,10 +1,6 @@
 ---
 title: Mac 上安装软件的方式
-tags: 
-  - Mac
-categories:
-  - Mac
-url: https://www.yuque.com/samzong/ap/cx5yst
+tags: []
 ---
 
 

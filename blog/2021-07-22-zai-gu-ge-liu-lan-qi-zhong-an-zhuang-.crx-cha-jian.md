@@ -1,10 +1,6 @@
 ---
 title: 在谷歌浏览器中安装.crx 插件
-tags: 
-  - Mac
-categories:
-  - Mac
-url: https://www.yuque.com/samzong/ap/zai-gu-ge-liu-lan-qi-zhong-an-zhuangcrx-cha-jian
+tags: []
 ---
 
 下载插件：[immpkjjlgappgfkkfieppnmlhakdmaab\_v0.9.8.74.zip](https://www.yuque.com/attachments/yuque/0/2021/zip/343806/1626953566160-f0ac0382-2820-497b-ac94-4d45bf856ab6.zip?_lake_card=%7B%22src%22%3A%22https%3A%2F%2Fwww.yuque.com%2Fattachments%2Fyuque%2F0%2F2021%2Fzip%2F343806%2F1626953566160-f0ac0382-2820-497b-ac94-4d45bf856ab6.zip%22%2C%22name%22%3A%22immpkjjlgappgfkkfieppnmlhakdmaab_v0.9.8.74.zip%22%2C%22size%22%3A149152%2C%22type%22%3A%22application%2Fzip%22%2C%22ext%22%3A%22zip%22%2C%22status%22%3A%22done%22%2C%22taskId%22%3A%22uc49f92d7-8f44-47ac-9838-e24bd41e27c%22%2C%22taskType%22%3A%22upload%22%2C%22id%22%3A%22u573c41c9%22%2C%22card%22%3A%22file%22%7D)

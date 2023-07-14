@@ -1,12 +1,6 @@
 ---
 title: 腾讯云微服务网关
-tags: 
-  - 云原生网关
-  - 腾讯云
-categories:
-  - Kubernetes
-  - 云平台
-url: https://www.yuque.com/samzong/dao/lrghqv
+tags: []
 ---
 
 

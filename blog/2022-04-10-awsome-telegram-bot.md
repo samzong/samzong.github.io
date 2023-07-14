@@ -2,10 +2,7 @@
 title: Awsome Telegram Bot
 toc: true
 date: 2022-04-10 22:20:25
-tags: 
-    - Telegram
-categories:
-    - Tools
+tags: [Telegram]
 ---
 
 ## 关于电报群

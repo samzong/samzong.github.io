@@ -1,10 +1,6 @@
 ---
 title: Panads fill NaN value to Zero
-tags: 
-  - Pandas
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/bvadi3
+tags: []
 ---
 
 ```python

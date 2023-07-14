@@ -1,10 +1,6 @@
 ---
 title: macOs Terminal 三剑客
-tags: 
-  - Mac
-categories:
-  - Mac
-url: https://www.yuque.com/samzong/ap/aof3re
+tags: []
 ---
 
 

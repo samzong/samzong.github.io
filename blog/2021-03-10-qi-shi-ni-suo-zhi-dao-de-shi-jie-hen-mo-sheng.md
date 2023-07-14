@@ -1,10 +1,6 @@
 ---
 title: 其实，你所知道的世界很陌生
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/38994d1837d3a0ae838944b4fafbbaae
+tags: []
 ---
 
 - 一座城市到另一座城市，从一个国度到另一个国度，从一个人到另一个人，谁不是只身而来只身而去。最重要的总不在行李上。

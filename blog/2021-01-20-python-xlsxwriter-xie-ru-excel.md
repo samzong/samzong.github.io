@@ -1,10 +1,6 @@
 ---
 title: python xlsxwriter 写入 excel
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/xp5om9
+tags: []
 ---
 
 以下是使用的方法：

@@ -1,10 +1,6 @@
 ---
 title: python3 文本处理 strip() split()
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/zyil6u
+tags: []
 ---
 
 - strip() 删除字符串中的内容，删除后仍旧是 str

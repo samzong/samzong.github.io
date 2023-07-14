@@ -1,10 +1,6 @@
 ---
 title: Python Pip 国内加速
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/python-pip-guo-nei-jia-su
+tags: []
 ---
 
 目前国内还是有比较多的镜像站，截止目前使用下比较稳定的只有下面这个 清华的镜像站了

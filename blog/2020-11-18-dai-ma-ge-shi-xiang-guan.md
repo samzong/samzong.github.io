@@ -1,10 +1,6 @@
 ---
 title: 代码格式相关
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/xewo3v
+tags: []
 ---
 
 ```java

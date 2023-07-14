@@ -1,8 +1,6 @@
 ---
 title: Kubernetes 部署错误解决汇总
 tags: [Kubernetes]
-categories: Kubernetes
-url: https://www.yuque.com/samzong/dao/kqwdhc
 ---
 
 

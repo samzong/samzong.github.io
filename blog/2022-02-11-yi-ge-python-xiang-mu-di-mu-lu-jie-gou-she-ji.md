@@ -1,10 +1,6 @@
 ---
 title: 一个 Python 项目的目录结构设计
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/vn49me
+tags: []
 ---
 
 

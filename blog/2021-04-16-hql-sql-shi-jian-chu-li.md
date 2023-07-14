@@ -1,10 +1,6 @@
 ---
 title: HQL/SQL时间处理
-tags: 
-  - SQL
-categories:
-  - 数据库
-url: https://www.yuque.com/samzong/code/phn4g3
+tags: []
 ---
 
 ```sql

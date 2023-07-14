@@ -1,11 +1,6 @@
 ---
 title: 钉钉内网穿透工具
-tags: 
-  - Developer
-  - 钉钉
-categories:
-  - Tools
-url: https://www.yuque.com/samzong/code/shi-yong-ding-ding-nei-wang-chuan-tou-gong-ju
+tags: []
 ---
 
 > <https://developers.dingtalk.com/document/resourcedownload/http-intranet-penetration?pnamespace=tutorial>

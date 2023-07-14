@@ -1,10 +1,6 @@
 ---
 title: 我所理解的生活
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/c26db32030a354f17e0d4cada4c7f9de
+tags: []
 ---
 
 - 前程————红灯永远不能照亮你的前程，照亮你前程的，是你的才能。

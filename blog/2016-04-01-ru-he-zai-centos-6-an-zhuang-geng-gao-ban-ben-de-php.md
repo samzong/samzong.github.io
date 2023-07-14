@@ -1,8 +1,6 @@
 ---
 title: 如何在 CentOS 6 安装更高版本的 PHP
-tags: 
-  - CentOS
-  - PHP
+tags: []
 date: 2016-04-01 14:57:45
 ---
 

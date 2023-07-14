@@ -1,15 +1,14 @@
 ---
 title: Google 搜索技巧整理
-tags: 
-  - Tools
-categories:
-  - Tools
+tags: []
 authors: [samzong]
 ---
 
 ## 笔记说明
 
-> 支持 google、部分 baidu 网页检索和图片检索等
+:::info
+支持 google、部分 baidu 网页检索和图片检索等
+:::
 
 ![20230711172625](https://img.samzong.me/202307111726902.png)
 

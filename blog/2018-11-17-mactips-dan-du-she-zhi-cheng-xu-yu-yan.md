@@ -1,10 +1,6 @@
 ---
 title: MacTips 单独设置程序语言
-tags: 
-  - Mac
-categories:
-  - Mac
-url: https://www.yuque.com/samzong/ap/mactips-dan-du-she-zhi-cheng-xu-yu-yan
+tags: []
 ---
 
 > 目前 macOS 10.15 系统原生已支持给单个 App 设置语言的方式，就在系统设置 - 语言/地区

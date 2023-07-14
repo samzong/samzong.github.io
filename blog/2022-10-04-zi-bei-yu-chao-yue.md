@@ -1,10 +1,6 @@
 ---
 title: 自卑与超越
-tags: 
-  - 旧书摘
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/e9b998e61369229b6e82e7e2e8704873
+tags: []
 ---
 
 [【奥】阿尔弗雷德··阿德勒](https://www.amazon.cn/gp/product/B013GD8VEY/ref=as_li_qf_sp_asin_tl?ie=UTF8\&camp=536\&creative=3200\&creativeASIN=B013GD8VEY\&linkCode=as2\&tag=llll1-23)

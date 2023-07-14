@@ -1,10 +1,6 @@
 ---
 title: python flask form
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/python-flask-form
+tags: []
 ---
 
 ```python

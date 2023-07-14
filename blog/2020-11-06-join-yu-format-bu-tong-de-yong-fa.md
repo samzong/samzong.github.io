@@ -1,10 +1,6 @@
 ---
 title: join 与 format 不同的用法
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/wbt7rr
+tags: []
 ---
 
 ```python

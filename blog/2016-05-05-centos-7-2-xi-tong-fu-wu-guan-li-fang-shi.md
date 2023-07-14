@@ -1,9 +1,6 @@
 ---
 title: CentOS 系统服务管理方式
-tags: 
-   - CentOS
-categories: 
-   - Linux
+tags: [CentOS]
 date: 2016-05-05 05:43:55
 ---
 

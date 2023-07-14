@@ -1,10 +1,6 @@
 ---
 title: 阿里云云原生网关
-tags: 
-  - 云原生网关
-  - 阿里云
-  - 云平台
-url: https://www.yuque.com/samzong/dao/nasfdl
+tags: []
 ---
 
 

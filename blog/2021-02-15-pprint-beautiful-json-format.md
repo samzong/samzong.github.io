@@ -1,10 +1,6 @@
 ---
 title: pprint beautiful json format
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/sqoykk
+tags: []
 ---
 
 ```python

@@ -1,13 +1,8 @@
 ---
 title: Git 修复历史错误的 Author 信息
 toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: zh
-tags: 
-  - Git
-categories:
-  - Git
+authors: [samzong]
+tags: []
 date: 2022-04-11 08:19:00
 ---
 
@@ -68,11 +63,11 @@ git log
 
 ```bash
 commit 145a3eb180c3f45fd99c2d61cad6439177cbc319
-Author: samzong.lu <samzong.lu@gmail.com>
+authors: [samzong] <samzong.lu@gmail.com>
 Date:   Sun Mar 20 22:22:58 2022 +0800
 
 commit 7e04c7ebaf06b2eea1951a29b79a571090cd1d8b  {commit_id}
-Author: samzong.lu <samzong.lu@gmail.com>
+authors: [samzong] <samzong.lu@gmail.com>
 Date:   Sun Mar 20 22:19:48 2022 +0800
 ```
 

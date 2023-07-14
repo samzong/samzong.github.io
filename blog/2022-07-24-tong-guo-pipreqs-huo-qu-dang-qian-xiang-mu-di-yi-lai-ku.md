@@ -1,10 +1,6 @@
 ---
 title: 通过 pipreqs 获取当前项目的依赖库
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/glc4mk
+tags: []
 ---
 
 如果在开始开发一个项目时，未注意项目的依赖库隔离；可能会导致后续给项目打包时：

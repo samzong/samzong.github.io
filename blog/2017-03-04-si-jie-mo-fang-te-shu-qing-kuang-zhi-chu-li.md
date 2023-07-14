@@ -1,7 +1,6 @@
 ---
 title: 四阶魔方特殊情况之处理
-tags: 
-  - 随笔
+tags: []
 ---
 
 ![](https://source.unsplash.com/random/480x480/?Rubik's-Cube)

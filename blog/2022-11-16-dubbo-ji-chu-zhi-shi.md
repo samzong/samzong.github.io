@@ -1,9 +1,6 @@
 ---
 title: Dubbo 基础知识梳理
-tags: 
-  - Dubbo
-categories:
-  - 微服务
+tags: []
 ---
 
 > 参考资料：

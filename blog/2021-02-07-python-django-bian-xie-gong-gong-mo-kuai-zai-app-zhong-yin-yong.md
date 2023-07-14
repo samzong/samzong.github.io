@@ -1,10 +1,6 @@
 ---
 title: python django 编写公共模块在 app 中引用
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/oqgh03
+tags: []
 ---
 
 

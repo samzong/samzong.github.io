@@ -1,10 +1,6 @@
 ---
 title: 我们生活在巨大的差距里
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/3d46b4e8a6fb38d839ca28dbd523fb89
+tags: []
 ---
 
 - 知道自己无知不是完全的无知，完全的无知是不知道自己无知的无知。

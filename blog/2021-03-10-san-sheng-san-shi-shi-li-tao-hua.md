@@ -1,10 +1,6 @@
 ---
 title: 三生三世十里桃花
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/59a1460beb73b5e3305b5acc342c3c98
+tags: []
 ---
 
 [唐七](https://www.amazon.cn/s/ref=as_li_ss_tl?_encoding=UTF8\&camp=536\&creative=3132\&field-keywords=%E4%B8%89%E7%94%9F%E4%B8%89%E4%B8%96%E5%8D%81%E9%87%8C%E6%A1%83%E8%8A%B1\&linkCode=ur2\&tag=llll1-23\&url=search-alias%3Dbooks)

@@ -1,10 +1,6 @@
 ---
 title: FastAPI 使用文档
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/ecgq7v
+tags: []
 ---
 
 

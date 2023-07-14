@@ -1,10 +1,6 @@
 ---
 title: 人间失格
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/c4a302422f7d95b886dcaffed5535701
+tags: []
 ---
 
 

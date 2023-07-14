@@ -1,8 +1,7 @@
 ---
 title: 如何重置 Mac 的 SMC
 toc: true
-tags: 
-  - Mac
+tags: []
 ---
 
 

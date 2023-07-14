@@ -1,10 +1,6 @@
 ---
 title: Django 练手项目
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/eh2av7
+tags: []
 ---
 
 > started\_at 2020-11.17

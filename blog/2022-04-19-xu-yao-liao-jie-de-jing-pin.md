@@ -1,13 +1,8 @@
 ---
 title: 需要了解的 K8s 发行版本
 toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: en
-tags: 
-  - 竞品
-categories:
-  - Kubernetes
+authors: [samzong]
+tags: []
 date: 2022-04-19 18:11:00
 ---
 ## K8s 的发行版本

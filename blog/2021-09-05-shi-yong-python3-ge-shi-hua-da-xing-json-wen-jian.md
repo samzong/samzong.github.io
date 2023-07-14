@@ -1,10 +1,6 @@
 ---
 title: 使用 Python3 格式化大型 json 文件
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/zoedwm
+tags: []
 ---
 
 当单个甚至单行 Json 文件大小超过 100M 时，无论是哪个文本编辑器在处理时都会显得吃力，接下来介绍一种非常方便的方式，快速格式化大型 Json 文件。

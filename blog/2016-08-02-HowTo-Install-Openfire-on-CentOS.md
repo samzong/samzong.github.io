@@ -1,7 +1,6 @@
 ---
 title: HowTo Install Openfire  on CentOS
-tags: 
-  - Openfire
+tags: []
 date: 2016-08-02 16:04:48
 ---
 

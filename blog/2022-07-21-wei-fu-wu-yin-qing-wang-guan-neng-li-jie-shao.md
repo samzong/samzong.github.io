@@ -1,11 +1,6 @@
 ---
 title: 微服务引擎网关能力介绍
-tags: 
-   - Skoala
-categories:
-   - Kubernetes
-   - DaoCloud Enterprise
-url: https://www.yuque.com/samzong/dao/qwoqr6
+tags: [DaoCloud]
 ---
 
 ![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1656640362731-d86ebb64-4193-4e1e-8f45-7248a8d70fc3.jpeg?x-oss-process=image/resize,w_960,m_lfit)

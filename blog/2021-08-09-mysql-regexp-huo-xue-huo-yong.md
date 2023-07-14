@@ -1,10 +1,6 @@
 ---
 title: MySQL REGEXP 活学活用
-tags: 
-  - SQL
-categories:
-  - 数据库
-url: https://www.yuque.com/samzong/code/gc1atk
+tags: []
 ---
 
 `REGEXP` 在 MySQL 中使用的正则表达式标识符，有着非常丰富的使用路径，代替`like`将有非常大的使用空间

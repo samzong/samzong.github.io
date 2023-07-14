@@ -1,7 +1,6 @@
 ---
 title: HowTo Install NextCloud
-tags: 
-  - NextCloud
+tags: []
 date: 2017-02-27 14:57:00
 ---
 

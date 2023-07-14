@@ -1,10 +1,6 @@
 ---
 title: 快速了解 MySQL 时间范围参数
-tags: 
-  - SQL
-categories:
-  - 数据库
-url: https://www.yuque.com/samzong/code/ybtaq2
+tags: []
 ---
 
 ## 查询 30 天

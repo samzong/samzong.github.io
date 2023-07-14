@@ -1,10 +1,6 @@
 ---
 title: get current timestamp
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/curllenttimestamp
+tags: []
 ---
 
 ```python

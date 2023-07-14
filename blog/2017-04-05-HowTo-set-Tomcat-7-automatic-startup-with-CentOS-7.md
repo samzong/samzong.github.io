@@ -1,10 +1,6 @@
 ---
 title: HowTo set Tomcat 7 automatic startup with CentOS 7
-tags: 
-   - Tomcat
-   - CentOS
-categories: 
-   - Java
+tags: [Tomcat]
 date: 2017-04-05 15:21:03
 ---
 

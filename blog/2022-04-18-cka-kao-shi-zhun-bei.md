@@ -1,13 +1,8 @@
 ---
 title: CKA 考试准备
 toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: en
-tags: 
-  - CKA
-categories:
-  - Kubernetes
+authors: [samzong]
+tags: []
 date: 2022-04-18 06:00:00
 ---
 ## 汇总

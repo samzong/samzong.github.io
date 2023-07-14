@@ -1,10 +1,7 @@
 ---
 title: Awesome Hexo Plugin
 date: 2022-03-27 21:45:17
-tags: 
-  - Hexo
-categories:
-  - Blog
+tags: []
 ---
 
 About my blog use hexo plugin
@@ -88,10 +85,8 @@ restful:
     cover: true      # 封面图，取文章第一张图片
     content: false
     keywords: false
-    categories: true
-    tag: true
-  categories: true         # 分类数据
-  use_category_slug: false # Use slug for filename of category data
+        tag: true
+    use_category_slug: false # Use slug for filename of category data
   tag: true               # 标签数据
   use_tag_slug: false      # Use slug for filename of tag data
   post: true               # 文章数据

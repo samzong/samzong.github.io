@@ -1,10 +1,6 @@
 ---
 title: 淘宝 Python SDK 优化支持 Python3
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/tao-baopython-sdk-you-hua-zhi-chipython3
+tags: []
 ---
 
 淘宝开放平台的 SDK，Python 的 SDK 是在 2012 年，仅支持 Python2.7 及以上，但不支持 Python3；二现在是 2102 年了，像我这样的新手都是直接从 Python3 开始的，

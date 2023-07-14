@@ -1,8 +1,6 @@
 ---
 title: Contour 学习笔记
 tags: [Contour]
-categories: Kubernetes
-url: https://www.yuque.com/samzong/dao/crxpzd
 ---
 
 

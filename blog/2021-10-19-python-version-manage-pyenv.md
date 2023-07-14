@@ -1,10 +1,6 @@
 ---
 title: Python Version Manage `pyenv`
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/python-version-manage-tool-pyenv
+tags: []
 ---
 
 > to\_url : <http://pyenv.run/>

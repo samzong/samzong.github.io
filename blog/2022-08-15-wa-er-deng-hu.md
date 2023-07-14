@@ -1,10 +1,6 @@
 ---
 title: 瓦尔登湖
-tags: 
-  - 读书笔记
-categories:
-  - 读书笔记
-url: https://www.yuque.com/samzong/notes/18fdc08cc9e9cc12aeb8c919afc096c5
+tags: []
 ---
 
 [亨利••大卫••梭罗](https://www.amazon.cn/s/ref=as_li_ss_tl?_encoding=UTF8\&camp=536\&creative=3132\&field-keywords=%E7%93%A6%E5%B0%94%E7%99%BB%E6%B9%96\&linkCode=ur2\&tag=llll1-23\&url=search-alias%3Dbooks)

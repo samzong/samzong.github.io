@@ -1,9 +1,7 @@
 ---
 title: Javascript Tips
 toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: en
+authors: [samzong]
 date: 2022-03-28 19:09:44
 tags: [Javascript]
 ---

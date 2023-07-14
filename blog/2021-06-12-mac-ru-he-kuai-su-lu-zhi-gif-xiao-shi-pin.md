@@ -1,10 +1,6 @@
 ---
 title: Mac 如何快速录制 GiF 小视频
-tags: 
-  - Mac
-categories:
-  - Mac
-url: https://www.yuque.com/samzong/ap/mac-ru-he-kuai-su-lu-zhigif-xiao-shi-pin
+tags: []
 ---
 
 在平时的沟通中经常有需要用到分享一个连续的操作等，在很多时候截图不能满足我的需求，录制视频文件的话呢，文件过大，不同平台限制过多是一个很麻烦的视频，所以录制 GIF 是一个非常好的解决办法，今天给大家推荐两款软件，关于录制 GIF 和 GIF 编辑。

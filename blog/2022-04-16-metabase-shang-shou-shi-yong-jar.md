@@ -1,10 +1,6 @@
 ---
 title: Metabase 上手 - 使用 Jar 运行
-tags: 
-  - Metabase
-categories:
-  - OpenSource
-  - 数据库
+tags: []
 date: 2022-04-16 02:40:00
 ---
 

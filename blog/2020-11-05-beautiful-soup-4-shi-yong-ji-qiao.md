@@ -1,10 +1,6 @@
 ---
 title: beautiful soup 4 使用技巧
-tags: 
-  - Python
-categories:
-  - Python
-url: https://www.yuque.com/samzong/code/acam8e
+tags: []
 ---
 
 ## Code

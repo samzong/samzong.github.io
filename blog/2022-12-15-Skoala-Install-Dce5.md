@@ -1,10 +1,6 @@
 ---
 title: "DCE5-Skoala 安装教程"
-tagline: ""
-description: ""
-category: Mac
 tags: [Mac,Raycast]
-last_updated: 
 ---
 
 ## 使用之前的话

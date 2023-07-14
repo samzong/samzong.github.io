@@ -1,9 +1,7 @@
 ---
 title: 闭关备战 11 月
 toc: true
-author: samzong.lu
-author_id: defaultAuthorId
-language: zh
+authors: [samzong]
 date: 2022-07-18 00:35:00
 ---
 ## 目标
