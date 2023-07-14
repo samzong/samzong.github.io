@@ -41,6 +41,8 @@ const config = {
         blog: {
           showReadingTime: true,
           routeBasePath: "/",
+          editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
+          `https://github.com/samzong/samzong.me/edit/main/${blogDirPath}/${blogPath}`,
           readingTime: ({ content, frontMatter, defaultReadingTime }) =>
             defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
           blogTitle: "Samzong blog!",
