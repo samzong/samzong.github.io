@@ -1,6 +1,6 @@
 ---
 title: GitLab Forked 如何跟随 upstream 主库
-tags: []
+tags: [Git]
 ---
 
 :::info

@@ -1,6 +1,6 @@
 ---
 title: HowTo Mount OSS Bucket On ECS
-tags: []
+tags: [Aliyun, Tools]
 date: 2016-12-20 06:17:08
 ---
 

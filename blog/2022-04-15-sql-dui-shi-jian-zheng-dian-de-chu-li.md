@@ -2,7 +2,7 @@
 title: SQL 对时间整点的处理
 toc: true
 authors: [samzong]
-tags: []
+tags: [SQL]
 date: 2022-04-15 18:55:00
 ---
 ## 需要取值整点时间

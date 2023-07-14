@@ -1,6 +1,6 @@
 ---
 title: HowTo Install piwik with nginx on centos 6.x
-tags: [Piwik]
+tags: [Tools, Piwik]
 date: 2016-04-27 16:00:44
 ---
 

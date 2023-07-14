@@ -1,6 +1,6 @@
 ---
 title: python Request install pip error
-tags: []
+tags: [Python]
 ---
 
 ```log

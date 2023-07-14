@@ -1,6 +1,6 @@
 ---
 title: HowTo Monitor Tomcat HeadMemory for Zabbix
-tags: [Zabbix]
+tags: [Microservice, Tools]
 date: 2017-01-18 23:28:44
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Python 抓出来随机下载记录
-tags: []
+tags: [Python]
 ---
 
 ```python

@@ -2,7 +2,7 @@
 title: "在线服务器激活 Ketbrains"
 category:
   - Python
-tags: [Pycharm,Python]
+tags: [Python, Mac]
 ---
 
 ## Ketbrains 激活服务器

@@ -1,6 +1,6 @@
 ---
 title: HQL/SQL时间处理
-tags: []
+tags: [SQL]
 ---
 
 ```sql

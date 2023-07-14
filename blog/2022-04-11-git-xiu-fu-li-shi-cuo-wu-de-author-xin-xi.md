@@ -2,7 +2,7 @@
 title: Git 修复历史错误的 Author 信息
 toc: true
 authors: [samzong]
-tags: []
+tags: [Git]
 date: 2022-04-11 08:19:00
 ---
 

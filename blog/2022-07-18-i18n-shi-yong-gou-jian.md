@@ -1,6 +1,6 @@
 ---
 title: i18n 使用构建
-tags: []
+tags: [Blog]
 ---
 
 

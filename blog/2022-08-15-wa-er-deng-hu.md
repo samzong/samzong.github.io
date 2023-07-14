@@ -1,10 +1,11 @@
 ---
 title: 瓦尔登湖
-tags: []
+tags: [读书]
 ---
 
 [亨利••大卫••梭罗](https://www.amazon.cn/s/ref=as_li_ss_tl?_encoding=UTF8\&camp=536\&creative=3132\&field-keywords=%E7%93%A6%E5%B0%94%E7%99%BB%E6%B9%96\&linkCode=ur2\&tag=llll1-23\&url=search-alias%3Dbooks)
-7 highlights, 1 note
+
+
 
 - 在这段时间里把车钱挣出来了，会在明天的什么时候到达那里，如果你幸运地及时找到了工作，也可能今晚到达。你大半天的时间不是去了菲奇堡，却是在这里干活。因此，如果铁路通到全世界，我想我还是会在你前头；至于说长见识，如果净是那方面的见识，我就得和你完全断绝来往了。
 - 如果你决定明天开始做一件事情，那为什么不现在就开始呢？实用主义，不应该追求虚无的东西。

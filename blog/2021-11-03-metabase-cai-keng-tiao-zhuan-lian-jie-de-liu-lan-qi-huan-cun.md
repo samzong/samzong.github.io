@@ -1,6 +1,6 @@
 ---
 title: Metabase 踩坑：跳转链接的浏览器缓存
-tags: []
+tags: [Tools]
 ---
 
 ![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1635955971186-4f85ab8d-9d1e-46ab-bd20-ee914c91fade.png?x-oss-process=image/resize,w_960,m_lfit)

@@ -1,6 +1,6 @@
 ---
 title: 钉钉内网穿透工具
-tags: []
+tags: [Python]
 ---
 
 > <https://developers.dingtalk.com/document/resourcedownload/http-intranet-penetration?pnamespace=tutorial>

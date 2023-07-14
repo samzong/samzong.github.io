@@ -1,6 +1,6 @@
 ---
 title: learn sqlalchemy
-tags: []
+tags: [Python]
 ---
 
 ```bash

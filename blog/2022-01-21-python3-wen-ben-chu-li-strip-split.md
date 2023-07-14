@@ -1,6 +1,6 @@
 ---
-title: python3 文本处理 strip() split()
-tags: []
+title: Python3 文本处理
+tags: [Python]
 ---
 
 - strip() 删除字符串中的内容，删除后仍旧是 str

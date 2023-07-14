@@ -1,7 +1,7 @@
 ---
 title: K8s 系列 南北流量和东西流量
 toc: true
-tags: []
+tags: [Kubernetes]
 ---
 
 

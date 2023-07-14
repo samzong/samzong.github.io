@@ -2,7 +2,7 @@
 title: Pyenv Python 多版本管理利器
 toc: true
 authors: [samzong]
-tags: []
+tags: [Python]
 date: 2022-03-27 21:18:00
 ---
 

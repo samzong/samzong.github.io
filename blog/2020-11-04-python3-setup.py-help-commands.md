@@ -1,6 +1,6 @@
 ---
 title: python3 setup.py --help-commands
-tags: []
+tags: [Python]
 ---
 
 ```python

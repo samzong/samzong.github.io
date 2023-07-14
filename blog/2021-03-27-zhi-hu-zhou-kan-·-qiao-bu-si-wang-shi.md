@@ -1,6 +1,6 @@
 ---
 title: 知乎周刊·乔布斯往事
-tags: []
+tags: [读书]
 ---
 
 [知乎](https://www.amazon.cn/s/ref=as_li_ss_tl?_encoding=UTF8\&camp=536\&creative=3132\&field-keywords=%E7%9F%A5%E4%B9%8E%E5%91%A8%E5%88%8A%C2%B7%E4%B9%94%E5%B8%83%E6%96%AF%E5%BE%80%E4%BA%8B\&linkCode=ur2\&tag=llll1-23\&url=search-alias%3Dbooks)

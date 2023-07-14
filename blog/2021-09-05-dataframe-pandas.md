@@ -1,6 +1,6 @@
 ---
 title: dataframe - Pandas
-tags: []
+tags: [Python]
 ---
 
 <https://www.cnblogs.com/timotong/p/9678490.html>

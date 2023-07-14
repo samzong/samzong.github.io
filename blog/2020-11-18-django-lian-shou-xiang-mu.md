@@ -1,6 +1,6 @@
 ---
 title: Django 练手项目
-tags: []
+tags: [Python]
 ---
 
 > started\_at 2020-11.17

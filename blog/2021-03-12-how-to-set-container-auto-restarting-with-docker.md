@@ -1,6 +1,6 @@
 ---
 title: how to set container auto-restarting with docker
-tags: []
+tags: [Docker]
 ---
 
 ## auto-restarting with docker

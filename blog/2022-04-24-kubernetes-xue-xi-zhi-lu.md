@@ -1,6 +1,6 @@
 ---
 title: kubernetes 学习之路
-tags: []
+tags: [Kubernetes]
 ---
 
 

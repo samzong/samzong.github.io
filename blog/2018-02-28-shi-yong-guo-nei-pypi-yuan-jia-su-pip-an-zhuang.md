@@ -1,6 +1,6 @@
 ---
 title: 使用国内 pypi 源加速 pip 安装
-tags: []
+tags: [Python]
 ---
 
 ![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/mxb19.png)

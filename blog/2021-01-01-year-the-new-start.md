@@ -1,6 +1,6 @@
 ---
 title: "2021 年 - 全新出发"
-tags: []
+tags: [随笔]
 last_updated:
 ---
 

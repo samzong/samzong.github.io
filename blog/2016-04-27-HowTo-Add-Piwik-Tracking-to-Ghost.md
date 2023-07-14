@@ -1,6 +1,6 @@
 ---
 title: HowTo Add Piwik Tracking to Ghost
-tags: [Piwik]
+tags: [Tools, Piwik]
 date: 2016-04-27 16:51:58
 ---
 

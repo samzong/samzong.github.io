@@ -1,6 +1,6 @@
 ---
 title: python django 编写公共模块在 app 中引用
-tags: []
+tags: [Python]
 ---
 
 

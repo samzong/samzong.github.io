@@ -1,6 +1,6 @@
 ---
 title: Denyhosts 增加服务器 SSH 黑名单机制
-tags: [DenyHosts]
+tags: [CentOS]
 date: 2016-11-23 16:24:40
 ---
 

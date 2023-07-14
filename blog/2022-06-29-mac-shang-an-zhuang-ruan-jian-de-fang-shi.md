@@ -1,6 +1,6 @@
 ---
 title: Mac 上安装软件的方式
-tags: []
+tags: [Mac]
 ---
 
 

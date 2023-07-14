@@ -1,6 +1,6 @@
 ---
 title: Metabase 上手 - 使用 Jar 运行
-tags: []
+tags: [Tools]
 date: 2022-04-16 02:40:00
 ---
 

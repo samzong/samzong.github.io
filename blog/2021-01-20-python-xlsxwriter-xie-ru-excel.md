@@ -1,6 +1,6 @@
 ---
 title: python xlsxwriter 写入 excel
-tags: []
+tags: [Python]
 ---
 
 以下是使用的方法：

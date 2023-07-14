@@ -1,6 +1,6 @@
 ---
 title: 使用 canal 进行数据库增量同步
-tags: []
+tags: [Tools, MySQL]
 ---
 
 ![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1662586780206-7328e88e-c0e3-4e2f-ac6d-e072747efc4a.png?x-oss-process=image/resize,w_960,m_lfit)

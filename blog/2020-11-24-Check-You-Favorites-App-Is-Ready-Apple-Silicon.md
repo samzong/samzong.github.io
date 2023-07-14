@@ -1,6 +1,6 @@
 ---
 title: Check You App readyOnAppleSilicon
-tags: []
+tags: [Mac]
 date: 2020-11-24 00:32:13
 ---
 

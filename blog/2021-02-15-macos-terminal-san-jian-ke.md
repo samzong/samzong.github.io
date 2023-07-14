@@ -1,6 +1,6 @@
 ---
 title: macOs Terminal 三剑客
-tags: []
+tags: [Mac]
 ---
 
 

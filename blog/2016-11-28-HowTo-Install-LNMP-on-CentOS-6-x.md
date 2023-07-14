@@ -1,6 +1,6 @@
 ---
 title: HowTo Install LNMP on CentOS 6.x
-tags: []
+tags: [CentOS]
 date: 2016-11-28 10:33:09
 ---
 

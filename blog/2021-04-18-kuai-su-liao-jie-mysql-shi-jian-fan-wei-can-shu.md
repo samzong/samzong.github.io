@@ -1,6 +1,6 @@
 ---
 title: 快速了解 MySQL 时间范围参数
-tags: []
+tags: [MySQL]
 ---
 
 ## 查询 30 天

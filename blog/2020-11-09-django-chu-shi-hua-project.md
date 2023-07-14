@@ -1,6 +1,6 @@
 ---
 title: Django 初始化 project
-tags: []
+tags: [Python]
 ---
 
 ```bash

@@ -1,6 +1,6 @@
 ---
 title: Use devtools encodeurl & decodeurl
-tags: []
+tags: [Frontend]
 ---
 
 ```javascript

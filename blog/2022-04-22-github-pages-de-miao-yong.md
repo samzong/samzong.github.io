@@ -1,7 +1,7 @@
 ---
 title: GitHub Pages 的妙用
 authors: [samzong]
-tags: []
+tags: [Github]
 date: 2022-04-22 17:23:00
 ---
 

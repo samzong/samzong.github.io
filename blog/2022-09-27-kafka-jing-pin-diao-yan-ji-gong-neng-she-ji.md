@@ -1,6 +1,6 @@
 ---
 title: Kafka 调研及功能设计
-tags: []
+tags: [ Microservice, Kafka]
 ---
 
 

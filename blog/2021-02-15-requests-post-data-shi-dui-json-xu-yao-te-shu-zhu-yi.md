@@ -1,6 +1,6 @@
 ---
 title: requests post data 时对 json 需要特殊注意
-tags: []
+tags: [Python]
 ---
 
 ```python

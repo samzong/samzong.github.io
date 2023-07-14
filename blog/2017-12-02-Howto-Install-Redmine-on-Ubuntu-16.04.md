@@ -1,6 +1,6 @@
 ---
 title: Howto Install Redmine on Ubuntu 16.04
-tags: []
+tags: [Tools]
 ---
 
 ```bash

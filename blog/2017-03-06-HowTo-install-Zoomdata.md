@@ -1,6 +1,6 @@
 ---
 title: HowTo install Zoomdata
-tags: [Zoomdata]
+tags: [Microservice, Tools]
 date: 2017-03-06 09:44:47
 ---
 

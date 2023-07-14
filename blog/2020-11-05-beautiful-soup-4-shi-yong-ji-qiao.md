@@ -1,6 +1,6 @@
 ---
 title: beautiful soup 4 使用技巧
-tags: []
+tags: [Python]
 ---
 
 ## Code

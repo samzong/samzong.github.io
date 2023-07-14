@@ -1,6 +1,6 @@
 ---
 title: pprint beautiful json format
-tags: []
+tags: [Python]
 ---
 
 ```python

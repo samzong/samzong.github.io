@@ -1,6 +1,6 @@
 ---
 title: Contour 设计理念
-tags: [Contour]
+tags: [Microservice]
 ---
 
 Contour 是一个第 7 层 **HTTP** 中间件反向代理，用于启用 Kubernetes 集群的入口。

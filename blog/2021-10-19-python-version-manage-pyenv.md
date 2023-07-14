@@ -1,6 +1,6 @@
 ---
 title: Python Version Manage `pyenv`
-tags: []
+tags: [Python]
 ---
 
 > to\_url : <http://pyenv.run/>

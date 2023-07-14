@@ -1,6 +1,6 @@
 ---
 title: MySQL Case WHEN
-tags: []
+tags: [MySQL]
 ---
 
 ```SQL

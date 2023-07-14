@@ -1,6 +1,6 @@
 ---
 title: join 与 format 不同的用法
-tags: []
+tags: [Python]
 ---
 
 ```python

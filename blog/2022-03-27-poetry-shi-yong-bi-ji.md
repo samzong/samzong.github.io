@@ -2,7 +2,7 @@
 title: Poetry 使用笔记
 toc: true
 authors: [samzong]
-tags: []
+tags: [Python]
 date: 2022-03-27 21:18:00
 ---
 poetry 是目前比较流行的 Python 环境管理工具 和 包管理工具，对多项目开发时的环境隔离有非常大的帮助，同时集成了包管理能力。

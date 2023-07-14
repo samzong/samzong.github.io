@@ -1,6 +1,6 @@
 ---
 title: Panads fill NaN value to Zero
-tags: []
+tags: [Python]
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
 title: dingtalk orgBot sign generate
-tags: []
+tags: [Python]
 ---
 
 需要使用到 hmac 以及 time 库

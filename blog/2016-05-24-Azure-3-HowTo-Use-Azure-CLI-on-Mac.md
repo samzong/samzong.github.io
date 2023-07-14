@@ -1,6 +1,6 @@
 ---
 title: Azure CLI Import AcountInfo
-tags: []
+tags: [Azure]
 date: 2016-05-24 06:20:43
 ---
 

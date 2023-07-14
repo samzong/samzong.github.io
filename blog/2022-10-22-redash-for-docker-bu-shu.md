@@ -1,6 +1,6 @@
 ---
 title: Redash for Docker 部署
-tags: []
+tags: [Tools]
 ---
 
 > 暗坑很多

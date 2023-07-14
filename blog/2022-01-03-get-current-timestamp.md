@@ -1,6 +1,6 @@
 ---
 title: get current timestamp
-tags: []
+tags: [Python]
 ---
 
 ```python

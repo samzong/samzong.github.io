@@ -1,6 +1,6 @@
 ---
 title: Creating DataFrame using list
-tags: []
+tags: [Python]
 ---
 
 ```python

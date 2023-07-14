@@ -1,7 +1,7 @@
 ---
 title: Awesome Hexo Plugin
 date: 2022-03-27 21:45:17
-tags: []
+tags: [Blog]
 ---
 
 About my blog use hexo plugin

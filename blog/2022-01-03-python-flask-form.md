@@ -1,6 +1,6 @@
 ---
 title: python flask form
-tags: []
+tags: [Python]
 ---
 
 ```python

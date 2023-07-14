@@ -1,6 +1,6 @@
 ---
 title: python3 str 去除特定内容
-tags: []
+tags: [Python]
 ---
 
 ```python

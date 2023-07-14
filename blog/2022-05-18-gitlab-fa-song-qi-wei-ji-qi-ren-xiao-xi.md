@@ -1,6 +1,6 @@
 ---
 title: Gitlab 发送企微机器人消息
-tags: []
+tags: [Github]
 ---
 
 - 企业微信机器人消息说明： <https://developer.work.weixin.qq.com/document/path/91770>

@@ -1,6 +1,6 @@
 ---
 title: iPhone/iPad 不越狱安装旧版程序
-tags: []
+tags: [iOS]
 ---
 
 

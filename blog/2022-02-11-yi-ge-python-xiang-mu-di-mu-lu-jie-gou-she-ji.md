@@ -1,6 +1,6 @@
 ---
-title: 一个 Python 项目的目录结构设计
-tags: []
+title: Python 项目的目录结构设计
+tags: [Python]
 ---
 
 

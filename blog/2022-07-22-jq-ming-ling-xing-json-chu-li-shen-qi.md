@@ -1,7 +1,7 @@
 ---
 title: jq 命令行 Json 处理神器
 toc: true
-tags: []
+tags: [Mac]
 ---
 
 - [https://mozillazg.com/2018/01/jq-use-examples-cookbook.htm](https://mozillazg.com/2018/01/jq-use-examples-cookbook.html)-

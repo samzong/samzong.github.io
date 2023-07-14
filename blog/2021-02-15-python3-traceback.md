@@ -1,6 +1,6 @@
 ---
 title: python3 traceback
-tags: []
+tags: [Python]
 ---
 
 打印堆栈信息，方便调试

@@ -1,6 +1,6 @@
 ---
 title: HowTo Reset Azure VM Linux Password
-tags: []
+tags: [CentOS]
 date: 2016-07-10 11:21:47
 ---
 

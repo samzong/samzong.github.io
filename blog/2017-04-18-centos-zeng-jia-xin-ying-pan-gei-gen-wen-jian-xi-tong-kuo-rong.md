@@ -1,6 +1,6 @@
 ---
 title: CentOS 增加新硬盘给根文件系统扩容
-tags: []
+tags: [CentOS]
 date: 2017-04-18 17:48:57
 ---
 
