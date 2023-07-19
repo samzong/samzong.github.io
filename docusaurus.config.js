@@ -40,7 +40,7 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: true,
-          routeBasePath: "notes",
+          routeBasePath: "/",
           // editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
           // `https://github.com/samzong/samzong.me/edit/main/${blogDirPath}/${blogPath}`,
           readingTime: ({ content, frontMatter, defaultReadingTime }) =>
@@ -50,6 +50,7 @@ const config = {
           blogSidebarCount: 0, // or 'ALL'
           tagsBasePath: "tags",
           archiveBasePath: "archives",
+          sortPosts: "ascending",
           truncateMarker: /<!--\s*(truncate)\s*-->/,
           include: ["**/*.{md,mdx}"],
           exclude: [
@@ -58,10 +59,6 @@ const config = {
             "**/*.test.{js,jsx,ts,tsx}",
             "**/__tests__/**",
           ],
-          blogListComponent: "@theme/BlogListPage",
-          blogPostComponent: "@theme/BlogPostPage",
-          blogTagsListComponent: "@theme/BlogTagsListPage",
-          blogTagsPostsComponent: "@theme/BlogTagsPostsPage",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
