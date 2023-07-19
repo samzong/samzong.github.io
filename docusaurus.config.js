@@ -49,7 +49,7 @@ const config = {
           postsPerPage: 1,
           blogSidebarCount: 0, // or 'ALL'
           tagsBasePath: "tags",
-          archiveBasePath: "archives",
+          archiveBasePath: "history",
           sortPosts: "ascending",
           truncateMarker: /<!--\s*(truncate)\s*-->/,
           include: ["**/*.{md,mdx}"],
