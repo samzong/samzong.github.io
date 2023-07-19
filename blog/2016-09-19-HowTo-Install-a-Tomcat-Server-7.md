@@ -139,7 +139,7 @@ tomcat7       6326  8.3 85.6 5229768 2910176 ?     Sl   Aug22 3216:38 /usr/bin/j
 
 #### 7. 打开浏览器测试 Tomcat Server 搭建完成，默认页面如下
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/09/tomcat7.jpg)
+![image](https://img.samzong.me/202307191530811.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 #### 8. 使用 curl 测试
 

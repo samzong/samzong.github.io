@@ -20,7 +20,7 @@ tags: [Tools]
 
 简单分析了下服务端日志，发现不能正常登录情况是请求根本没有到后端服务器，浏览器直接进行了跳转，而之前签发的 token 是有时效的，超过时间就过期了，所以导致跳转后校验不通过
 
-[![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1635957317795-60317ecd-b550-42d6-ab25-3f0b7d9247d9.png?x-oss-process=image/resize,w_960,m_lfit)](https://juejin.cn/post/6844904130482274318)
+[![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1635957317795-60317ecd-b550-42d6-ab25-3f0b7d9247d9.png?x-oss-process=image/resize,w_960,m_lfit)](https://img.samzong.me/202307191534498.svg?imageView2/3/w/400/interlace/1/q/50)
 
 > 有兴趣的同学，可以点击上方的图片链接，去详细介绍的原文看看
 

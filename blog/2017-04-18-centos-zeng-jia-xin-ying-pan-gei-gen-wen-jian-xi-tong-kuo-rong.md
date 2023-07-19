@@ -19,13 +19,13 @@ date: 2017-04-18 17:48:57
 ## 增加一块物理磁盘
 
 Parallels Desktop 不能在线增加磁盘，所以要先将 VM 关闭，然后添加：
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/m5e1d.jpg)
+![image](https://img.samzong.me/202307191530998.jpg?imageView2/3/w/400/interlace/1/q/50)
 增加 12G 的磁盘
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/prgyd.jpg)
+![image](https://img.samzong.me/202307191530999.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 然后启动 VM，这时可以通过`fdisk -l`查看当前已经增加了一块 12G 的磁盘
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/tat9r.jpg)
+![image](https://img.samzong.me/202307191530000.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 ## 格式化磁盘并加入到 VGroup 组内
 

@@ -100,11 +100,11 @@ tar xf setuptools-1.4.2.tar.gz
 
 首次安装之后，需要进行授权，只需要运行任何一个命令都可以，例如`bypy info`，然后根据提示，打开网页登录你的百度网盘账号，取得授权码，即可。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/2grhz.png)
+![image](https://img.samzong.me/202307191531228.png?imageView2/3/w/400/interlace/1/q/50)
 
 复制上图中的链接到你的浏览器中，打开可以看到百度 API 授权页面，如下图，将授权码粘贴到命令行，然后回车等待验证通过即可。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/9zhdm.png)
+![image](https://img.samzong.me/202307191531229.png?imageView2/3/w/400/interlace/1/q/50)
 
 然后再次运行命令时，就不需要进行身份验证了
 

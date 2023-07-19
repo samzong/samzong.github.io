@@ -5,7 +5,7 @@ tags: [Git]
 
 ## 问题
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/eaxem.png)
+![image](https://img.samzong.me/202307191532395.png?imageView2/3/w/400/interlace/1/q/50)
 
 因为国内的网络的原因，导致我们在首次打开 SourceTree 时需要验证 Atlassian 账号，但是 Atlassian 的注册页面使用 requirejs 是用了 Google 的 CDN 服务，所以无法正常通过验证，如果你有翻墙工具，那么这就没有问题，下面我要讲的方法是在不翻墙的情况下跳过初始化验证。
 

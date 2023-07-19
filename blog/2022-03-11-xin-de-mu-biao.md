@@ -10,7 +10,7 @@ date: 2022-03-11 01:24:00
 
 ---
 
-![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/4817FA7F-3FF7-43C0-A6DE-96F1568C4259_1_105_c.jpeg)
+![image](https://img.samzong.me/202307191535056.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 ## 终局
 

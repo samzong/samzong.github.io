@@ -28,13 +28,13 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 [立即注册](http://www.ssglobal.co/wp/registration/?action=register)
 
-![05](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/x6fbl.jpg)
+![05](https://img.samzong.me/202307191532482.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 > 这里 alexman@mac.local 仅仅是演示邮箱，请填写对应属于你的邮箱。
 
 当你点击提交完成后，在你的邮箱会收到一封激活邮件，点击其中链接或将链接复制到浏览器中即可激活。
 
-![07](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/r4oo0.jpg)
+![07](https://img.samzong.me/202307191532483.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 > 这里同样是激活链接，同样仅作为演示。
 
@@ -44,13 +44,13 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 输入注册时的用户名密码，即可登录到系统内，然后在首页找到进入后台按钮，即可看到试用信息。
 
-![06](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/lmcst.jpg)
+![06](https://img.samzong.me/202307191532484.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 > 这里填写用户名或邮箱都可以。
 
 进入系统后，找到订阅链接信息，默认情况下，你应该只有一条线路信息，付费用户享有应急通道。
 
-![04](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/xba0a.jpg)
+![04](https://img.samzong.me/202307191532485.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 > 上图中”切换“，用来切换不同服务器节点，注意，切换后要到客户端内刷新订阅信息，下面会讲到。
 
@@ -62,17 +62,17 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 [立即下载](http://www.ssglobal.co/wp/wp-content/uploads/2017/02/ShadowsocksX-NG-R8.dmg)
 
-![01](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/bc4jy.jpg)
+![01](https://img.samzong.me/202307191532486.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 下载完成后，找到你的下载文件，双击打开，将程序拖到 Mac 程序目录即完成安装，和 Mac 其他软件安装并无不同。
 
-![02](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/p7wkf.jpg)
+![02](https://img.samzong.me/202307191532487.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 ## 启动程序
 
  在 Launchpad 中找到最近安装的 Shadowsocks NG R8，点击启动后，Mac 右上角导航栏中会有一个小飞机的图标，点击可以看到以下信息：
 
-![03](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/iycjw.jpg)
+![03](https://img.samzong.me/202307191532488.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 > 上图中已经有我的订阅信息，请忽略
 
@@ -80,7 +80,7 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 选择编辑订阅信息，然后将你在 SSGlobal 网站后台拿到的订阅信息添加到其中
 
-![09](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/7bbj6.jpg)
+![09](https://img.samzong.me/202307191532489.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 > 注意只要添加 URL 信息即可，不需要修改其他。
 
@@ -90,11 +90,11 @@ permalink: /2017/11/15/howto-user-ssr-on-mac/
 
 首次使用 PAC 需要更新一次 PAC 规则，操作如下图。
 
-![10](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/gzrb5.jpg)
+![10](https://img.samzong.me/202307191532490.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 这里的 PAC 规则是从 GFWLists 更新的，由于其更新速度较慢，所以如果日常使用发现某些网站无法使用，可以手动添加到 PAC 规则内
 
-![11](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/9rhe6.jpg)
+![11](https://img.samzong.me/202307191532491.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 > || domain , 这里表示匹配所有代理
 

@@ -19,21 +19,21 @@ tags: [iPhone]
 
 对于 Charles 版本并没有特殊要求，我这边是通过 brew 安装，你也可以到 Charles 官网下载安装，Charles 是需要付费的软件，但是有 30 天免费使用期限，如果你有长期使用打算，建议购买正版授权。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/x4dkc.jpg)
+![image](https://img.samzong.me/202307191532956.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 ##### Charles SSL 证书导入系统
 
 从 Charles 中导出证书文件
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/v815e.jpg)
+![image](https://img.samzong.me/202307191532957.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 在 KeyChain Access 中导入证书
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/883p7.jpg)
+![image](https://img.samzong.me/202307191532958.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 选中导入的证书，然后右键选择 'Get Info' ，设置证书信任状态
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/xoalz.jpg)
+![image](https://img.samzong.me/202307191532959.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 #### “虾米音乐”的三次下载
 
@@ -41,26 +41,26 @@ tags: [iPhone]
 
 打开 Charles，开启监听，然后使用搜索虾米音乐，点击 Downloads 按钮。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/6dt52.jpg)
+![image](https://img.samzong.me/202307191532960.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 点击下载后，在 Charles 会出现监听到信息，找到一条 'p[xx]-buy.itunes.apple.com' ，其中 xx 是一个随机的数字，选中它，然后右键菜单栏中勾选 'Enable SSL Proxying' 和 'Breakpoints' 。设置完成后，在 iTunes 下载中，清理下载记录。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/ea85i.jpg)
+![image](https://img.samzong.me/202307191532961.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 ##### 第二次下载
 
 重新搜索虾米音乐，并点击下载按钮，这时 Charles 会弹出窗口，然后在弹出窗口的右下三个按钮中选择 'Execute' ，这一步是我们请求服务器，紧接着出现的就是服务器给我们的响应，然后选择 'Edit Response' - 'XML Text' ，然后向下滚动找到下图中的部分，这里是所有虾米音乐的版本的序列数字，但是这里没有办法直接看到版本号，越大的数字版本号越新。这里可以通过在手机 App store 中查看软件的版本记录，找到大概要回退多少个版本，然后数字从大到小找个半个序列数字记录下来，然后在下面三个按钮中选择 'Abort' ，这时 iTunes 会弹出一个报错窗口，关掉即可。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/27nit.jpg)
+![image](https://img.samzong.me/202307191532962.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 ##### 第三次下载
 
 再次重新搜索虾米音乐，并点击下载，在这次 Charles 弹出窗口中我们需要直接修改 'Edit Requset' - 'XML Text' ，将如下图中的 'appExtVrsid' 对应的值修改为，我们上一步中记录的序列数字，然后就一直在每次弹出选择时，选择 'Execute' ，直到下载完成记录。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/h7zzu.jpg)
+![image](https://img.samzong.me/202307191532963.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 #### 验证
 
 下载完成后，你的 iTunes App Library 中已经有了一个虾米音乐，连接上你的手机，将其安装到手机上即可，下图是我安装后的版本截图。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/ppy2m.jpg)
+![image](https://img.samzong.me/202307191532964.jpg?imageView2/3/w/400/interlace/1/q/50)

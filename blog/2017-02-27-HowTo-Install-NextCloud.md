@@ -233,15 +233,15 @@ mysql> FLUSH PRIVILEGES;
 
 在浏览器打开你在 nginx 中配置的域名，NextCloud 初始化非常简单，设定一个管理员账户和密码，然后设定数据库即可，按照我们上一步针对 MySQL 的设定，你会非常清楚地知道你的数据库信息：
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/jjkqh.png)
+![image](https://img.samzong.me/202307191530733.png?imageView2/3/w/400/interlace/1/q/50)
 
 登录之后的界面是这样：
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/7n28v.png)
+![image](https://img.samzong.me/202307191530734.png?imageView2/3/w/400/interlace/1/q/50)
 
 你可以在登录之后，在你的右上角点击头像选择 Admin 进入管理界面查看和修改你的服务器设置，你还可以在浏览器上方看到你的服务器现有哪些问题，会有对应文档提醒你如何解决这些问题。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/yx34e.png)
+![image](https://img.samzong.me/202307191530735.png?imageView2/3/w/400/interlace/1/q/50)
 
 ## Other
 

@@ -143,7 +143,7 @@ pt-query-digest slow.logs
 
 输出信息如下：
 
-![image](http://images.cnitblog.com/blog/288950/201312/14135450-6f7a732598054f7aa311e95cbd4df3b1.png)
+![image](https://img.samzong.me/202307191530282.png?imageView2/3/w/400/interlace/1/q/50)
 
 <ul>
 1. Overall 这个部分是一个大致的概要信息 (类似 loadrunner 给出的概要信息)，通过它可以对当前 MySQL 的查询性能做一个初步的评估，比如各个指标的最大值 (max)，平均值 (min)，95% 分布值，中位数 (median)，标准偏差 (stddev)

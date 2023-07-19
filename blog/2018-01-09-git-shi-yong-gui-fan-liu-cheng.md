@@ -5,11 +5,11 @@ tags: [Git]
 
 团队开发中，遵循一个合理、清晰的 Git 使用流程，是非常重要的。否则，每个人都提交一堆杂乱无章的 commit，项目很快就会变得难以协调和维护。下图是比较常规的 Git 使用规范流程，这能适合绝大多数团队开发的需求，推荐你们也这样使用。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/j4ndi.png)
+![image](https://img.samzong.me/202307191532710.png?imageView2/3/w/400/interlace/1/q/50)
 
 ## 1.  分支管理
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/naweu.jpg)
+![image](https://img.samzong.me/202307191532711.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 1. 主分支 Master：首先，代码库应该有一个、且仅有一个主分支。所有提供给用户使用的正式版本，都在这个主分支上发布。
 

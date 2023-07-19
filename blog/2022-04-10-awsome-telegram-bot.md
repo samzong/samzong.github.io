@@ -32,7 +32,7 @@ tags: [Telegram]
 
 ## Develop in Telegram
 
-![7a0Bjv](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/7a0Bjv.png)
+![7a0Bjv](https://img.samzong.me/202307191535181.png?imageView2/3/w/400/interlace/1/q/50)
 
 - [telegra.ph](https://telegra.ph/) 匿名博客，Writing is Sharing ~
 - [telegram.bot_api](https://core.telegram.org/bots/api) 定制开发你的 webhook

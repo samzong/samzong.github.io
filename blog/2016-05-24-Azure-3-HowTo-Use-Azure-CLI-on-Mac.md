@@ -4,4 +4,4 @@ tags: [Azure]
 date: 2016-05-24 06:20:43
 ---
 
-![image](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016/05/D50E240D-1468-486F-8CA7-C5D3DC7463DE.png)
+![image](https://img.samzong.me/202307191530052.jpg?imageView2/3/w/400/interlace/1/q/50)

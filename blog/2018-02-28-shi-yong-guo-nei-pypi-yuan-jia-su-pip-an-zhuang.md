@@ -3,7 +3,7 @@ title: 使用国内 pypi 源加速 pip 安装
 tags: [Python]
 ---
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/mxb19.png)
+![image](https://img.samzong.me/202307191532698.png?imageView2/3/w/400/interlace/1/q/50)
 
 在解决将 AWS Cloudwatch 的监控信息展示在 Zabbix 上时，需要安装 AWS 的一个 python 工具包 boto3，但是在安装过程中，碰到了如上图的错误信息；问题是由于国内网络问题导致连接 python 库超时，所以将库改为国内
 

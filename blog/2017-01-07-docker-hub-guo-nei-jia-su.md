@@ -11,15 +11,15 @@ date: 2017-01-07 15:32:23
 #### 1. 注册 DaoCloud 账号
 
 首先，你需要到一 DaoCloud 账号，注册很方便，点击地址：[signup](https://account.daocloud.io/signup)
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/o6wh3.jpg)
+![image](https://img.samzong.me/202307191530439.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 #### 2. 登录到你的 DaoCloud 账号内，然后入下图操作
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/n9mt7.jpg)
+![image](https://img.samzong.me/202307191530440.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 #### 3. 查看你的 DaoCloud 加速器地址
 
 [链接](https://www.daocloud.io/mirror#accelerator-doc)
 
 选择你相对应平台的的加速器设置
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/4wuea.jpg)
+![image](https://img.samzong.me/202307191530441.jpg?imageView2/3/w/400/interlace/1/q/50)
