@@ -40,16 +40,14 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: true,
-          routeBasePath: "blog",
+          routeBasePath: "notes",
           // editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
           // `https://github.com/samzong/samzong.me/edit/main/${blogDirPath}/${blogPath}`,
           readingTime: ({ content, frontMatter, defaultReadingTime }) =>
-            defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+            defaultReadingTime({ content, options: { wordsPerMinute: 200 } }),
           blogTitle: "Samzong",
-          // blogDescription: "A Docusaurus powered blog!",
-          postsPerPage: 20,
-          blogSidebarCount: 'ALL', // or 'ALL'
-          // blogSidebarTitle: "Recent posts",
+          postsPerPage: 1,
+          blogSidebarCount: 0, // or 'ALL'
           tagsBasePath: "tags",
           archiveBasePath: "archives",
           truncateMarker: /<!--\s*(truncate)\s*-->/,
