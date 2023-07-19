@@ -1,6 +1,6 @@
 ---
 title: 写的第一个前端页面
-tags: [Fronted]
+tags: [Frontend]
 ---
 
 ![ne0Eiv](https://img.samzong.me/202307191528677.png?imageView2/3/w/400/interlace/1/q/50)

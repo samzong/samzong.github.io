@@ -1,5 +1,5 @@
 ---
-title: Pyenv Python 多版本管理利器
+title: Pyenv Python 版本管理
 toc: true
 authors: [samzong]
 tags: [Python]

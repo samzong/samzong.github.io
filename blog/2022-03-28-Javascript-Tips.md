@@ -3,7 +3,7 @@ title: Javascript Tips
 toc: true
 authors: [samzong]
 date: 2022-03-28 19:09:44
-tags: [Fronted]
+tags: [Frontend]
 ---
 
 - alert 弹窗提醒一段文本

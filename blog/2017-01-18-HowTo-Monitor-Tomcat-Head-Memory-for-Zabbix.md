@@ -51,7 +51,7 @@ export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 
 首先在$tomcatdir/bin/catalina.sh 文件开头处增加如下：
 
-```
+```shell
 #!/bin/sh
 
 CATALINA_OPTS="-Dcom.sun.management.jmxremote \
@@ -62,7 +62,7 @@ CATALINA_OPTS="-Dcom.sun.management.jmxremote \
 
 然后，启动 Tomcat，你会发现多了一个 12345 端口，这就是 jmx 的监听端口，请保证 zabbix-java-gateway 可以访问到这台服务器。
 
-```
+```shell
 [root@6 ~]# /tomcat7/bin/startup.sh
 Starting Tomcat7:
 Using CATALINA_BASE:   /tomcat7
@@ -81,7 +81,7 @@ tcp  0      0 :::12345   :::*     LISTEN      8793/java
 
 这里疏忽了 1 个问题，如果您的 zabbix server 与 agent 端之间有防火墙规则，而按照我上面的所述只是增加了 12345 这个端口，那么很可能，您在/var/log/zabbix/zabbix_java_gateway.log 中会看到“No route to host”的报错，这是因为 JMX 不光开启了 12345 端口，还开启了另外两个随机端口，而在获取监控数据时会使用到其中一个，这就导致了无法通过固定的防火墙规则来开放该端口。其实有另外一个替代方式来使该监听端口固定下来——使用 Tomcat 提供的额外组件 catalina-jmx-remote.jar，这个组件是需要另外下载的：
 
-```
+```shell
 # 查看当前Tomcat版本.
 [root@6 bin]# ./catalina.sh version
 Using CATALINA_BASE:   /tomcat7
@@ -104,14 +104,14 @@ wget http://mirror.bit.edu.cn/apache/tomcat/tomcat-7/v7.0.57/bin/extras/catalina
 
 增加如下内容，在 conf/server.xml 中：
 
-```
+```shell
 <Listener className="org.apache.catalina.mbeans.JmxRemoteLifecycleListener"
           rmiRegistryPortPlatform="12345" rmiServerPortPlatform="12346" />
 ```
 
 因为我们已经在conf/server.xml定义了rmiRegistryPortPlatform，所以要将bin/catalina.sh中CATALINA_OPTS的com.sun.management.jmxremote.port去掉，否则会因为jmxremote.port配置有优先级更高而导致配置失效。
 
-```
+```shell
 CATALINA_OPTS="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
 ```
 
@@ -121,7 +121,7 @@ CATALINA_OPTS="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.aut
 
 首先需要修改 zabbix_server.conf 启用 zabbix-java-gateway，让 zabbix 可以检测到服务，修改如下：
 
-```
+```shell
 ### Option: JavaGateway
  #       IP address (or hostname) of Zabbix Java gateway.
  #       Only required if Java pollers are started.
@@ -160,10 +160,9 @@ JavaGateway=10.211.55.4 # 设置为你的zabbixsever IP
 
 ```
 
-然后修改 zabbix\_java\_gateway.conf 配置如下：
+然后修改 zabbix_java_gateway.conf 配置如下：
 
-```
-
+```shell
 ### Option: zabbix.listenIP
 
 # IP address to listen on
