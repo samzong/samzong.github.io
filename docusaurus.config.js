@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "zh-Hans",
-    locales: ["zh-Hans"],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
@@ -40,16 +40,16 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: true,
-          routeBasePath: "/",
-          editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
-          `https://github.com/samzong/samzong.me/edit/main/${blogDirPath}/${blogPath}`,
+          routeBasePath: "blog",
+          // editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
+          // `https://github.com/samzong/samzong.me/edit/main/${blogDirPath}/${blogPath}`,
           readingTime: ({ content, frontMatter, defaultReadingTime }) =>
             defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
-          blogTitle: "Samzong blog!",
-          blogDescription: "A Docusaurus powered blog!",
-          postsPerPage: 1,
-          blogSidebarCount: 30, // or 'ALL'
-          blogSidebarTitle: "Recent posts",
+          blogTitle: "Samzong",
+          // blogDescription: "A Docusaurus powered blog!",
+          postsPerPage: 20,
+          blogSidebarCount: 'ALL', // or 'ALL'
+          // blogSidebarTitle: "Recent posts",
           tagsBasePath: "tags",
           archiveBasePath: "archives",
           truncateMarker: /<!--\s*(truncate)\s*-->/,
@@ -78,22 +78,22 @@ const config = {
       // Replace with your project's social card
       // image: '',
       navbar: {
-        title: "SAMZONG",
-        logo: {
-          alt: "Samzong",
-          src: "img/logo.png",
-          href: 'https://samzong.me',
-        },
+        // title: "SAMZONG",
+        // logo: {
+        //   alt: "Samzong",
+        //   src: "img/logo.png",
+        //   // href: 'https://samzong.me',
+        // },
         items: [
-          { label: "Github", href: "https://github.com/samzong/", position: "right", },
-          { to: "/tags", label: "Tags", position: "right" },
-          { type: 'search',position: 'left',}
+          // { label: "Github", href: "https://github.com/samzong/", position: "right", },
+          // { to: "/tags", label: "Tags", position: "right" },
+          // { type: 'search',position: 'left',}
           // { to: "/archives", label: "Archives", position: "right" },
         ],
       },
       colorMode: {
-        defaultMode: 'light',
-        disableSwitch: false,
+        defaultMode: 'dark',
+        disableSwitch: true,
         respectPrefersColorScheme: true,
       },
       // announcementBar: {
@@ -104,27 +104,26 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      algolia: {
-        // The application ID provided by Algolia
-        appId: "QHUDGE595D",
-        // Public API key: it is safe to commit it
-        apiKey: "f17f47c5f11046d10c0d3651447e85c1",
-        indexName: "samzong.me",
-        // Optional: see doc section below
-        contextualSearch: true,
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        // externalUrlRegex: "external\\.com|domain\\.com",
+      // algolia: {
+      //   // The application ID provided by Algolia
+      //   appId: "QHUDGE595D",
+      //   // Public API key: it is safe to commit it
+      //   apiKey: "f17f47c5f11046d10c0d3651447e85c1",
+      //   indexName: "samzong.me",
+      //   // Optional: see doc section below
+      //   contextualSearch: true,
+      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      //   // externalUrlRegex: "external\\.com|domain\\.com",
 
-        // Optional: Algolia search parameters
-        searchParameters: {},
+      //   // Optional: Algolia search parameters
+      //   searchParameters: {},
 
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: "search",
-      },
+      //   // Optional: path for search page that enabled by default (`false` to disable it)
+      //   searchPagePath: "search",
+      // },
       markdown: {
         mermaid: true,
       },
-      metadata: [{ name: "keywords", content: "kubernetes, blog" }],
     }),
 };
 
