@@ -28,7 +28,7 @@ date: 2016-07-24 21:42:01
 
 6. 进入游戏，登录 Google ID，然后授权，进入游戏。
 
-    ![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/07/pokemongo3.png)
+    ![image](https://img.samzong.me/202307191727786.png?imageView2/3/w/400/interlace/1/q/50)
 
 7. 开始捕捉你的小精灵吧，手动微笑。
 
