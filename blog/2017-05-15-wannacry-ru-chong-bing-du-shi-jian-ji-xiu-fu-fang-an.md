@@ -3,7 +3,7 @@ title: Wannacry 蠕虫病毒事件及修复方案
 tags: [Windows]
 ---
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/3d0jo.png)
+![image](https://img.samzong.me/202307191546149.png?imageView2/3/w/400/interlace/1/q/50)
 
 ### 事件背景
 
@@ -27,7 +27,7 @@ tags: [Windows]
 
 如果你也遇到了这样的问题，请不要担心，我在下面给出了如何修复这个漏洞的建议。
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/9y7cc.jpg)
+![image](https://img.samzong.me/202307191546150.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 ### 什么是比特币蠕虫病毒？
 
@@ -37,7 +37,7 @@ tags: [Windows]
 
 1. 使用`Win`+`R`按键打开运行窗口，输入 cmd，进入命令行工具，然后输入`netstat -an` 查看是否开放了对应的端口。
 
-   ![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/3m1jm.png)
+   ![image](https://img.samzong.me/202307191546151.png?imageView2/3/w/400/interlace/1/q/50)
 
    上图中的服务器就是开放了 445 端口，这有很大的风险可能会 WannaCry 蠕虫病毒被攻击到，所以我们应该关掉对应端口，并修复漏洞。
 
@@ -82,9 +82,9 @@ pause
 
 3. 在“入站规则”中新建一条规则，本地端口号选择 445，操作选择阻止连接。
 
-   ![image](https://pic3.zhimg.com/v2-85f14330cdba1fbf89369b26b9e48f52_b.png)
+   ![image](https://img.samzong.me/202307191546152.png?imageView2/3/w/400/interlace/1/q/50)
 
-   ![image](https://pic2.zhimg.com/v2-1bbe08395ec8ef8d0e2028cbccb01055_b.png)
+   ![image](https://img.samzong.me/202307191546153.png?imageView2/3/w/400/interlace/1/q/50)
 
 ### 手动导入安全策略
 
@@ -94,10 +94,10 @@ pause
 
 打开控制面板--管理工具 - 本地安全策略--IP 安全策略 -->所有任务-->导入策略：
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/hj9f4.jpg)
+![image](https://img.samzong.me/202307191546155.jpg?imageView2/3/w/400/interlace/1/q/50)
 
 或者，通过`Win`+`R`，输入`gpedit.msc`
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/9vsqx.jpg)
+![image](https://img.samzong.me/202307191546156.jpg?imageView2/3/w/400/interlace/1/q/50)
 
-![image](https://samzong.oss-cn-shenzhen.aliyuncs.com/blog/tosjk.jpg)
+![image](https://img.samzong.me/202307191546157.jpg?imageView2/3/w/400/interlace/1/q/50)
