@@ -24,40 +24,38 @@ Parallels Desktop 提供了一个终端命令 `prlctl`，可以通过命令来�
 
 ### 常用命令介绍
 
-!!! note
+:::info
+查看当前 virtual machine 的列表
 
-    查看当前 virtual machine 的列表
+```bash
+prlctl list -a
+```
+:::
 
-    ```bash
-    prlctl list -a
-    ```
+:::info
+查看当前 virtual machine 的状态
 
-!!! note
+```bash
+prlctl status <vm_name>
+```
+:::
 
-    查看当前 virtual machine 的状态
+:::info
+启动 virtual machine
 
-    ```bash
-    prlctl status <vm_name>
-    ```
+```bash
+prlctl start <vm_name>
+```
+:::
 
-!!! note
+:::info
+关闭 virtual machine
 
-    启动 virtual machine
-
-    ```bash
-    prlctl start <vm_name>
-    ```
-
-!!! note
-
-    关闭 virtual machine
-
-    ```bash
-    prlctl stop <vm_name>
-    ```
+```bash
+prlctl stop <vm_name>
+```
+:::
 
 ## 更多指令
 
 更多指令可以通过 `prlctl --help` 查看。
-
-```bash
