@@ -43,7 +43,7 @@ jobs:
         ls -l
         rm -rf .git
         cd ..
-        git add '*.md'
+        git add **/*.md **/*.mdx
         git status
         git commit -m "add test"
         git push origin test-k8s-docs --force
