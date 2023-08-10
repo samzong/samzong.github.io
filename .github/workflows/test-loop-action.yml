@@ -42,8 +42,8 @@ jobs:
         gh repo clone kubernetes/kubernetes tmp
         cd tmp
         ls -l
-        rm -rf .git
-        git add --all **/*.md
+        rm -rf .git build
+        git add -v --all docs/**/*.md
         cd ..
         git status
         git commit -m "add test"
