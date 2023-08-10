@@ -1,0 +1,25 @@
+name: Test Loop
+
+on:
+  push:
+    branches:
+      - main
+    # Review gh actions docs if you want to further define triggers, paths, etc
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+
+jobs:
+  run_for:
+    name: run_for
+    runs-on: ubuntu-latest
+    steps:
+    - name: for print 1-5
+      run: |
+        for id in {1..5}
+        do
+          echo "正在处理文件 id"
+        done
+        
+        for file in ./
+        do
+          echo "正在处理文件 $file"
+        done
