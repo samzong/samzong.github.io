@@ -43,8 +43,8 @@ jobs:
         ls -l
         rm -rf .git
         cd ..
-        git add --all *.md
+        git add --all tmp/*.md
         git status
         git commit -m "add test"
-        git push origin test-k8s-docs
+        git push origin test-k8s-docs --force
         
