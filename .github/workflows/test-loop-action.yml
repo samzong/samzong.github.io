@@ -37,6 +37,7 @@ jobs:
         done
         git config --global user.email samzong-bot@gmail.com
         git config --global user.name samzong-bot
+        git config advice.addIgnoredFile false
         git checkout -b test-k8s-docs
         gh repo clone kubernetes/kubernetes tmp
         cd tmp
