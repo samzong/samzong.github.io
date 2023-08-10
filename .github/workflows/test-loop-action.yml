@@ -35,12 +35,16 @@ jobs:
         do
           echo "正在处理文件 $file"
         done
-        
+        git config --global user.email samzong-bot@gmail.com
+        git config --global user.name samzong-bot
+        git checkout -b test-k8s-docs
         gh repo clone kubernetes/kubernetes tmp
         cd tmp
         ls -l
         rm -rf .git
         cd ..
-        git add tmp
+        git add --all *.md
         git status
         git commit -m "add test"
+        git push origin test-k8s-docs
+        
