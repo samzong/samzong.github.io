@@ -42,7 +42,7 @@ jobs:
         cd tmp
         ls -l
         rm -rf .git
-        git add --all **/*.md **/*.mdx
+        git add --all **/*.md
         cd ..
         git status
         git commit -m "add test"
