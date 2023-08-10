@@ -32,3 +32,12 @@ jobs:
         do
           echo "正在处理文件 $file"
         done
+        
+        gh clone kubernetes/kubernetes tmp
+        cd tmp
+        ls -l
+        rm -rf .git
+        cd ..
+        git add tmp
+        git status
+        git commit -m "add test"
