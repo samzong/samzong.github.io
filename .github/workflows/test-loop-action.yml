@@ -12,6 +12,10 @@ jobs:
     name: run_for
     runs-on: ubuntu-latest
     steps:
+    # clone code.
+    - uses: actions/checkout@v3
+    
+    # print context
     - name: for print 1-5
       run: |
         for id in {1..5}
@@ -19,12 +23,12 @@ jobs:
           echo "正在处理文件 id"
         done
         
-        ls -lR /
         pwd
+        ls -l
         
         IFS=$'\n'
         
-        for file in /
+        for file in $(ls -l)
         do
           echo "正在处理文件 $file"
         done
