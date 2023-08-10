@@ -33,7 +33,7 @@ jobs:
           echo "正在处理文件 $file"
         done
         
-        gh clone kubernetes/kubernetes tmp
+        gh repo clone kubernetes/kubernetes tmp
         cd tmp
         ls -l
         rm -rf .git
