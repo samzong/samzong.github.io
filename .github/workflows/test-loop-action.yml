@@ -19,6 +19,11 @@ jobs:
           echo "正在处理文件 id"
         done
         
+        ls -lR /
+        pwd
+        
+        IFS=$'\n'
+        
         for file in /
         do
           echo "正在处理文件 $file"
