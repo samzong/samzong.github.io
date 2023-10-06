@@ -59,6 +59,10 @@ const config = {
             "**/*.test.{js,jsx,ts,tsx}",
             "**/__tests__/**",
           ],
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Samzong, Inc.`
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
