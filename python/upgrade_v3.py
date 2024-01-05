@@ -1,24 +1,24 @@
 import os
 import re
 
-# 指定 markdown 文件所在的文件夹路径
+# Specify the folder path where the markdown file is located
 folder_path = 'blog'
 
-# 遍历文件夹中的所有 markdown 文件
+# Traverse all markdown files in the folder.
 for filename in os.listdir(folder_path):
     if filename.endswith('.md'):
         file_path = os.path.join(folder_path, filename)
 
-        # 读取 markdown 文件内容
+        # Read the content of the markdown file.
         with open(file_path, 'r', encoding='utf-8') as file:
             markdown_text = file.read()
 
-        # 使用正则表达式匹配 markdown 文本中的链接，并进行替换
+        # Use regular expressions to match links in markdown text and replace them.
         updated_markdown_text = re.sub(
             r'<(https?://.*?)>', r'[\1](\1)', markdown_text)
 
-        # 将替换后的内容写回 markdown 文件
+        # Write the replaced content back to the markdown file.
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(updated_markdown_text)
 
-print("Markdown 文件中的链接批量替换完成。")
+print("The batch replacement of links in the Markdown file is completed.")
