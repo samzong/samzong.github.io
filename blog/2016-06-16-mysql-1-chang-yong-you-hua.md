@@ -138,6 +138,6 @@ set time_zone='+8:00'
 
 ### 3.  第三方工具对 mysql 配置进行优化
 
-* <http://toolspercona.com>
+* [http://toolspercona.com](http://toolspercona.com)
 
 先回答问题，然后根据问题你给出的答案，网站会给你一个参考配置。

@@ -105,9 +105,9 @@ Complete!
 
 不同 CentOS 版本的 epel 下载地址：
 
-* CentOS 5 : <https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm>
-* CentOS 6 : <https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm>
-* CentOS 7 : <https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm>
+* CentOS 5 : [https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm](https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm)
+* CentOS 6 : [https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm](https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm)
+* CentOS 7 : [https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm](https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm)
 
 本次试验用到的 CentOS 6 所以我们下载 epel-release-latest-6.noarch.rpm
 

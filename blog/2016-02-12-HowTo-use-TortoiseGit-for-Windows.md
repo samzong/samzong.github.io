@@ -13,13 +13,13 @@ TortoiseGit 是 TortoiseSVN 的 Git 版本，TortoiseGit 用于迁移 TortoiseSV
 
 #### 下载
 
-TortoiseGit 的官方下载地址是这里：<https://tortoisegit.org/download/> ，下载时请注意与你系统的兼容性。
+TortoiseGit 的官方下载地址是这里：[https://tortoisegit.org/download/](https://tortoisegit.org/download/) ，下载时请注意与你系统的兼容性。
 
 > 注意 TortoiseGit 1.8.16 之后的版本不在支持 Windows XP 和 Server 2003
 
 因为 TortoiseGit 官网不在国内，所以在访问下载时速度非常的慢，我将目前的稳定版本 2.4 上传到我的百度云盘，但是以后我可能不能及时更新，所以如果你对版本要求不是很高，可以点击下面链接下载。
 
-链接：<https://pan.baidu.com/s/1eScNjA6> 密码：31hu
+链接：[https://pan.baidu.com/s/1eScNjA6](https://pan.baidu.com/s/1eScNjA6) 密码：31hu
 
 > 如链接失效，您可以通过本页面右下角展开通过邮箱，与我取得联系。
 
@@ -29,11 +29,11 @@ TortoiseGit 的官方下载地址是这里：<https://tortoisegit.org/download/>
 
 首先，我们需要安装 Git 在你的电脑上，这保证你的 TortoiseGit 运行时所需要的依赖环境。
 
-下载地址：<https://git-for-windows.github.io/>
+下载地址：[https://git-for-windows.github.io/](https://git-for-windows.github.io/)
 
 同样，因为某些网络的原因，导致我们在下载时也会很慢，所以我也将目前最新 2.13 版本上传到了我的百度云盘：
 
-链接：<https://pan.baidu.com/s/1c12ZvRq> 密码：43yt
+链接：[https://pan.baidu.com/s/1c12ZvRq](https://pan.baidu.com/s/1c12ZvRq) 密码：43yt
 
 安装过程，这里不在展示，通常情况下，你只需要一路点击 Next 即可，但是如果你想要修改一些设置，例如默认的安装位置，那么你需要注意下，在 TortoiseGit 初次启动时，你需要手动设置 Git.exe 的位置。
 

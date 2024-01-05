@@ -28,7 +28,7 @@ Install Date: Sat 21 May 2016 03:31:27 AM CST      Build Host: c6b9.bsys.dev.cen
 Group       : System Environment/Base       Source RPM: centos-release-6-7.el6.centos.12.3.src.rpm
 Size        : 35634                            License: GPLv2
 Signature   : RSA/SHA1, Tue 04 Aug 2015 12:15:08 AM CST, Key ID 0946fca2c105b9de
-Packager    : CentOS BuildSystem <http://bugs.centos.org>
+Packager    : CentOS BuildSystem [http://bugs.centos.org](http://bugs.centos.org)
 Summary     : CentOS release file
 Description :
 CentOS release files
@@ -46,7 +46,9 @@ i386
 但是，当我在命令行查看是却发现`$releasever`和`$basearch`是空的。
 
 Google 一下之后，说明 Yum 变量的说明可以在这里（5.3.3. Using Yum Variables）找到，说明如下：
->5.3.3. Using Yum Variables
+
+```text
+> 5.3.3. Using Yum Variables
 
 You can use and reference the following built-in variables in yum commands and in all Yum configuration files (that is, /etc/yum.conf and all .repo files in the /etc/yum.repos.d/ directory):
 
@@ -69,6 +71,7 @@ For example, repository descriptions often include the operating system name. To
 `echo "Red Hat Enterprise Linux" > /etc/yum/vars/osname`
 
 Instead of "Red Hat Enterprise Linux 6", you can now use the following in the .repo files: name=$osname $releasever
+```
 
 文中说到$releasever 的定义可以查看 /etc/yum.conf 文件的事 distroverpkg=value 行，打开 /etc/yum.conf 看一下，默认文件（我的是 CentOS 6）内容如下：
 
@@ -95,6 +98,6 @@ distroverpkg 的值，并不是明文，而是“redhat-release”。不知道�
 
 ##### 小结
 
-yum 中的$releasever 变量是取 redhat-release-server rpm 包的属性值 ( %{version})。
-[root@ldap01 ~]# rpm -q --qf %{version} redhat-release-server;echo
+yum 中的$releasever 变量是取 redhat-release-server rpm 包的属性值 ( $version)。
+[root@ldap01 ~]# rpm -q --qf $version redhat-release-server;echo
 6Server

@@ -72,7 +72,7 @@ pause
 
 我已经将脚本上传到百度云盘中，大家可以自行下载运行，注意解压缩 Zip 包之后的 fix_WannaCry.bat
 
-下载链接：<https://pan.baidu.com/s/1gfceNRH>
+下载链接：[https://pan.baidu.com/s/1gfceNRH](https://pan.baidu.com/s/1gfceNRH)
 
 ### 添加防火规则
 
@@ -90,7 +90,7 @@ pause
 
 下载策略文件
 
-<https://share.weiyun.com/15b7bbd3f86c493a66721dd948a81c54>
+[https://share.weiyun.com/15b7bbd3f86c493a66721dd948a81c54](https://share.weiyun.com/15b7bbd3f86c493a66721dd948a81c54)
 
 打开控制面板--管理工具 - 本地安全策略--IP 安全策略 -->所有任务-->导入策略：
 

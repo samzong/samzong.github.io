@@ -75,30 +75,30 @@ tags: [Projects]
 
 | 功能                     | 介绍网址                                                  |
 | ------------------------ | --------------------------------------------------------- |
-| 应用部署                 | <https://docs.cskefu.com/docs/deploy>                     |
-| 系统初始化               | <https://docs.cskefu.com/docs/initialization>             |
-| 开源社区                 | <https://docs.cskefu.com/docs/osc/>                       |
-| 开源许可协议             | <https://docs.cskefu.com/docs/osc/license>                |
-| 春松客服大讲堂           | <https://docs.cskefu.com/docs/osc/training>               |
-| 开发环境搭建             | <https://docs.cskefu.com/docs/osc/engineering>            |
-| IDE 使用之 Eclipse IDE   | <https://docs.cskefu.com/docs/osc/ide_eclipse>            |
-| IDE 使用之 IntelliJ IDEA | <https://docs.cskefu.com/docs/osc/ide_intelij_idea>       |
-| 系统维护                 | <https://docs.cskefu.com/docs/osc/maintainence>           |
-| 提交代码                 | <https://docs.cskefu.com/docs/osc/contribution>           |
-| REST APIs                | <https://docs.cskefu.com/docs/osc/restapi>                |
-| 账号和权限               | <https://docs.cskefu.com/docs/accounting>                 |
-| 坐席工作台               | <https://docs.cskefu.com/docs/work>                       |
-| 渠道管理                 | <https://docs.cskefu.com/docs/channels/>                  |
-| Messenger 渠道           | <https://docs.cskefu.com/docs/channels/messenger/>        |
-| 网页渠道                 | <https://docs.cskefu.com/docs/channels/webim>             |
-| 客户关系管理             | <https://docs.cskefu.com/docs/crm>                        |
-| 坐席监控                 | <https://docs.cskefu.com/docs/monitoring>                 |
-| 机器人客服               | <https://docs.cskefu.com/docs/work-chatbot/>              |
-| 安装配置                 | <https://docs.cskefu.com/docs/work-chatbot/install>       |
-| 集成机器人客服           | <https://docs.cskefu.com/docs/work-chatbot/bot-agent>     |
-| 消息类型                 | <https://docs.cskefu.com/docs/work-chatbot/message-types> |
-| 会话历史                 | <https://docs.cskefu.com/docs/reports>                    |
-| 访问统计                 | <https://docs.cskefu.com/docs/usage>                      |
+| 应用部署                 | [https://docs.cskefu.com/docs/deploy](https://docs.cskefu.com/docs/deploy)                     |
+| 系统初始化               | [https://docs.cskefu.com/docs/initialization](https://docs.cskefu.com/docs/initialization)             |
+| 开源社区                 | [https://docs.cskefu.com/docs/osc/](https://docs.cskefu.com/docs/osc/)                       |
+| 开源许可协议             | [https://docs.cskefu.com/docs/osc/license](https://docs.cskefu.com/docs/osc/license)                |
+| 春松客服大讲堂           | [https://docs.cskefu.com/docs/osc/training](https://docs.cskefu.com/docs/osc/training)               |
+| 开发环境搭建             | [https://docs.cskefu.com/docs/osc/engineering](https://docs.cskefu.com/docs/osc/engineering)            |
+| IDE 使用之 Eclipse IDE   | [https://docs.cskefu.com/docs/osc/ide_eclipse](https://docs.cskefu.com/docs/osc/ide_eclipse)            |
+| IDE 使用之 IntelliJ IDEA | [https://docs.cskefu.com/docs/osc/ide_intelij_idea](https://docs.cskefu.com/docs/osc/ide_intelij_idea)       |
+| 系统维护                 | [https://docs.cskefu.com/docs/osc/maintainence](https://docs.cskefu.com/docs/osc/maintainence)           |
+| 提交代码                 | [https://docs.cskefu.com/docs/osc/contribution](https://docs.cskefu.com/docs/osc/contribution)           |
+| REST APIs                | [https://docs.cskefu.com/docs/osc/restapi](https://docs.cskefu.com/docs/osc/restapi)                |
+| 账号和权限               | [https://docs.cskefu.com/docs/accounting](https://docs.cskefu.com/docs/accounting)                 |
+| 坐席工作台               | [https://docs.cskefu.com/docs/work](https://docs.cskefu.com/docs/work)                       |
+| 渠道管理                 | [https://docs.cskefu.com/docs/channels/](https://docs.cskefu.com/docs/channels/)                  |
+| Messenger 渠道           | [https://docs.cskefu.com/docs/channels/messenger/](https://docs.cskefu.com/docs/channels/messenger/)        |
+| 网页渠道                 | [https://docs.cskefu.com/docs/channels/webim](https://docs.cskefu.com/docs/channels/webim)             |
+| 客户关系管理             | [https://docs.cskefu.com/docs/crm](https://docs.cskefu.com/docs/crm)                        |
+| 坐席监控                 | [https://docs.cskefu.com/docs/monitoring](https://docs.cskefu.com/docs/monitoring)                 |
+| 机器人客服               | [https://docs.cskefu.com/docs/work-chatbot/](https://docs.cskefu.com/docs/work-chatbot/)              |
+| 安装配置                 | [https://docs.cskefu.com/docs/work-chatbot/install](https://docs.cskefu.com/docs/work-chatbot/install)       |
+| 集成机器人客服           | [https://docs.cskefu.com/docs/work-chatbot/bot-agent](https://docs.cskefu.com/docs/work-chatbot/bot-agent)     |
+| 消息类型                 | [https://docs.cskefu.com/docs/work-chatbot/message-types](https://docs.cskefu.com/docs/work-chatbot/message-types) |
+| 会话历史                 | [https://docs.cskefu.com/docs/reports](https://docs.cskefu.com/docs/reports)                    |
+| 访问统计                 | [https://docs.cskefu.com/docs/usage](https://docs.cskefu.com/docs/usage)                      |
 
 ### 账号和权限
 
@@ -461,7 +461,7 @@ INFO  c.c.socketio.SocketIOServer - SocketIO server started at port: 8036 [nioEv
 
 | 内容       | 说明                      |
 | ---------- | ------------------------- |
-| 网站       | <https://demo.cskefu.com> |
+| 网站       | [https://demo.cskefu.com](https://demo.cskefu.com) |
 | 默认用户名 | admin                     |
 | 默认密码   | admin1234                 |
 
@@ -476,9 +476,9 @@ INFO  c.c.socketio.SocketIOServer - SocketIO server started at port: 8036 [nioEv
 
 ## 关注春松客服
 
-- 春松客服官网 <https://www.cskefu.com>
-- Github 主页  <https://github.com/cskefu/cskefu>
-- 春松客服文档站 <https://docs.cskefu.com>
+- 春松客服官网 [https://www.cskefu.com](https://www.cskefu.com)
+- Github 主页  [https://github.com/cskefu/cskefu](https://github.com/cskefu/cskefu)
+- 春松客服文档站 [https://docs.cskefu.com](https://docs.cskefu.com)
 
 ## 社区会议
 
@@ -492,5 +492,5 @@ INFO  c.c.socketio.SocketIOServer - SocketIO server started at port: 8036 [nioEv
 
 ### 往期会议
 
-- 会议记录 <https://www.cskefu.com/category/conferences/>
-- 视频记录 <https://space.bilibili.com/34290698/channel/collectiondetail?sid=817713>
+- 会议记录 [https://www.cskefu.com/category/conferences/](https://www.cskefu.com/category/conferences/)
+- 视频记录 [https://space.bilibili.com/34290698/channel/collectiondetail?sid=817713](https://space.bilibili.com/34290698/channel/collectiondetail?sid=817713)

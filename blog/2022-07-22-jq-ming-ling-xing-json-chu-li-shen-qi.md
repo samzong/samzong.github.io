@@ -6,7 +6,7 @@ tags: [Mac]
 
 - [https://mozillazg.com/2018/01/jq-use-examples-cookbook.htm](https://mozillazg.com/2018/01/jq-use-examples-cookbook.html)-
 
-- jq 命令日常练习 <https://jqplay.org/s/KhRuUFCP2h>
+- jq 命令日常练习 [https://jqplay.org/s/KhRuUFCP2h](https://jqplay.org/s/KhRuUFCP2h)
 
 一个灵活的轻量级命令行 JSON 处理器
 

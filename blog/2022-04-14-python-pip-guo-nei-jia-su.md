@@ -5,7 +5,7 @@ tags: [Python]
 
 目前国内还是有比较多的镜像站，截止目前使用下比较稳定的只有下面这个 清华的镜像站了
 
-- <https://pypi.tuna.tsinghua.edu.cn/simple>
+- [https://pypi.tuna.tsinghua.edu.cn/simple](https://pypi.tuna.tsinghua.edu.cn/simple)
 
 ## 安装特定包时加速
 

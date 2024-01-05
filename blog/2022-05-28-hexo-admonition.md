@@ -11,7 +11,7 @@ tags: [Blog]
 
 保证写作习惯的一致性，好在有人开发出对应的插件，感谢。
 
-- <https://github.com/lxl80/hexo-admonition>
+- [https://github.com/lxl80/hexo-admonition](https://github.com/lxl80/hexo-admonition)
 
 ## 安装方式
 

@@ -4,17 +4,17 @@ tags: [Mac]
 date: 2020-11-24 00:32:13
 ---
 
-## 1. <https://isapplesiliconready.com/>
+## 1. [https://isapplesiliconready.com/](https://isapplesiliconready.com/)
 
 ![image-20201124222803150](https://img.samzong.me/202307191533376.png?imageView2/3/w/400/interlace/1/q/50)
 
 ### If you have any apps want and to here. Please click `REQUEST AN APP`  or use this link
 
-> <https://isapplesiliconready.com/request/>
+> [https://isapplesiliconready.com/request/](https://isapplesiliconready.com/request/)
 
 ---
 
-## 2. <https://doesitarm.com/>
+## 2. [https://doesitarm.com/](https://doesitarm.com/)
 
 ![image](https://img.samzong.me/202307191533377.png?imageView2/3/w/400/interlace/1/q/50)
 

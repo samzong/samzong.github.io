@@ -3,8 +3,8 @@ title: Python Version Manage `pyenv`
 tags: [Python]
 ---
 
-> to\_url : <http://pyenv.run/>
-> github offical site <https://github.com/pyenv/pyenv>
+> to\_url : [http://pyenv.run/](http://pyenv.run/)
+> github offical site [https://github.com/pyenv/pyenv](https://github.com/pyenv/pyenv)
 
 在 MacOS 的使用方式：brew install pyenv
 
@@ -27,7 +27,7 @@ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer 
 wget https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer -O ~/pyenv-installer
 ```
 
-如果你的服务器环境比较悲催，访问 GitHub 也是比较麻烦，那么可以看下这个网站  <https://gitclone.com/> ；只需要对 `pyenv-installer` 进行简单的修改就可以实现加速下载了
+如果你的服务器环境比较悲催，访问 GitHub 也是比较麻烦，那么可以看下这个网站  [https://gitclone.com/](https://gitclone.com/) ；只需要对 `pyenv-installer` 进行简单的修改就可以实现加速下载了
 
 ```bash
 # ......
@@ -56,7 +56,7 @@ echo 'eval "$(pyenv virtualenv-init -)"'  >> ~/.bashrc
 
 ![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1630846711398-96703bab-2e76-4f74-8b6d-1dfa212d39b1.jpeg?x-oss-process=image/resize,w_960,m_lfit)
 
-遇到这个问题，可以尝试 先下载对应版本的安装包；可以使用国内的镜像站进行下载，或者在网络访问正常的地方进行下载包，然后上传到服务器中，这里推荐使用 淘宝的镜像站，把域名中 <https://www.python.org/ftp> 替换为 <https://npm.taobao.org/mirrors/> ，下载到指定的目录
+遇到这个问题，可以尝试 先下载对应版本的安装包；可以使用国内的镜像站进行下载，或者在网络访问正常的地方进行下载包，然后上传到服务器中，这里推荐使用 淘宝的镜像站，把域名中 [https://www.python.org/ftp](https://www.python.org/ftp) 替换为 [https://npm.taobao.org/mirrors/](https://npm.taobao.org/mirrors/) ，下载到指定的目录
 
 ```bash
 # v = 你想要安装的python版本，比如 3.8.6

@@ -3,7 +3,7 @@ title: Kubernetes Operator
 tags: [Kubernetes]
 ---
 
-<https://www.redhat.com/zh/topics/containers/what-is-a-kubernetes-operator>
+[https://www.redhat.com/zh/topics/containers/what-is-a-kubernetes-operator](https://www.redhat.com/zh/topics/containers/what-is-a-kubernetes-operator)
 
 Kubernetes Operator 是一种封装、部署和管理 Kubernetes 应用的方法。我们使用 Kubernetes API（应用编程接口）和 kubectl 工具在 Kubernetes 上部署并管理 Kubernetes 应用。
 

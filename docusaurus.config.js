@@ -1,13 +1,12 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "SAMZONG",
-  tagline: "Samzong blogs",
+  tagline: "Samzong's Blog",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -60,8 +59,8 @@ const config = {
             "**/__tests__/**",
           ],
           feedOptions: {
-            type: 'all',
-            copyright: `Copyright © ${new Date().getFullYear()} Samzong, Inc.`
+            type: "all",
+            copyright: `Copyright © ${new Date().getFullYear()} Samzong, Inc.`,
           },
         },
         theme: {
@@ -91,7 +90,7 @@ const config = {
         ],
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
         disableSwitch: true,
         respectPrefersColorScheme: true,
       },
@@ -100,26 +99,10 @@ const config = {
       //     '⭐️ If you find my articles beneficial, feel free to follow me on <a target="_blank" rel="noopener noreferrer" href="https://github.com/samzong">GitHub</a>! ⭐️',
       // },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+        additionalLanguages: ['bash', 'python', 'json']
       },
-      // algolia: {
-      //   // The application ID provided by Algolia
-      //   appId: "QHUDGE595D",
-      //   // Public API key: it is safe to commit it
-      //   apiKey: "f17f47c5f11046d10c0d3651447e85c1",
-      //   indexName: "samzong.me",
-      //   // Optional: see doc section below
-      //   contextualSearch: true,
-      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-      //   // externalUrlRegex: "external\\.com|domain\\.com",
-
-      //   // Optional: Algolia search parameters
-      //   searchParameters: {},
-
-      //   // Optional: path for search page that enabled by default (`false` to disable it)
-      //   searchPagePath: "search",
-      // },
       markdown: {
         mermaid: true,
       },

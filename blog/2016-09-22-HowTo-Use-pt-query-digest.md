@@ -173,7 +173,7 @@ pt-query-digest --type tcpdump mysql.tcp.txt
 
 #### c. pt-query-digest 还支持很对其他的数据包分析形势，但是我们主要使用的还是针对慢日志进行分析
 
-> 更多的帮助文档，请查看官方文档：<http://www.percona.com/doc/percona-toolkit/2.2/pt-query-digest.html>
+> 更多的帮助文档，请查看官方文档：[http://www.percona.com/doc/percona-toolkit/2.2/pt-query-digest.html](http://www.percona.com/doc/percona-toolkit/2.2/pt-query-digest.html)
 
 ### 5. 使用 Anemometer 将 pt-query-digest 的 MySQL 慢查询可视化
 

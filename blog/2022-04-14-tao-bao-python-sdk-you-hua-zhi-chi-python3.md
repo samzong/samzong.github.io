@@ -7,8 +7,8 @@ date: 2022-04-14 10:43:00
 ---
 淘宝开放平台的 SDK，Python 的 SDK 是在 2012 年，仅支持 Python2.7 及以上，但不支持 Python3；二现在是 2102 年了，像我这样的新手都是直接从 Python3 开始的
 
-- 我已经把这个项目开放在 GitHub <https://github.com/SAMZONG/taobao-openapi>
-- 同时放在了 Python pypi 软件仓库 <https://pypi.org/project/taobao-openapi/>
+- 我已经把这个项目开放在 GitHub [https://github.com/SAMZONG/taobao-openapi](https://github.com/SAMZONG/taobao-openapi)
+- 同时放在了 Python pypi 软件仓库 [https://pypi.org/project/taobao-openapi/](https://pypi.org/project/taobao-openapi/)
 
 ## Install & Usage
 
@@ -67,7 +67,7 @@ if __name__ == '__main__':
 
 ## 适配部分介绍
 
-> 以下为了省时间，基本引用了 <https://blog.csdn.net/starryhwj/article/details/103026402> 补充了 8
+> 以下为了省时间，基本引用了 [https://blog.csdn.net/starryhwj/article/details/103026402](https://blog.csdn.net/starryhwj/article/details/103026402) 补充了 8
 > 同时感谢 [@ymj4023](https://github.com/ymj4023)
 
 ### 1. Python3 int 替代了 long

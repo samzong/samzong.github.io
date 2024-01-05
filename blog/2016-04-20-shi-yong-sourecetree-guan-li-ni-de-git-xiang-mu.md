@@ -27,7 +27,7 @@ date: 2016-04-20 21:31:49
 
 SourceTree 是一款免费且同时支持 Windows 和 Mac 的 git 项目管理软件，本文旨在给大家介绍这款应用的基础使用，并用它来管理你的项目
 
->官网： <https://www.sourcetreeapp.com/>
+>官网： [https://www.sourcetreeapp.com/](https://www.sourcetreeapp.com/)
 
 ## git 帐号建立
 

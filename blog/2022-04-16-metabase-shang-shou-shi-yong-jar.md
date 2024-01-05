@@ -10,7 +10,7 @@ date: 2022-04-16 02:40:00
 
 我正在打造一个中文环境下 Metabase 交互的社群，如果你有任何关于 Metabase 的问题，请联系我们：
 
-> Metabase 中文交流 **<https://t.me/metabase_zh>**
+> Metabase 中文交流 **[https://t.me/metabase_zh](https://t.me/metabase_zh)**
 
 ## Installation
 
@@ -35,7 +35,7 @@ Metabase 要求 Java 8 及以上，如果你的环境不支持，请先升级
 
 ### 获取 Metabase 的 Jar 包
 
-> <https://metabase.com/start/jar.html>
+> [https://metabase.com/start/jar.html](https://metabase.com/start/jar.html)
 
 通过上方这个链接，可以很快的获取到 Metabase 的最新版本的 Jar 包
 
@@ -51,7 +51,7 @@ java -jar metabase.jar
 
 成功启动后，Metabase 会运行在 3000 端口
 
-> <http://localhost:3000/>
+> [http://localhost:3000/](http://localhost:3000/)
 
 ### 以后台方式运行 Metabase
 
@@ -108,17 +108,17 @@ server {
 
 ### 配置 Metabase 的 ClickHouse 插件
 
-> Metabase 官方支持数据库 <https://www.metabase.com/docs/latest/administration-guide/01-managing-databases.html#officially-supported-databases>
+> Metabase 官方支持数据库 [https://www.metabase.com/docs/latest/administration-guide/01-managing-databases.html#officially-supported-databases](https://www.metabase.com/docs/latest/administration-guide/01-managing-databases.html#officially-supported-databases)
 
 Metabase 默认支持非常丰富数据库驱动，这些都会预置在 Jar 内，例如 MySQL、Oracle、SQL Server；但是 ClickHouse 不在其中，所以我们需要独立进行安装。
 
-ClickHouse 驱动：<https://github.com/enqueue/metabase-clickhouse-driver#readme>=
+ClickHouse 驱动：[https://github.com/enqueue/metabase-clickhouse-driver#readme](https://github.com/enqueue/metabase-clickhouse-driver#readme)=
 
 - 下载 **合适的** 驱动版本，放在 Metabase 的目录下的 plugin 文件夹下
 - 重新启动 Metabase 即可
 - 在 Metabase 的数据库管理中新增数据库，选择类型为 ClickHouse
 
-> 更多三方驱动：<https://www.metabase.com/docs/latest/developers-guide-drivers.html#how-to-use-a-community-built-driver>
+> 更多三方驱动：[https://www.metabase.com/docs/latest/developers-guide-drivers.html#how-to-use-a-community-built-driver](https://www.metabase.com/docs/latest/developers-guide-drivers.html#how-to-use-a-community-built-driver)
 
 ## Tips
 

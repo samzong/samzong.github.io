@@ -55,7 +55,7 @@ sudo ossfs my-bucket /mnt/ossdir -ourl=http://oss-location.aliyuncs.com
 
 # 如果使用 ossfs 的机器是阿里云 ECS，可以使用内网域名来避免流量收费和 提高速度
 
-sudo ossfs my-bucket /tmp/ossfs -ourl=<http://oss-location-internal.aliyuncs.com>
+sudo ossfs my-bucket /tmp/ossfs -ourl=[http://oss-location-internal.aliyuncs.com](http://oss-location-internal.aliyuncs.com)
 
 ```
 
@@ -79,7 +79,7 @@ sudo fusermount -u /tmp/ossfs # non-root user
 ```bash
 # 使用 -o dbglevel=debug -f -d 参数打印日志信息
 
-sudo ossfs my-bucket /tmp/ossfs -ourl=<http://oss-location-internal.aliyuncs.com> -o dbglevel=debug -f -d > /mnt/ossfs.log 2>&1
+sudo ossfs my-bucket /tmp/ossfs -ourl=[http://oss-location-internal.aliyuncs.com](http://oss-location-internal.aliyuncs.com) -o dbglevel=debug -f -d > /mnt/ossfs.log 2>&1
 
 ```
 

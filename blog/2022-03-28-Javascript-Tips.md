@@ -74,7 +74,7 @@ function showMessage() {
 
 ## 严格模式
 
-- 三连表达式     cond ? resultA : resultB   //  1 > 0 ? alert(true) : alert(false)   cond 为真展示resultA, 反之展示resultB
+- 三连表达式     cond ? resultA : resultB   //  1 > 0 ? alert(true) : alert(false)   cond 为真展示 resultA, 反之展示 resultB
 - 空值运算符     a ?? b       =>  a ?? b 的结果是 a，除非 a 为 null/undefined，这时结果是 b
 
 ## 开发行为规范
@@ -119,13 +119,13 @@ let user = {}     构造 "字面量的语法"
 
 在对象中，包含的是 一个个属性，这些属性又以 键值对 的形式出现在 {} 中
 
-- 定义一个有属性的对象  let user = {name:'alex', age: 18}
+- 定义一个有属性的对象  `let user = {name:'alex', age: 18}`
   - 增加属性 user.city = 'Shanghai'  =>   user['love package'] = 'Apple'
   - 删除一个属性 delete user.age
 - 计算属性  ：当创建一个对象时，我可以在对象字面量中使用方括号，这叫做计算属性；计算属性的含义是 [fruit] 是从 变量 fruit 中获取的
 - 判断一个 属性是否在对象中    "key" in Object  ，这里的 key 需要时一个值，否则会被认为一个变量
-- 遍历一个对象采用的方式是  for  (let key in Object) : 这里的做法是 声明[let] 变量key ，并且把Object 中的每一个key的值遍历赋予key
-- 取出对象中一个 key 的值可以采用的方式 Object[key] 或者 Object.key；但是Object.key 会出现对 `多词属性`
+- 遍历一个对象采用的方式是  for  (let key in Object) : 这里的做法是 声明[let] 变量 key，并且把 Object 中的每一个 key 的值遍历赋予 key
+- 取出对象中一个 key 的值可以采用的方式 Object[key] 或者 Object.key；但是 Object.key 会出现对 `多词属性`
   - 单词属性   name , age
   - 多词属性   "like birds" ，这时使用 Object.key 的方式就不可行了
 

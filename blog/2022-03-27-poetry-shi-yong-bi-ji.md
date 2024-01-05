@@ -39,8 +39,7 @@ experimental.new-installer = true
 installer.parallel = true
 virtualenvs.create = true
 virtualenvs.in-project = true
-virtualenvs.path = "{cache-dir}/virtualenvs"  # /Users/$username/Library/Caches/pypoetry/virtualenvs
-
+virtualenvs.path = "\{cache-dir\}/virtualenvs"  # /Users/$username/Library/Caches/pypoetry/virtualenvs
 ```
 
 | **配置项目** | **配置内容** | **配置项说明** | **建议配置** |
@@ -49,7 +48,7 @@ virtualenvs.path = "{cache-dir}/virtualenvs"  # /Users/$username/Library/Caches/
 | installer.parallel | boolean | 此配置会被忽略 |  |
 | virtualenvs.create | boolean | 默认为 true，如果当前工程的虚拟环境不存在，就创建一个 | 不建议更改 |
 | virtualenvs.in-project | boolean | None：poetry 会在系统特定目录创建一个.venv 目录，由下面的 path 参数指定<br />true：poetry 会在项目根目录创建一个.venv 目录<br />false：poetry 将会忽略已存在的.venv 目录 | **《建议修改》**<br /><br />推荐这种方式，在项目根目录创建虚拟环境，这样就算移动目录位置也不影响虚拟环境的使用 |
-| virtualenvs.path | string | 默认是{cache-dir}/virtualenvs，虚拟环境创建的目录，如果上面的 in-project 为 true，此配置就无效 | 不建议更改 |
+| virtualenvs.path | string | 默认是\{cache-dir\}/virtualenvs，虚拟环境创建的目录，如果上面的 in-project 为 true，此配置就无效 | 不建议更改 |
 
 > 建议 在使用前 启用 virtualenvs.in-project，这样会在每个项目下有一个.venv 方便隔离管理
 

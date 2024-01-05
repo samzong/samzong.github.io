@@ -11,7 +11,7 @@ tags: [Python, Mac]
 
 ## Ketbrains 激活服务器
 
-打开这个网站：<https://search.censys.io/>
+打开这个网站：[https://search.censys.io/](https://search.censys.io/)
 
 ![20230221225628](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/20230221225628.png?x-oss-process=image/resize,w_960,m_lfit)
 

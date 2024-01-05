@@ -18,7 +18,7 @@ MacOS Dock 栏的空间是有限的，而且绝大部分应用都会占用一个
 
 ## Github 全球同性交友网站
 
-下午在闲逛的时候，发现了这个仓库： <https://github.com/FirePanther/MacOS-Hide-Dock-Icon> ，一个非常简单的 PHP 脚本，貌似可以提供这个能力，于是我就简单的 Download，按照 README.md 的方法执行了一下。
+下午在闲逛的时候，发现了这个仓库： [https://github.com/FirePanther/MacOS-Hide-Dock-Icon](https://github.com/FirePanther/MacOS-Hide-Dock-Icon) ，一个非常简单的 PHP 脚本，貌似可以提供这个能力，于是我就简单的 Download，按照 README.md 的方法执行了一下。
 
 很神奇的！满足了我的需求！所以，我在这里记录和分享给大家，如果你也需要的话。
 

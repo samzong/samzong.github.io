@@ -6,7 +6,7 @@ tags: [Python]
 
 ## 参考的目录结构设计
 
-> thanks <https://www.justdopython.com/2020/01/18/python-web-flask-project-125/>
+> thanks [https://www.justdopython.com/2020/01/18/python-web-flask-project-125/](https://www.justdopython.com/2020/01/18/python-web-flask-project-125/)
 
 ```python
 project/

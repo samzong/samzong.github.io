@@ -26,20 +26,20 @@ tags: [Mac]
 
 这是苹果的官方渠道，如同 iPhone 的 App Store，可以在这边方便下载和更新你的软件。但是由于 App Store 的软件审核和发布流程的繁琐，Mac 版相对 iPhone 版，软件少的可怜，不过一些主流应用还是都可以找到的，下面列出一些常用的软件。
 
-- 微信 <https://apps.apple.com/cn/app/wechat/id836500024?l=en&mt=12>
-- 钉钉 <https://apps.apple.com/cn/app/dingtalk/id1435447041?l=en&mt=12>
-- Maipo <https://apps.apple.com/cn/app/maipo-for-weibo/id789066512?l=en&mt=12>
-- QQ  <https://apps.apple.com/cn/app/qq/id451108668?l=en&mt=12>
-- WPS <https://apps.apple.com/cn/app/wps-office/id1443749478?l=en&mt=12>
+- 微信 [https://apps.apple.com/cn/app/wechat/id836500024?l=en&mt=12](https://apps.apple.com/cn/app/wechat/id836500024?l=en&mt=12)
+- 钉钉 [https://apps.apple.com/cn/app/dingtalk/id1435447041?l=en&mt=12](https://apps.apple.com/cn/app/dingtalk/id1435447041?l=en&mt=12)
+- Maipo [https://apps.apple.com/cn/app/maipo-for-weibo/id789066512?l=en&mt=12](https://apps.apple.com/cn/app/maipo-for-weibo/id789066512?l=en&mt=12)
+- QQ  [https://apps.apple.com/cn/app/qq/id451108668?l=en&mt=12](https://apps.apple.com/cn/app/qq/id451108668?l=en&mt=12)
+- WPS [https://apps.apple.com/cn/app/wps-office/id1443749478?l=en&mt=12](https://apps.apple.com/cn/app/wps-office/id1443749478?l=en&mt=12)
 
 ### 2. 软件官方网站
 
 注意，在 Mac 上目前还没成熟的第三方软件仓库管理工具，例如某安全卫士和某管家都集成 Windows 软件管理仓库。所以到你需要用到的软件官网下载是一个非常保险的方式。
 
-- <https://bearychat.com/downloads>  倍洽 - 内部沟通 IM
-- <https://support.logi.com/hc/zh-cn/articles/360025297893>  logitech Mouse - 公司给的 M336 的鼠标
-- <https://www.iterm2.com/>  iTerm 2 - 提到 Mac 自带终端的 Terminal 工具
-- <https://filezilla-project.org/>  Filezilla - 免费的 SFTP 工具
+- [https://bearychat.com/downloads](https://bearychat.com/downloads)  倍洽 - 内部沟通 IM
+- [https://support.logi.com/hc/zh-cn/articles/360025297893](https://support.logi.com/hc/zh-cn/articles/360025297893)  logitech Mouse - 公司给的 M336 的鼠标
+- [https://www.iterm2.com/](https://www.iterm2.com/)  iTerm 2 - 提到 Mac 自带终端的 Terminal 工具
+- [https://filezilla-project.org/](https://filezilla-project.org/)  Filezilla - 免费的 SFTP 工具
 
 > Mac 版本的软件后缀名一般为.dmg 或 .pkg，注意安装过程中可能需要输入密码
 
@@ -49,12 +49,12 @@ tags: [Mac]
 
 下面分享一下 Mac 应用网站：
 
-- <https://xclient.info/>  精品 MAC 应用分享
-- <https://www.macw.cn>  麦克坞
-- <https://sspai.com/mall>  少数派 - 正版软件商店 - 要钱的
-- <https://www.waitsun.com/> 麦氪派 - 良心网站
-- <https://www.ifunmac.com/>  玩转苹果
-- <https://macwk.com/> MacWK
+- [https://xclient.info/](https://xclient.info/)  精品 MAC 应用分享
+- [https://www.macw.cn](https://www.macw.cn)  麦克坞
+- [https://sspai.com/mall](https://sspai.com/mall)  少数派 - 正版软件商店 - 要钱的
+- [https://www.waitsun.com/](https://www.waitsun.com/) 麦氪派 - 良心网站
+- [https://www.ifunmac.com/](https://www.ifunmac.com/)  玩转苹果
+- [https://macwk.com/](https://macwk.com/) MacWK
 
 > 注意，以上网站下载软件后解压时需要输入密码，对应网站会有提示或者 Google Search
 
@@ -62,9 +62,9 @@ tags: [Mac]
 
 我竟然关注了一堆非开发相关的东西，真是奇特的知识。（GayHub 还有非常丰富的东西），这里就直接把 Github 上的仓库分享出来了，喜欢的老铁请自行 Star、Watch、打赏 (刚出的功能)。
 
-- <https://github.com/serhii-londar/open-source-mac-os-apps>  open-source-mac-os-apps
-- <https://github.com/hzlzh/Best-App>  Best-App
-- <https://github.com/catofmrlu/MacApps>  MacApps
+- [https://github.com/serhii-londar/open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)  open-source-mac-os-apps
+- [https://github.com/hzlzh/Best-App](https://github.com/hzlzh/Best-App)  Best-App
+- [https://github.com/catofmrlu/MacApps](https://github.com/catofmrlu/MacApps)  MacApps
 
 ### 5. Homebrew & Cask
 

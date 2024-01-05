@@ -48,7 +48,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 24.75-b04, mixed mode)
 #### 4. Download Tomcat7
 
 Make sure the latest one and download it from the site below.
-=》 <http://ftp.riken.jp/net/apache/tomcat/tomcat-7/>
+=》 [http://ftp.riken.jp/net/apache/tomcat/tomcat-7/](http://ftp.riken.jp/net/apache/tomcat/tomcat-7/)
 
 ```bash
 [root@ultraera ~]# wget http://ftp.riken.jp/net/apache/tomcat/tomcat-7/v7.0.70/bin/apache-tomcat-7.0.70.tar.gz

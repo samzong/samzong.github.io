@@ -133,7 +133,7 @@ kubectl -n skoala-system exec pods/`kubectl -n skoala-system get pods | grep sko
 
 初始化数据库表
 
-- 获取到 mysql 的初始化脚本文件，<https://gitlab.daocloud.cn/ndx/skoala/-/tree/main/app/hive/db>
+- 获取到 mysql 的初始化脚本文件，[https://gitlab.daocloud.cn/ndx/skoala/-/tree/main/app/hive/db](https://gitlab.daocloud.cn/ndx/skoala/-/tree/main/app/hive/db)
 - 依次查看对应的文件，并放在 mysql 中执行
 
 注意把对应的版本，建议使用最新的版本，这里建议  v0.6.1

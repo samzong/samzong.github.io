@@ -49,7 +49,7 @@ cp $tomcatdir/conf/server.xml $tomcatdir/conf/server.xml
 
 ## 3. 修改 server.xml
 
-### a. 注释以下：（tomcat 注释用：<\!\-\- XXXX \-\-\> ）,如何也想保留 http 访问，可以不注释
+### a. 注释以下：（tomcat 注释用：`<\!\-\- XXXX \-\-\>` ）,如何也想保留 http 访问，可以不注释
 
 ```xml
 <!--

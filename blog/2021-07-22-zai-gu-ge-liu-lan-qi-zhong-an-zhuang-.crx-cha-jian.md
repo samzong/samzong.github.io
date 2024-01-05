@@ -27,4 +27,4 @@ tags: [Google]
 
 用户只需要通过上面介绍的五个步骤就可以轻松地把离线谷歌浏览器插件安装到 Chrome 中去，希望这个离线 Chrome 插件的安装方法能够帮助到您或者是您的朋友。
 
-> 出处 <https://huajiakeji.com/utilities/2014-09/181.html>
+> 出处 [https://huajiakeji.com/utilities/2014-09/181.html](https://huajiakeji.com/utilities/2014-09/181.html)

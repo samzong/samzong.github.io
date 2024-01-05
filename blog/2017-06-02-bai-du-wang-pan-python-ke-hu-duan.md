@@ -120,7 +120,7 @@ Used: 180.074GB
 
 由于百度 PCS API 权限限制，程序只能存取百度云端/apps/bypy 目录下面的文件和目录。通过以下链接可以打开你的 bypy 默认路径：
 
- <https://pan.baidu.com/disk/home#list/vmode=list&path=%2Fapps%2Fbypy>
+ [https://pan.baidu.com/disk/home#list/vmode=list&path=%2Fapps%2Fbypy](https://pan.baidu.com/disk/home#list/vmode=list&path=%2Fapps%2Fbypy)
 
 #### 查看
 

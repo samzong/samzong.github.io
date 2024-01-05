@@ -42,6 +42,6 @@ tags: [Microservice]
   - OIDC
   - OAtuh
 - SaaS 产品
-  - 飞书 <门神>
+  - 飞书 `<门神>`
   - [auth0.com](https://auth0.com)
   - [fusionauth](https://fusionauth.io/)

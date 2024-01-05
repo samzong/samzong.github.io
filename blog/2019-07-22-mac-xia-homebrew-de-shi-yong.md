@@ -11,7 +11,7 @@ mac 系统也是基于 unix 的系统，所以也继承类很多 unix 的特性�
 
 `brew`是 Mac 下的一个包管理工具，它从下载源码解压然后 `./configure && make install` ，同时会包含相关依存库。并自动配置好各种环境变量，而且非常易于卸载。这个对程序员来说简直是福音，简单的指令，就能快速安装和升级本地的各种开发环境。
 
-home brew 官网是 <http://brew.sh/index_zh-cn.html>
+home brew 官网是 [http://brew.sh/index_zh-cn.html](http://brew.sh/index_zh-cn.html)
 
 ## 安装 brew
 
@@ -106,7 +106,7 @@ Rosetta 2: false
 brew cask 是在 brew 的基础上一个增强的工具，用来安装 Mac 上的 Gui 程序应用包（.dmg/.pkg）, 比如 Chrome、WeChat 等。它先下载解压到统一的目录中（`/opt/homebrew-cask/Caskroom`），省掉了自己去下载、解压、拖拽（安装）等蛋疼步骤，同样，卸载相当容易与干净。然后再软链到`~/Applications/`目录下，一气呵成。非常方便，而且还包含很多在 AppStore 里没有的常用软件。
 
 - brew cask 的官网是：[http://caskroom.io](http://caskroom.io/)
-- github 地址是：<https://github.com/caskroom/homebrew-cask>
+- github 地址是：[https://github.com/caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
 
 :::information_desk_person: Cask 目前已经内置到 brew 官方安装包内了，无需单独安装；并且官方集成的非常好，大部分情况下，不需要特殊标记就可以看到到对应的软件了
 
@@ -181,7 +181,7 @@ OK，以上确认后，就可以正常安装了
 
 ### cu 的安装
 
-- Github <https://github.com/buo/homebrew-cask-upgrade>
+- Github [https://github.com/buo/homebrew-cask-upgrade](https://github.com/buo/homebrew-cask-upgrade)
 
 ```sh
 ➜  ~ brew tap buo/cask-upgrade

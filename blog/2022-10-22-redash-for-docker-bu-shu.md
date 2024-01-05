@@ -29,18 +29,18 @@ REDASH_DATABASE_URL=postgresql://postgres
 
 > postgresql 在执行 psql 命令时，默认会读取当前系统用户作为执行 role；但 psql 默认用户是 postgres
 
-<https://redash.io/help/open-source/setup>
-<https://redash.io/help/open-source/dev-guide/docker>
-<https://docs.victoriametrics.com/url-examples.html#apiv1exportcsv>
+[https://redash.io/help/open-source/setup](https://redash.io/help/open-source/setup)
+[https://redash.io/help/open-source/dev-guide/docker](https://redash.io/help/open-source/dev-guide/docker)
+[https://docs.victoriametrics.com/url-examples.html#apiv1exportcsv](https://docs.victoriametrics.com/url-examples.html#apiv1exportcsv)
 
 [https://mp.weixin.qq.com/s?src=11\&timestamp=1660629444\&ver=3985\&signature=verv70veamW*Ez2Sgc8e89yMJGwANIOzz4lfwbezyVV3wpWNT2d9SnGrDecUOwrbTJBR2o-Ax6ZS4Fpu2UxfX7Sy9xsk1LCXfY1wNr42ucl3tFePfJ7c536c8z*L-HOy\&new=1](https://mp.weixin.qq.com/s?src=11\&timestamp=1660629444\&ver=3985\&signature=verv70veamW*Ez2Sgc8e89yMJGwANIOzz4lfwbezyVV3wpWNT2d9SnGrDecUOwrbTJBR2o-Ax6ZS4Fpu2UxfX7Sy9xsk1LCXfY1wNr42ucl3tFePfJ7c536c8z*L-HOy\&new=1)
 
-<https://mp.weixin.qq.com/s?src=11&timestamp=1660682601&ver=3986&signature=h8m0RzEX3qWsKcUo6Ee3azdsnzLQqUf3N8FdLhyWNa52U4vAvlbEaBFUCrTZnh54tT-YS2mODfkp-6Hemmzt3n*hzGHlEmXP-HO5830W0Fzmn4MMfnsOPBKLrcjaiU0h&new=1>
+[https://mp.weixin.qq.com/s?src=11&timestamp=1660682601&ver=3986&signature=h8m0RzEX3qWsKcUo6Ee3azdsnzLQqUf3N8FdLhyWNa52U4vAvlbEaBFUCrTZnh54tT-YS2mODfkp-6Hemmzt3n*hzGHlEmXP-HO5830W0Fzmn4MMfnsOPBKLrcjaiU0h&new=1](https://mp.weixin.qq.com/s?src=11&timestamp=1660682601&ver=3986&signature=h8m0RzEX3qWsKcUo6Ee3azdsnzLQqUf3N8FdLhyWNa52U4vAvlbEaBFUCrTZnh54tT-YS2mODfkp-6Hemmzt3n*hzGHlEmXP-HO5830W0Fzmn4MMfnsOPBKLrcjaiU0h&new=1)
 
-- redash env 配置：<https://redash.io/help/open-source/admin-guide/env-vars-settings>
-- postgres 权限问题 <https://stackoverflow.com/a/25051632/5067657>
-- <https://techoverflow.net/2021/05/07/how-to-fix-alpine-linux-ash-sudo-not-found/>
-- <https://discuss.redash.io/t/error-99-connecting-to-localhost-6379-cannot-assign-requested-address/9716/7>
+- redash env 配置：[https://redash.io/help/open-source/admin-guide/env-vars-settings](https://redash.io/help/open-source/admin-guide/env-vars-settings)
+- postgres 权限问题 [https://stackoverflow.com/a/25051632/5067657](https://stackoverflow.com/a/25051632/5067657)
+- [https://techoverflow.net/2021/05/07/how-to-fix-alpine-linux-ash-sudo-not-found/](https://techoverflow.net/2021/05/07/how-to-fix-alpine-linux-ash-sudo-not-found/)
+- [https://discuss.redash.io/t/error-99-connecting-to-localhost-6379-cannot-assign-requested-address/9716/7](https://discuss.redash.io/t/error-99-connecting-to-localhost-6379-cannot-assign-requested-address/9716/7)
 
 ## 启动的服务介绍
 
@@ -72,7 +72,7 @@ redash 的版本升级较为方便，更换 server 的镜像；然后升级数�
 ## 解决 ES 的 HTTPS 问题
 
 由于我们的 es 地址访问地址采用 https，但为自签证书，所以在 request 之中会有些问题，所以我在这里更新了 elasticsearch 的插件，然后将其上传到我个人的 docker hub.
-<https://hub.docker.com/r/samzong/redash>
+[https://hub.docker.com/r/samzong/redash](https://hub.docker.com/r/samzong/redash)
 
 > 带来的问题，页面上无法选择到 Elasticsearch 作为数据源，没时间去研究了
 

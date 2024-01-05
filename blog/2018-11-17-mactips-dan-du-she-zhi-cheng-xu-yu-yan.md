@@ -9,7 +9,7 @@ Mac 上系统语言设置成英文查看起来是最舒适的，所以我很早�
 
 ## Command
 
-    defaults write '{AppName}' AppleLanguages '("Your choose language")'
+    defaults write AppName AppleLanguages '("Your choose language")'
 
 这不会影响到我们其他软件的使用。
 
@@ -17,29 +17,29 @@ Mac 上系统语言设置成英文查看起来是最舒适的，所以我很早�
 
 我在一次切换 Outlook 语言时使用上面的命令不能生效，经过研究稍微改造了一下命令：
 
+```bash
     defaults write com.microsoft.Outlook AppleLanguages -array zh
+```
 
 ## 例子
 
 1. 修改 Microsoft Office Applocation.
 
-<!---->
-
+```bash
     defaults write com.microsoft.Word AppleLanguages '("zh-CN")'
-
-<!---->
 
     defaults write com.microsoft.Excel AppleLanguages '("zh-CN")'
 
-<!---->
-
     defaults write com.microsoft.Powerpoint AppleLanguages '("zh-CN")'
+```
 
 Mac 自带地图应
 
 Mac 自带地图非常的好用，但是中文会更适合我们的查看和标记
 
-    defaults write com.apple.Maps AppleLanguages '("zh-CN")'
+```bash
+defaults write com.apple.Maps AppleLanguages '("zh-CN")'
+```
 
 > Tip：如果不知道程序名称时，可以在`com.`使用三次`Tab`键来查找程序名称。
 
@@ -51,6 +51,8 @@ Mac 自带地图非常的好用，但是中文会更适合我们的查看和标�
 
 ok，在我们增加了特定程序语言环境之后，如果手动切换系统语言之后，已设置的程序语言环境仍保留我们的手动设置情境，如若不需要，可以采用以下命令去除。
 
-    defaults delete '{AppName}' AppleLanguages
+```bash
+    defaults delete AppName AppleLanguages
+```
 
-- 参考链接：<http://www.viblue.com/wiki/469264501.html>
+- 参考链接：[http://www.viblue.com/wiki/469264501.html](http://www.viblue.com/wiki/469264501.html)

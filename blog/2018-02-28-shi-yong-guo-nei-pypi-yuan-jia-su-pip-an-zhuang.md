@@ -9,10 +9,10 @@ tags: [Python]
 
 ## 国内 pypi 源站点
 
-* <http://pypi.douban.com/simple>  豆瓣
-* <http://pypi.hustunique.com/simple>  华中理工大学
-* <http://pypi.sdutlinux.org/simple>  山东理工大学
-* <http://pypi.mirrors.ustc.edu.cn/simple>  中国科学技术大学
+* [http://pypi.douban.com/simple](http://pypi.douban.com/simple)  豆瓣
+* [http://pypi.hustunique.com/simple](http://pypi.hustunique.com/simple)  华中理工大学
+* [http://pypi.sdutlinux.org/simple](http://pypi.sdutlinux.org/simple)  山东理工大学
+* [http://pypi.mirrors.ustc.edu.cn/simple](http://pypi.mirrors.ustc.edu.cn/simple)  中国科学技术大学
 
 ## Windows 修改
 

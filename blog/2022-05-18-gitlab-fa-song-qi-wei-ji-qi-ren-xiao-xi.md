@@ -3,8 +3,8 @@ title: Gitlab 发送企微机器人消息
 tags: [Github]
 ---
 
-- 企业微信机器人消息说明： <https://developer.work.weixin.qq.com/document/path/91770>
-- GitLab Webhook Event：   <https://docs.gitlab.com/ee/user/project/integrations/webhook_events.html>
+- 企业微信机器人消息说明： [https://developer.work.weixin.qq.com/document/path/91770](https://developer.work.weixin.qq.com/document/path/91770)
+- GitLab Webhook Event：   [https://docs.gitlab.com/ee/user/project/integrations/webhook_events.html](https://docs.gitlab.com/ee/user/project/integrations/webhook_events.html)
 
 ![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1652838666817-16490352-2dcb-4e6f-a4d6-0e060090287a.jpeg?x-oss-process=image/resize,w_960,m_lfit)
 

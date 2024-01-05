@@ -26,12 +26,12 @@ tags: [Blog]
 - 不同部件中 相同 key 的翻译不一致时提示
 - 对于翻译内容的校验
 - 项目挂件 和 新人引导页
-  - <http://10.6.229.10:8080/widgets/skoala-ui-demo/>
-- 利用 api 实现二次封装 <https://docs.weblate.org/en/latest/api.html>
+  - [http://10.6.229.10:8080/widgets/skoala-ui-demo/](http://10.6.229.10:8080/widgets/skoala-ui-demo/)
+- 利用 api 实现二次封装 [https://docs.weblate.org/en/latest/api.html](https://docs.weblate.org/en/latest/api.html)
 
 ## 通过 api 查询组件详情
 
-<https://docs.weblate.org/en/latest/api.html#get--api-components-(string-project)-(string-component)->
+[https://docs.weblate.org/en/latest/api.html#get--api-components-(string-project)-(string-component)-](https://docs.weblate.org/en/latest/api.html#get--api-components-(string-project)-(string-component)-)
 
 ```json
 GET /api/components/(string:project)/(string:component)/
@@ -45,7 +45,7 @@ component (string) – Component URL slug
 
 ## 通过 api 创建组件
 
-<https://docs.weblate.org/en/latest/api.html#post--api-projects-(string-project)-components->
+[https://docs.weblate.org/en/latest/api.html#post--api-projects-(string-project)-components-](https://docs.weblate.org/en/latest/api.html#post--api-projects-(string-project)-components-)
 
 ```json
 POST /api/projects/hello/components/ HTTP/1.1

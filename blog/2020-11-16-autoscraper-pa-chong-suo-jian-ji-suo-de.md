@@ -32,4 +32,4 @@ print(result)
 
 ## 更多使用技巧
 
-> 请关注 Github 仓库： <https://github.com/alirezamika/autoscraper>
+> 请关注 Github 仓库： [https://github.com/alirezamika/autoscraper](https://github.com/alirezamika/autoscraper)

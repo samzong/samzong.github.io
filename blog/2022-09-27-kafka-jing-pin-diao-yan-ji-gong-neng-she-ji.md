@@ -9,17 +9,17 @@ tags: [ Microservice, Kafka]
 
 | 厂家 | 产品控制台主页 | 应用模式 |
 | --- | --- | --- |
-| 阿里云 | <https://kafka.console.aliyun.com/> | 中间件 PaaS 模块之一 |
-| 腾讯云 | <https://console.cloud.tencent.com/ckafka/overview> | 中间件 PaaS 模块之一 |
-| 华为云 | <https://console.huaweicloud.com/dms/?region=cn-east-3&engine=kafka> | 中间件 PaaS 模块之一 |
-| QingCloud | <https://console.qingcloud.com/pek3/app/app-n9ro0xcp/> | 中间件 AppCenter 模块之一 |
-| UCloud | <https://console.ucloud.cn/ukafka/ukafka> | 中间件 PaaS 模块之一 |
-| 时速云 | <https://console.tenxcloud.com/middleware_center/app> | 中间件 应用之一 |
+| 阿里云 | [https://kafka.console.aliyun.com/](https://kafka.console.aliyun.com/) | 中间件 PaaS 模块之一 |
+| 腾讯云 | [https://console.cloud.tencent.com/ckafka/overview](https://console.cloud.tencent.com/ckafka/overview) | 中间件 PaaS 模块之一 |
+| 华为云 | [https://console.huaweicloud.com/dms/?region=cn-east-3&engine=kafka](https://console.huaweicloud.com/dms/?region=cn-east-3&engine=kafka) | 中间件 PaaS 模块之一 |
+| QingCloud | [https://console.qingcloud.com/pek3/app/app-n9ro0xcp/](https://console.qingcloud.com/pek3/app/app-n9ro0xcp/) | 中间件 AppCenter 模块之一 |
+| UCloud | [https://console.ucloud.cn/ukafka/ukafka](https://console.ucloud.cn/ukafka/ukafka) | 中间件 PaaS 模块之一 |
+| 时速云 | [https://console.tenxcloud.com/middleware_center/app](https://console.tenxcloud.com/middleware_center/app) | 中间件 应用之一 |
 
 ## operator 选型
 
-- <https://github.com/strimzi/strimzi-kafka-operator>
-- <https://github.com/banzaicloud/koperator>
+- [https://github.com/strimzi/strimzi-kafka-operator](https://github.com/strimzi/strimzi-kafka-operator)
+- [https://github.com/banzaicloud/koperator](https://github.com/banzaicloud/koperator)
 
 ### 功能横向对比
 
@@ -67,7 +67,7 @@ tags: [ Microservice, Kafka]
 | 腾讯云    | 名称 Kafka 版本实例规格配置存储容量消息保留时长               |
 | 华为云    | 名称 Kafka 版本实例规格配置存储容量                           |
 | QingCloud | 名称 Kafka 版本 Kafka 节点配置：CPU / 内存  / 节点数（规格）客户端节点配置：CPU / 内存  / 节点数（规格）Kafka-Manager / CLI）Zookeeper 实例存储容量自定义参数配置内部 Topic offset replicasKafka manager 认证 zabbix.agentkafka scale version |
-| UCloud    | 名称 Kafka 版本实例规格配置 + 存储容量实例数 3<设定值<100 消息保留时长 |
+| UCloud    | 名称 Kafka 版本实例规格配置 + 存储容量实例数 3`<`设定值`<`100 消息保留时长 |
 
 ## 基础设计问题
 
@@ -158,7 +158,7 @@ DCE5 支持多集群，Kafka 采用 operator 的方式部署，则需要先安�
 
 ![CleanShot 2022-08-24 at 17.18.06@2x.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1661332709528-c073dd8e-8637-4620-831b-59b714fd31ec.jpeg?x-oss-process=image/resize,w_960,m_lfit)
 ![CleanShot 2022-08-24 at 17.18.35@2x.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1661332721004-1c4aae0a-424a-4a40-89de-904f2cc9e021.jpeg?x-oss-process=image/resize,w_960,m_lfit)
-<https://cloud.tencent.com/document/product/597/73566>
+[https://cloud.tencent.com/document/product/597/73566](https://cloud.tencent.com/document/product/597/73566)
 
 #### 查看 Topic 详情
 
@@ -228,7 +228,7 @@ DCE5 支持多集群，Kafka 采用 operator 的方式部署，则需要先安�
 #### Topic 管理
 
 提供了原生的 Kafka-manager 管理 UI
-<https://docsv3.qingcloud.com/middware/kafka/manual/kafka_manager/kafka_manager_topic/>
+[https://docsv3.qingcloud.com/middware/kafka/manual/kafka_manager/kafka_manager_topic/](https://docsv3.qingcloud.com/middware/kafka/manual/kafka_manager/kafka_manager_topic/)
 
 访问方式，以 openvpn 的方式接入到 VPC(需绑定入口公网 IP) 后，通过 client 内网地址访问
 ![CleanShot 2022-08-24 at 17.57.01@2x.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1661335030256-d6d8f4ce-5450-4675-9887-d91bfc43261e.jpeg?x-oss-process=image/resize,w_960,m_lfit)
@@ -317,7 +317,7 @@ DCE5 支持多集群，Kafka 采用 operator 的方式部署，则需要先安�
 
 ![CleanShot 2022-08-24 at 18.45.08@2x.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1661337926424-23d5d513-4080-4f36-af59-2bda413eb905.jpeg?x-oss-process=image/resize,w_960,m_lfit)
 
-<https://yongyu2000hotmailcom.sharepoint.cn/:f:/s/ndx/EuCYqMaXhdlPh411YVnihRQBmCbGLQ4BvU1QW_2DX7_uUQ?e=18NyTR>
+[https://yongyu2000hotmailcom.sharepoint.cn/:f:/s/ndx/EuCYqMaXhdlPh411YVnihRQBmCbGLQ4BvU1QW_2DX7_uUQ?e=18NyTR](https://yongyu2000hotmailcom.sharepoint.cn/:f:/s/ndx/EuCYqMaXhdlPh411YVnihRQBmCbGLQ4BvU1QW_2DX7_uUQ?e=18NyTR)
 
 > 腾讯云只可以按月份订购，所以没有录制视频。
 

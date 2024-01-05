@@ -23,7 +23,7 @@ eeen.... 这样就 ok！
 
 `gh-pages` 是每个 GitHub 仓库的默认 github pages 分支，当你创建这个分支并推动到 GitHub 时，会自动触发 Pages 的构建任务，大约 30s 左右，你就会得到一个网站
 
-> <http://[github_username>].github.io/[github_repo_name]
+> [http://github_username](http://github_username)
 
 ## 简单的配置
 
@@ -46,9 +46,9 @@ eeen.... 这样就 ok！
 
 这里不赘述安装细节的，比较简单，直接去看下面几个网站即可
 
-- <https://utteranc.es/>
-- <https://roife.github.io/2021/02/12/use-utterances-for-comment/>
-- <https://www.evanlin.com/jekyll-remove-disqus/>
+- [https://utteranc.es/](https://utteranc.es/)
+- [https://roife.github.io/2021/02/12/use-utterances-for-comment/](https://roife.github.io/2021/02/12/use-utterances-for-comment/)
+- [https://www.evanlin.com/jekyll-remove-disqus/](https://www.evanlin.com/jekyll-remove-disqus/)
 
 > 注意需要增加的文件
 
@@ -76,6 +76,6 @@ git push origin gh-pages
 
 以上就是全部的部署内容了，可以去看下我的网站和项目
 
-- <https://k8s-yaml.samzong.me>
+- [https://k8s-yaml.samzong.me](https://k8s-yaml.samzong.me)
 
 如果你觉得喜欢，求 fork，求 star

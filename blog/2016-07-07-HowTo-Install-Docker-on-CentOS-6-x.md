@@ -66,7 +66,7 @@ sudo yum install device-mapper-event-libs
 
 ### **2. Faild to use docker**
 
-`***Get <http:///var/run/docker.sock/v1.19/info>: dial unix /var/run/docker.sock: no such file or directory. Are you trying to connect to a TLS-enabled daemon without TLS?***`
+`***Get [http:///var/run/docker.sock/v1.19/info](http:///var/run/docker.sock/v1.19/info): dial unix /var/run/docker.sock: no such file or directory. Are you trying to connect to a TLS-enabled daemon without TLS?***`
 
 ```bash
 # this is because docker no restart ok.

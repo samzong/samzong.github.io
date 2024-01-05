@@ -37,7 +37,7 @@ date: 2016-06-16 02:28:02
 MOSH CONNECT 53371 asdAADfdse234LSDSdIbow
 mosh-server (mosh 1.2.4)
 Copyright 2012 Keith Winstein <mosh-devel@mit.edu>
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+License GPLv3+: GNU GPL version 3 or later [http://gnu.org/licenses/gpl.html](http://gnu.org/licenses/gpl.html).
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 [mosh-server detached, pid = 27290]

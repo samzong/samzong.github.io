@@ -46,7 +46,7 @@ date: 2017-02-22 12:30:36
 
 ##### 更换 gem 源
 
-默认 gem 的源站点是<https://rubygems.org> 由于国内的网络原因导致无法连接，所以导致无法使用 gem 安装，这里换成国内淘宝的 gem 镜像站点
+默认 gem 的源站点是[https://rubygems.org](https://rubygems.org) 由于国内的网络原因导致无法连接，所以导致无法使用 gem 安装，这里换成国内淘宝的 gem 镜像站点
 
 ```
 [root@localhost ~]# gem sources -l

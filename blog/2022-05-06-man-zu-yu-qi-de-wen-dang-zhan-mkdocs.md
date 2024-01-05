@@ -28,7 +28,7 @@ pip install mkdocs-awesome-pages-plugin
 
 ### Github repo
 
-Private Teamplate <https://github.com/SAMZONG/mkdocs-template>
+Private Teamplate [https://github.com/SAMZONG/mkdocs-template](https://github.com/SAMZONG/mkdocs-template)
 
 ### Awesome Plugin 常用参数
 

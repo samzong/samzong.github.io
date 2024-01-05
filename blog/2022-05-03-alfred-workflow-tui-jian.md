@@ -41,7 +41,7 @@ Workflow 工作流；将一件事情的多个步骤，通过一个的规则相�
 
 ## 如何获取 Workflow ?
 
-可以到这个网站 <https://www.packal.org/>  有非常丰富的 Workflow 或者 主题可以选择，丰富你的 Alfred 使用
+可以到这个网站 [https://www.packal.org/](https://www.packal.org/)  有非常丰富的 Workflow 或者 主题可以选择，丰富你的 Alfred 使用
 
 如果你有能力制作一些优秀的 Workflow，也可以在这里分享
 

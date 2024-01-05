@@ -7,6 +7,7 @@ tags: [Mac]
 
 ## 查看网络接口
 
+```bash
     ifconfig
     en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
      ether 60:f8:1d:ad:85:76
@@ -15,6 +16,7 @@ tags: [Mac]
      nd6 options=201<PERFORMNUD,DAD>
      media: autoselect
      status: active
+```
 
 ## 关闭 AirPort
 

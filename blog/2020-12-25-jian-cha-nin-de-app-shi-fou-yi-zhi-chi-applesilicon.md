@@ -13,23 +13,23 @@ tags: [Mac]
 
 ## 网友整理 Games on Apple Sillicon
 
-<https://docs.google.com/spreadsheets/d/1er-NivvuIheDmIKBVRu3S_BzA_lZT5z3Z-CxQZ-uPVs/>
+[https://docs.google.com/spreadsheets/d/1er-NivvuIheDmIKBVRu3S_BzA_lZT5z3Z-CxQZ-uPVs/](https://docs.google.com/spreadsheets/d/1er-NivvuIheDmIKBVRu3S_BzA_lZT5z3Z-CxQZ-uPVs/)
 
 > 目前已补充了 App 清单
 
 ***
 
-## <https://isapplesiliconready.com/>
+## [https://isapplesiliconready.com/](https://isapplesiliconready.com/)
 
 ![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-142803.png?x-oss-process=image/resize,w_960,m_lfit)
 
 如果你有希望给关注的软件，可以提交给站点维护者，点击页面右上角的 `REQUEST AN APP`
 
-> <https://isapplesiliconready.com/request/>
+> [https://isapplesiliconready.com/request/](https://isapplesiliconready.com/request/)
 
 ***
 
-## <https://doesitarm.com/>
+## [https://doesitarm.com/](https://doesitarm.com/)
 
 ![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-143231.png?x-oss-process=image/resize,w_960,m_lfit)
 

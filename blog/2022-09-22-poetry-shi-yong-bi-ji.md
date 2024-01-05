@@ -5,7 +5,7 @@ tags: [Python]
 
 poetry 是目前比较流行的 Python 环境管理工具 和 包管理工具，对多项目开发时的环境隔离有非常大的帮助，同时集成了包管理能力。
 
-> 官方网站  <https://python-poetry.org/>   集成了所有 Poetry 最新的使用文档，以下仅在我的环境上经过验证
+> 官方网站  [https://python-poetry.org/](https://python-poetry.org/)   集成了所有 Poetry 最新的使用文档，以下仅在我的环境上经过验证
 
 ### 安装方式
 
@@ -38,7 +38,7 @@ experimental.new-installer = true
 installer.parallel = true
 virtualenvs.create = true
 virtualenvs.in-project = true
-virtualenvs.path = "{cache-dir}/virtualenvs"  # /Users/$username/Library/Caches/pypoetry/virtualenvs
+virtualenvs.path = "\{cache-dir\}/virtualenvs"  # /Users/$username/Library/Caches/pypoetry/virtualenvs
 
 ```
 
@@ -52,7 +52,7 @@ true：poetry 会在项目根目录创建一个.venv 目录
 false：poetry 将会忽略已存在的.venv 目录 | **《建议修改》**
 
 推荐这种方式，在项目根目录创建虚拟环境，这样就算移动目录位置也不影响虚拟环境的使用 |
-| virtualenvs.path | string | 默认是{cache-dir}/virtualenvs，虚拟环境创建的目录，如果上面的 in-project 为 true，此配置就无效 | 不建议更改 |
+| virtualenvs.path | string | 默认是\{cache-dir\}/virtualenvs，虚拟环境创建的目录，如果上面的 in-project 为 true，此配置就无效 | 不建议更改 |
 
 :::danger
 建议 在使用前 启用 virtualenvs.in-project，这样会在每个项目下有一个.venv 方便隔离管理
