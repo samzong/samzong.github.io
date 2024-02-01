@@ -26,7 +26,6 @@ if  /elif else
 ## 支持的循环方式
 
 ```javascript
-
 do {
     // Hello
 } whIle ()
@@ -65,7 +64,7 @@ function showMessage() {
 
 > 函数的特殊部分
 
-- 函数表达式   let  sayHi = function () { alert('Hi')}  利用声明 `let` 创建了一个函数，并把他赋值给了变量 sayHi
+- 函数表达式   let  sayHi = function () \{ alert('Hi')\}  利用声明 `let` 创建了一个函数，并把他赋值给了变量 sayHi
 - 回调函数
 
 ---
@@ -200,7 +199,7 @@ Symbol 的另外一个特性是不会被自动转化为字符串；其实在 jav
   - slice(start, end) —— 创建一个新数组，将从索引 start 到索引 end（但不包括 end）的元素复制进去 `取出部分数组的内容产生新数组`
   - concat(...items) —— 返回一个新数组：复制当前数组的所有元素，并向其中添加 items。如果 items 中的任意一项是一个数组，那么就取其元素。 `拼接多个数组，产生一个新的数组`
 
-*搜索元素：
+- 搜索元素：
 
 - indexOf/lastIndexOf(item, pos) —— 从索引 pos 开始搜索 item，搜索到则返回该项的索引，否则返回 -1。
 - includes(value) —— 如果数组有 value，则返回 true，否则返回 false。
@@ -214,10 +213,10 @@ Symbol 的另外一个特性是不会被自动转化为字符串；其实在 jav
 
 let fruits = ['Apple', 'Orage','Prism']
 
-for ( let fruit of fruits ) {alert(fruit); }
+for ( let fruit of fruits ) \{alert(fruit); \}
 // 遍历数组 使用 for .. of 不能获取到当前元素的索引，知识获取到元素的值；但是大多数情况下是够用的，而且这样些代码更短，质量会高一些
 
-for (let i = 0; i <= fruits.length; i++ ) {alert(fruits[i])}
+for (let i = 0; i <= fruits.length; i++ ) \{alert(fruits[i])\}
 // 这个方式就是标准的通过遍历元素的索引，然后通过索引获取到对应的数组元素的值
 ```
 
