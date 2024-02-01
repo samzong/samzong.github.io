@@ -2,23 +2,21 @@
 
 ## 前言
 
-### 创建新文章
+- 本博客基于 [Docusaurus v3](https://docusaurus.io/) 搭建，使用 [GitHub Pages](https://pages.github.com/) 托管。
+- 推荐使用 [yarn](https://yarnpkg.com/) 管理依赖。
+- 推荐使用 Node.js 18.0.0 及以上版本，（当前在用 Node.js 20.0.0）。
 
-> 新建 Post，Title 可为中文，自动转变成拼音
-
-```bash
-rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
-```
-
-也可以按照格式创建文章，以标题前缀为日期，title,tag,categroy 写在文章内即可，比如搭配 Typora 之类
-
-### 新建页面
+## 本地开发
 
 ```bash
-rake page name="about.html"
+git clone
+cd samzong.github.io
+yarn install
+yarn start
 ```
 
-## 运行 Jekyll
+## 部署
 
-- 目录下运行 `make serve`
-- 本地浏览地址：[http://localhost:3000](http://localhost:3000)
+```bash
+yarn deploy
+```
