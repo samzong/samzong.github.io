@@ -1,7 +1,6 @@
 ---
 title: MacOS 启用和关闭 SIP
-tags: [MacOS, Parallels Desktop]
-authors: [samzong]
+tags: [MacOS]
 ---
 
 ## SIP 介绍

@@ -1,7 +1,6 @@
 ---
 title: Dockerfile Run at M1 processor build failed
 toc: true
-authors: [samzong]
 tags: [Docker]
 date: 2022-04-17 20:32:00
 ---

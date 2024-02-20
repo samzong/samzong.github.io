@@ -1,7 +1,6 @@
 ---
 title: 使用 Parallels Desktop 无界面启动虚拟机
 tags: [MacOS, Parallels Desktop]
-authors: [samzong]
 ---
 
 ## 背景

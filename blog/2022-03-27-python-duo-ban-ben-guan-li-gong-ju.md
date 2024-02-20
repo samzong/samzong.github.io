@@ -1,7 +1,6 @@
 ---
 title: Pyenv Python 版本管理
 toc: true
-authors: [samzong]
 tags: [Python]
 date: 2022-03-27 21:18:00
 ---

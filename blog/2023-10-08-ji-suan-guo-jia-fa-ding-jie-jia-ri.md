@@ -1,7 +1,6 @@
 ---
 title: 计算国家法定节假日
 tags: [Python]
-authors: [samzong]
 ---
 
 ## 介绍
