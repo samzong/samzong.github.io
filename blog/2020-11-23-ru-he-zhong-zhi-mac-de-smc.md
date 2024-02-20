@@ -4,6 +4,13 @@ toc: true
 tags: [Mac]
 ---
 
+:::warning
+
+`M 系列芯片`的 MacBook 不具备 `SMC` 功能，以前由芯片控制的功能都嵌入到处理器内，重启电脑即可达到重置 `SMC` 的效果。
+
+> 根据经验，关闭 MacBook 至少 30 秒后再开机，可以达到重置 SMC 的效果。
+
+:::
 
 ![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437045272-4d2c8ef2-804a-4ed7-bb53-b241152c780c.png?x-oss-process=image/resize,w_960,m_lfit)
 
