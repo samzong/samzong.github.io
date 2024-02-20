@@ -1,7 +1,6 @@
 ---
 title: CKA 考试准备
 toc: true
-authors: [samzong]
 tags: [Kubernetes]
 date: 2022-04-18 06:00:00
 ---

@@ -1,7 +1,6 @@
 ---
 title: 淘宝 Python SDK 优化支持 Python3
 toc: true
-authors: [samzong]
 tags: [Python]
 date: 2022-04-14 10:43:00
 ---

@@ -1,7 +1,6 @@
 ---
 title: SQL 对时间整点的处理
 toc: true
-authors: [samzong]
 tags: [SQL]
 date: 2022-04-15 18:55:00
 ---

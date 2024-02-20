@@ -1,7 +1,6 @@
 ---
 title: Google 搜索技巧整理
 tags: [Google]
-authors: [samzong]
 ---
 
 ## 笔记说明

@@ -38,18 +38,18 @@ const config = {
       ({
         docs: false,
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           routeBasePath: "/",
           // editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
           // `https://github.com/samzong/samzong.me/edit/main/${blogDirPath}/${blogPath}`,
-          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
-            defaultReadingTime({ content, options: { wordsPerMinute: 200 } }),
+          // readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+          //   defaultReadingTime({ content, options: { wordsPerMinute: 200 } }),
           blogTitle: "Samzong",
           postsPerPage: 1,
           blogSidebarCount: 0, // or 'ALL'
           tagsBasePath: "tags",
           archiveBasePath: "history",
-          sortPosts: "ascending",
+          sortPosts: "descending",
           truncateMarker: /<!--\s*(truncate)\s*-->/,
           include: ["**/*.{md,mdx}"],
           exclude: [
@@ -101,7 +101,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ['bash', 'python', 'json']
+        additionalLanguages: ["bash", "python", "json"],
       },
       markdown: {
         mermaid: true,
