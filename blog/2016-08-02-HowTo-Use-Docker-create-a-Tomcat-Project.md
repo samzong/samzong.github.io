@@ -63,7 +63,7 @@ mohri1219/centos6.7-ruby2.2.2-mysql5.6   centos6.7-ruby2.2.2-mysql5.6           
 
 报错如下
 
-```text
+```bash
 Error response from daemon: conflict: unable to remove repository reference "centos" (must force) - container 705a30cbc002 is using its referenced image 42118e3df429
 ```
 
@@ -117,7 +117,7 @@ registry            latest              c6c14b3960bd        3 days ago          
 
 ## 5. 编辑 Dockerfile
 
-```conf
+```bash
 # dockfile 的第一行一定是 FROM，指定了父镜像
 
 FROM centos:centos6
@@ -208,7 +208,6 @@ registry            latest              c6c14b3960bd        3 days ago          
 
 [root@docker ~]# docker run -d -p 2222:22 -P --name=sshd centos:centos6-ssh
 b4211f7a304d9e34b72b510230be2c7a76b276886b488f08f3e12896a4d3c172
-
 ```
 
 ## 7. ssh 登陆到 docker 容器内，部署项目环境

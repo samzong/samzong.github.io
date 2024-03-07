@@ -5,8 +5,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "SAMZONG",
-  tagline: "Samzong's Blog",
+  title: "samzong",
+  // tagline: "Samzong's Blog",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -27,8 +27,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans", "en"],
   },
 
   presets: [
@@ -44,11 +44,11 @@ const config = {
           // `https://github.com/samzong/samzong.me/edit/main/${blogDirPath}/${blogPath}`,
           // readingTime: ({ content, frontMatter, defaultReadingTime }) =>
           //   defaultReadingTime({ content, options: { wordsPerMinute: 200 } }),
-          blogTitle: "Samzong",
+          blogTitle: "Notes",
           postsPerPage: 1,
           blogSidebarCount: 0, // or 'ALL'
-          tagsBasePath: "tags",
-          archiveBasePath: "history",
+          // tagsBasePath: "tags",
+          archiveBasePath: "posts",
           sortPosts: "descending",
           truncateMarker: /<!--\s*(truncate)\s*-->/,
           include: ["**/*.{md,mdx}"],
@@ -101,7 +101,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ["bash", "python", "json"],
+        additionalLanguages: ['bash', 'python', 'json']
       },
       markdown: {
         mermaid: true,

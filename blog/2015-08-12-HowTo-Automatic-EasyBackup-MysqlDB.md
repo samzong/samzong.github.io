@@ -104,7 +104,7 @@ total 780K
 
 #### 安装命令行邮件工具 mailx
 
-安装 mailx 在CentOS/RehHat:
+安装 mailx 在 CentOS/RehHat:
 
 ```bash
 ➜  ~ yum install -y mailx

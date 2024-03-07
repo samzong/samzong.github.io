@@ -1,9 +1,7 @@
 ---
 title: 爱与痛的边缘
-tags: [读书]
 date: 2012-07-30 00:34:54
 ---
-
 
 ![image](https://img.samzong.me/202307191528633.jpg?imageView2/3/w/400/interlace/1/q/50)
 

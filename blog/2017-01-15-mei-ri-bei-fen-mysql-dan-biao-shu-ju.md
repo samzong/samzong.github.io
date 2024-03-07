@@ -20,7 +20,7 @@ mysqldump -h dbServer -PdbServerPort -u db_user -p -d dbName tbName > tbName.sql
 
 #### 2. 新增数据库，专做临时每日数据备份库
 
-```
+```sql
 # loginTo your DBserver
 mysql> create database bakdbName character set utf8;
 ```

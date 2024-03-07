@@ -8,11 +8,11 @@ tags: [CentOS]
 
 因为目的是让自建 DNS 服务器解析公司内部的自定义域名，所以当客户端需要访问外网域名时，DNS 服务器会将解析请求转发给 ISP 的 DNS 服务器，并会将解析结果缓存，并且只对内网主机的解析请求进行转发，而不会对公网的主机解析请求进行转发。
 
-#### DNS 服务介绍
+## DNS 服务介绍
 
 DNS 服务由 BIND 提供，启动后服务名为`named`，管理工具为`rndc`，debug 工具为`dig`，主要配置文件在`/etc/named.conf`。
 
-#### 安装
+## 安装
 
 推荐选择`bind-chroot`来安装，提高服务的安全性：
 
@@ -31,7 +31,7 @@ tcp        0      0 127.0.0.1:53            0.0.0.0:*               LISTEN      
 tcp        0      0 127.0.0.1:953           0.0.0.0:*               LISTEN      4515/named
 ```
 
-#### 配置
+## 配置
 
 首先备份 DNS 服务端的主配置文件，然后修改其中的内容：
 
@@ -87,7 +87,7 @@ include "/etc/named.rfc1912.zones";
 include "/etc/named.root.key";
 ```
 
-#### 编辑 samzong.local.zone 配置文件
+## 编辑 samzong.local.zone 配置文件
 
 首先创建 samzong.local.zone 文件：
 
@@ -121,7 +121,7 @@ b       A       192.168.16.101
 ➜  named systemctl restart named-chroot.service
 ```
 
-#### 客户端验证
+## 客户端验证
 
 ```bash
 ➜  named nslookup www.samzong.local
@@ -132,7 +132,7 @@ Name: www.samzong.local
 Address: 192.168.16.100
 ```
 
-#### 使用 rndc 管理 DNS 解析记录
+## 使用 rndc 管理 DNS 解析记录
 
 rndc 常用指令：
 

@@ -29,7 +29,7 @@ MariaDB Galera Cluster 是一套在 MySQL InnoDB 存储引擎上面实现 multi-
 * 检查 selinux 状态：getenforce
 * 检查 openssh-client 包是否安装：系统中是否有 ssh 命令
 * 检查是否系统中含有 mysql 相关的包：rpm -qa | grep mysql，有的话都需要卸载掉
-* 检查网络是否通畅：ping www.baidu.com
+* 检查网络是否通畅：`ping www.baidu.com`
 
 ## 安装
 
@@ -71,7 +71,7 @@ enabled=0
 
 > 注意安装完成之后，不要启动 mysql
 
-### 3. 在其中一个节点上编辑/etc/my.cnf.d/server.cnf配置文件
+### 3. 在其中一个节点上编辑/etc/my.cnf.d/server.cnf 配置文件
 
 ```bash
 [root@node4 ~]# vi /etc/my.cnf.d/server.cnf
@@ -102,7 +102,7 @@ Starting MySQL. SUCCESS!
 [root@node4 ~]# mysql_secure_installation
 ```
 
-### 4. 在其它节点上编辑/etc/my.cnf.d/server.cnf配置文件
+### 4. 在其它节点上编辑/etc/my.cnf.d/server.cnf 配置文件
 
 ```bash
 [root@node4 ~]# vim /etc/my.cnf.d/server.cnf
