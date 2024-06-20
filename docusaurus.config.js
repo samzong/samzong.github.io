@@ -27,8 +27,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "zh-Hans",
-    locales: ["zh-Hans", "en"],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
@@ -94,10 +94,10 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: true,
       },
-      // announcementBar: {
-      //   content:
-      //     '⭐️ If you find my articles beneficial, feel free to follow me on <a target="_blank" rel="noopener noreferrer" href="https://github.com/samzong">GitHub</a>! ⭐️',
-      // },
+      announcementBar: {
+        content:
+          '🫵🫵🫵  警钟长鸣！尊纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵',
+      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,

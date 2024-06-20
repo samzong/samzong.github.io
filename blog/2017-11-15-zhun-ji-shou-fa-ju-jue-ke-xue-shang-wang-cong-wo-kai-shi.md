@@ -1,7 +1,7 @@
 ---
 title: HowTo Use SSR Service on Mac
 tags: [Google]
-permalink: /2017/11/15/howto-user-ssr-on-mac/
+ulisted: true
 ---
 
 应邀制作一份关于 Mac SSR 的连接使用。
