@@ -96,7 +96,7 @@ const config = {
       },
       announcementBar: {
         content:
-          '🫵🫵🫵  警钟长鸣！尊纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵',
+          '🫵🫵🫵  警钟长鸣！遵纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵',
       },
       prism: {
         theme: prismThemes.github,
