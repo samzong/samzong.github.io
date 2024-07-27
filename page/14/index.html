@@ -6,106 +6,10 @@
 <title data-rh="true">Notes | samzong</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://samzong.me/page/14"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" property="og:title" content="Notes | samzong"><meta data-rh="true" name="description" content="Blog"><meta data-rh="true" property="og:description" content="Blog"><meta data-rh="true" name="docusaurus_tag" content="blog_posts_list"><meta data-rh="true" name="docsearch:docusaurus_tag" content="blog_posts_list"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://samzong.me/page/14"><link data-rh="true" rel="alternate" href="https://samzong.me/page/14" hreflang="en"><link data-rh="true" rel="alternate" href="https://samzong.me/page/14" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="samzong RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="samzong Atom Feed">
 <link rel="alternate" type="application/json" href="/feed.json" title="samzong JSON Feed"><link rel="stylesheet" href="/assets/css/styles.94db4b8a.css">
-<script src="/assets/js/runtime~main.32fc6d5f.js" defer="defer"></script>
-<script src="/assets/js/main.1ff93bf0.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ec37c0f9.js" defer="defer"></script>
+<script src="/assets/js/main.6624e7d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):window.matchMedia("(prefers-color-scheme: light)").matches?t("light"):t("dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">🫵🫵🫵  警钟长鸣！遵纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><a class="navbar__brand" href="/"></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><main class="col col--9 col--offset-1" itemscope="" itemtype="https://schema.org/Blog"><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="暗坑很多"><header><h2 class="title_f1Hy" itemprop="headline"><a itemprop="url" href="/2022/10/22/redash-for-docker-bu-shu">Redash for Docker 部署</a></h2><div class="container_mt6G margin-vert--md"><time datetime="2022-10-22T00:00:00.000Z" itemprop="datePublished">October 22, 2022</time></div></header><div class="markdown" itemprop="articleBody"><blockquote>
-<p>暗坑很多</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="部署过程">部署过程<a href="#部署过程" class="hash-link" aria-label="Direct link to 部署过程" title="Direct link to 部署过程">​</a></h2>
-<ol>
-<li>需要自行维护一个 env 作为配置文件</li>
-</ol>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">REDASH_COOKIE_SECRET=a07cca441ab9f28b66c589f3118e0de48469b1bc6a5036eade7badbed305d96e</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">POSTGRES_HOST_AUTH_METHOD=trust</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">REDASH_REDIS_URL=redis://redis:6379/0</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">REDASH_DATABASE_URL=postgresql://postgres</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<ul>
-<li>
-<p>需要创建一个 postgres-data 并配置 docker-compose.yml 的路径，数据库持久化</p>
-</li>
-<li>
-<p>需要给 postgres 容器增加 sudo 命令</p>
-<ul>
-<li>apk add sudo</li>
-</ul>
-</li>
-<li>
-<p>需要手工进入到 postgresql 容器内创建 role 和 database</p>
-<ul>
-<li>createuser -U postgres redash</li>
-<li>createdb -U postgres redash</li>
-</ul>
-</li>
-<li>
-<p>执行数据库初始化动作</p>
-</li>
-<li>
-<p>docker-compose run --rm server create_db</p>
-</li>
-<li>
-<p>然后重启 redash 全部服务即可 docker-compose down 后重启</p>
-</li>
-</ul>
-<blockquote>
-<p>postgresql 在执行 psql 命令时，默认会读取当前系统用户作为执行 role；但 psql 默认用户是 postgres</p>
-</blockquote>
-<p><a href="https://redash.io/help/open-source/setup" target="_blank" rel="noopener noreferrer">https://redash.io/help/open-source/setup</a>
-<a href="https://redash.io/help/open-source/dev-guide/docker" target="_blank" rel="noopener noreferrer">https://redash.io/help/open-source/dev-guide/docker</a>
-<a href="https://docs.victoriametrics.com/url-examples.html#apiv1exportcsv" target="_blank" rel="noopener noreferrer">https://docs.victoriametrics.com/url-examples.html#apiv1exportcsv</a></p>
-<p><a href="https://mp.weixin.qq.com/s?src=11&amp;timestamp=1660629444&amp;ver=3985&amp;signature=verv70veamW*Ez2Sgc8e89yMJGwANIOzz4lfwbezyVV3wpWNT2d9SnGrDecUOwrbTJBR2o-Ax6ZS4Fpu2UxfX7Sy9xsk1LCXfY1wNr42ucl3tFePfJ7c536c8z*L-HOy&amp;new=1" target="_blank" rel="noopener noreferrer">https://mp.weixin.qq.com/s?src=11&amp;timestamp=1660629444&amp;ver=3985&amp;signature=verv70veamW<em>Ez2Sgc8e89yMJGwANIOzz4lfwbezyVV3wpWNT2d9SnGrDecUOwrbTJBR2o-Ax6ZS4Fpu2UxfX7Sy9xsk1LCXfY1wNr42ucl3tFePfJ7c536c8z</em>L-HOy&amp;new=1</a></p>
-<p><a href="https://mp.weixin.qq.com/s?src=11&amp;timestamp=1660682601&amp;ver=3986&amp;signature=h8m0RzEX3qWsKcUo6Ee3azdsnzLQqUf3N8FdLhyWNa52U4vAvlbEaBFUCrTZnh54tT-YS2mODfkp-6Hemmzt3n*hzGHlEmXP-HO5830W0Fzmn4MMfnsOPBKLrcjaiU0h&amp;new=1" target="_blank" rel="noopener noreferrer">https://mp.weixin.qq.com/s?src=11&amp;timestamp=1660682601&amp;ver=3986&amp;signature=h8m0RzEX3qWsKcUo6Ee3azdsnzLQqUf3N8FdLhyWNa52U4vAvlbEaBFUCrTZnh54tT-YS2mODfkp-6Hemmzt3n*hzGHlEmXP-HO5830W0Fzmn4MMfnsOPBKLrcjaiU0h&amp;new=1</a></p>
-<ul>
-<li>redash env 配置：<a href="https://redash.io/help/open-source/admin-guide/env-vars-settings" target="_blank" rel="noopener noreferrer">https://redash.io/help/open-source/admin-guide/env-vars-settings</a></li>
-<li>postgres 权限问题 <a href="https://stackoverflow.com/a/25051632/5067657" target="_blank" rel="noopener noreferrer">https://stackoverflow.com/a/25051632/5067657</a></li>
-<li><a href="https://techoverflow.net/2021/05/07/how-to-fix-alpine-linux-ash-sudo-not-found/" target="_blank" rel="noopener noreferrer">https://techoverflow.net/2021/05/07/how-to-fix-alpine-linux-ash-sudo-not-found/</a></li>
-<li><a href="https://discuss.redash.io/t/error-99-connecting-to-localhost-6379-cannot-assign-requested-address/9716/7" target="_blank" rel="noopener noreferrer">https://discuss.redash.io/t/error-99-connecting-to-localhost-6379-cannot-assign-requested-address/9716/7</a></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="启动的服务介绍">启动的服务介绍<a href="#启动的服务介绍" class="hash-link" aria-label="Direct link to 启动的服务介绍" title="Direct link to 启动的服务介绍">​</a></h2>
-<ul>
-<li>v10-redashio_adhoc_worker_1     # 执行查询任务的 worker</li>
-<li>v10-redashio_postgres_1       # 数据库</li>
-<li>v10-redashio_redis_1        # 缓存</li>
-<li>v10-redashio_scheduled_worker_1   # 执行计划任务的 worker</li>
-<li>v10-redashio_scheduler_1      # 计划任务管理 server</li>
-<li>v10-redashio_server_1        # 主体 server</li>
-</ul>
-<p>以上主要会设计到 3 个镜像，redis、pgsql、redash，其中核心是 redash，所以关注镜像版本也是这个</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="版本升级">版本升级<a href="#版本升级" class="hash-link" aria-label="Direct link to 版本升级" title="Direct link to 版本升级">​</a></h2>
-<p>redash 的版本升级较为方便，更换 server 的镜像；然后升级数据库即可。</p>
-<blockquote>
-<p>测试过从 v8 升级到 v10 , 和 v9 升级到 v10，都是 ok 的。</p>
-</blockquote>
-<ol>
-<li>关闭 Redash 服务<!-- -->
-<ol>
-<li><code>docker-compose stop server scheduler scheduled_worker adhoc_worker</code></li>
-</ol>
-</li>
-<li>更新 docker-compose.yml<!-- -->
-<ol>
-<li>基本上这一步，只需要更新 redash 的镜像版本即可</li>
-<li>然后执行 <code>docker-compose pull</code> 拉取新镜像版本</li>
-</ol>
-</li>
-<li>执行数据库升级<!-- -->
-<ol>
-<li><code>docker-compose run --rm server manage db upgrade</code></li>
-</ol>
-</li>
-<li>启动全部服务即可<!-- -->
-<ol>
-<li><code>docker-compse up -d</code></li>
-</ol>
-</li>
-</ol>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="解决-es-的-https-问题">解决 ES 的 HTTPS 问题<a href="#解决-es-的-https-问题" class="hash-link" aria-label="Direct link to 解决 ES 的 HTTPS 问题" title="Direct link to 解决 ES 的 HTTPS 问题">​</a></h2>
-<p>由于我们的 es 地址访问地址采用 https，但为自签证书，所以在 request 之中会有些问题，所以我在这里更新了 elasticsearch 的插件，然后将其上传到我个人的 docker hub.
-<a href="https://hub.docker.com/r/samzong/redash" target="_blank" rel="noopener noreferrer">https://hub.docker.com/r/samzong/redash</a></p>
-<blockquote>
-<p>带来的问题，页面上无法选择到 Elasticsearch 作为数据源，没时间去研究了</p>
-</blockquote>
-<p>看了下还是可以使用 redash 的 API 去创建的 <code>/api/data_sources</code>:</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="配置">配置<a href="#配置" class="hash-link" aria-label="Direct link to 配置" title="Direct link to 配置">​</a></h2>
-<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token property">&quot;options&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token property">&quot;basic_auth_password&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">&quot;-----&quot;</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token property">&quot;basic_auth_user&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">&quot;elastic&quot;</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token property">&quot;server&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">&quot;https://10.6.51.101:31001/&quot;</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token property">&quot;skip_tls_verification&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token boolean">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">&quot;elasticsearch&quot;</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">&quot;test-es&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>创建完成后，就可以在页面上更新了。</p></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/tools">Tools</a></li></ul></div></footer></article><nav class="pagination-nav" aria-label="Blog list page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/page/13"><div class="pagination-nav__label">Newer Entries</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/page/15"><div class="pagination-nav__label">Older Entries</div></a></nav></main></div></div></div></div>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):window.matchMedia("(prefers-color-scheme: light)").matches?t("light"):t("dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">🫵🫵🫵  警钟长鸣！遵纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><a class="navbar__brand" href="/"></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><main class="col col--9 col--offset-1" itemscope="" itemtype="https://schema.org/Blog"><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><header><h2 class="title_f1Hy" itemprop="headline"><a itemprop="url" href="/2022/11/10/panads-fill-nan-value-to-zero">Panads fill NaN value to Zero</a></h2><div class="container_mt6G margin-vert--md"><time datetime="2022-11-10T00:00:00.000Z" itemprop="datePublished">November 10, 2022</time></div></header><div class="markdown" itemprop="articleBody"><div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">df </span><span class="token operator">=</span><span class="token plain"> pandas</span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token plain">read_csv</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token string" style="color:rgb(255, 121, 198)">&#x27;somefile.txt&#x27;</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">df </span><span class="token operator">=</span><span class="token plain"> df</span><span class="token punctuation" style="color:rgb(248, 248, 242)">.</span><span class="token plain">fillna</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token number">0</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/python">Python</a></li></ul></div></footer></article><nav class="pagination-nav" aria-label="Blog list page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/page/13"><div class="pagination-nav__label">Newer Entries</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/page/15"><div class="pagination-nav__label">Older Entries</div></a></nav></main></div></div></div></div>
 </body>
 </html>

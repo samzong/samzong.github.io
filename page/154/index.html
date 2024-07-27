@@ -6,44 +6,20 @@
 <title data-rh="true">Notes | samzong</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://samzong.me/page/154"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" property="og:title" content="Notes | samzong"><meta data-rh="true" name="description" content="Blog"><meta data-rh="true" property="og:description" content="Blog"><meta data-rh="true" name="docusaurus_tag" content="blog_posts_list"><meta data-rh="true" name="docsearch:docusaurus_tag" content="blog_posts_list"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://samzong.me/page/154"><link data-rh="true" rel="alternate" href="https://samzong.me/page/154" hreflang="en"><link data-rh="true" rel="alternate" href="https://samzong.me/page/154" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="samzong RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="samzong Atom Feed">
 <link rel="alternate" type="application/json" href="/feed.json" title="samzong JSON Feed"><link rel="stylesheet" href="/assets/css/styles.94db4b8a.css">
-<script src="/assets/js/runtime~main.32fc6d5f.js" defer="defer"></script>
-<script src="/assets/js/main.1ff93bf0.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ec37c0f9.js" defer="defer"></script>
+<script src="/assets/js/main.6624e7d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):window.matchMedia("(prefers-color-scheme: light)").matches?t("light"):t("dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">🫵🫵🫵  警钟长鸣！遵纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><a class="navbar__brand" href="/"></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><main class="col col--9 col--offset-1" itemscope="" itemtype="https://schema.org/Blog"><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="前言"><header><h2 class="title_f1Hy" itemprop="headline"><a itemprop="url" href="/2017/03/04/si-jie-mo-fang-te-shu-qing-kuang-zhi-chu-li">四阶魔方特殊情况之处理</a></h2><div class="container_mt6G margin-vert--md"><time datetime="2017-03-04T00:00:00.000Z" itemprop="datePublished">March 4, 2017</time></div></header><div class="markdown" itemprop="articleBody"><p><img loading="lazy" src="https://source.unsplash.com/random/480x480/?Rubik&#x27;s-Cube" alt="" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="前言">前言<a href="#前言" class="hash-link" aria-label="Direct link to 前言" title="Direct link to 前言">​</a></h2>
-<blockquote>
-<p>注意，本文不是四阶魔方的还原教程。</p>
-</blockquote>
-<p>在还原高阶魔方 (四阶及以上) 时，采用的处理方法是，将魔方降级为三阶魔方，然后按照三阶魔方的技巧进行还原即可，但是在还原四阶魔方时会遇到 2 个不可能出现在三阶魔方的特殊情况，下面是针对这两个特殊情况的公式。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="特殊情况顶层黄色无法形成十或l">特殊情况：顶层黄色无法形成“十”或“L”<a href="#特殊情况顶层黄色无法形成十或l" class="hash-link" aria-label="Direct link to 特殊情况：顶层黄色无法形成“十”或“L”" title="Direct link to 特殊情况：顶层黄色无法形成“十”或“L”">​</a></h3>
-<ul>
-<li>1.手势：黄色面朝上</li>
-<li>2.右边两层旋转 180&#x27;（这时应该黄色面有右面两层为白色）</li>
-<li>3.后面一层旋转 180&#x27;</li>
-<li>4.上面一层旋转 180&#x27;</li>
-<li>5.左边两层靠近你身体旋转 90&#x27;</li>
-<li>6.上面一层旋转 180&#x27;</li>
-<li>7.右面两层靠近你身体旋转 90&#x27;</li>
-<li>8.上面一层旋转 180&#x27;</li>
-<li>9.右面两层远离你身体旋转 90&#x27;</li>
-<li>10.上面一层旋转 180&#x27;</li>
-<li>11.前面一层旋转 180&#x27;</li>
-<li>12.右面两层远离你身体旋转 90&#x27;</li>
-<li>13.前面一层旋转 180&#x27;</li>
-<li>14.左边两层远离你身体旋转 90&#x27;</li>
-<li>15.后面一层旋转 180&#x27;</li>
-<li>16.右边两层旋转 180&#x27;</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="特殊情况最后四对棱角只有两对还原">特殊情况：最后四对棱角只有两对还原<a href="#特殊情况最后四对棱角只有两对还原" class="hash-link" aria-label="Direct link to 特殊情况：最后四对棱角只有两对还原" title="Direct link to 特殊情况：最后四对棱角只有两对还原">​</a></h3>
-<ul>
-<li>1.黄色面已经还原的情况下，黄色面朝上</li>
-<li>2.右面夹层旋转 180&#x27;</li>
-<li>3.上面一层旋转 180‘</li>
-<li>4.右面夹层旋转 180&#x27;</li>
-<li>5.上面两层旋转 180&#x27;</li>
-<li>6.右面夹层旋转 180&#x27;</li>
-<li>7.上面两层旋转 180&#x27;</li>
-</ul></div></article><nav class="pagination-nav" aria-label="Blog list page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/page/153"><div class="pagination-nav__label">Newer Entries</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/page/155"><div class="pagination-nav__label">Older Entries</div></a></nav></main></div></div></div></div>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):window.matchMedia("(prefers-color-scheme: light)").matches?t("light"):t("dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">🫵🫵🫵  警钟长鸣！遵纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><a class="navbar__brand" href="/"></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><main class="col col--9 col--offset-1" itemscope="" itemtype="https://schema.org/Blog"><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="Zoomdata 是一个大数据可视化展示的工具，由 ZoomData 企业创建，是为数不多的同时支持移动端的数据分析公司，Zoomdata 的可视化可将大数据流转化为触屏友好的，艺术感十足的三维形态，Zoomdata 的定位是非 ETL(传统的提取、转换和加载的数据处理过程) 工具，Zoomdata 支持多种数据源，包括社交媒体等，其中应用最主流是大数据平台的展示工具，并且 Zoomdata 对 Cloudera Impala 做了很好的支持，所以我们做了 Zoomdata+Cloudera 技术实施。"><header><h2 class="title_f1Hy" itemprop="headline"><a itemprop="url" href="/2017/03/06/HowTo-install-Zoomdata">HowTo install Zoomdata</a></h2><div class="container_mt6G margin-vert--md"><time datetime="2017-03-06T09:44:47.000Z" itemprop="datePublished">March 6, 2017</time></div></header><div class="markdown" itemprop="articleBody"><p>Zoomdata 是一个大数据可视化展示的工具，由 ZoomData 企业创建，是为数不多的同时支持移动端的数据分析公司，Zoomdata 的可视化可将大数据流转化为触屏友好的，艺术感十足的三维形态，Zoomdata 的定位是非 ETL(传统的提取、转换和加载的数据处理过程) 工具，Zoomdata 支持多种数据源，包括社交媒体等，其中应用最主流是大数据平台的展示工具，并且 Zoomdata 对 Cloudera Impala 做了很好的支持，所以我们做了 Zoomdata+Cloudera 技术实施。<sup><a href="#user-content-fn-1-1ac1ac" id="user-content-fnref-1-1ac1ac" data-footnote-ref="true" aria-describedby="footnote-label">1</a></sup></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="系统要求"><strong>系统要求</strong><a href="#系统要求" class="hash-link" aria-label="Direct link to 系统要求" title="Direct link to 系统要求">​</a></h4>
+<p>Zoomdata 最新版是 v2.4，支持常见主流的操作系统，并且有非常友好的安装帮助，但是 Zoomdata 不支持安装在 32 位的操作系统之上</p>
+<table><thead><tr><th>biaoti</th><th>biaoti</th><th>baiiti</th></tr></thead><tbody><tr><td>list</td><td>file</td><td>china</td></tr><tr><td>letian</td><td>zhong</td><td>hongkong</td></tr></tbody></table>
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorWithStickyNavbar_LWe7 sr-only" id="footnote-label">Footnotes<a href="#footnote-label" class="hash-link" aria-label="Direct link to Footnotes" title="Direct link to Footnotes">​</a></h2>
+<ol>
+<li id="user-content-fn-1-1ac1ac">
+<p>这是一个示意的文档 <a href="#user-content-fnref-1-1ac1ac" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/microservice">Microservice</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/tools">Tools</a></li></ul></div></footer></article><nav class="pagination-nav" aria-label="Blog list page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/page/153"><div class="pagination-nav__label">Newer Entries</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/page/155"><div class="pagination-nav__label">Older Entries</div></a></nav></main></div></div></div></div>
 </body>
 </html>

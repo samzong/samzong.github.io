@@ -6,34 +6,85 @@
 <title data-rh="true">Notes | samzong</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://samzong.me/page/23"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" property="og:title" content="Notes | samzong"><meta data-rh="true" name="description" content="Blog"><meta data-rh="true" property="og:description" content="Blog"><meta data-rh="true" name="docusaurus_tag" content="blog_posts_list"><meta data-rh="true" name="docsearch:docusaurus_tag" content="blog_posts_list"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://samzong.me/page/23"><link data-rh="true" rel="alternate" href="https://samzong.me/page/23" hreflang="en"><link data-rh="true" rel="alternate" href="https://samzong.me/page/23" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="samzong RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="samzong Atom Feed">
 <link rel="alternate" type="application/json" href="/feed.json" title="samzong JSON Feed"><link rel="stylesheet" href="/assets/css/styles.94db4b8a.css">
-<script src="/assets/js/runtime~main.32fc6d5f.js" defer="defer"></script>
-<script src="/assets/js/main.1ff93bf0.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ec37c0f9.js" defer="defer"></script>
+<script src="/assets/js/main.6624e7d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):window.matchMedia("(prefers-color-scheme: light)").matches?t("light"):t("dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">🫵🫵🫵  警钟长鸣！遵纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><a class="navbar__brand" href="/"></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><main class="col col--9 col--offset-1" itemscope="" itemtype="https://schema.org/Blog"><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="南北流量和东西流量 是什么意思？"><header><h2 class="title_f1Hy" itemprop="headline"><a itemprop="url" href="/2022/09/12/k8s-xi-lie-nan-bei-liu-liang-he-dong-xi-liu-liang">K8s 系列 南北流量和东西流量</a></h2><div class="container_mt6G margin-vert--md"><time datetime="2022-09-12T00:00:00.000Z" itemprop="datePublished">September 12, 2022</time></div></header><div class="markdown" itemprop="articleBody"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="南北流量和东西流量-是什么意思">南北流量和东西流量 是什么意思？<a href="#南北流量和东西流量-是什么意思" class="hash-link" aria-label="Direct link to 南北流量和东西流量 是什么意思？" title="Direct link to 南北流量和东西流量 是什么意思？">​</a></h2>
-<p>在 Service Mesh 微服务架构中，我们常常会听到东西流量和南北流量两个术语。</p>
-<p>南北流量（NORTH-SOUTH traffic）和东西流量（EAST-WEST traffic）是数据中心环境中的网络流量模式。下面我们通过一个例子来理解这两个术语。</p>
-<p>假设我们尝试通过浏览器访问某些 Web 应用。Web 应用部署在位于某个数据中心的应用服务器中。在多层体系结构中，典型的数据中心不仅包含应用服务器，还包含其他服务器，如负载均衡器、数据库等，以及路由器和交换机等网络组件。假设应用服务器是负载均衡器的前端。</p>
-<p>当我们访问 web 应用时，会发生以下类型的网络流量：</p>
-<p><img loading="lazy" src="http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/f9c10a68e23f6955cc25c176d2ea98f7.png?x-oss-process=image/resize,w_960,m_lfit" alt="" class="img_ev3q"></p>
-<p>数据中心树型拓扑图是一个典型的包含接入层、汇聚层、核心层三层的网络结构。这种结构诞生之初就是为了将外部流量引流到内部应用。</p>
-<p>流量从外部穿过防火墙或者数据中心其它外围网络设备进来，对应到上⾯这张图里，流动方向为从上到下，称为南向流量（和地图一样，上北下南），而与之对应的，数据中心内部产生的，离开数据中心的流量，从下到上故称为北向流量。合起来称为南北流量。</p>
-<p>在微服务化流行之前，以巨石系统（monolithic）这种单体应用为单位部署的方式，产生的是典型的南北流量。一个单体应用配有一个专门的服务器（或虚拟机），一个外部请求通常在单体应用内独立完成，除了访问数据库等必须依赖服务之外，很少会发生横向的流量。</p>
-<p>但云计算机、大数据、微服务、云原生等技术的发展催生了大量的从左到右以及从右到左的流量，也被称为东西流量。</p>
-<p>数据中心内部南北流量的削弱，而东西流量的井喷在硬件上要求数据中心要横向扩展以提供更宽的大二层以及容纳更多的服务器，而在软件上则要求一种新的服务编排方式以便能充分挖掘、利用现有的计算能力，从这个角度看 K8s 的出现是一种必然。</p>
-<p>举两个例子：</p>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):window.matchMedia("(prefers-color-scheme: light)").matches?t("light"):t("dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">🫵🫵🫵  警钟长鸣！遵纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><a class="navbar__brand" href="/"></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><main class="col col--9 col--offset-1" itemscope="" itemtype="https://schema.org/Blog"><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="image.png"><header><h2 class="title_f1Hy" itemprop="headline"><a itemprop="url" href="/2022/09/18/shi-yong-canal-jin-xing-shu-ju-ku-zeng-liang-tong-bu">使用 canal 进行数据库增量同步</a></h2><div class="container_mt6G margin-vert--md"><time datetime="2022-09-18T00:00:00.000Z" itemprop="datePublished">September 18, 2022</time></div></header><div class="markdown" itemprop="articleBody"><p><img loading="lazy" src="http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1662586780206-7328e88e-c0e3-4e2f-ac6d-e072747efc4a.png?x-oss-process=image/resize,w_960,m_lfit" alt="image.png" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="简介">简介<a href="#简介" class="hash-link" aria-label="Direct link to 简介" title="Direct link to 简介">​</a></h2>
+<p><img loading="lazy" src="http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/20191104101735947.png?x-oss-process=image/resize,w_960,m_lfit" alt="image" class="img_ev3q"></p>
+<p><strong>canal [kə&#x27;næl]</strong>，译意为水道/管道/沟渠，主要用途是基于 MySQL 数据库增量日志解析，提供增量数据订阅和消费</p>
+<p>早期阿里巴巴因为杭州和美国双机房部署，存在跨机房同步的业务需求，实现方式主要是基于业务 trigger 获取增量变更。从 2010 年开始，业务逐步尝试数据库日志解析获取增量变更进行同步，由此衍生出了大量的数据库增量订阅和消费业务。</p>
+<p>基于日志增量订阅和消费的业务包括</p>
 <ul>
-<li>
-<p>客户端（位于数据中心一侧的浏览器）与负载均衡器（位于数据中心）之间的网络流量</p>
-</li>
-<li>
-<p>负载均衡器、应用服务器、数据库等之间的网络流量，它们都位于数据中心。</p>
-</li>
+<li>数据库镜像</li>
+<li>数据库实时备份</li>
+<li>索引构建和实时维护 (拆分异构索引、倒排索引等)</li>
+<li>业务 cache 刷新</li>
+<li>带业务逻辑的增量数据处理</li>
 </ul>
-<p>在这个例子中，前者即即客户端和服务器之间的流量被称为南北流量。简而言之，南北流量是 server-client 流量。</p>
-<p>第二种流量即不同服务器之间的流量与数据中心或不同数据中心之间的网络流被称为东西流量。简而言之，东西流量是 service-service 流量。</p>
-<p>当下，东西流量远超南北流量，尤其是在当今的大数据生态系统中，比如 Hadoop 生态系统（大量 server 驻留在数据中心中，用 map reduce 处理），server-server 流量远大于 server-client 流量。</p>
-<p>大家可能会好奇，东西南北，为什么这么命名？</p>
-<p>该命名来自于绘制典型 network diagrams 的习惯。在图表中，通常核心网络组件绘制在顶部（NORTH），客户端绘制在底部（SOUTH），而数据中心内的不同服务器水平（EAST-WEST）</p></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/kubernetes">Kubernetes</a></li></ul></div></footer></article><nav class="pagination-nav" aria-label="Blog list page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/page/22"><div class="pagination-nav__label">Newer Entries</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/page/24"><div class="pagination-nav__label">Older Entries</div></a></nav></main></div></div></div></div>
+<p>当前的 canal 支持源端 MySQL 版本包括 5.1.x , 5.5.x , 5.6.x , 5.7.x , 8.0.x</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="工作原理">工作原理<a href="#工作原理" class="hash-link" aria-label="Direct link to 工作原理" title="Direct link to 工作原理">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mysql-主备复制原理">MySQL 主备复制原理<a href="#mysql-主备复制原理" class="hash-link" aria-label="Direct link to MySQL 主备复制原理" title="Direct link to MySQL 主备复制原理">​</a></h3>
+<ul>
+<li>MySQL master 将数据变更写入二进制日志 ( binary log, 其中记录叫做二进制日志事件 binary log events，可以通过 show binlog events 进行查看)</li>
+<li>MySQL slave 将 master 的 binary log events 拷贝到它的中继日志 (relay log)</li>
+<li>MySQL slave 重放 relay log 中事件，将数据变更反映它自己的数据</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="canal-工作原理">canal 工作原理<a href="#canal-工作原理" class="hash-link" aria-label="Direct link to canal 工作原理" title="Direct link to canal 工作原理">​</a></h3>
+<ul>
+<li>canal 模拟 MySQL slave 的交互协议，伪装自己为 MySQL slave，向 MySQL master 发送 dump 协议</li>
+<li>MySQL master 收到 dump 请求，开始推送 binary log 给 slave (即 canal )</li>
+<li>canal 解析 binary log 对象 (原始为 byte 流)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="文档支持">文档支持<a href="#文档支持" class="hash-link" aria-label="Direct link to 文档支持" title="Direct link to 文档支持">​</a></h2>
+<ul>
+<li><a href="https://github.com/alibaba/canal/wiki/Home" target="_blank" rel="noopener noreferrer">Home</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/Introduction" target="_blank" rel="noopener noreferrer">Introduction</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/QuickStart" target="_blank" rel="noopener noreferrer">QuickStart</a>
+<ul>
+<li><a href="https://github.com/alibaba/canal/wiki/Docker-QuickStart" target="_blank" rel="noopener noreferrer">Docker QuickStart</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/Canal-Kafka-RocketMQ-QuickStart%22" target="_blank" rel="noopener noreferrer">Canal Kafka/RocketMQ QuickStart</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/aliyun-RDS-QuickStart" target="_blank" rel="noopener noreferrer">Aliyun RDS for MySQL QuickStart</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/Prometheus-QuickStart" target="_blank" rel="noopener noreferrer">Prometheus QuickStart</a></li>
+</ul>
+</li>
+<li>Canal Admin<!-- -->
+<ul>
+<li><a href="https://github.com/alibaba/canal/wiki/Canal-Admin-QuickStart" target="_blank" rel="noopener noreferrer">Canal Admin QuickStart</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/Canal-Admin-Guide" target="_blank" rel="noopener noreferrer">Canal Admin Guide</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/Canal-Admin-ServerGuide" target="_blank" rel="noopener noreferrer">Canal Admin ServerGuide</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/Canal-Admin-Docker" target="_blank" rel="noopener noreferrer">Canal Admin Docker</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/alibaba/canal/wiki/AdminGuide" target="_blank" rel="noopener noreferrer">AdminGuide</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/ClientExample" target="_blank" rel="noopener noreferrer">ClientExample</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/ClientAPI" target="_blank" rel="noopener noreferrer">ClientAPI</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/Performance" target="_blank" rel="noopener noreferrer">Performance</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/DevGuide" target="_blank" rel="noopener noreferrer">DevGuide</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/BinlogChange%28mysql5.6%29" target="_blank" rel="noopener noreferrer">BinlogChange(MySQL 5.6)</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/BinlogChange%28MariaDB%29" target="_blank" rel="noopener noreferrer">BinlogChange(MariaDB)</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/TableMetaTSDB" target="_blank" rel="noopener noreferrer">TableMetaTSDB</a></li>
+<li><a href="http://alibaba.github.com/canal/release.html" target="_blank" rel="noopener noreferrer">ReleaseNotes</a></li>
+<li><a href="https://github.com/alibaba/canal/releases" target="_blank" rel="noopener noreferrer">Download</a></li>
+<li><a href="https://github.com/alibaba/canal/wiki/FAQ" target="_blank" rel="noopener noreferrer">FAQ</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="多语言">多语言<a href="#多语言" class="hash-link" aria-label="Direct link to 多语言" title="Direct link to 多语言">​</a></h2>
+<p>canal 特别设计了 client-server 模式，交互协议使用 protobuf 3.0 , client 端可采用不同语言实现不同的消费逻辑，欢迎大家提交 pull request</p>
+<ul>
+<li>canal java 客户端：<a href="https://github.com/alibaba/canal/wiki/ClientExample" target="_blank" rel="noopener noreferrer">https://github.com/alibaba/canal/wiki/ClientExample</a></li>
+<li>canal c# 客户端：<a href="https://github.com/dotnetcore/CanalSharp" target="_blank" rel="noopener noreferrer">https://github.com/dotnetcore/CanalSharp</a></li>
+<li>canal go 客户端：<a href="https://github.com/CanalClient/canal-go" target="_blank" rel="noopener noreferrer">https://github.com/CanalClient/canal-go</a></li>
+<li>canal php 客户端：<a href="https://github.com/xingwenge/canal-php" target="_blank" rel="noopener noreferrer">https://github.com/xingwenge/canal-php</a></li>
+<li>canal Python 客户端：<a href="https://github.com/haozi3156666/canal-python" target="_blank" rel="noopener noreferrer">https://github.com/haozi3156666/canal-python</a></li>
+<li>canal Rust 客户端：<a href="https://github.com/laohanlinux/canal-rs" target="_blank" rel="noopener noreferrer">https://github.com/laohanlinux/canal-rs</a></li>
+<li>canal Nodejs 客户端：<a href="https://github.com/marmot-z/canal-nodejs" target="_blank" rel="noopener noreferrer">https://github.com/marmot-z/canal-nodejs</a></li>
+</ul>
+<p>canal 作为 MySQL binlog 增量获取和解析工具，可将变更记录投递到 MQ 系统中，比如 Kafka/RocketMQ，可以借助于 MQ 的多语言能力</p>
+<ul>
+<li>参考文档：<a href="https://github.com/alibaba/canal/wiki/Canal-Kafka-RocketMQ-QuickStart" target="_blank" rel="noopener noreferrer">Canal Kafka/RocketMQ QuickStart</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="资料整理">资料整理<a href="#资料整理" class="hash-link" aria-label="Direct link to 资料整理" title="Direct link to 资料整理">​</a></h2>
+<p>canal 的策略是模拟了 MySQL Slave 的行为，因此需要有 SELECT, REPLICATION SLAVE, REPLICATION CLIENT 的权限</p></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/tools">Tools</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/my-sql">MySQL</a></li></ul></div></footer></article><nav class="pagination-nav" aria-label="Blog list page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/page/22"><div class="pagination-nav__label">Newer Entries</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/page/24"><div class="pagination-nav__label">Older Entries</div></a></nav></main></div></div></div></div>
 </body>
 </html>
