@@ -6,40 +6,81 @@
 <title data-rh="true">Notes | samzong</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://samzong.me/page/144"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" property="og:title" content="Notes | samzong"><meta data-rh="true" name="description" content="Blog"><meta data-rh="true" property="og:description" content="Blog"><meta data-rh="true" name="docusaurus_tag" content="blog_posts_list"><meta data-rh="true" name="docsearch:docusaurus_tag" content="blog_posts_list"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://samzong.me/page/144"><link data-rh="true" rel="alternate" href="https://samzong.me/page/144" hreflang="en"><link data-rh="true" rel="alternate" href="https://samzong.me/page/144" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="samzong RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="samzong Atom Feed">
 <link rel="alternate" type="application/json" href="/feed.json" title="samzong JSON Feed"><link rel="stylesheet" href="/assets/css/styles.94db4b8a.css">
-<script src="/assets/js/runtime~main.ec37c0f9.js" defer="defer"></script>
-<script src="/assets/js/main.6624e7d0.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.133c1f09.js" defer="defer"></script>
+<script src="/assets/js/main.43c72455.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):window.matchMedia("(prefers-color-scheme: light)").matches?t("light"):t("dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">🫵🫵🫵  警钟长鸣！遵纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><a class="navbar__brand" href="/"></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><main class="col col--9 col--offset-1" itemscope="" itemtype="https://schema.org/Blog"><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="前言"><header><h2 class="title_f1Hy" itemprop="headline"><a itemprop="url" href="/2017/10/22/iphone:ipad-bu-yue-yu-an-zhuang-jiu-ban-cheng-xu">iPhone/iPad 不越狱安装旧版程序</a></h2><div class="container_mt6G margin-vert--md"><time datetime="2017-10-22T00:00:00.000Z" itemprop="datePublished">October 22, 2017</time></div></header><div class="markdown" itemprop="articleBody"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="前言">前言<a href="#前言" class="hash-link" aria-label="Direct link to 前言" title="Direct link to 前言">​</a></h4>
-<p>软件版本迭代是会带来新的功能和 BUG 修复，为给用户带来更好的使用体验，我也是乐于尝鲜的性格，所以在软件推出发布新版本时都会及时更新，但用户体验其实是一个玄学的话题，有时并不能给你带来更好的体验，在 iOS 上，由于苹果商店严格的管理机制导致我们在升级后，想要回退到之前版本变得十分困难。</p>
-<p>虾米音乐升级到 6.0 版本之后，改变很大，作为一位老虾米非常不适应，所以就瞄准了 6.0 之前的最后一个版本：5.9.4。</p>
-<p>解决办法是在 iTunes 下载程序时，使用抓包工具对与苹果应用商店服务器之间的请求进行分析，通过修改下载请求中程序版本识别序列号来下载旧版本。</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="准备">准备<a href="#准备" class="hash-link" aria-label="Direct link to 准备" title="Direct link to 准备">​</a></h4>
-<p>网上较多的解决办法是使用 Fiddler+iTunes 是在 Windows 平台，因为我只有 Mac，所以用 Charles 代替 Fiddler，这里需要注意的是 iTunes 的版本，在笔者写这篇教程的前一天 iTunes 更新到 12.7，在 12.7 中有一个很大的变化移除了 App store，所以请使用低于 12.7 版本的 iTunes。</p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="charles-安装">Charles 安装<a href="#charles-安装" class="hash-link" aria-label="Direct link to Charles 安装" title="Direct link to Charles 安装">​</a></h5>
-<p>对于 Charles 版本并没有特殊要求，我这边是通过 brew 安装，你也可以到 Charles 官网下载安装，Charles 是需要付费的软件，但是有 30 天免费使用期限，如果你有长期使用打算，建议购买正版授权。</p>
-<p><img loading="lazy" src="https://img.samzong.me/202307191532956.jpg?imageView2/3/w/400/interlace/1/q/50" alt="image" class="img_ev3q"></p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="charles-ssl-证书导入系统">Charles SSL 证书导入系统<a href="#charles-ssl-证书导入系统" class="hash-link" aria-label="Direct link to Charles SSL 证书导入系统" title="Direct link to Charles SSL 证书导入系统">​</a></h5>
-<p>从 Charles 中导出证书文件</p>
-<p><img loading="lazy" src="https://img.samzong.me/202307191532957.jpg?imageView2/3/w/400/interlace/1/q/50" alt="image" class="img_ev3q"></p>
-<p>在 KeyChain Access 中导入证书</p>
-<p><img loading="lazy" src="https://img.samzong.me/202307191532958.jpg?imageView2/3/w/400/interlace/1/q/50" alt="image" class="img_ev3q"></p>
-<p>选中导入的证书，然后右键选择 &#x27;Get Info&#x27; ，设置证书信任状态</p>
-<p><img loading="lazy" src="https://img.samzong.me/202307191532959.jpg?imageView2/3/w/400/interlace/1/q/50" alt="image" class="img_ev3q"></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="虾米音乐的三次下载">“虾米音乐”的三次下载<a href="#虾米音乐的三次下载" class="hash-link" aria-label="Direct link to “虾米音乐”的三次下载" title="Direct link to “虾米音乐”的三次下载">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="第一次下载">第一次下载<a href="#第一次下载" class="hash-link" aria-label="Direct link to 第一次下载" title="Direct link to 第一次下载">​</a></h5>
-<p>打开 Charles，开启监听，然后使用搜索虾米音乐，点击 Downloads 按钮。</p>
-<p><img loading="lazy" src="https://img.samzong.me/202307191532960.jpg?imageView2/3/w/400/interlace/1/q/50" alt="image" class="img_ev3q"></p>
-<p>点击下载后，在 Charles 会出现监听到信息，找到一条 &#x27;p[xx]-buy.itunes.apple.com&#x27; ，其中 xx 是一个随机的数字，选中它，然后右键菜单栏中勾选 &#x27;Enable SSL Proxying&#x27; 和 &#x27;Breakpoints&#x27; 。设置完成后，在 iTunes 下载中，清理下载记录。</p>
-<p><img loading="lazy" src="https://img.samzong.me/202307191532961.jpg?imageView2/3/w/400/interlace/1/q/50" alt="image" class="img_ev3q"></p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="第二次下载">第二次下载<a href="#第二次下载" class="hash-link" aria-label="Direct link to 第二次下载" title="Direct link to 第二次下载">​</a></h5>
-<p>重新搜索虾米音乐，并点击下载按钮，这时 Charles 会弹出窗口，然后在弹出窗口的右下三个按钮中选择 &#x27;Execute&#x27; ，这一步是我们请求服务器，紧接着出现的就是服务器给我们的响应，然后选择 &#x27;Edit Response&#x27; - &#x27;XML Text&#x27; ，然后向下滚动找到下图中的部分，这里是所有虾米音乐的版本的序列数字，但是这里没有办法直接看到版本号，越大的数字版本号越新。这里可以通过在手机 App store 中查看软件的版本记录，找到大概要回退多少个版本，然后数字从大到小找个半个序列数字记录下来，然后在下面三个按钮中选择 &#x27;Abort&#x27; ，这时 iTunes 会弹出一个报错窗口，关掉即可。</p>
-<p><img loading="lazy" src="https://img.samzong.me/202307191532962.jpg?imageView2/3/w/400/interlace/1/q/50" alt="image" class="img_ev3q"></p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="第三次下载">第三次下载<a href="#第三次下载" class="hash-link" aria-label="Direct link to 第三次下载" title="Direct link to 第三次下载">​</a></h5>
-<p>再次重新搜索虾米音乐，并点击下载，在这次 Charles 弹出窗口中我们需要直接修改 &#x27;Edit Requset&#x27; - &#x27;XML Text&#x27; ，将如下图中的 &#x27;appExtVrsid&#x27; 对应的值修改为，我们上一步中记录的序列数字，然后就一直在每次弹出选择时，选择 &#x27;Execute&#x27; ，直到下载完成记录。</p>
-<p><img loading="lazy" src="https://img.samzong.me/202307191532963.jpg?imageView2/3/w/400/interlace/1/q/50" alt="image" class="img_ev3q"></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="验证">验证<a href="#验证" class="hash-link" aria-label="Direct link to 验证" title="Direct link to 验证">​</a></h4>
-<p>下载完成后，你的 iTunes App Library 中已经有了一个虾米音乐，连接上你的手机，将其安装到手机上即可，下图是我安装后的版本截图。</p>
-<p><img loading="lazy" src="https://img.samzong.me/202307191532964.jpg?imageView2/3/w/400/interlace/1/q/50" alt="image" class="img_ev3q"></p></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/i-phone">iPhone</a></li></ul></div></footer></article><nav class="pagination-nav" aria-label="Blog list page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/page/143"><div class="pagination-nav__label">Newer Entries</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/page/145"><div class="pagination-nav__label">Older Entries</div></a></nav></main></div></div></div></div>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):window.matchMedia("(prefers-color-scheme: light)").matches?t("light"):t("dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">🫵🫵🫵  警钟长鸣！遵纪守法，拒绝科学上网，拒绝传播违法信息；如有发现，请立即拨打 110 !  🫵🫵🫵</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><a class="navbar__brand" href="/"></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><main class="col col--9 col--offset-1" itemscope="" itemtype="https://schema.org/Blog"><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="应邀制作一份关于 Mac SSR 的连接使用。"><header><h2 class="title_f1Hy" itemprop="headline"><a itemprop="url" href="/2017/11/15/zhun-ji-shou-fa-ju-jue-ke-xue-shang-wang-cong-wo-kai-shi">HowTo Use SSR Service on Mac</a></h2><div class="container_mt6G margin-vert--md"><time datetime="2017-11-15T00:00:00.000Z" itemprop="datePublished">November 15, 2017</time></div></header><div class="markdown" itemprop="articleBody"><p>应邀制作一份关于 Mac SSR 的连接使用。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="准备">准备<a href="#准备" class="hash-link" aria-label="Direct link to 准备" title="Direct link to 准备">​</a></h2>
+<ol>
+<li>SSR 服务提供商，<a href="http://www.ssglobal.co/wp/" target="_blank" rel="noopener noreferrer">SSGlobal</a> ，你可以到 Telegram 加入我们。<a href="https://t.me/joinchat/ESwgR0Ckp_zXMCuRKqykqA" target="_blank" rel="noopener noreferrer">SSGlobal Group</a></li>
+<li>MacOS 版本 10.12.6，经过实测 OS 版本对实际使用影响并不大。</li>
+<li>SSR Client， <a href="http://www.ssglobal.co/wp/wp-content/uploads/2017/02/ShadowsocksX-NG-R8.dmg" target="_blank" rel="noopener noreferrer">下载</a></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ssr-服务">SSR 服务<a href="#ssr-服务" class="hash-link" aria-label="Direct link to SSR 服务" title="Direct link to SSR 服务">​</a></h2>
+<p>如果你需要科学上网的话，非常愿意给你推荐我正在使用的 SSR 服务商，但是由于其官方网站和客户沟通工具 TG 需要科学上网才能使用，所以你可以联系到我来介绍你们。</p>
+<p>最新定价计划：</p>
+<ul>
+<li>Plan-A：<strong>¥15.00 元</strong>，1 个月，无限流量，不限速，可自助切换节点。</li>
+<li>Plan-B：<strong>¥15.00 元</strong>，3 个月，6G 流量包，不限速，可自助切换节点。</li>
+<li>增加线路：<strong>¥8.00 元</strong>，1 个月，1 条。</li>
+</ul>
+<blockquote>
+<p>注：增加线路仅支持 Plan-A 用户配套购买，不超过主线路最长期限，不足 1 个月剩余时限用户不支持购买</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="注册账号">注册账号<a href="#注册账号" class="hash-link" aria-label="Direct link to 注册账号" title="Direct link to 注册账号">​</a></h3>
+<p><a href="http://www.ssglobal.co/wp/registration/?action=register" target="_blank" rel="noopener noreferrer">立即注册</a></p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532482.jpg?imageView2/3/w/400/interlace/1/q/50" alt="05" class="img_ev3q"></p>
+<blockquote>
+<p>这里 <a href="mailto:alexman@mac.local" target="_blank" rel="noopener noreferrer">alexman@mac.local</a> 仅仅是演示邮箱，请填写对应属于你的邮箱。</p>
+</blockquote>
+<p>当你点击提交完成后，在你的邮箱会收到一封激活邮件，点击其中链接或将链接复制到浏览器中即可激活。</p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532483.jpg?imageView2/3/w/400/interlace/1/q/50" alt="07" class="img_ev3q"></p>
+<blockquote>
+<p>这里同样是激活链接，同样仅作为演示。</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="登录系统">登录系统<a href="#登录系统" class="hash-link" aria-label="Direct link to 登录系统" title="Direct link to 登录系统">​</a></h3>
+<p><a href="http://www.ssglobal.co/wp/login-2/?redirect_to=http://www.ssglobal.co/wp/registration/" target="_blank" rel="noopener noreferrer">立即登录</a></p>
+<p>输入注册时的用户名密码，即可登录到系统内，然后在首页找到进入后台按钮，即可看到试用信息。</p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532484.jpg?imageView2/3/w/400/interlace/1/q/50" alt="06" class="img_ev3q"></p>
+<blockquote>
+<p>这里填写用户名或邮箱都可以。</p>
+</blockquote>
+<p>进入系统后，找到订阅链接信息，默认情况下，你应该只有一条线路信息，付费用户享有应急通道。</p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532485.jpg?imageView2/3/w/400/interlace/1/q/50" alt="04" class="img_ev3q"></p>
+<blockquote>
+<p>上图中”切换“，用来切换不同服务器节点，注意，切换后要到客户端内刷新订阅信息，下面会讲到。</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ssr-client-安装">SSR Client 安装<a href="#ssr-client-安装" class="hash-link" aria-label="Direct link to SSR Client 安装" title="Direct link to SSR Client 安装">​</a></h2>
+<p>在本文最上面已经有了，如何下载 SSR 客户端的地方，细 心的朋友，应该已经在 SSGlobal 官网上找到了对应下载页面，其中包含全平台的客户端工具。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="下载">下载<a href="#下载" class="hash-link" aria-label="Direct link to 下载" title="Direct link to 下载">​</a></h3>
+<p><a href="http://www.ssglobal.co/wp/wp-content/uploads/2017/02/ShadowsocksX-NG-R8.dmg" target="_blank" rel="noopener noreferrer">立即下载</a></p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532486.jpg?imageView2/3/w/400/interlace/1/q/50" alt="01" class="img_ev3q"></p>
+<p>下载完成后，找到你的下载文件，双击打开，将程序拖到 Mac 程序目录即完成安装，和 Mac 其他软件安装并无不同。</p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532487.jpg?imageView2/3/w/400/interlace/1/q/50" alt="02" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="启动程序">启动程序<a href="#启动程序" class="hash-link" aria-label="Direct link to 启动程序" title="Direct link to 启动程序">​</a></h2>
+<p>在 Launchpad 中找到最近安装的 Shadowsocks NG R8，点击启动后，Mac 右上角导航栏中会有一个小飞机的图标，点击可以看到以下信息：</p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532488.jpg?imageView2/3/w/400/interlace/1/q/50" alt="03" class="img_ev3q"></p>
+<blockquote>
+<p>上图中已经有我的订阅信息，请忽略</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="编辑订阅信息">编辑订阅信息<a href="#编辑订阅信息" class="hash-link" aria-label="Direct link to 编辑订阅信息" title="Direct link to 编辑订阅信息">​</a></h2>
+<p>选择编辑订阅信息，然后将你在 SSGlobal 网站后台拿到的订阅信息添加到其中</p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532489.jpg?imageView2/3/w/400/interlace/1/q/50" alt="09" class="img_ev3q"></p>
+<blockquote>
+<p>注意只要添加 URL 信息即可，不需要修改其他。</p>
+</blockquote>
+<p>然后选择手动更新订阅，这里在你的服务列表内，就有了你的服务器节点信息，选择对应节点即可开启科学上网</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pac-规则">PAC 规则<a href="#pac-规则" class="hash-link" aria-label="Direct link to PAC 规则" title="Direct link to PAC 规则">​</a></h3>
+<p>首次使用 PAC 需要更新一次 PAC 规则，操作如下图。</p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532490.jpg?imageView2/3/w/400/interlace/1/q/50" alt="10" class="img_ev3q"></p>
+<p>这里的 PAC 规则是从 GFWLists 更新的，由于其更新速度较慢，所以如果日常使用发现某些网站无法使用，可以手动添加到 PAC 规则内</p>
+<p><img loading="lazy" src="https://img.samzong.me/202307191532491.jpg?imageView2/3/w/400/interlace/1/q/50" alt="11" class="img_ev3q"></p>
+<blockquote>
+<p>|| domain , 这里表示匹配所有代理</p>
+</blockquote>
+<p>更多关于用户规则，可以查看这里，<a href="https://adblockplus.org/en/filter-cheatsheet" target="_blank" rel="noopener noreferrer">使用手册</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="结语">结语<a href="#结语" class="hash-link" aria-label="Direct link to 结语" title="Direct link to 结语">​</a></h2>
+<p>到这里，基本常用的安装和使用已经完成了，如果测试后仍旧无法正常使用，请仔细检查是否遗漏步骤，也可以与我取得沟通。</p></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/google">Google</a></li></ul></div></footer></article><nav class="pagination-nav" aria-label="Blog list page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/page/143"><div class="pagination-nav__label">Newer Entries</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/page/145"><div class="pagination-nav__label">Older Entries</div></a></nav></main></div></div></div></div>
 </body>
 </html>

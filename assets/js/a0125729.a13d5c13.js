@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksamzong_me=self.webpackChunksamzong_me||[]).push([[42856],{42376:s=>{s.exports=JSON.parse('{"label":"Arc Browser","permalink":"/tags/arc-browser","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);
