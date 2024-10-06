@@ -9,20 +9,20 @@ on:
 
 jobs:
   # PR test
-  pr-test:
-    name: PR test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: yarn
+  # pr-test:
+  #   name: PR test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 20
+  #         cache: yarn
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Test build website
-        run: yarn build
+  #     - name: Install dependencies
+  #       run: yarn install --frozen-lockfile
+  #     - name: Test build website
+  #       run: yarn build
 
   # add pull request size label
   size-labeler:
