@@ -19,7 +19,7 @@ features:
   - icon: 🚀
     title: LLM & AI
     details: Exploring LLM Infrastructure and Development.
-    link: /pages/tags?tag=LLM
+    link: /llm
   - icon: ☁️
     title: Cloud Native
     details: Focus on Cloud Native Architecture & Infrastructure
