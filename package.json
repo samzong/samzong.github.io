@@ -16,7 +16,8 @@
   "author": "Samzong",
   "license": "MIT",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.31",
-    "vue": "^3.3.8"
+    "vitepress": "^1.0.0-rc.xx",
+    "vue": "^3.3.8",
+    "@types/node": "^20.x.x"
   }
 }
