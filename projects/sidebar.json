@@ -1,0 +1,17 @@
+{
+  "text": "Projects",
+  "items": [
+    {
+      "text": "SD Chat",
+      "link": "/projects/sd-chat"
+    },
+    {
+      "text": "Chrome Tabboost",
+      "link": "/projects/chrome-tabboost"
+    },
+    {
+      "text": "MacMusicPlayer",
+      "link": "/projects/macmusicplayer"
+    }
+  ]
+} 

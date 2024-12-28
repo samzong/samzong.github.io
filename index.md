@@ -25,9 +25,9 @@ features:
     details: Focus on Cloud Native Architecture & Infrastructure
     link: /pages/tags?tag=CloudNative
   - icon: 🎯
-    title: Product
-    details: Product Strategy & Management
-    link: /pages/tags?tag=Product
+    title: Projects
+    details: Showcase of my open source projects and tools
+    link: /pages/projects
 ---
 
 ```bash

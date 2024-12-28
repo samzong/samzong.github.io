@@ -122,6 +122,7 @@ export default defineConfig({
       { text: "LLM", link: "/llm/" },
       { text: "Cloud Native", link: "/cloud-native/" },
       { text: "Blog", link: "/blog/" },
+      { text: "Projects", link: "/pages/projects" },
       { text: "About", link: "/about" },
     ],
 
@@ -129,6 +130,7 @@ export default defineConfig({
       "/llm/": loadSidebar("llm"),
       "/cloud-native/": loadSidebar("cloud-native"),
       "/blog/": blogSidebar,
+      "/projects/": loadSidebar("projects")
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/samzong" }],
