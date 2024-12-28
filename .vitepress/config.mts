@@ -1,4 +1,16 @@
 import { defineConfig } from "vitepress";
+import fs from "fs";
+import path from "path";
+
+// load sidebar.json for each nav
+function loadSidebar(navPath: string): any {
+  const sidebarPath = path.resolve(__dirname, `../${navPath}/sidebar.json`);
+  if (fs.existsSync(sidebarPath)) {
+    const sidebarContent = fs.readFileSync(sidebarPath, "utf-8");
+    return JSON.parse(sidebarContent);
+  }
+  return [];
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,24 +23,6 @@ export default defineConfig({
 
   head: [
     ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    [
-      "link",
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        href: "/favicon-32x32.png",
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: "/favicon-16x16.png",
-      },
-    ],
     [
       "style",
       {},
@@ -111,49 +105,18 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "LLM", link: "/llm/" },
+      { text: "Cloud Native", link: "/cloud-native/" },
       { text: "Blog", link: "/blog/" },
-      { text: "Archives", link: "/pages/archives" },
       { text: "About", link: "/about" },
     ],
 
     sidebar: {
-      "/llm/": [
-        {
-          text: "Getting Started",
-          collapsed: false,
-          items: [
-            { text: "Introduction", link: "/llm/" },
-            { text: "Quick Start", link: "/llm/quickstart" },
-          ],
-        },
-        {
-          text: "Deployment",
-          collapsed: false,
-          items: [
-            {
-              text: "Deploying LLMs on Kubernetes",
-              link: "/llm/Deploying-LLMs-on-Kubernetes",
-            },
-          ],
-        },
-        {
-          text: "Tutorials",
-          collapsed: false,
-          items: [],
-        },
-      ],
-      "/blog/": {
-        base: "/blog/",
-        items: [],
-      },
+      "/llm/": loadSidebar("llm"),
+      "/cloud-native/": loadSidebar("cloud-native"),
+      "/blog/": loadSidebar("blog"),
     },
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/samzong/samzong.github.io" },
-      // { icon: "twitter", link: "https://x.com/samzong_" },
-      // { icon: "linkedin", link: "https://www.linkedin.com/in/samzong" },
-      // { icon: "telegram", link: "https://t.me/samzong" },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/samzong" }],
 
     footer: {
       message: "Powered by VitePress",

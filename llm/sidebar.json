@@ -1,0 +1,17 @@
+[
+  {
+    "text": "Getting Started",
+    "collapsed": false,
+    "items": [{ "text": "Introduction", "link": "/llm/" }]
+  },
+  {
+    "text": "Deployment",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "Deploying LLMs on Kubernetes",
+        "link": "/llm/Deploying-LLMs-on-Kubernetes"
+      }
+    ]
+  }
+]
