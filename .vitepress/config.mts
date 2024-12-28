@@ -1,18 +1,38 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "samzong",
   description: "Samzong records the place where he studies and lives.",
-  lang: 'en-US',
+  lang: "en-US",
   lastUpdated: true,
   ignoreDeadLinks: true,
-  
+  appearance: "dark",
+
   head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
-    ['style', {}, `
+    ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/favicon-16x16.png",
+      },
+    ],
+    [
+      "style",
+      {},
+      `
       :root {
         --vp-home-hero-name-color: transparent;
         --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #47caff);
@@ -68,92 +88,95 @@ export default defineConfig({
       .custom-block.tip {
         border-color: var(--vp-c-brand);
       }
-    `]
+    `,
+    ],
   ],
 
   markdown: {
     theme: {
-      light: 'github-light',
-      dark: 'github-dark'
+      light: "github-light",
+      dark: "github-dark",
     },
     lineNumbers: true,
     container: {
-      tipLabel: 'TIP',
-      warningLabel: 'WARNING',
-      dangerLabel: 'DANGER',
-      infoLabel: 'INFO',
-      detailsLabel: 'Details'
-    }
+      tipLabel: "TIP",
+      warningLabel: "WARNING",
+      dangerLabel: "DANGER",
+      infoLabel: "INFO",
+      detailsLabel: "Details",
+    },
   },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Blog', link: '/blog/' },
-      { text: 'LLM', link: '/llm/' },
-      { 
-        text: 'Categories',
-        items: [
-          { text: 'Tags', link: '/pages/tags' },
-          { text: 'Categories', link: '/pages/categories' },
-          { text: 'Archives', link: '/pages/archives' }
-        ]
-      },
-      { text: 'About', link: '/about' }
+      { text: "LLM", link: "/llm/" },
+      { text: "Blog", link: "/blog/" },
+      { text: "Archives", link: "/pages/archives" },
+      { text: "About", link: "/about" },
     ],
 
     sidebar: {
-      '/llm/': [
+      "/llm/": [
         {
-          text: 'Getting Started',
+          text: "Getting Started",
           collapsed: false,
           items: [
-            { text: 'Introduction', link: '/llm/' },
-            { text: 'Quick Start', link: '/llm/quickstart' }
-          ]
+            { text: "Introduction", link: "/llm/" },
+            { text: "Quick Start", link: "/llm/quickstart" },
+          ],
         },
         {
-          text: 'Deployment',
+          text: "Deployment",
           collapsed: false,
           items: [
-            { text: 'Deploying LLMs on Kubernetes', link: '/llm/Deploying-LLMs-on-Kubernetes' }
-          ]
+            {
+              text: "Deploying LLMs on Kubernetes",
+              link: "/llm/Deploying-LLMs-on-Kubernetes",
+            },
+          ],
         },
         {
-          text: 'Tutorials',
+          text: "Tutorials",
           collapsed: false,
-          items: []
-        }
+          items: [],
+        },
       ],
-      '/blog/': {
-        base: '/blog/',
-        items: []
-      }
+      "/blog/": {
+        base: "/blog/",
+        items: [],
+      },
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/samzong/samzong.github.io' }
+      { icon: "github", link: "https://github.com/samzong/samzong.github.io" },
+      // { icon: "twitter", link: "https://x.com/samzong_" },
+      // { icon: "linkedin", link: "https://www.linkedin.com/in/samzong" },
+      // { icon: "telegram", link: "https://t.me/samzong" },
     ],
 
+    footer: {
+      message: "Powered by VitePress",
+    },
+
     search: {
-      provider: 'local',
+      provider: "local",
       options: {
         translations: {
           button: {
-            buttonText: 'Search',
-            buttonAriaLabel: 'Search'
+            buttonText: "Search",
+            buttonAriaLabel: "Search",
           },
           modal: {
-            noResultsText: 'No results found',
-            resetButtonTitle: 'Reset search',
+            noResultsText: "No results found",
+            resetButtonTitle: "Reset search",
             footer: {
-              selectText: 'to select',
-              navigateText: 'to navigate'
-            }
-          }
-        }
-      }
-    }
-  }
-})
+              selectText: "to select",
+              navigateText: "to navigate",
+            },
+          },
+        },
+      },
+    },
+  },
+});

@@ -1,14 +1,8 @@
 ---
 title: About
-layout: doc
-aside: false
+layout: home
 ---
 
-# About
-
-::: tip
-I'm always open to interesting conversations and collaboration.
-:::
 
 ```yaml
 name: Samzong
