@@ -1,0 +1,21 @@
+{
+  "text": "Projects",
+  "items": [
+    {
+      "text": "samzong.github.io",
+      "link": "/projects/samzong-blog"
+    },
+    {
+      "text": "OpenAI Translator",
+      "link": "/projects/openai-translator"
+    },
+    {
+      "text": "Docker Compose Hub",
+      "link": "/projects/docker-compose-hub"
+    },
+    {
+      "text": "Kubernetes Tools",
+      "link": "/projects/kubernetes-tools"
+    }
+  ]
+} 

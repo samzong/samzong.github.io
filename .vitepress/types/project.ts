@@ -6,6 +6,7 @@ export interface Project {
   logo?: string
   tags: string[]
   createdAt: string // ISO 格式的日期字符串，如：'2024-01-01'
+  docPath: string   // 项目文档路径，如：'/projects/samzong-blog'
 }
 
 export const projects: Project[] = [
@@ -17,6 +18,7 @@ export const projects: Project[] = [
     logo: '/logo.png',
     tags: ['Vue3', 'VitePress', 'Blog'],
     createdAt: '2024-01-01',
+    docPath: '/projects/samzong-blog'
   },
   {
     name: 'OpenAI Translator',
@@ -25,6 +27,7 @@ export const projects: Project[] = [
     website: 'https://translator.samzong.me',
     tags: ['TypeScript', 'OpenAI', 'React', 'API'],
     createdAt: '2023-12-01',
+    docPath: '/projects/openai-translator'
   },
   {
     name: 'Docker Compose Hub',
@@ -32,6 +35,7 @@ export const projects: Project[] = [
     github: 'https://github.com/samzong/docker-compose-hub',
     tags: ['Docker', 'DevOps', 'Infrastructure'],
     createdAt: '2023-06-15',
+    docPath: '/projects/docker-compose-hub'
   },
   {
     name: 'Kubernetes Tools',
@@ -39,5 +43,6 @@ export const projects: Project[] = [
     github: 'https://github.com/samzong/k8s-tools',
     tags: ['Kubernetes', 'Go', 'CLI', 'DevOps'],
     createdAt: '2023-09-20',
+    docPath: '/projects/kubernetes-tools'
   }
 ] 
