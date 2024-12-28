@@ -25,5 +25,5 @@ outline: deep
 - Latest Post: 2024-10-24
 
 ::: tip
-[View All Posts](/pages/archives) | [Browse by Tags](/pages/tags) | [Browse by Categories](/pages/categories)
+[View All Posts](/pages/archives) | [Browse by Tags](/pages/tags)
 :::

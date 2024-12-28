@@ -1,56 +1,86 @@
 ---
 title: Archives
 description: 文章归档
-aside: false
+aside: true
+layout: doc
 ---
 
 <script setup>
-import { data as posts } from '../.vitepress/theme/archives.data.ts'
+import { data } from '../.vitepress/theme/data/archives.data'
+import { ref, computed } from 'vue'
+
+const years = computed(() => 
+  Object.keys(data)
+    .map(Number)
+    .sort((a, b) => b - a)
+    .map(String)
+)
 </script>
 
-# 文章归档
-
-<div v-for="(articles, year) in posts" :key="year" class="archives-year">
-  <h2>{{ year }}</h2>
-  <ul class="archives-list">
-    <li v-for="post in articles" :key="post.url" class="archives-item">
-      <span class="archives-date">{{ post.date }}</span>
-      <a :href="post.url" class="archives-title">{{ post.title }}</a>
-    </li>
-  </ul>
+<div class="archives-wrapper">
+  <div v-for="year in years" :key="year" class="year-section">
+    <h2 :id="year">{{ year }}</h2>
+    <ul class="post-list">
+      <li v-for="post in data[year]" :key="post.url" class="post-item">
+        <span class="post-date">{{ post.date.slice(5) }}</span>
+        <a :href="post.url" class="post-title">{{ post.title }}</a>
+      </li>
+    </ul>
+  </div>
 </div>
 
 <style scoped>
-.archives-year {
-  margin-bottom: 2rem;
+.archives-wrapper {
+  padding-top: 1rem;
 }
 
-.archives-list {
+.year-section {
+  margin-bottom: 3rem;
+}
+
+.year-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--vp-c-brand);
+  scroll-margin-top: 5rem;
+}
+
+.post-list {
   list-style: none;
   padding: 0;
 }
 
-.archives-item {
+.post-item {
+  margin: 0.8rem 0;
   display: flex;
   align-items: baseline;
-  margin: 0.5rem 0;
-  line-height: 1.6;
 }
 
-.archives-date {
+.post-date {
   color: var(--vp-c-text-2);
   font-family: Monaco, monospace;
-  margin-right: 1rem;
   font-size: 0.9em;
+  margin-right: 1rem;
+  min-width: 5em;
 }
 
-.archives-title {
+.post-title {
   color: var(--vp-c-text-1);
   text-decoration: none;
 }
 
-.archives-title:hover {
+.post-title:hover {
   color: var(--vp-c-brand);
+}
+
+@media (max-width: 960px) {
+  .post-item {
+    flex-direction: column;
+  }
+  
+  .post-date {
+    margin-bottom: 0.3rem;
+  }
 }
 </style>
 
