@@ -32,7 +32,7 @@ export default defineConfig({
   title: "samzong",
   description: "Samzong records the place where he studies and lives.",
   lang: "en-US",
-  lastUpdated: true,
+  // lastUpdated: true,
   ignoreDeadLinks: true,
   appearance: "dark",
 

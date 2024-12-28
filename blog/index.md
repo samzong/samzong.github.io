@@ -1,48 +1,49 @@
 ---
 layout: doc
 aside: true
-sidebar: false
-
+sidebar: true
 ---
 
 <script setup>
 import { data } from '../.vitepress/theme/data/blog.data'
 </script>
 
-# Blog Posts
+# Latest Posts
 
-## Latest Posts
-
-<ul class="post-list">
-  <li v-for="post in data.latestPosts" :key="post.url" class="post-item">
+<div class="posts-list">
+  <div v-for="post in data.latestPosts" :key="post.url" class="post-item">
     <span class="post-date">{{ post.date }}</span>
     <a :href="post.url" class="post-title">{{ post.title }}</a>
-  </li>
-</ul>
+  </div>
+</div>
 
 ## Statistics
 
 - Total Posts: {{ data.statistics.totalPosts }}
 - Years of Writing: {{ data.statistics.totalYears }}
 
+<div class="actions">
+  <a href="/pages/archives" class="action-link">View All Posts</a>
+  <a href="/pages/tags" class="action-link">Browse by Tags</a>
+</div>
+
 <style scoped>
-.post-list {
-  list-style: none;
-  padding: 0;
+.posts-list {
+  margin: 2rem 0;
 }
 
 .post-item {
-  margin: 0.8rem 0;
   display: flex;
   align-items: baseline;
+  gap: 1rem;
+  margin: 0.8rem 0;
 }
 
 .post-date {
-  color: var(--vp-c-text-2);
   font-family: Monaco, monospace;
-  font-size: 0.9em;
-  margin-right: 1rem;
-  min-width: 7em;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  min-width: 6.5rem;
 }
 
 .post-title {
@@ -54,13 +55,29 @@ import { data } from '../.vitepress/theme/data/blog.data'
   color: var(--vp-c-brand);
 }
 
-@media (max-width: 960px) {
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.action-link {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
   .post-item {
     flex-direction: column;
+    gap: 0.3rem;
   }
-  
+
   .post-date {
-    margin-bottom: 0.3rem;
+    min-width: auto;
   }
 }
 </style>
