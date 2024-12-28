@@ -1,29 +1,66 @@
 ---
-title: Blog
-outline: deep
+layout: doc
+aside: true
+sidebar: false
+
 ---
+
+<script setup>
+import { data } from '../.vitepress/theme/data/blog.data'
+</script>
 
 # Blog Posts
 
 ## Latest Posts
 
-- [安装 Docker 看这篇就够了](/blog/2024-10-24-install-docker) <sub>2024-10-24</sub>
-- [修改 Arc Browser 的图标](/blog/2024-10-06-change-arc-icons) <sub>2024-10-06</sub>
-- [Python 常见的高阶用法](/blog/2024-07-27-python-advanced-usage) <sub>2024-07-27</sub>
-- [计算国家法定节假日](/blog/2023-10-08-ji-suan-guo-jia-fa-ding-jie-jia-ri) <sub>2023-10-08</sub>
-- [MacOS 启用和关闭 SIP](/blog/2023-08-08-MacOS-qi-yong-he-bi-SIP) <sub>2023-08-08</sub>
-- [使用 Parallels Desktop 无界面启动虚拟机](/blog/2023-07-28-use-paralles-desktop-without-ui) <sub>2023-07-28</sub>
-- [Google 搜索技巧整理](/blog/2023-07-13-google-sou-suo-ji-qiao-zheng-li) <sub>2023-07-13</sub>
-- [在线服务器激活 Ketbrains](/blog/2023-02-21-ketbrains-ji-huo-fu-wu-qi) <sub>2023-02-21</sub>
-- [Raycast 你的年度报告已到达](/blog/2022-12-16-raycast) <sub>2022-12-16</sub>
-- [DCE5-Skoala 安装教程](/blog/2022-12-15-Skoala-Install-Dce5) <sub>2022-12-15</sub>
+<ul class="post-list">
+  <li v-for="post in data.latestPosts" :key="post.url" class="post-item">
+    <span class="post-date">{{ post.date }}</span>
+    <a :href="post.url" class="post-title">{{ post.title }}</a>
+  </li>
+</ul>
 
 ## Statistics
 
-- Total Posts: 250
-- First Post: 2012-07-30
-- Latest Post: 2024-10-24
+- Total Posts: {{ data.statistics.totalPosts }}
+- Years of Writing: {{ data.statistics.totalYears }}
 
-::: tip
-[View All Posts](/pages/archives) | [Browse by Tags](/pages/tags)
-:::
+<style scoped>
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.post-date {
+  color: var(--vp-c-text-2);
+  font-family: Monaco, monospace;
+  font-size: 0.9em;
+  margin-right: 1rem;
+  min-width: 7em;
+}
+
+.post-title {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+
+.post-title:hover {
+  color: var(--vp-c-brand);
+}
+
+@media (max-width: 960px) {
+  .post-item {
+    flex-direction: column;
+  }
+  
+  .post-date {
+    margin-bottom: 0.3rem;
+  }
+}
+</style>

@@ -1,6 +1,21 @@
 import { defineConfig } from "vitepress";
 import fs from "fs";
 import path from "path";
+import { generateArchives } from './utils/archives'
+
+const archives = generateArchives()
+const years = Object.keys(archives)
+  .map(Number)
+  .sort((a, b) => b - a)
+  .map(String)
+
+const blogSidebar = years.map(year => ({
+  text: year,
+  items: archives[year].map(post => ({
+    text: post.title,
+    link: post.url
+  }))
+}))
 
 // load sidebar.json for each nav
 function loadSidebar(navPath: string): any {
@@ -113,7 +128,7 @@ export default defineConfig({
     sidebar: {
       "/llm/": loadSidebar("llm"),
       "/cloud-native/": loadSidebar("cloud-native"),
-      "/blog/": loadSidebar("blog"),
+      "/blog/": blogSidebar,
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/samzong" }],
