@@ -51,7 +51,7 @@ java -jar metabase.jar
 
 成功启动后，Metabase 会运行在 3000 端口
 
-> [http://localhost:3000/](http://localhost:3000/)
+> http://localhost:3000/
 
 ### 以后台方式运行 Metabase
 

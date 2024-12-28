@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Samzong records the place where he studies and lives.",
   lang: 'en-US',
   lastUpdated: true,
+  ignoreDeadLinks: true,
   
   head: [
     ['style', {}, `
