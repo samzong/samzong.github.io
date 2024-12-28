@@ -5,7 +5,10 @@ import ProjectCard from './ProjectCard.vue'
 
 <template>
   <div class="projects-container">
-    <h1>My Projects</h1>
+    <div class="projects-header">
+      <h1>My Projects</h1>
+      <p class="projects-subtitle">这里展示了我的一些开源项目，包括个人项目和工具库。</p>
+    </div>
     <div class="projects-grid">
       <ProjectCard
         v-for="project in projects"
@@ -20,19 +23,63 @@ import ProjectCard from './ProjectCard.vue'
 .projects-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 32px 24px;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+  background: linear-gradient(120deg, var(--vp-c-brand) 0%, var(--vp-c-brand-light) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 16px;
+}
+
+.projects-subtitle {
+  color: var(--vp-c-text-2);
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
   margin-top: 20px;
 }
 
-h1 {
-  text-align: center;
-  color: var(--vp-c-brand);
-  margin-bottom: 40px;
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .projects-container {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .projects-subtitle {
+    font-size: 1em;
+    padding: 0 16px;
+  }
 }
 </style> 

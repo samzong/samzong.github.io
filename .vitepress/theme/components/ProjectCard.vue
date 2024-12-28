@@ -44,7 +44,7 @@ const getTagColor = (tag: string) => {
 
 // 生成默认 logo 文本
 const defaultLogoText = computed(() => {
-  return project.name.split(' ')
+  return props.project.name.split(' ')
     .map(word => word[0])
     .join('')
     .toUpperCase()
@@ -105,13 +105,30 @@ const defaultLogoText = computed(() => {
   border-radius: 12px;
   padding: 24px;
   background: var(--vp-c-bg-soft);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: all 0.3s ease;
   overflow: hidden;
+  backdrop-filter: blur(8px);
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--vp-c-brand-light);
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 1px 2px var(--vp-c-brand-light);
+}
+
+.dark .project-card {
+  background: rgba(36, 36, 36, 0.7);
+  border-color: rgba(82, 82, 89, 0.68);
+}
+
+.dark .project-card:hover {
+  background: rgba(36, 36, 36, 0.8);
+  border-color: var(--vp-c-brand-light);
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 1px 3px var(--vp-c-brand-light);
 }
 
 .new-badge {
@@ -181,7 +198,8 @@ const defaultLogoText = computed(() => {
   justify-content: center;
   font-size: 20px;
   font-weight: bold;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header-content {
@@ -196,6 +214,11 @@ const defaultLogoText = computed(() => {
   color: var(--vp-c-brand);
   font-weight: 600;
   line-height: 1.3;
+  transition: color 0.2s ease;
+}
+
+.project-card:hover .project-title {
+  color: var(--vp-c-brand-light);
 }
 
 .project-description {
@@ -246,19 +269,35 @@ const defaultLogoText = computed(() => {
   color: var(--vp-c-text-2);
   background: var(--vp-c-bg);
   transition: all 0.2s;
+  border: 1px solid var(--vp-c-divider);
+  opacity: 0.8;
 }
 
-.action-button:hover {
+.action-button.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.dark .action-button {
+  background: rgba(50, 50, 50, 0.7);
+  border-color: rgba(82, 82, 89, 0.68);
+}
+
+.action-button:not(.disabled):hover {
   color: white;
   transform: translateY(-2px);
+  opacity: 1;
 }
 
-.action-button.github:hover {
+.action-button.github:not(.disabled):hover {
   background: #24292e;
+  border-color: #24292e;
 }
 
-.action-button.website:hover {
+.action-button.website:not(.disabled):hover {
   background: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
 }
 
 .action-button svg {
