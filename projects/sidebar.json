@@ -2,20 +2,16 @@
   "text": "Projects",
   "items": [
     {
-      "text": "samzong.github.io",
-      "link": "/projects/samzong-blog"
+      "text": "SD Chat",
+      "link": "/projects/sd-chat"
     },
     {
-      "text": "OpenAI Translator",
-      "link": "/projects/openai-translator"
+      "text": "Chrome Tabboost",
+      "link": "/projects/chrome-tabboost"
     },
     {
-      "text": "Docker Compose Hub",
-      "link": "/projects/docker-compose-hub"
-    },
-    {
-      "text": "Kubernetes Tools",
-      "link": "/projects/kubernetes-tools"
+      "text": "MacMusicPlayer",
+      "link": "/projects/macmusicplayer"
     }
   ]
 } 
