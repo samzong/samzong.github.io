@@ -122,6 +122,7 @@ export default defineConfig({
       { text: "LLM", link: "/llm/" },
       { text: "Cloud Native", link: "/cloud-native/" },
       { text: "Blog", link: "/blog/" },
+      { text: "Projects", link: "/pages/projects" },
       { text: "About", link: "/about" },
     ],
 
