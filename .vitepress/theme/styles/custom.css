@@ -1,0 +1,112 @@
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #47caff);
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+}
+
+.VPImage.image-src {
+  position: relative;
+  border-radius: 50% !important;
+  width: 280px !important;
+  height: 280px !important;
+  border: 4px solid var(--vp-c-bg-soft);
+  transition: border-color 0.3s ease;
+  z-index: 1;
+  margin-bottom: -20px !important;
+}
+
+.VPImage.image-src::before {
+  content: '';
+  position: absolute;
+  inset: -80px;
+  background: radial-gradient(
+    circle at center,
+    var(--vp-c-brand) 0%,
+    var(--vp-c-brand-light) 45%,
+    transparent 80%
+  );
+  opacity: 0.3;
+  filter: blur(50px);
+  border-radius: 50%;
+  z-index: -1;
+  animation: glow 4s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+.VPImage.image-src:hover {
+  border-color: var(--vp-c-brand);
+}
+
+@keyframes glow {
+  from {
+    opacity: 0.3;
+    transform: scale(0.8);
+    filter: blur(50px);
+  }
+  to {
+    opacity: 0.6;
+    transform: scale(1.3);
+    filter: blur(60px);
+  }
+}
+
+@media (max-width: 768px) {
+  .VPImage.image-src {
+    width: 220px !important;
+    height: 220px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPImage.image-src {
+    width: 180px !important;
+    height: 180px !important;
+  }
+}
+
+.VPHero .name {
+  background: var(--vp-home-hero-name-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+}
+
+.VPHero .text {
+  font-size: 48px !important;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.VPFeature {
+  transition: transform 0.3s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-5px);
+}
+
+.VPFeature .title {
+  font-size: 20px;
+  font-weight: 600;
+  background: linear-gradient(120deg, #3498db, #2ecc71);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-block.tip {
+  border-color: var(--vp-c-brand);
+}
+
+.VPHero .container {
+  gap: 24px !important;
+  position: relative;
+}
+
+.VPHero .image {
+  margin: 0 auto;
+}

@@ -38,67 +38,6 @@ export default defineConfig({
 
   head: [
     ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    [
-      "style",
-      {},
-      `
-      :root {
-        --vp-home-hero-name-color: transparent;
-        --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #47caff);
-        --vp-c-brand: #646cff;
-        --vp-c-brand-light: #747bff;
-      }
-
-      .VPImage.image-src {
-        border-radius: 50% !important;
-        width: 200px !important;
-        height: 200px !important;
-        border: 4px solid transparent;
-        transition: border-color 0.3s ease;
-      }
-
-      .VPImage.image-src:hover {
-        border-color: var(--vp-c-brand);
-      }
-
-      .VPHero .name {
-        background: var(--vp-home-hero-name-background);
-        -webkit-background-clip: text;
-        background-clip: text;
-        font-weight: bold;
-      }
-
-      .VPHero .text {
-        font-size: 48px !important;
-        font-weight: 600;
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
-
-      .VPFeature {
-        transition: transform 0.3s ease;
-      }
-
-      .VPFeature:hover {
-        transform: translateY(-5px);
-      }
-
-      .VPFeature .title {
-        font-size: 20px;
-        font-weight: 600;
-        background: linear-gradient(120deg, #3498db, #2ecc71);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
-
-      .custom-block.tip {
-        border-color: var(--vp-c-brand);
-      }
-    `,
-    ],
   ],
 
   markdown: {
