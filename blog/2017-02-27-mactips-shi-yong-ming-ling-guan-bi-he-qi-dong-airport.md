@@ -1,5 +1,5 @@
 ---
-title: MacTips 使用命令关闭和启动 AirPort
+title: Mac 使用命令关闭和启动 AirPort
 tags: [Mac]
 date: 2017-02-27 23:40:29
 ---

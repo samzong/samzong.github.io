@@ -1,0 +1,11 @@
+{
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute",
+  "attachmentFolderPath": "images",
+  "promptDelete": false,
+  "userIgnoreFilters": [
+    "images/",
+    "node_modules/",
+    "pages/"
+  ]
+}

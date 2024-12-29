@@ -5,12 +5,34 @@
     "items": [{ "text": "Introduction", "link": "/llm/" }]
   },
   {
-    "text": "Deployment",
+    "text": "Infrastructure",
     "collapsed": false,
     "items": [
       {
         "text": "Deploying LLMs on Kubernetes",
         "link": "/llm/Deploying-LLMs-on-Kubernetes"
+      },
+      {
+        "text": "What is MIG",
+        "link": "/llm/what-is-mig"
+      },
+      {
+        "text": "Kubeflow 101",
+        "link": "/llm/kubeflow-101"
+      },
+      {
+        "text": "Fluid",
+        "link": "/llm/fluid-data"
+      }
+    ]
+  },
+  {
+    "text": "Training",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "What is MIG",
+        "link": "/llm/what-is-mig"
       }
     ]
   }
