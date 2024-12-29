@@ -1,60 +1,30 @@
-import fs from 'fs'
 import path from 'path'
-import matter from 'gray-matter'
+import { BasePost, walkFiles, extractDateFromFilename } from './fileWalker'
 
-interface Post {
-  title: string
-  date: string
-  url: string
-}
+interface Post extends BasePost {}
 
 interface ArchiveData {
   [year: string]: Post[]
 }
 
-// 从文件名中提取日期
-function extractDateFromFilename(filename: string): string | null {
-  const match = filename.match(/^(\d{4}-\d{2}-\d{2})/)
-  return match ? match[1] : null
-}
-
 export function generateArchives(): ArchiveData {
-  const posts: Post[] = []
   const contentDir = path.resolve(__dirname, '../../blog')
   
-  function findMarkdownFiles(dir: string) {
-    const files = fs.readdirSync(dir)
-    
-    files.forEach(file => {
-      const filePath = path.join(dir, file)
-      const stat = fs.statSync(filePath)
-      
-      if (stat.isDirectory()) {
-        findMarkdownFiles(filePath)
-      } else if (path.extname(file) === '.md') {
-        // 从文件名中提取日期
-        const dateFromFilename = extractDateFromFilename(file)
-        
-        // 如果文件名没有日期前缀，跳过这个文件
-        if (!dateFromFilename) return
-        
-        const content = fs.readFileSync(filePath, 'utf-8')
-        const { data } = matter(content)
-        const url = '/' + path.relative(path.resolve(__dirname, '../..'), filePath).replace(/\.md$/, '')
-        
-        const post = {
-          title: data.title || file.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.md$/, ''),
-          date: dateFromFilename,
-          url
-        }
-        
-        posts.push(post)
+  const posts = walkFiles<Post>({
+    contentDir,
+    fileFilter: (file) => !!extractDateFromFilename(file),
+    processFile: (filePath, content, { data }) => {
+      const dateFromFilename = extractDateFromFilename(path.basename(filePath))
+      if (!dateFromFilename) return null
+
+      return {
+        title: data.title || path.basename(filePath).replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.md$/, ''),
+        date: dateFromFilename,
+        url: '/' + path.relative(path.resolve(__dirname, '../..'), filePath).replace(/\.md$/, '')
       }
-    })
-  }
-  
-  findMarkdownFiles(contentDir)
-  
+    }
+  })
+
   // 按日期排序（从新到旧）
   posts.sort((a, b) => b.date.localeCompare(a.date))
   
