@@ -1,8 +1,8 @@
-[![build-deploy](https://github.com/SAMZONG/samzong.me/actions/workflows/deploy.yaml/badge.svg)](https://github.com/SAMZONG/samzong.me/actions/workflows/deploy.yaml)
+# Blog
 
 ## 简介
 
-- 本博客基于 [VitePress](https://vitepress.dev/) 构建，使用 [GitHub Pages](https://pages.github.com/) 托管
+- 本博客基于 [VitePress](https://vitepress.dev/) 构建，使用 Cloudflare Pages 托管
 - VitePress 是一个基于 Vue 和 Vite 的静态网站生成器，性能出色且配置简单
 - 推荐使用 [yarn](https://yarnpkg.com/) 作为包管理工具
 - 推荐使用 Node.js 18.0.0 及以上版本（当前使用 Node.js 20.x）

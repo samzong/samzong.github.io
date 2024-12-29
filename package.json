@@ -13,8 +13,8 @@
     "vitepress",
     "vue"
   ],
-  "author": "Samzong",
-  "license": "MIT",
+  "author": "samzong",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@types/node": "^20.x.x",
     "vitepress": "^1.0.0-rc.xx",
