@@ -2,6 +2,10 @@
   "text": "Projects",
   "items": [
     {
+      "text": "AI Icon Generator",
+      "link": "/projects/ai-icon-generator"
+    },
+    {
       "text": "SD Chat",
       "link": "/projects/sd-chat"
     },
@@ -18,4 +22,4 @@
       "link": "/projects/imusicplayer"
     }
   ]
-} 
+}
