@@ -5,6 +5,7 @@ export interface Project {
   website?: string;
   logo?: string;
   tags: string[];
+  stars?: number; // GitHub stars 数量
   createdAt: string; // ISO 格式的日期字符串，如：'2024-01-01'
   docPath: string; // 项目文档路径，如：'/projects/samzong-blog'
 }
