@@ -39,12 +39,20 @@ export const projects: Project[] = [
     docPath: "/projects/macmusicplayer",
   },
   {
-    name: "Samzong Blog",
+    name: "Blogs",
     description: "一个简洁、轻量级的博客，收集了我的一些技术文章和项目文档。",
     github: "https://github.com/samzong/samzong.github.io",
     website: "https://samzong.me",
     tags: ["VitePress", "Typescript"],
     createdAt: "2024-12-28",
     docPath: "/",
+  },
+  {
+    name: "iMusicPlayer",
+    description: "一个简洁、轻量级的音乐播放器，支持 macOS 和 iOS 平台。",
+    github: "https://github.com/samzong/iMusicPlayer",
+    tags: ["macOS", "iOS", "SwiftUI"],
+    createdAt: "2024-12-28",
+    docPath: "/projects/imusicplayer",
   },
 ];
