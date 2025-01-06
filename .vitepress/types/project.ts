@@ -55,4 +55,13 @@ export const projects: Project[] = [
     createdAt: "2024-12-28",
     docPath: "/projects/imusicplayer",
   },
+  {
+    name: "ai-icon-generator",
+    description: "一个基于 AI 的图标生成器，支持多种风格和尺寸。",
+    github: "https://github.com/samzong/ai-icon-generator",
+    website: "https://ai-icon-generator-fawn.vercel.app",
+    tags: ["AI", "Icon", "Generator"],
+    createdAt: "2025-01-02",
+    docPath: "/projects/ai-icon-generator",
+  }
 ];
