@@ -64,5 +64,13 @@ export const projects: Project[] = [
     tags: ["AI", "Icon", "Generator"],
     createdAt: "2025-01-02",
     docPath: "/projects/ai-icon-generator",
+  },
+  {
+    name: "HF Model Downloader",
+    description: "A cross-platform GUI application for easily downloading HuggingFace models.",
+    github: "https://github.com/samzong/hf-model-downloader",
+    tags: ["Hugginface", "Model", "Downloader"],
+    createdAt: "2025-01-15",
+    docPath: "/projects/hfm-downloader",
   }
 ];
