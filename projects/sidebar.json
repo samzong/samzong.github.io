@@ -2,6 +2,10 @@
   "text": "Projects",
   "items": [
     {
+      "text": "Hugginface Model Downloader",
+      "link": "/projects/hfm-downloader"
+    },
+    {
       "text": "AI Icon Generator",
       "link": "/projects/ai-icon-generator"
     },
