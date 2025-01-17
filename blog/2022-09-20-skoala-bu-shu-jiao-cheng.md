@@ -11,7 +11,7 @@ Skoala 的微服务治理和微服务是强依赖的 Ghippo、Insight 和 Kpanda
 ### 检测方式一
 
 访问 UI 界面环境，可以在左侧导航栏能够正确看到所有模块，并且可以正常使用。
-![CleanShot 2022-09-07 at 18.07.42@2x.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1662545276376-f34d4b1d-e736-4552-b873-83421c7a70e8.jpeg?x-oss-process=image/resize,w_960,m_lfit)
+![CleanShot 2022-09-07 at 18.07.42@2x.jpg](images/resize,w_960,m_lfit_65ad95c9.jpg)
 
 ### 检测方式二
 
@@ -129,7 +129,7 @@ spec:
 kubectl -n skoala-system exec pods/`kubectl -n skoala-system get pods | grep skoala-mysql | awk '{print $1}'` -it bash
 ```
 
-![CleanShot 2022-09-07 at 18.54.47@2x.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1662548094736-0d938b21-7991-426b-a0b0-9aa19a2d357a.jpeg?x-oss-process=image/resize,w_960,m_lfit)
+![CleanShot 2022-09-07 at 18.54.47@2x.jpg](images/resize,w_960,m_lfit_26781c02.jpg)
 
 初始化数据库表
 

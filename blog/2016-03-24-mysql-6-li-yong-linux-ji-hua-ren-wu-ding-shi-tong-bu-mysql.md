@@ -96,7 +96,7 @@ fi
 ```
 
   查看下邮件通知：
-![image](http://blog.ultraera.org:80/content/images/2016/03/24/p01.jpg)
+![image](images/p01_16cc841e.jpg)
 
 ### 6. 计划任务 crontab
 

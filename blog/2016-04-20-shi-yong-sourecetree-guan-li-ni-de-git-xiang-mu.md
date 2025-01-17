@@ -33,19 +33,19 @@ SourceTree 是一款免费且同时支持 Windows 和 Mac 的 git 项目管理�
 
 ### 新员工入职之后，你的公司邮箱内会收到一封来自 Gitlab 的邮件，如下图
 
-![image](https://img.samzong.me/202307191529103.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_fd7adef9.jpg)
 
 ### 点击邮件中的“Click here to set your password”，设置 gitlab 登陆密码
 
-![image](https://img.samzong.me/202307191529105.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_76eadeb8.jpg)
 
 ### 登陆 gitlab 帐号，将会出现这个界面
 
-![image](https://img.samzong.me/202307191529106.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_da4d170c.jpg)
 
 ### 设定个人信息
 
-![image](https://img.samzong.me/202307191529107.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_062930db.jpg)
 
 ### sshKey
 
@@ -84,21 +84,21 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvuQAq65b+nLZPqqc3b3Mj9e7Pt8oWKasJFa2QH1VI
 
 #### 步骤如下
 
-![image](https://img.samzong.me/202307191529108.jpg?imageView2/3/w/400/interlace/1/q/50)
-![image](https://img.samzong.me/202307191529109.jpg?imageView2/3/w/400/interlace/1/q/50)
-![image](https://img.samzong.me/202307191529110.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_0559f892.jpg)
+![image](images/50_278b6d6d.jpg)
+![image](images/50_a50cd811.jpg)
 
 #### 当 sourcetree 首次启动时，会弹出加载 sshkey 的提示，按提示操作，找到之前保存的 private.ppk 文件
 
-![image](https://img.samzong.me/202307191529111.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_83d3483e.jpg)
 
 #### 5.3 上传 sshkey
 
-![image](https://img.samzong.me/202307191529112.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_1bc9d3ac.jpg)
 
 ### 6. 回到 dashboard，点击项目名称进入详情
 
-![image](https://img.samzong.me/202307191529113.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_4ce457c7.jpg)
 
 ### 7. 使用 souretree 将项目从 git 服务器 clone 到本地
 
@@ -106,12 +106,12 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvuQAq65b+nLZPqqc3b3Mj9e7Pt8oWKasJFa2QH1VI
 
 #### 7.2 clone 项目到本地
 
-![image](https://img.samzong.me/202307191529114.jpg?imageView2/3/w/400/interlace/1/q/50)
-![image](https://img.samzong.me/202307191529115.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_f51650da.jpg)
+![image](images/50_faf31b79.jpg)
 
 ### 8. 进入项目工作台
 
-![image](https://img.samzong.me/202307191529116.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_13cc40e1.jpg)
 
 #### 9. 关于 sourcetree 工具的使用，下面是一些 git 操作的释疑
 

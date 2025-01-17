@@ -6,11 +6,11 @@ tags: [Github]
 - 企业微信机器人消息说明： [https://developer.work.weixin.qq.com/document/path/91770](https://developer.work.weixin.qq.com/document/path/91770)
 - GitLab Webhook Event：   [https://docs.gitlab.com/ee/user/project/integrations/webhook_events.html](https://docs.gitlab.com/ee/user/project/integrations/webhook_events.html)
 
-![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1652838666817-16490352-2dcb-4e6f-a4d6-0e060090287a.jpeg?x-oss-process=image/resize,w_960,m_lfit)
+![image](images/resize,w_960,m_lfit_22f30921.jpg)
 
 ## Gitlab 配置
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1652837377264-dc310e99-bcbc-4495-a4f0-f507c6f54f1e.png?x-oss-process=image/resize,w_960,m_lfit "Gitlab 项目配置")
+![image.png](images/resize,w_960,m_lfit_6113be51.png)
 :::info
 \=> 高级用法 开启鉴权
 :::
@@ -131,12 +131,12 @@ app.run(debug=IS_SERVERLESS != True, port=9000, host='0.0.0.0')
 ## 创建企微群机器人
 
 成功创建机器人后，会获取到一个 用于推送消息的 webhook Key
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1652837537654-e5be191b-d8c6-4752-ae0b-76118ec55ac4.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_bd956cb0.png)
 :::info
 \=> 高级用法 针对推送来源进行 IP 限制
 :::
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1652837738144-f9f88da1-eae9-44e3-8a8b-ad9e98247ffd.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_de79f111.png)
 
 ## 消息呈现展示
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1652838264735-b525d863-e8a9-4041-9b11-d349a3df7420.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_0e7b4b54.png)

@@ -9,7 +9,7 @@ Parallels Desktop 是一款 Mac 上的虚拟机软件，可以在 Mac 上运行 
 
 Parallels Desktop 有一个很大的问题，就是在启动虚拟机时，会弹出一个界面，这个界面会一直存在，直到虚拟机关闭。这个界面会遮挡其他窗口，非常影响使用体验。
 
-![](https://img.samzong.me/202307281022067.png?imageView2/3/w/400/interlace/1/q/50)
+![](images/50_e6c5fbd6.png)
 
 此时，如果不小心关闭了窗口，虚拟机也会被关闭，非常不方便。
 
@@ -19,7 +19,7 @@ Parallels Desktop 提供了一个终端命令 `prlctl`，可以通过命令来�
 
 ### 操作示例
 
-[![asciicast](https://asciinema.org/a/oNe0YLoevAn8JQsN4Wbozs7Lr.svg)](https://asciinema.org/a/oNe0YLoevAn8JQsN4Wbozs7Lr)
+[![asciicast](images/oNe0YLoevAn8JQsN4Wbozs7Lr_e66e4bfd.svg)](https://asciinema.org/a/oNe0YLoevAn8JQsN4Wbozs7Lr)
 
 ### 常用命令介绍
 

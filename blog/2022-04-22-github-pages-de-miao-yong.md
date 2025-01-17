@@ -26,7 +26,7 @@ eeen.... 这样就 ok！
 
 ## 简单的配置
 
-![X4tbDt](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/X4tbDt.png?x-oss-process=image/resize,w_960,m_lfit)
+![X4tbDt](images/resize,w_960,m_lfit_f61d4e84.png)
 
 上图简单指引了如何打开 GitHub Pages 的配置路径，下面对主要的几个模块进行说明：
 

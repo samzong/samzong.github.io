@@ -255,11 +255,11 @@ Starting zabbix server:              [  OK  ]
 下载请点击：[Template App Tomcat Head Memory](https://samzong.oss-cn-shenzhen.aliyuncs.com/2016/12/zbx_template_app_tomcat_head_memory.xml)
 
 然后，增加服务器的 jmx 监控
-![image](https://img.samzong.me/202307191530422.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_318bc2bf.jpg)
 
 关联模板
-![image](https://img.samzong.me/202307191530423.png?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_3bf3ffbc.png)
 
 #### 5. View the Head Memory Monitoring
 
-![image](https://img.samzong.me/202307191530425.png?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_00d9cbe5.png)

@@ -119,4 +119,4 @@ tags: [Microservice]
 - 现阶段暂时未接入 prom，需要考虑如何处理，接入后会联动到 grafana，这部分跟 insight 怎么处理
 - 告警怎么做？拿到了数据指标之后怎么处理
 
-![image-20221120000945266](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/image-20221120000945266.png?x-oss-process=image/resize,w_960,m_lfit)
+![image-20221120000945266](images/resize,w_960,m_lfit_1679163e.png)

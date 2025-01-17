@@ -2,8 +2,6 @@
 title: 四阶魔方特殊情况之处理
 ---
 
-![](https://source.unsplash.com/random/480x480/?Rubik's-Cube)
-
 ## 前言
 
 > 注意，本文不是四阶魔方的还原教程。

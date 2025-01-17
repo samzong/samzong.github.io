@@ -16,7 +16,7 @@ tags: [Microservice]
 
 ## 参考文档一：使用 Contour 接管 K8s 南北流量
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1652658255610-3a38d8d3-2062-486b-a0b9-3b0a1d47dc5c.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_5b1a612d.png)
 容器公司 [Heptio](https://heptio.com/) 开源的项目 [Contour](https://github.com/heptio/contour) 使用 Envoy 作为 Kubernetes 的 Ingress Controller 实现。
 
 ### Contour 的组成
@@ -41,13 +41,13 @@ Contour Ingress controller 由两个组件组成：
 - Contour 与 Envoy 之间通过双向认证的自签名证书进行通信，大大增强了安全性。
 - 升级 Contour 不需要重启 Envoy。
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1652658571911-263003fa-2d88-47d9-9650-7929589a49c8.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_6d072014.png)
 
 > 启动分析
 
 在 Envoy 的 Pod 初始化期间，Contour 作为 Init 容器运行，并将 bootstrap（初始化）配置写入一个 temporary volume。该 Volume 被传递给 Envoy 容器并告诉 Envoy 将另一个 Deployment 中的 Contour 容器视为控制平面。
 
-![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1652659925765-50a45ceb-22f8-44a9-8c48-34fa832cda3e.jpeg?x-oss-process=image/resize,w_960,m_lfit)
+![image](images/resize,w_960,m_lfit_af6b7773.jpg)
 
 > Contour 会根据启动参数和 K8S API Server 中的配置信息生成 Envoy 的初始配置文件
 

@@ -17,7 +17,7 @@ tags: [MySQL]
 </div>
 ```
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1626796098224-66dfb621-323e-4e68-b1e2-fedfa40b43d9.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_572dc6dc.png)
 
 > 修改页面 height 默认展示底部 footer
 
@@ -28,4 +28,4 @@ body,body>[ui-view],html,html>[ui-view] {
 }
 ```
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1626796019003-27d5c0b3-dfe4-4c26-ae28-a334a5ed8039.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_52e1c7b3.png)

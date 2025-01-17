@@ -12,7 +12,7 @@ tags: [Mac]
 
 :::
 
-![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437045272-4d2c8ef2-804a-4ed7-bb53-b241152c780c.png?x-oss-process=image/resize,w_960,m_lfit)
+![img](images/resize,w_960,m_lfit_ccd0508b.png)
 
 MacBookPro 雷电口不可用了不着送修，尝试下一下方法；可以为您省下大几千块钱哟 ~
 
@@ -46,13 +46,13 @@ SMC 全称 系统管理控制器负责管理与以下功能相关的行为：
 
 - 将 Mac 关机
 - 在内建键盘上，按住以下所有按键。Mac 可能会开机。
-  - 键盘左侧的 **Control** ![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437210613-0f478f9a-1f5b-4b51-8060-6f9af28a4ae0.png?x-oss-process=image/resize,w_960,m_lfit)
-  - 键盘左侧的 **Option** (Alt) ![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437216356-d0ba8e9e-ebb9-4756-8459-124876d0c332.png?x-oss-process=image/resize,w_960,m_lfit)
-  - 键盘右侧的 **Shift** ![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437210667-cdfb2059-1d3d-4cb4-bb6c-88e38c1c3054.png?x-oss-process=image/resize,w_960,m_lfit)
+  - 键盘左侧的 **Control** ![img](images/resize,w_960,m_lfit_e017f682.png)
+  - 键盘左侧的 **Option** (Alt) ![img](images/resize,w_960,m_lfit_765856ec.png)
+  - 键盘右侧的 **Shift** ![img](images/resize,w_960,m_lfit_201bc5b3.png)
 
 - 按住**全部三个按键** 7 秒钟，然后在不松开按键的情况下按住**电源按钮**。如果 Mac 处于开机状态，它将在您按住这些按键时关机。
 
-![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437286162-81a557b7-7f54-49b2-9ad6-32716f0b8488.png?x-oss-process=image/resize,w_960,m_lfit)
+![img](images/resize,w_960,m_lfit_600f152a.png)
 
 - 继续按住**全部四个按键** 7 秒钟，然后松开这些按键。
 - 等待几秒钟，然后按下**电源按钮**以将 Mac 开机。
@@ -78,13 +78,13 @@ SMC 全称 系统管理控制器负责管理与以下功能相关的行为：
 1. 将 Mac 关机。
 2. 在内建键盘上，按住以下所有按键：
 
-- 键盘左侧的 **Shift** ![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437453096-c4dd55c9-dea8-4ece-810d-d0a6bf880b5a.png?x-oss-process=image/resize,w_960,m_lfit)
-- 键盘左侧的 **Control** ![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437452982-7bdab59b-e4d2-4aa0-863d-59d224b081a9.png?x-oss-process=image/resize,w_960,m_lfit)
-- 键盘左侧的 **Option** (Alt) ![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437453069-12f401d8-bfbf-4657-9323-67169460f2fa.png?x-oss-process=image/resize,w_960,m_lfit)
+- 键盘左侧的 **Shift** ![img](images/resize,w_960,m_lfit_8e1a2600.png)
+- 键盘左侧的 **Control** ![img](images/resize,w_960,m_lfit_1df39daf.png)
+- 键盘左侧的 **Option** (Alt) ![img](images/resize,w_960,m_lfit_b8f9999f.png)
 
 - 在按住**全部三个按键**的情况下，按住**电源按钮**。
 
-![img](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1617437452835-44611990-1f9b-49c4-a49b-446cef022d56.png?x-oss-process=image/resize,w_960,m_lfit)
+![img](images/resize,w_960,m_lfit_4d38f04a.png)
 
 - 按住**全部四个按键** 10 秒钟。
 - 松开所有按键，然后按下**电源按钮**以将 Mac 开机。

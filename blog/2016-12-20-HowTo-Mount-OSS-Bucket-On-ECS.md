@@ -25,14 +25,14 @@ ossfs 是通过磁盘挂载的形式，将 oss 存储挂载到 linux、类 unix 
 需要获取以下信息，在后面我们都会用到的：
 
 - Bucket 名称
-  ![image](https://img.samzong.me/202307191530335.jpg?imageView2/3/w/400/interlace/1/q/50)
+  ![image](images/50_9281cc21.jpg)
   
 - Access Key ID
 
 - Access Key Secret
 
-  ![image](https://img.samzong.me/202307191530336.jpg?imageView2/3/w/400/interlace/1/q/50)
-  ![image](https://img.samzong.me/202307191530337.jpg?imageView2/3/w/400/interlace/1/q/50)
+  ![image](images/50_7cfe254f.jpg)
+  ![image](images/50_6ad4787b.jpg)
 
 - Location，这需要注意点，不要加上 Bucket 的名字，区域对应表如下，注意你的 Bucket 所在区域：
 
@@ -60,7 +60,7 @@ sudo ossfs my-bucket /tmp/ossfs -ourl=[http://oss-location-internal.aliyuncs.com
 ```
 
 磁盘空间达到上百 T：
-![image](https://img.samzong.me/202307191530338.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_c54d2225.jpg)
 
  umount：
 
