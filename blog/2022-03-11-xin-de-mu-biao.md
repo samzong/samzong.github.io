@@ -9,7 +9,7 @@ date: 2022-03-11 01:24:00
 
 ---
 
-![image](https://img.samzong.me/202307191535056.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_8708f0ab.jpg)
 
 ## 终局
 

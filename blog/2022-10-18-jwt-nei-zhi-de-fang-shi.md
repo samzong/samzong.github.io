@@ -10,7 +10,7 @@ tags: [Microservice]
   - expire\_time 过期时间的配置
   - 解密后的参数传递
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1666060887030-ff0a6f09-9bf0-44d5-a92b-dc36fc9b7d47.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_b3bb2a80.png)
 
 ### 迭代的方向
 

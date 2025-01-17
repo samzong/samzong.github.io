@@ -9,7 +9,7 @@ tags:
 很多人觉得默认 Launchpad 的应用程序图标很大, 空间比较拥挤, 不过这个其实是可以通过调整 Launchpad 每一行和每一列图标的数量, 来调整 Launchpad 图标大小.
 
 默认如下图：  
-![](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016%2F04%2FQQ20160408-1.jpg)
+![](images/20201125-mac-launchpad.jpg)
 
 代码块:
 
@@ -22,4 +22,4 @@ tags:
 ```
 
 修改后如下：  
-![](http://samzong.oss-cn-shenzhen.aliyuncs.com/2016%2F04%2FQQ20160408-2.jpg)
+![](images/20201125-mac-launchpad-2.jpg)

@@ -18,7 +18,7 @@ yum install php* -y
 ConfigurationTemplatesImport(在右上角)
 选择导出的模板文件，点击 Import 完成导入
 
-![image](https://img.samzong.me/202307191530289.png?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_e34994c4.png)
 
 ## 安装 Agent
 
@@ -52,6 +52,6 @@ sed -i s/cactiuser/percona/g /var/lib/zabbix/percona/scripts/ss_get_mysql_stats.
 cd /var/lib/zabbix/percona/scripts/
 ./get_mysql_stats_wrapper.sh gg
 如果获取到值，则说明配置成功
-![image](https://img.samzong.me/202307191530290.png?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_87c738c0.png)
 
 注意：执行完脚本后，请手动删除/tmp/文件夹下生成的*-mysql_cacti_stats.txt 文件，然后让程序自己调用创建新文件。

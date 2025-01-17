@@ -21,7 +21,7 @@ tags: [Mac]
 
 ## [https://isapplesiliconready.com/](https://isapplesiliconready.com/)
 
-![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-142803.png?x-oss-process=image/resize,w_960,m_lfit)
+![image](images/resize,w_960,m_lfit_3949915e.png)
 
 如果你有希望给关注的软件，可以提交给站点维护者，点击页面右上角的 `REQUEST AN APP`
 
@@ -31,11 +31,11 @@ tags: [Mac]
 
 ## [https://doesitarm.com/](https://doesitarm.com/)
 
-![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-143231.png?x-oss-process=image/resize,w_960,m_lfit)
+![image](images/resize,w_960,m_lfit_cd138f40.png)
 
 如果你想要关注某一个软件的适配进度，可以在  `Tell me with this changes`输入你的邮箱，这样当软件有适配变更时，会第一时间邮件通知你
 
-![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/2020-11-24-143450.png?x-oss-process=image/resize,w_960,m_lfit)
+![image](images/resize,w_960,m_lfit_868aec7b.png)
 
 ## 如何在命令行使用 `rosseta 2`
 

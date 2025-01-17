@@ -15,7 +15,7 @@ tags: [Kubernetes]
 
 当我们访问 web 应用时，会发生以下类型的网络流量：
 
-![](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/f9c10a68e23f6955cc25c176d2ea98f7.png?x-oss-process=image/resize,w_960,m_lfit)
+![](images/resize,w_960,m_lfit_703a167c.png)
 
 数据中心树型拓扑图是一个典型的包含接入层、汇聚层、核心层三层的网络结构。这种结构诞生之初就是为了将外部流量引流到内部应用。
 

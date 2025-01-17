@@ -12,7 +12,7 @@ date: 2016-07-24 21:42:01
 
 最近看到身边朋友都在玩 Pokemon GO, 心痒难耐，于是跟同事请教琢磨了，终于在自己的手机上玩起来了，由于我的手机是 iPhone 5s，身边朋友也都是 iPhone，所以不确定是 Android 是否可以玩耍，想来应该是没有问题话，Android 平台做破解等操作一直以来比 iPhone 更加方便。
 
-![image](https://img.samzong.me/202307191530767.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_5e532174.jpg)
 
 1. 点击上面的 TuTuAPP，可以打开兔兔助手的网站，用手机扫描首页的二维码 (可以用微信等，带有二维码扫描的都可以)，注意如果你的 iPhone 已经越狱，请切换标签页到越狱版本。
 
@@ -24,11 +24,11 @@ date: 2016-07-24 21:42:01
 
 5. 注册 Google Account ID，[点击](https://account.google.com)
 
-    ![image](https://img.samzong.me/202307191530768.jpg?imageView2/3/w/400/interlace/1/q/50)
+    ![image](images/50_862dc315.jpg)
 
 6. 进入游戏，登录 Google ID，然后授权，进入游戏。
 
-    ![image](https://img.samzong.me/202307191727786.png?imageView2/3/w/400/interlace/1/q/50)
+    ![image](images/50_a4d9e181.png)
 
 7. 开始捕捉你的小精灵吧，手动微笑。
 
@@ -36,6 +36,6 @@ date: 2016-07-24 21:42:01
 
 注意：如果看到了 GPS signal not found，说明是 GPS 信息丢失，这是根据 GPS 定位的游戏，所以这很重要，记得选择美国的 VPN 代理。
 
-    ![image](https://img.samzong.me/202307191530769.png?imageView2/3/w/400/interlace/1/q/50)
-    ![image](https://img.samzong.me/202307191530770.png?imageView2/3/w/400/interlace/1/q/50)
-    ![image](https://img.samzong.me/202307191530771.png?imageView2/3/w/400/interlace/1/q/50)
+    ![image](images/50_10537167.png)
+    ![image](images/50_c30cd663.png)
+    ![image](images/50_9c99772c.png)

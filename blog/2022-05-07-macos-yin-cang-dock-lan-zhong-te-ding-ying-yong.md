@@ -42,7 +42,7 @@ brew install php   # just one command
 
 接下就是操作步骤了：在此之前，你需要完全退出被隐藏的软件**
 
-![image-20220507152104232](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/image-20220507152104232.png?x-oss-process=image/resize,w_960,m_lfit)
+![image-20220507152104232](images/resize,w_960,m_lfit_f776ee52.png)
 
 下方是脚本的执行过程：
 
@@ -68,17 +68,17 @@ Finished  # 看到这个就是成功了
 
 ### 确认对的 App Name
 
-![image-20220507153226027](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/image-20220507153226027.png?x-oss-process=image/resize,w_960,m_lfit)
+![image-20220507153226027](images/resize,w_960,m_lfit_b1a28ad0.png)
 
 ### 恢复被隐藏的应用
 
 **首先 >** 还是要退出 App，这时 Dock 栏也不显示了，菜单栏也没有，所以不好使用 `邮件退出的方式`，那么接下来我们要找到下方这个软件：
 
-![image-20220507153525040](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/image-20220507153525040.png?x-oss-process=image/resize,w_960,m_lfit)
+![image-20220507153525040](images/resize,w_960,m_lfit_03334b4b.png)
 
 打开软件后，等待加载完成，通过搜索窗口利用 App name 找到被隐藏的软件
 
-![image-20220507154000558](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/image-20220507154000558.png?x-oss-process=image/resize,w_960,m_lfit)
+![image-20220507154000558](images/resize,w_960,m_lfit_6e7d5237.png)
 
 然后使用上方的，`X` 关闭按钮，在弹窗中，选择 `Quit`
 

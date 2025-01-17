@@ -3,7 +3,7 @@ title: 微服务引擎网关能力介绍
 tags: [DaoCloud]
 ---
 
-![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1656640362731-d86ebb64-4193-4e1e-8f45-7248a8d70fc3.jpeg?x-oss-process=image/resize,w_960,m_lfit)
+![image](images/resize,w_960,m_lfit_9caef61c.jpg)
 
 ## 产品介绍
 
@@ -20,7 +20,7 @@ Skoala-gateway 采用了业界领先的主流微服务网关开源项目 Contour
 ### 什么是微服务网关？
 
 微服务网关作为云原生微服务的 API 统一的外部流量入口，网关承接了所有访问微服务 API 的请求，所以肩负着保护、增强和控制对于微服务的安全访问、管理授权、访问控制和流量限制等，这样微服务就会被微服务网关保护起来，对所有的调用者透明。因此，隐藏在 Skoala-gateway 后面的业务系统就可以更加专注于业务本身。
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1656641290967-99b03c4c-217a-408f-b77c-761ad5226417.png?x-oss-process=image/resize,w_960,m_lfit "对比采用微服务网关前后")
+![image.png](images/resize,w_960,m_lfit_03a7aaa3.png)
 在云原生时代，采用统一的微服务网关来完成对外的流量治理、流量分发、鉴权能力等，这样微服务本身可以关注在业务内容背身；对于网络管理和安全这些基础能力，重复在不同的微服务实现成本极高且维护不变，另外微服务内无法很好的实现流量的治理，所以将流量管理和认证管理的能力，使用独立的微服务中间件来完成，会极大提升系统的自由度和专业性。
 
 ### 产品优势
@@ -121,7 +121,7 @@ SKoala-gateway 用户手册，帮助您快速了解本产品的全部功能。
 2. 完成创建微服务网关
    1. 输入网关名称
    2. 选择部署区域
-3. ![CleanShot 2022-07-27 at 01.55.03@2x.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1658858115798-1a9600e1-354a-44ac-a463-3c184725348e.jpeg?x-oss-process=image/resize,w_560,m_lfit)
+3. ![CleanShot 2022-07-27 at 01.55.03@2x.jpg](images/resize,w_560,m_lfit_023a5f48.jpg)
 4. 创建后等待网关初始化和启动成功，这是网关状态会展示为“运行中”
 5. 在列表中点击网关名称进入网关详情，通过右侧导航栏，找到 API 列表
 6. 点击创建 API，按步骤完成 API 创建
@@ -129,7 +129,7 @@ SKoala-gateway 用户手册，帮助您快速了解本产品的全部功能。
    2. 选择关联域名，如果找不到域名，可以根据提示去接入域名
    3. 填写 匹配规则
    4. 选择 目标服务，目标服务会根据自动发现和手工接入（需要到服务列表接入）、重定向、直接返回多种类型
-7. ![CleanShot 2022-07-27 at 02.08.44@2x.jpg](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1658858936831-6d6aa7e5-035e-4e68-bc23-681db50b9131.jpeg?x-oss-process=image/resize,w_560,m_lfit)
+7. ![CleanShot 2022-07-27 at 02.08.44@2x.jpg](images/resize,w_560,m_lfit_ca0344eb.jpg)
 8. 完成 API 创建后，即可通过请求列表，查看对应的 API 结果
 9. 通过左侧导航栏 日志查看，查看对应的请求信息
 10. 通过 监控告警，查看对应的监控信息

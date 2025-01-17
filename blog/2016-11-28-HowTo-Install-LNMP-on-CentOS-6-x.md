@@ -62,7 +62,7 @@ httpd-tools-2.2.15-39.el6.centos.x86_64
 it's ok.
 ```
 
-![image](https://img.samzong.me/202307191530583.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_7d912bb5.jpg)
 
 #### Install PHP
 
@@ -96,7 +96,7 @@ date.timezone = "Asia/Shanghai"
 ?>
 ```
 
-![image](https://img.samzong.me/202307191530584.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_bc0f7fd3.jpg)
 
 #### Install MySQL
 

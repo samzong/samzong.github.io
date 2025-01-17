@@ -17,13 +17,13 @@ categories: [开发工具]
 2. 在自己的仓库中修改代码
 3. 通过 PR 的方式提交贡献请求
 
-![一份完整的 Github贡献指南](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1664330743895-9b2e0dc6-527e-4bcd-8b63-c223aa634b8f.png?x-oss-process=image/resize,w_960,m_lfit)
+![一份完整的 Github贡献指南](images/resize,w_960,m_lfit_bcf299df.png)
 
 ## GitHub 的实现方式
 
 GitHub 最近更新了 `Sync fork` 功能，通过简单的点击操作，即可完成对源库 (upstream) 的更新同步。
 
-![当 upstream 超前时，提示 update branch](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1664330528512-563a5536-1734-4fd0-b41c-9c5d121327e0.jpeg?x-oss-process=image/resize,w_960,m_lfit)
+![当 upstream 超前时，提示 update branch](images/resize,w_960,m_lfit_e68cb0bc.jpg)
 
 ::: warning 注意
 GitHub 的这种同步方式仅在以下场景可用：
@@ -35,7 +35,7 @@ GitHub 的这种同步方式仅在以下场景可用：
 
 与 GitHub 不同，GitLab 并未提供 Sync fork 的功能，我们需要自行解决同步的需求。
 
-![gitlab 默认项目首页](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1664331575915-853554f5-c047-4f14-8e79-67e2214429bc.jpeg?x-oss-process=image/resize,w_960,m_lfit)
+![gitlab 默认项目首页](images/resize,w_960,m_lfit_b3765d71.jpg)
 
 ## 手动添加 upstream 源仓库
 

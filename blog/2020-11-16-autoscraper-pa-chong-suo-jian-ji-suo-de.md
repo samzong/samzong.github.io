@@ -28,7 +28,7 @@ print(result)
 - url 是你需要爬取的网页
 - wanted\_list 是一个 list，其中有你需要的元素目标，注意会爬取相同 tag 和范围的数据
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1605241399644-c035e6f7-8096-438b-806d-7a9da7bee65f.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_08aacb2d.png)
 
 ## 更多使用技巧
 

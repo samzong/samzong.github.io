@@ -3,12 +3,12 @@ title: Metabase 踩坑：跳转链接的浏览器缓存
 tags: [Tools]
 ---
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1635955971186-4f85ab8d-9d1e-46ab-bd20-ee914c91fade.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_c1552da9.png)
 
 ### 背景说明
 
 最近在使用 Metabase 做一个内部工具的跳转传送门，大概实现的方式是这样：
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1635956694248-79aec951-9e6d-4360-b4e9-37bd2cefd740.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_95783d67.png)
 
 - 通过 Metabase 带有的字段支持链接跳转的功能，拼接上查询结果的部分
 - 后端服务完成对用户行为的校验，并且完成身份预认证，生成验证 token
@@ -20,7 +20,7 @@ tags: [Tools]
 
 简单分析了下服务端日志，发现不能正常登录情况是请求根本没有到后端服务器，浏览器直接进行了跳转，而之前签发的 token 是有时效的，超过时间就过期了，所以导致跳转后校验不通过
 
-[![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1635957317795-60317ecd-b550-42d6-ab25-3f0b7d9247d9.png?x-oss-process=image/resize,w_960,m_lfit)](https://img.samzong.me/202307191534498.svg?imageView2/3/w/400/interlace/1/q/50)
+[![image.png](images/resize,w_960,m_lfit_baeda4aa.png)](https://img.samzong.me/202307191534498.svg?imageView2/3/w/400/interlace/1/q/50)
 
 > 有兴趣的同学，可以点击上方的图片链接，去详细介绍的原文看看
 
@@ -43,7 +43,7 @@ FROM
 
 > 解决之后对比
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1635957781278-bd41df03-24be-4640-b77f-54ba77774bea.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_ca82e083.png)
 
 🎆🎆🎆  完毕，问题得以解决
 

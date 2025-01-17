@@ -9,7 +9,7 @@ tags: [Google]
 支持 google、部分 baidu 网页检索和图片检索等
 :::
 
-![20230711172625](https://img.samzong.me/202307191539768.png?imageView2/3/w/400/interlace/1/q/50)
+![20230711172625](images/50_4ae7aae9.png)
 
 - intitle: 仅在名称中查询
     - allintitle: 多个关键词查询

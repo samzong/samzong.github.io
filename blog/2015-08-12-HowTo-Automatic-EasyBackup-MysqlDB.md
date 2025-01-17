@@ -13,7 +13,7 @@ date: 2016-05-05 05:41:39
 ### 方法 2: `hostnamectl set-hostname <主机名>`
 
 使用这种方式修改，可以永久性的修改主机名称！
-![image](https://img.samzong.me/202307191528329.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_1b5e8002.jpg)
 
 所以我们的步骤应该：
 
@@ -116,7 +116,7 @@ total 780K
 ➜  ~ echo "test" | mail -s "this a test email" samzong.lu@gmail.com
 ```
 
-![image](https://img.samzong.me/202307191528331.jpg?imageView2/3/w/400/interlace/1/q/50)
+![image](images/50_21829352.jpg)
 
 #### 安装计划任务工具 Crontab
 

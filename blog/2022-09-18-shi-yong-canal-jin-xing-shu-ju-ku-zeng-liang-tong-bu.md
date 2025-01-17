@@ -3,11 +3,11 @@ title: 使用 canal 进行数据库增量同步
 tags: [Tools, MySQL]
 ---
 
-![image.png](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/1662586780206-7328e88e-c0e3-4e2f-ac6d-e072747efc4a.png?x-oss-process=image/resize,w_960,m_lfit)
+![image.png](images/resize,w_960,m_lfit_32ca8750.png)
 
 ## 简介
 
-![image](http://ipic-typora-samzong.oss-cn-qingdao.aliyuncs.com//uPic/20191104101735947.png?x-oss-process=image/resize,w_960,m_lfit)
+![image](images/resize,w_960,m_lfit_5d9ddd3b.png)
 
 **canal \[kə'næl]**，译意为水道/管道/沟渠，主要用途是基于 MySQL 数据库增量日志解析，提供增量数据订阅和消费
 

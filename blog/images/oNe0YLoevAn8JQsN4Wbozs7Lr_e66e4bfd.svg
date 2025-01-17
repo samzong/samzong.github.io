@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1162.41999954" height="671.9998320000001" font-family="Consolas, Menlo, 'Bitstream Vera Sans Mono', monospace, 'Powerline Symbols'" font-size="14px">
+  <style>
+    .br { font-weight: bold }
+    .fa { fill-opacity: 0.5 }
+    .it { font-style: italic }
+    .un { text-decoration: underline }
+  </style>
+
+  <rect width="100%" height="100%" style="fill: #121314" rx="4" ry="4"></rect>
+
+  <svg x="8.42333333" y="9.333331000000001" class="default-text-fill">
+    <g style="shape-rendering: optimizeSpeed">
+
+        <rect x="50.539999980000005" y="634.666508" width="8.42333333" height="18.666662000000002" style="fill: #d9d9d9"></rect>
+
+
+    </g>
+
+    <text style="fill: #cccccc">
+      <tspan y="0.0">
+        <tspan dy="1em" x="0.0">
+SMBIOS configurable options are:
+        </tspan>
+      </tspan><tspan y="18.666662000000002">
+        <tspan dy="1em" x="33.69333332">
+[--smbios-board-id &lt;board_id&gt;]
+        </tspan>
+      </tspan><tspan y="37.333324000000005">
+        <tspan dy="1em" x="33.69333332">
+[--smbios-build-version &lt;build_id&gt;]
+        </tspan>
+      </tspan><tspan y="55.99998600000001">
+        <tspan dy="1em" x="33.69333332">
+[--smbios-serial-number &lt;serial_number&gt;]
+        </tspan>
+      </tspan><tspan y="74.66664800000001">
+        <tspan dy="1em" x="0.0">
+Video options are:
+        </tspan>
+      </tspan><tspan y="93.33331000000001">
+        <tspan dy="1em" x="33.69333332">
+[--video-adapter-type &lt;parallels | virtio&gt;]
+        </tspan>
+      </tspan><tspan y="111.99997200000001">
+        <tspan dy="1em" x="33.69333332">
+[--videosize &lt;auto | megabytes&gt;]
+        </tspan>
+      </tspan><tspan y="130.66663400000002">
+        <tspan dy="1em" x="33.69333332">
+[--3d-accelerate &lt;off | highest | dx9&gt;]
+        </tspan>
+      </tspan><tspan y="149.33329600000002">
+        <tspan dy="1em" x="33.69333332">
+[--vertical-sync &lt;on | off&gt;]
+        </tspan>
+      </tspan><tspan y="167.99995800000002">
+        <tspan dy="1em" x="33.69333332">
+[--high-resolution &lt;on | off&gt;]
+        </tspan>
+      </tspan><tspan y="186.66662000000002">
+        <tspan dy="1em" x="33.69333332">
+[--high-resolution-in-guest &lt;on | off&gt;]
+        </tspan>
+      </tspan><tspan y="205.33328200000003">
+        <tspan dy="1em" x="33.69333332">
+[--native-scaling-in-guest &lt;on | off&gt;]
+        </tspan>
+      </tspan><tspan y="223.99994400000003">
+        <tspan dy="1em" x="0.0">
+Mouse and Keyboard options are:
+        </tspan>
+      </tspan><tspan y="242.66660600000003">
+        <tspan dy="1em" x="33.69333332">
+[--smart-mouse-optimize &lt;auto | on | off&gt;]
+        </tspan>
+      </tspan><tspan y="261.33326800000003">
+        <tspan dy="1em" x="33.69333332">
+[--sticky-mouse &lt;on | off&gt;]
+        </tspan>
+      </tspan><tspan y="298.66659200000004">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+samzonglu
+        </tspan><tspan x="84.2333333">
+at 
+        </tspan><tspan x="109.50333329" style="fill: #ddaf3c">
+samzongs-MacBook-Pro
+        </tspan><tspan x="286.39333322">
+in 
+        </tspan><tspan x="311.66333321" class="br" style="fill: #4ebf22">
+~/Desktop
+        </tspan>
+      </tspan><tspan y="317.333254">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+prlctl
+        </tspan><tspan x="58.96333331">
+list
+        </tspan>
+      </tspan><tspan y="335.99991600000004">
+        <tspan dy="1em" x="0.0">
+UUID
+        </tspan><tspan x="336.9333332">
+STATUS
+        </tspan><tspan x="446.43666649">
+IP_ADDR
+        </tspan><tspan x="581.20999977">
+NAME
+        </tspan>
+      </tspan><tspan y="354.666578">
+        <tspan dy="1em" x="0.0">
+{84db4bdd-bb56-46dc-8c7c-6a75f0786565}
+        </tspan><tspan x="336.9333332">
+running
+        </tspan><tspan x="446.43666649">
+-
+        </tspan><tspan x="581.20999977">
+ubuntu-kind
+        </tspan>
+      </tspan><tspan y="391.999902">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+samzonglu
+        </tspan><tspan x="84.2333333">
+at 
+        </tspan><tspan x="109.50333329" style="fill: #ddaf3c">
+samzongs-MacBook-Pro
+        </tspan><tspan x="286.39333322">
+in 
+        </tspan><tspan x="311.66333321" class="br" style="fill: #4ebf22">
+~/Desktop
+        </tspan>
+      </tspan><tspan y="410.66656400000005">
+        <tspan dy="1em" x="0.0">
+○ 
+        </tspan><tspan x="16.84666666" style="fill: #4ebf22">
+prlctl
+        </tspan><tspan x="75.80999997">
+list -a
+        </tspan>
+      </tspan><tspan y="429.333226">
+        <tspan dy="1em" x="0.0">
+UUID
+        </tspan><tspan x="336.9333332">
+STATUS
+        </tspan><tspan x="446.43666649">
+IP_ADDR
+        </tspan><tspan x="581.20999977">
+NAME
+        </tspan>
+      </tspan><tspan y="447.99988800000006">
+        <tspan dy="1em" x="0.0">
+{a53e8ad7-4d17-435a-9bff-ed199aed48ce}
+        </tspan><tspan x="336.9333332">
+stopped
+        </tspan><tspan x="446.43666649">
+-
+        </tspan><tspan x="581.20999977">
+Windows 11
+        </tspan>
+      </tspan><tspan y="466.66655000000003">
+        <tspan dy="1em" x="0.0">
+{a5bfc886-312f-45bc-82df-38b17f21d190}
+        </tspan><tspan x="336.9333332">
+stopped
+        </tspan><tspan x="446.43666649">
+-
+        </tspan><tspan x="581.20999977">
+base-vm
+        </tspan>
+      </tspan><tspan y="485.33321200000006">
+        <tspan dy="1em" x="0.0">
+{84db4bdd-bb56-46dc-8c7c-6a75f0786565}
+        </tspan><tspan x="336.9333332">
+running
+        </tspan><tspan x="446.43666649">
+-
+        </tspan><tspan x="581.20999977">
+ubuntu-kind
+        </tspan>
+      </tspan><tspan y="522.6665360000001">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+samzonglu
+        </tspan><tspan x="84.2333333">
+at 
+        </tspan><tspan x="109.50333329" style="fill: #ddaf3c">
+samzongs-MacBook-Pro
+        </tspan><tspan x="286.39333322">
+in 
+        </tspan><tspan x="311.66333321" class="br" style="fill: #4ebf22">
+~/Desktop
+        </tspan>
+      </tspan><tspan y="541.333198">
+        <tspan dy="1em" x="0.0">
+○ 
+        </tspan><tspan x="16.84666666" style="fill: #4ebf22">
+prlctl
+        </tspan><tspan x="75.80999997">
+start base-vm
+        </tspan>
+      </tspan><tspan y="559.99986">
+        <tspan dy="1em" x="0.0">
+Starting the VM...
+        </tspan>
+      </tspan><tspan y="578.6665220000001">
+        <tspan dy="1em" x="0.0">
+The VM has been successfully started.
+        </tspan>
+      </tspan><tspan y="615.999846">
+        <tspan dy="1em" x="0.0" style="fill: #b954e1">
+samzonglu
+        </tspan><tspan x="84.2333333">
+at 
+        </tspan><tspan x="109.50333329" style="fill: #ddaf3c">
+samzongs-MacBook-Pro
+        </tspan><tspan x="286.39333322">
+in 
+        </tspan><tspan x="311.66333321" class="br" style="fill: #4ebf22">
+~/Desktop
+        </tspan>
+      </tspan><tspan y="634.666508">
+        <tspan dy="1em" x="0.0" class="br" style="fill: #dd3c69">
+parctl
+        </tspan><tspan x="58.96333331">
+status
+        </tspan>
+      </tspan>
+    </text>
+  </svg>
+
+  <g transform="translate(-40 -40)">
+    <svg x="50%" y="50%" width="80" height="80">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.0 1000.0" style="filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4))">
+  <defs>
+    <mask id="small-triangle-mask">
+      <rect width="100%" height="100%" fill="white"></rect>
+      <polygon points="700.0 500.0, 400.00000000000006 326.7949192431122, 399.9999999999999 673.2050807568877" fill="black">
+      </polygon>
+    </mask>
+  </defs>
+  <polygon points="1000.0 500.0, 250.0000000000001 66.98729810778059, 249.99999999999977 933.0127018922192" mask="url(#small-triangle-mask)" fill="white">
+  </polygon>
+  <polyline points="673.2050807568878 400.0, 326.7949192431123 600.0" stroke="white" stroke-width="90">
+  </polyline>
+</svg>
+    </svg>
+  </g>
+</svg>
