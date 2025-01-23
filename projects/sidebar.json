@@ -24,6 +24,10 @@
     {
       "text": "iMusicPlayer",
       "link": "/projects/imusicplayer"
+    },
+    {
+      "text": "mdctl",
+      "link": "/projects/mdctl"
     }
   ]
 }

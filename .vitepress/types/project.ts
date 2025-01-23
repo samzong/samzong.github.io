@@ -72,5 +72,13 @@ export const projects: Project[] = [
     tags: ["Hugginface", "Model", "Downloader"],
     createdAt: "2025-01-15",
     docPath: "/projects/hfm-downloader",
+  },
+  {
+    name: "mdctl",
+    description: "A command-line tool for processing Markdown files.",
+    github: "https://github.com/samzong/mdctl",
+    tags: ["Markdown", "CLI", "Golang"],
+    createdAt: "2025-01-15",
+    docPath: "/projects/mdctl",
   }
 ];
