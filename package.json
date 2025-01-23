@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "prepare": "husky install"
   },
   "keywords": [
     "blog",
@@ -17,6 +18,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/node": "^20.x.x",
+    "husky": "^9.1.7",
     "vitepress": "^1.0.0-rc.xx",
     "vue": "^3.3.8"
   },
