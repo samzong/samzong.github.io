@@ -31,8 +31,7 @@ function loadSidebar(navPath: string): any {
 export default defineConfig({
   title: "samzong",
   description: "Samzong records the place where he studies and lives.",
-  lang: "en-US",
-  // lastUpdated: true,
+  lang: "zh-CN",
   ignoreDeadLinks: true,
   appearance: "dark",
 
@@ -51,7 +50,7 @@ export default defineConfig({
       warningLabel: "WARNING",
       dangerLabel: "DANGER",
       infoLabel: "INFO",
-      detailsLabel: "Details",
+      detailsLabel: "DETAILS",
     },
   },
 
