@@ -9,7 +9,7 @@ Multi-Instance GPU（MIG）功能使 NVIDIA A100 GPU 可以安全地切割為多
 
 目前只有 NVIDIA Tesla A100 及 A30 擁有這個功能。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/343806/1704601533168-7e7ab815-b146-401a-9a0f-0874fc87559d.jpeg)
+![](images/1704601533168-7e7ab815-b146-401a-9a0f-0874fc87559d_70f3335d.jpeg)
 
 ### MIG 的功能和优势
 

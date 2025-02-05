@@ -1,7 +1,8 @@
-# 完全卸载Calico并安装 Flannel
+# 完全卸载 Calico 并安装 Flannel
+
 ## 安装 Flannel
 
-默认安装 flannel，如果你的pod-cidr 配置是 10.244.0.0/16
+默认安装 flannel，如果你的 pod-cidr 配置是 10.244.0.0/16
 
 ```
 kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml

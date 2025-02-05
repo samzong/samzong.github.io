@@ -1,4 +1,95 @@
 {
   "base": "/cloud-native/",
-  "items": []
+  "items": [
+    {
+      "text": "Cloud Native",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "Getting Started",
+          "link": "/index"
+        }
+      ]
+    },
+    {
+      "text": "Kubernetes",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "Ubuntu Install K8s",
+          "link": "/ubuntu-install-k8s"
+        },
+        {
+          "text": "K8s Resource Delete",
+          "link": "/k8s-resource-delete"
+        },
+        {
+          "text": "Batch Create Namespaces",
+          "link": "/batch-create-namespaces"
+        }
+      ]
+    },
+    {
+      "text": "CNI - K8s Network",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "from Calico to Flannel",
+          "link": "/calico-flannel"
+        }
+      ]
+    },
+    {
+      "text": "Microservice",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "Istio",
+          "link": "/istio"
+        },
+        {
+          "text": "Dubbo",
+          "link": "/dubbo"
+        },
+        {
+          "text": "Istio Service Health Diagnosis",
+          "link": "/istio-service"
+        },
+        {
+          "text": "What is XPS",
+          "link": "/xps"
+        }
+      ]
+    },
+    {
+      "text": "Insight",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "Prometheus Metrics",
+          "link": "/prometheus-metrics"
+        }
+      ]
+    },
+    {
+      "text": "Middleware",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "ClickHouse",
+          "link": "/clickhouse"
+        }
+      ]
+    },
+    {
+      "text": "Tools",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "jq 命令行工具",
+          "link": "/jq"
+        }
+      ]
+    }
+  ]
 }

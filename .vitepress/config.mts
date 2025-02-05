@@ -57,9 +57,9 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "LLM", link: "/llm/" },
-      { text: "Cloud Native", link: "/cloud-native/" },
-      { text: "Blog", link: "/blog/" },
+      { text: "LLMs", link: "/llm/" },
+      { text: "Cloud-Native", link: "/cloud-native/" },
+      { text: "Blogs", link: "/blog/" },
       { text: "Projects", link: "/pages/projects" },
       { text: "About", link: "/about" },
     ],

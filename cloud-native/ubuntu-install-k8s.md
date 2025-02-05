@@ -1,4 +1,4 @@
-# Ubuntu 部署 K8s
+# Ubuntu Install K8s
 
 ## 基础环境依赖
 
@@ -190,7 +190,7 @@ fs.inotify.max_user_instances=1280
 	- nameservers:
 		- addresses:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704528039698-cf695fcd-9aca-49b9-b58c-316d6df4e3b8.png)
+![](images/1704528039698-cf695fcd-9aca-49b9-b58c-316d6df4e3b8_450a91ab.png)
 
 Mac 本地使用了 dnspmasq 作为本地 dns 服务器，保证了域名的一致性
 
@@ -198,6 +198,6 @@ Mac 本地使用了 dnspmasq 作为本地 dns 服务器，保证了域名的一�
 
 curl -Lo ./dce5-installer https://proxy-qiniu-download-public.daocloud.io/DaoCloud_Enterprise/dce5/dce5-installer-v0.10.0-linux-arm64
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704528039664-e4c891c6-9e37-485c-8930-d287a6b75567.png)
+![](images/1704528039664-e4c891c6-9e37-485c-8930-d287a6b75567_d3b11832.png)
 
 [https://www.cnblogs.com/keithtt/p/13204497.html](https://www.cnblogs.com/keithtt/p/13204497.html)

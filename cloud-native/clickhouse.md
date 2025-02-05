@@ -116,11 +116,11 @@ ClickHouse 是一个用于联机分析处理（OLAP）的列式数据库管理�
 ## 一些案例
 [极光clickhouse千亿级数据分析实践之路](https://m.jiguang.cn/blog/8)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704429340360-1b95ad31-54b4-4991-94b1-934a89758525.png)
+![](images/1704429340360-1b95ad31-54b4-4991-94b1-934a89758525_52a16777.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704450700857-9e1a4d7f-6562-4c30-a2fd-5f91ddc46f79.png)
+![](images/1704450700857-9e1a4d7f-6562-4c30-a2fd-5f91ddc46f79_2d5e16e8.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704450713900-c871a094-3673-47a7-b2b9-dadd89369cae.png)
+![](images/1704450713900-c871a094-3673-47a7-b2b9-dadd89369cae_b7d937e8.png)
 
 [唯品会翻牌ClickHouse后，实现百亿级数据自助分析 - 墨天轮](https://www.modb.pro/db/70767)
 

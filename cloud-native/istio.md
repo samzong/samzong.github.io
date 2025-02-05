@@ -5,15 +5,15 @@
 
 ### Istio 的简单架构介绍
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704528313319-b649bff5-b057-426d-a2ec-278f01f8e0b9.png)
+![](images/1704528313319-b649bff5-b057-426d-a2ec-278f01f8e0b9_b5e257d9.png)
 
 ### Sidecar 架构
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704528313198-4f71297d-248e-4f44-bfc0-80b4900f863b.png)
+![](images/1704528313198-4f71297d-248e-4f44-bfc0-80b4900f863b_c219d048.png)
 
 Istio Control Plane Topo
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704528313181-b8e7ef6f-3673-4a44-8a0e-da71382844a9.png)
+![](images/1704528313181-b8e7ef6f-3673-4a44-8a0e-da71382844a9_a53fa00c.png)
 
 ## 组件介绍
 

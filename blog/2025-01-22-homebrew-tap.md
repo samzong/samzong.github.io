@@ -1,5 +1,5 @@
 ---
-title: 使用 Homebrew 发布自己的项目
+title: Homebrew 发布自己的项目
 tags:
   - Homebrew
 date: 2025-01-22 23:00:20

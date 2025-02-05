@@ -1,4 +1,4 @@
-## k8s resource cannot delete by finalizers
+# K8s Resource Delete
 
 > remove namespace by api
 

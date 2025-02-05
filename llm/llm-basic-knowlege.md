@@ -18,7 +18,7 @@ Microsoft 推出的 AI 训练 学习教程
 
 [https://redis.com/blog/announcing-langchain-rag-template-powered-by-redis/](https://redis.com/blog/announcing-langchain-rag-template-powered-by-redis/)
 
-![](https://cdn.nlark.com/yuque/0/2023/png/343806/1703032310206-71b7981d-9937-44e7-bff4-57e65fbde767.png)
+![](images/1703032310206-71b7981d-9937-44e7-bff4-57e65fbde767_bc3aa6d8.png)
 
 完整阅读三篇关于什么是 RAG 的普及文章：
 

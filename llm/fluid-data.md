@@ -13,13 +13,13 @@ Fluid, elastic data abstraction and acceleration for BigData/AI applications in 
 
 - Fluid
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704601639899-7b4c1063-2483-4fda-8bb9-f64b6195ff0d.png)
+![](images/1704601639899-7b4c1063-2483-4fda-8bb9-f64b6195ff0d_0ee197ed.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704601639918-fd99ca4f-073f-4fc4-a41b-4f9428dfb35c.png)
+![](images/1704601639918-fd99ca4f-073f-4fc4-a41b-4f9428dfb35c_6078f42d.png)
 
 - Alluxio
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704601640073-440f44b0-9942-4414-a745-6fe2d0a7df6a.png)
+![](images/1704601640073-440f44b0-9942-4414-a745-6fe2d0a7df6a_f1104de1.png)
 
 数据源是 minio ， 需要配置 minio-url and ak/sk
 

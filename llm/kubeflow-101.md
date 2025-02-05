@@ -5,13 +5,13 @@ title: Kubeflow 介绍
 
 [www.youtube.com](https://www.youtube.com/watch?v=cTZArDgbIWw&list=PLIivdWyY5sqLS4lN75RPDEyBgTro_YX7x)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704601273579-75faa13f-4324-4d40-89b2-1bf38b49d759.png)
+![](images/1704601273579-75faa13f-4324-4d40-89b2-1bf38b49d759_9d41db33.png)
 
 Kubeflow 操作视频:
 
 https://www.youtube.com/watch?v=6wWdNg0GMV4
 
-![](https://cdn.nlark.com/yuque/0/2024/png/343806/1704601273628-6a8e18b2-bd85-482b-b539-a94c7309a150.png)
+![](images/1704601273628-6a8e18b2-bd85-482b-b539-a94c7309a150_638af2fc.png)
 
 ## 部署 training-operator
 
