@@ -38,8 +38,15 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   ],
+  sitemap: {
+    hostname: "https://samzong.me",
+    lastmodDateOnly: true,
+  },
 
   markdown: {
+    image: {
+      lazyLoading: true,
+    },
     theme: {
       light: "github-light",
       dark: "github-dark",
