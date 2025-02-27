@@ -3,6 +3,8 @@ title: "仅使用 SSH 反向隧道打通内网服务"
 date: 2025-02-27
 ---
 
+# 仅使用 SSH 反向隧道打通内网服务
+
 这个是一个基于 SSH 协议的原生能力方案，通过方向 SSH 隧道，将不具备公网直接访问能力的内网服务器映射到公网访问，同时结合 SSH 的配置实现无人值守，开机自动启动的能力。
 
 ## 实现原理
@@ -86,23 +88,28 @@ WantedBy=multi-user.target
 EOF
 ```
 
-!!! note "自动重连原理"
+::: tip 自动重连原理
+当网络中断时，SSH 客户端无法与远程主机 `public_host` 通信。根据配置：
 
-    当网络中断时，SSH 客户端无法与远程主机 `public_host` 通信。根据配置：
-    `ServerAliveInterval=60` 表示 SSH 客户端每 60 秒发送一次 keepalive 消息。
-    `ServerAliveCountMax=3` 表示如果连续 3 次（即 60 × 3 = 180 秒）没有收到响应，SSH 客户端会判定连接断开并退出。
-    如果网络中断持续超过 180 秒，SSH 客户端会在网络中断后的 约 180 秒 内退出。
+- `ServerAliveInterval=60` 表示 SSH 客户端每 60 秒发送一次 keepalive 消息。
+- `ServerAliveCountMax=3` 表示如果连续 3 次（即 60 × 3 = 180 秒）没有收到响应，SSH 客户端会判定连接断开并退出。
 
-    SSH 进程退出后，`systemd` 会检测到服务停止。根据配置：
-    `Restart=always`：`systemd` 会自动重启服务；
-    `RestartSec=10`：重启前等待 10 秒。
-    因此，在 SSH 退出后（网络中断约 180 秒），`systemd` 会在 10 秒后 尝试重启服务。
+如果网络中断持续超过 180 秒，SSH 客户端会在网络中断后的 约 180 秒 内退出。
 
-    重启后，SSH 客户端会再次尝试连接 `public_host` 并建立反向隧道。如果网络仍未恢复：
+SSH 进程退出后，`systemd` 会检测到服务停止。根据配置：
 
-    SSH 客户端无法建立连接，可能会立即退出（尤其是如果反向转发失败，`ExitOnForwardFailure=yes` 会强制退出）。
-    `systemd` 检测到退出后，会再次等待 10 秒并重启服务。
-    在网络恢复前，服务会陷入这样的循环：尝试连接 → 失败退出 → 等待 10 秒 → 重启。
+- `Restart=always`：`systemd` 会自动重启服务；
+- `RestartSec=10`：重启前等待 10 秒。
+
+因此，在 SSH 退出后（网络中断约 180 秒），`systemd` 会在 10 秒后 尝试重启服务。
+
+重启后，SSH 客户端会再次尝试连接 `public_host` 并建立反向隧道。如果网络仍未恢复：
+
+SSH 客户端无法建立连接，可能会立即退出（尤其是如果反向转发失败，`ExitOnForwardFailure=yes` 会强制退出）。
+`systemd` 检测到退出后，会再次等待 10 秒并重启服务。
+
+在网络恢复前，服务会陷入这样的循环：**尝试连接(180s) → 失败退出 → 等待 10 秒 → 重启**。
+:::
 
 ### 3. 初始化设置为开机自启动
 
@@ -114,10 +121,10 @@ sudo systemctl start ssh-tunnel.service
 
 ## 总结
 
-通过 SSH 反向隧道，将内网服务器映射到公网，并结合 systemd 服务实现开机自启动，可以实现无人值守，开机自动启动的功能。
+通过 SSH 反向隧道，将内网服务器映射到公网，并结合 `systemd` 服务实现开机自启动，可以实现无人值守，开机自动启动的功能。
 
 ## 常见问题
 
 1. 为了避免网络中断，可以设置 `ServerAliveInterval` 和 `ServerAliveCountMax` 参数，实现自动重连。
-2. 如果需要将映射到公网服务器的端口可以被外网访问，需要注意在 /etc/ssh/sshd_config 中配置 `GatewayPorts yes`。
+2. 如果需要将映射到公网服务器的端口可以被外网访问，需要注意在 `/etc/ssh/sshd_config` 中配置 `GatewayPorts yes`。
 3. 对于 `CentOS`、`Rocky Linux` 系统，SELinux 默认会阻止 SSH 连接，需要关闭 SELinux 或者配置 `semanage` 允许 SSH 连接。
