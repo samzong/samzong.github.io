@@ -119,6 +119,46 @@ sudo systemctl enable ssh-tunnel.service
 sudo systemctl start ssh-tunnel.service
 ```
 
+### 4. 通过脚本实现自动重连
+
+在内网服务器中，增加一个自定义脚本，使用 ssh -O check 命令检查隧道是否正常，如果隧道断开，则重新建立隧道。
+
+```bash
+cat << EOF > /opt/ssh-tunnel/ssh-tunnel.sh
+#!/bin/bash
+
+while true; do
+    if ! ssh -O check public_host > /dev/null 2>&1; then
+        echo "SSH tunnel is down, restarting..."
+        ssh -fN -R 2222:localhost:22 public_host
+    fi
+    sleep 60
+done
+```
+
+注意，同样将 systemd 服务的 `ExecStart` 参数修改为：
+
+```bash{6-10}
+cat << EOF > /etc/systemd/system/ssh-tunnel.service
+[Unit]
+Description=SSH Reverse Tunnel for Server
+After=network.online.target
+
+[Service]
+ExecStart=/usr/bin/ssh -N -R 2222:localhost:22 -v \
+   -o ServerAliveInterval=60 \
+   -o ServerAliveCountMax=3 \
+   -o ExitOnForwardFailure=yes \
+   public_host
+Restart=always
+RestartSec=10
+User=root
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
 ## 总结
 
 通过 SSH 反向隧道，将内网服务器映射到公网，并结合 `systemd` 服务实现开机自启动，可以实现无人值守，开机自动启动的功能。
