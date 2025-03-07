@@ -4,7 +4,7 @@
     {
       "text": "Getting Started",
       "collapsed": false,
-      "items": [{ "text": "Introduction", "link": "/llm/" }]
+      "items": [{ "text": "Introduction", "link": "/" }]
     },
     {
       "text": "Infrastructure",
@@ -12,19 +12,19 @@
       "items": [
         {
           "text": "Deploying LLMs on Kubernetes",
-          "link": "/llm/Deploying-LLMs-on-Kubernetes"
+          "link": "/Deploying-LLMs-on-Kubernetes"
         },
         {
           "text": "What is MIG",
-          "link": "/llm/what-is-mig"
+          "link": "/what-is-mig"
         },
         {
           "text": "Kubeflow 101",
-          "link": "/llm/kubeflow-101"
+          "link": "/kubeflow-101"
         },
         {
           "text": "Fluid",
-          "link": "/llm/fluid-data"
+          "link": "/fluid-data"
         }
       ]
     },
@@ -32,6 +32,16 @@
       "text": "Training",
       "collapsed": false,
       "items": []
+    },
+    {
+      "text": "Inference",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "Parallel Inference",
+          "link": "/llm-parallelism"
+        }
+      ]
     }
   ]
 }
