@@ -47,7 +47,7 @@ git commit --amend --author="{user.name} <{user.email}>"
 
 写在前面的话，如果你知道 rebase 的作用，请谨慎使用的同时记住，可以在任何过程中终止你的操作，这非常重要，使用如下命令
 
-```bashe
+```bash
 git rebase --abort
 ```
 

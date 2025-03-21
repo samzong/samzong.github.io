@@ -4,7 +4,10 @@
     {
       "text": "Getting Started",
       "collapsed": false,
-      "items": [{ "text": "Introduction", "link": "/" }]
+      "items": [
+        { "text": "Introduction", "link": "/" },
+        { "text": "AI Websites", "link": "/ai-yellow-pages" }
+      ]
     },
     {
       "text": "Infrastructure",

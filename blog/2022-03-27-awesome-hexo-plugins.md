@@ -98,7 +98,7 @@ restful:
 
 > Request
 
-```request
+```
 GET /api/site.json
 ```
 
@@ -112,7 +112,7 @@ GET /api/site.json
 
 > Request
 
-```request
+```
 GET /api/posts.json
 ```
 

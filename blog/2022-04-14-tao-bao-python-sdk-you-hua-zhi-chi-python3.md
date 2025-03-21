@@ -35,7 +35,7 @@ NOTE: **如果你有其他的 SDK 没有在文档中找到，可以反馈给我�
 
 ## 使用说明
 
-```python3
+```python
 
 import top.api
 import json
@@ -71,7 +71,7 @@ if __name__ == '__main__':
 
 ### 1. Python3 int 替代了 long
 
-```python3
+```python
 FROM: str(long(time.time() * 1000))
 
 TO: P_TIMESTAMP: str(int(time.time() * 1000))
@@ -79,7 +79,7 @@ TO: P_TIMESTAMP: str(int(time.time() * 1000))
 
 ### 2. 用 items 替代 iteritems
 
-```python3
+```python
 FROM: for key, value in application_parameter.iteritems():
 
 TO: for key, value in application_parameter.items():
@@ -89,7 +89,7 @@ TO: for key, value in application_parameter.items():
 
 查阅资料，发现有人说到 dict methods dict.keys(), dict.items() and dict.values() return“views”instead of lists.这样就显而易见知道怎么改了：
 
-```python3
+```python
 FROM: keys = keys.sort()
 
 TO: keys = sorted(keys)
@@ -99,7 +99,7 @@ TO: keys = sorted(keys)
 
 英文意思很明确，unicode 对象在哈希之前必须进行编码转换，想起之前又看到过中文字符在 python 中是以 unicode 存在的，所以：
 
-```python3
+```python
 FROM: sign = hashlib.md5(parameters)).hexdigest().upper()
 
 TO: sign = hashlib.md5(parameters.encode("utf-8")).hexdigest().upper()
@@ -109,7 +109,7 @@ TO: sign = hashlib.md5(parameters.encode("utf-8")).hexdigest().upper()
 
 这是花费时间最长的一个错误。首先，直接看最后，错误在 soket.py 里，心凉了半截，难道这里的调用都不一样了，再网上看又是 python 3.X 的 http 模块，去百度了半天也没有发现类似的错误，只能自己硬着头皮去看模块，功夫不负有心人，其实也很简单，在类 HTTPConnection 的初始化函数是这样定义的：
 
-```python3
+```python
 FROM: connection = httplib.HTTPConnection(self.__domain, self.__port, False, timeout)
 
 TO: connection = httplib.HTTPConnection(self.__domain, self.__port, timeout)
@@ -121,7 +121,7 @@ TO: connection = httplib.HTTPConnection(self.__domain, self.__port, timeout)
 
 官方文档是这样解释的：urllib has been split up in Python 3. The urllib.urlencode() function is now urllib.parse.urlencode(), and the urllib.urlopen() function is now urllib.request.urlopen()
 
-```python3
+```python
 FROM: url = N_REST + "?" + urllib.parse.urlencode(sys_parameters)
 
 TO: url = N_REST + "?" + urllib.urlencode(sys_parameters)
@@ -131,7 +131,7 @@ TO: url = N_REST + "?" + urllib.urlencode(sys_parameters)
 
 这个错误是在 API 调用出异常的时候暴露出来的。原因前面已经提到了，稍微查了下替代的方法：
 
-```python3
+```python
 if "error_response" in jsonobj:
 
 if P_CODE in jsonobj["error_response"]:
@@ -141,7 +141,7 @@ if P_CODE in jsonobj["error_response"]:
 
 在 if 需要使用反向时，应该是 != ，而不是使用  is not；这个也是 PyCharm 给的建议，所以在使用时，所以简单调整下就好了
 
-```python3
+```python
 FROM: if respone.status is not 200:
 
 TO: if response.status != 200:
@@ -160,7 +160,7 @@ TO: if response.status != 200:
 
 > 注意：需要先安装 setuptools twine
 
-```python3
+```python
 # /usr/bin/env python3
 # -*- coding: utf-8 -*-
 

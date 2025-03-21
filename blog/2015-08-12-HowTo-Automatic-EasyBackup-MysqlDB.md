@@ -27,14 +27,14 @@ date: 2016-05-05 05:41:39
 
 首先你要获得你要备份的数据库对应的 select 权限，仅需要 select 权限即可，mysql 在管理方面，应该坚持只赋予必须权限的原则。
 
-```mysql
+```sql
 mysql> grant select on ghost.* to 'ghost_backuser'@'localhost' identified by 'backupPass';
 Query OK, 0 rows affected (0.00 sec)
 ```
 
 因为我只在本地执行备份操作，所以我只赋予了`localhost`的权限，你的权限应该要是执行备份工作的服务器主机信息。
 
-```mysql
+```sql
 # 创建仅授权本地访问的用户
 mysql> create user dbackuser@'localhost';
 # 创建授权所有来源地址的用户
@@ -49,7 +49,7 @@ mysql> create user dbackuser@'samzong.me';
 
 好了，接下来我们测试对应用户是否有权限。
 
-```mysql
+```sql
 ➜  ~ mysql -u ghost_backuser -pbackupPass
 Warning: Using a password on the command line interface can be insecure.
 Welcome to the MySQL monitor.  Commands end with ; or \g.

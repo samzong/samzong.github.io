@@ -9,14 +9,14 @@ date: 2016-07-10 11:21:47
 
 ### 1. 指定虚拟机
 
-```conf
+```bash
 $vm = Get-AzureVM -ServiceName '云服务名称' -Name '虚拟机名称'
 $vm.GetInstance().ProvisionGuestAgent = $true
 ```
 
 ### 2. 输入您当前的用户名和新密码
 
-```conf
+```bash
 $UserName = "指定用户名"
 $Password = "指定密码"
 
@@ -25,7 +25,7 @@ $PrivateConfig = '{"username":"'+ $UserName + '", "password":"' +  $Password + '
 
 ### 开始执行
 
-```conf
+```bash
 $ExtensionName = 'VMAccessForLinux'
 $Publisher = 'Microsoft.OSTCExtensions'
 $Version =  '1.0'
@@ -38,14 +38,14 @@ Set-AzureVMExtension -ExtensionName $ExtensionName -VM  $vm -Publisher $Publishe
 
 ### 指定虚拟机
 
-```conf
+```bash
 $vm = Get-AzureVM -ServiceName 'MyServiceName' -Name 'MyVMName'
 $PrivateConfig = '{"reset_ssh":"True"}''
 ```
 
 ### 2. 开始执行
 
-```conf
+```bash
 $ExtensionName = 'VMAccessForLinux'
 $Publisher = 'Microsoft.OSTCExtensions'
 $Version =  '1.0'
