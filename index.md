@@ -5,7 +5,7 @@ hero:
   name: "Samzong's Blog"
   tagline: "Keep it <strong>simple</strong>, but not <strong>simpler</strong>"
   image:
-    src: /me.jpg
+    src: /ghibili-style.jpeg
     alt: Samzong
   actions:
     - theme: alt
