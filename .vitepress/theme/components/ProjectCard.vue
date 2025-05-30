@@ -397,11 +397,7 @@ const defaultLogoText = computed(() => {
   justify-content: center;
   width: 36px;
   height: 36px;
-  border-radius: 8px;
-  color: var(--vp-c-text-2);
-  background: var(--vp-c-bg);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid var(--vp-c-divider);
   opacity: 0.9;
 }
 
@@ -416,23 +412,7 @@ const defaultLogoText = computed(() => {
   border-color: rgba(82, 82, 89, 0.48);
 }
 
-.action-button:not(.disabled):hover {
-  color: white;
-  transform: translateY(-3px);
-  opacity: 1;
-}
 
-.action-button.github:not(.disabled):hover {
-  background: #24292e;
-  border-color: #24292e;
-  box-shadow: 0 4px 12px rgba(36, 41, 46, 0.25);
-}
-
-.action-button.website:not(.disabled):hover {
-  background: var(--vp-c-brand);
-  border-color: var(--vp-c-brand);
-  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.25);
-}
 
 .action-button svg {
   width: 22px;
