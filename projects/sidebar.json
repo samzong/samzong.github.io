@@ -28,6 +28,10 @@
     {
       "text": "mdctl",
       "link": "/projects/mdctl"
+    },
+    {
+      "text": "ConfigForge",
+      "link": "/projects/configforge"
     }
   ]
 }
