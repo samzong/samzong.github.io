@@ -34,6 +34,7 @@ export default defineConfig({
   lang: "zh-CN",
   ignoreDeadLinks: true,
   appearance: "dark",
+  srcExclude: ['**/test-font/**'],
 
   head: [
     ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
