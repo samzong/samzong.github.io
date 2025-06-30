@@ -12,6 +12,9 @@
   --vp-font-family-mono: 'Fira Code', Monaco, ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --vp-font-size-base: 15px;
   --vp-font-size-sm: 14px;
+  
+  /* Adaptive full-width layout overrides */
+  --vp-layout-max-width: 1920px;
 }
 
 body {
@@ -94,4 +97,64 @@ code, pre {
 
 .VPHero .image {
   margin: 0 200px 0 0;
+}
+
+/* Adaptive full-width layout overrides */
+.VPDoc:not(.has-sidebar) .container {
+  max-width: 1584px !important;
+}
+
+.VPDoc:not(.has-sidebar) .content {
+  max-width: 1264px !important;
+}
+
+.VPDoc.has-aside .content-container {
+  max-width: 1168px !important;
+}
+
+.VPHero .container {
+  max-width: 1584px !important;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1920px) {
+  .VPDoc:not(.has-sidebar) .container {
+    max-width: calc(100vw - 128px) !important;
+  }
+  
+  .VPDoc:not(.has-sidebar) .content {
+    max-width: calc(100vw - 256px) !important;
+  }
+  
+  .VPHero .container {
+    max-width: calc(100vw - 128px) !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .VPDoc:not(.has-sidebar) .container {
+    max-width: 1104px !important;
+  }
+  
+  .VPDoc:not(.has-sidebar) .content {
+    max-width: 784px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .VPDoc:not(.has-sidebar) .container {
+    max-width: 992px !important;
+  }
+  
+  .VPDoc:not(.has-sidebar) .content {
+    max-width: 752px !important;
+  }
+}
+
+/* Ensure sidebar layout still works properly */
+@media (min-width: 960px) {
+  .VPContent.has-sidebar {
+    padding-left: var(--vp-sidebar-width);
+    padding-right: 0;
+  }
 }
