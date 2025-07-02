@@ -57,7 +57,7 @@ date: 2025-06-30
 
 ## 简介
 
-[SuperClaude](https://github.com/superclaude/superclaude) 是增强 [Claude Code](https://github.com/anthropics/anthropic-code) 的强大助力，如果你已经在使用 Claude Code，那么 SuperClaude 将是你最好的选择。
+[SuperClaude](https://github.com/NomenAK/SuperClaude) 是增强 [Claude Code](https://github.com/anthropics/claude-code) 的强大助力，如果你已经在使用 Claude Code，那么 SuperClaude 将是你最好的选择。
 
 SuperClaude 是一个强大的命令行辅助工具，旨在通过一套高度集成和智能化的命令，提升开发、分析、运维和团队协作的效率。它将复杂的工程任务封装成简单、易用的命令，并借助大型语言模型（LLM）的能力，提供代码审查、架构分析、安全扫描、项目构建等专业功能。
 
