@@ -54,6 +54,7 @@ date: 2025-06-30
       - [性能优化流程](#性能优化流程)
       - [质量保障流程](#质量保障流程)
     - [最佳实践](#最佳实践)
+    - [我的用例](#我的用例)
 
 ## 简介
 
@@ -1170,3 +1171,10 @@ _注意：`dev-setup.md` 提到了更具体的标志，如 `--type` 和 `--tools
     /design --microservices --think-hard
     /analyze --architecture --ultrathink
     ```
+
+### 我的用例
+
+```bash
+# Review a Commit
+/review --quality --commit ff7157487a --summary --persona-performance --thinkhard --all-mcp Carefully analyze whether this code modification is necessary and point out the implementation problems.
+```
