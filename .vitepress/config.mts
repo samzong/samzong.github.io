@@ -80,6 +80,9 @@ export default defineConfig({
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/samzong" }],
+    outline: {
+      level: [2,4]
+    },
 
     footer: {
       message: "Powered by VitePress",
