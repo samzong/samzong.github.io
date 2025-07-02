@@ -112,10 +112,6 @@ code, pre {
   max-width: 1168px !important;
 }
 
-.VPHero .container {
-  max-width: 1584px !important;
-}
-
 /* Responsive adjustments for different screen sizes */
 @media (max-width: 1920px) {
   .VPDoc:not(.has-sidebar) .container {
@@ -124,10 +120,6 @@ code, pre {
   
   .VPDoc:not(.has-sidebar) .content {
     max-width: calc(100vw - 256px) !important;
-  }
-  
-  .VPHero .container {
-    max-width: calc(100vw - 128px) !important;
   }
 }
 
@@ -156,5 +148,29 @@ code, pre {
   .VPContent.has-sidebar {
     padding-left: var(--vp-sidebar-width);
     padding-right: 0;
+  }
+}
+
+/* Fix hero centering to match features section */
+@media (min-width: 960px) {
+  .VPHero.has-image .container {
+    text-align: center !important;
+  }
+  
+  .VPHero.has-image .main {
+    text-align: center !important;
+    margin-right: 160px !important;
+  }
+  
+  .VPHero.has-image .name,
+  .VPHero.has-image .text,
+  .VPHero.has-image .tagline {
+    text-align: left !important;
+    margin-left: 20px !important;
+  }
+  
+  .VPHero.has-image .actions {
+    justify-content: left !important;
+    margin-left: 20px !important;
   }
 }
