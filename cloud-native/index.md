@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Cloud Native
 
-这是我整理的云原生知识笔记，目前我从事在云原生领域，所以会整理一些相关的知识笔记，希望对你有所帮助。
+以前做云原生时留下的笔记。
 
 ## Kubernetes
 
@@ -17,5 +17,3 @@ sidebar_position: 1
 - [Istio](istio.md) - 服务网格
 - [Dubbo](dubbo.md) - 分布式服务框架 Dubbo 基础知识
 - [XPS](xps.md) - 快速介绍 TPS、QPS、CPS 概念
-
-持续更新中...

@@ -2,45 +2,18 @@
 layout: home
 
 hero:
-  name: "Samzong's Blog"
-  tagline: "Keep it <strong>simple</strong>, but not <strong>simpler</strong>"
+  name: Samzong
+  tagline: Engineer for AI-native systems.<br>Building Dify.
   image:
     src: /ghibili-style.jpeg
     alt: Samzong
   actions:
+    - theme: brand
+      text: GitHub
+      link: https://github.com/samzong
     - theme: alt
       text: About
       link: /about
-    - theme: alt
-      text: GitHub
-      link: https://github.com/samzong
-
-features:
-  - icon: 🚀
-    title: LLM & AI
-    details: Exploring LLM Infrastructure and Development.
-    link: /llm
-  - icon: ☁️
-    title: Cloud Native
-    details: Focus on Cloud Native Architecture & Infrastructure
-    link: /pages/tags?tag=CloudNative
-  - icon: 🎯
-    title: Projects
-    details: Showcase of my open source projects and tools
-    link: /pages/projects
 ---
 
-```bash
-$ whoami
-> Product Manager @DaoCloud[https://www.daocloud.io]
-> Focus on LLM & Cloud Native
-> Based in Shanghai, China
-
-$ ls ./skills
-> llm/  cloud-native/  development/  product/
-
-$ cat ./contact
-> GitHub: @samzong
-> Blog: samzong.me
-> Email: samzong.lu@gmail.com
-```
+<div class="now"><span class="cmd">$ whoami</span><br>samzong · Los Angeles<br><br><span class="cmd">$ now</span><br>building <a href="https://github.com/langgenius/dify">dify</a> @ langgenius<br>ex daocloud<br><br><span class="cmd">$ tools</span><br><a href="https://github.com/samzong/Recall">recall</a>  <a href="https://github.com/samzong/gmc">gmc</a>  <a href="https://github.com/samzong/combe">combe</a>  <a href="https://github.com/samzong/confer">confer</a>  <a href="https://github.com/lathe-cli/lathe">lathe</a></div>

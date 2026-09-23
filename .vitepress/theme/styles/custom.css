@@ -1,20 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #47caff);
+  --vp-home-hero-name-color: var(--vp-c-text-1);
+  --vp-home-hero-name-background: none;
   --vp-c-brand: #646cff;
   --vp-c-brand-light: #747bff;
   --vp-font-family-base: 'Oxanium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  --vp-font-family-serif: 'Merriweather', Georgia, 'Times New Roman', serif;
   --vp-font-family-mono: 'Fira Code', Monaco, ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --vp-font-size-base: 15px;
   --vp-font-size-sm: 14px;
-  
-  /* Adaptive full-width layout overrides */
-  --vp-layout-max-width: 1920px;
 }
 
 body {
@@ -26,151 +21,94 @@ code, pre {
   font-size: var(--vp-font-size-base);
 }
 
-.VPImage.image-src {
-  position: relative;
-  border-radius: 50% !important;
-  width: 280px !important;
-  height: 280px !important;
-  z-index: 1;
-  margin-bottom: -20px !important;
+.VPHero .image-src {
+  width: 220px !important;
+  height: 220px !important;
+  max-width: none !important;
+  max-height: none !important;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px var(--vp-c-divider);
 }
 
-.VPImage.image-src:hover {
-  border-color: var(--vp-c-brand);
+.now {
+  max-width: 32rem;
+  margin: 0;
+  padding: 1.1rem 1.3rem;
+  border: 1px solid var(--vp-c-border);
+  border-top: 2px solid var(--vp-c-brand-1);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  font-family: var(--vp-font-family-mono);
+  font-size: 14px;
+  line-height: 1.65;
 }
 
-@media (max-width: 768px) {
-  .VPImage.image-src {
-    width: 220px !important;
-    height: 220px !important;
+.now a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+
+.now a:hover,
+.now .cmd {
+  color: var(--vp-c-brand-1);
+}
+
+.note-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.vp-doc a.note-row {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 0.35rem 1rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--vp-c-border);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.note-list .note-row:last-child {
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+.vp-doc a.note-row time {
+  font-family: var(--vp-font-family-mono);
+  font-size: 13px;
+  color: var(--vp-c-text-3);
+}
+
+.vp-doc a.note-row:hover span {
+  color: var(--vp-c-brand-1);
+}
+
+.note-meta {
+  margin-top: 1.25rem;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+}
+
+.VPHome .now {
+  max-width: 32rem;
+}
+
+@media (max-width: 959px) {
+  .VPHome .now {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@media (max-width: 480px) {
-  .VPImage.image-src {
-    width: 180px !important;
-    height: 180px !important;
+@media (max-width: 640px) {
+  .vp-doc a.note-row {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
   }
-}
-
-.VPHero .name {
-  background: var(--vp-home-hero-name-background);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-weight: bold;
-}
-
-.VPHero .text {
-  font-size: 48px !important;
-  font-weight: 600;
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.VPFeature {
-  transition: transform 0.3s ease;
-}
-
-.VPFeature:hover {
-  transform: translateY(-5px);
-}
-
-.VPFeature .title {
-  font-size: 20px;
-  font-weight: 600;
-  background: linear-gradient(120deg, #3498db, #2ecc71);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 .custom-block.tip {
   border-color: var(--vp-c-brand);
-}
-
-.VPHero .container {
-  gap: 24px !important;
-  position: relative;
-}
-
-.VPHero .image {
-  margin: 0 200px 0 0;
-}
-
-/* Adaptive full-width layout overrides */
-.VPDoc:not(.has-sidebar) .container {
-  max-width: 1584px !important;
-}
-
-.VPDoc:not(.has-sidebar) .content {
-  max-width: 1264px !important;
-}
-
-.VPDoc.has-aside .content-container {
-  max-width: 1168px !important;
-}
-
-/* Responsive adjustments for different screen sizes */
-@media (max-width: 1920px) {
-  .VPDoc:not(.has-sidebar) .container {
-    max-width: calc(100vw - 128px) !important;
-  }
-  
-  .VPDoc:not(.has-sidebar) .content {
-    max-width: calc(100vw - 256px) !important;
-  }
-}
-
-@media (max-width: 1440px) {
-  .VPDoc:not(.has-sidebar) .container {
-    max-width: 1104px !important;
-  }
-  
-  .VPDoc:not(.has-sidebar) .content {
-    max-width: 784px !important;
-  }
-}
-
-@media (max-width: 960px) {
-  .VPDoc:not(.has-sidebar) .container {
-    max-width: 992px !important;
-  }
-  
-  .VPDoc:not(.has-sidebar) .content {
-    max-width: 752px !important;
-  }
-}
-
-/* Ensure sidebar layout still works properly */
-@media (min-width: 960px) {
-  .VPContent.has-sidebar {
-    padding-left: var(--vp-sidebar-width);
-    padding-right: 0;
-  }
-}
-
-/* Fix hero centering to match features section */
-@media (min-width: 960px) {
-  .VPHero.has-image .container {
-    text-align: center !important;
-  }
-  
-  .VPHero.has-image .main {
-    text-align: center !important;
-    margin-right: 160px !important;
-  }
-  
-  .VPHero.has-image .name,
-  .VPHero.has-image .text,
-  .VPHero.has-image .tagline {
-    text-align: left !important;
-    margin-left: 20px !important;
-  }
-  
-  .VPHero.has-image .actions {
-    justify-content: left !important;
-    margin-left: 20px !important;
-  }
 }

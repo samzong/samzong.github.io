@@ -1,37 +1,15 @@
 ---
 title: About
-layout: home
+outline: false
+aside: false
 ---
 
+# Samzong
 
-```yaml
-name: Samzong
-role: Product Manager
-company: DaoCloud
-location: Shanghai, China
+Engineer for AI-native systems. Building [Dify](https://github.com/langgenius/dify) at LangGenius. Previously DaoCloud. Based in Los Angeles.
 
-focus:
-  - Cloud Native Architecture
-  - LLM Infrastructure
-  - Product Management
+Older notes on Kubernetes and model serving are still under [Cloud Native](/cloud-native/) and [LLMs](/llm/).
 
-skills:
-  cloud_native:
-    - Kubernetes
-    - Service Mesh
-    - DevOps
-  development:
-    - Python
-    - Go
-    - Shell
-  product:
-    - Strategy
-    - Design
-    - Management
-
-contact:
-  github: "@samzong"
-  blog: "samzong.me"
-  email: "samzong.lu@gmail.com"
-```
-
+- GitHub [@samzong](https://github.com/samzong)
+- X [@samzong](https://x.com/samzong)
+- samzong.lu@gmail.com
