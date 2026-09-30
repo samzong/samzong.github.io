@@ -1,28 +1,28 @@
-.PHONY: help install dev build clean blog
+BOLD  := \033[1m
+CYAN  := \033[36m
+GREEN := \033[32m
+RESET := \033[0m
 
-help:
-	@echo "Available commands:"
-	@echo "  help    - Show this help message"
-	@echo "  install - Install dependencies"
-	@echo "  dev     - Start development server"
-	@echo "  build   - Build for production"
-	@echo "  clean   - Remove build files and dependencies"
-	@echo "  blog new - Create new blog post from (templates/blog.md)"
+.DEFAULT_GOAL := help
 
-install:
+# ── Develop ──────────────────────────────────────────────────────────────────
+
+.PHONY: install dev build
+
+install: ## Install npm dependencies
 	npm install
 
-dev: install
+dev: install ## Start the VitePress dev server
 	npm run dev
 
-build: install
+build: install ## Build the site for production
 	npm run build
 
-clean:
-	rm -rf .vitepress/dist
-	rm -rf node_modules
+# ── Content ──────────────────────────────────────────────────────────────────
 
-blog:
+.PHONY: blog
+
+blog: ## Create a post from templates/blog.md (make blog new <name>)
 	@$(eval ACTION=$(word 2, $(MAKECMDGOALS)))
 	@$(eval NAME=$(word 3, $(MAKECMDGOALS)))
 	@mkdir -p blog
@@ -40,5 +40,24 @@ blog:
 		echo "Usage: make blog new [post-name]"; \
 	fi
 
+
+# ── Maintenance ──────────────────────────────────────────────────────────────
+
+.PHONY: clean
+
+clean: ## Remove the built site and node_modules
+	rm -rf .vitepress/dist
+	rm -rf node_modules
+
+# ── Help ─────────────────────────────────────────────────────────────────────
+
+.PHONY: help
+
+help: ## Show available targets
+	@awk 'BEGIN {FS = ":.*## "; printf "\n$(BOLD)samzong.github.io$(RESET) — personal blog built with VitePress\n"} \
+		/^# ── / {n = $$0; gsub(/(^# ── | (─)+$$)/, "", n); printf "\n$(BOLD)%s$(RESET)\n", n} \
+		/^[a-zA-Z0-9_-]+:.*## / {printf "  $(CYAN)make %-10s$(RESET) %s\n", $$1, $$2} \
+		END {printf "\n"}' $(MAKEFILE_LIST)
+
 %:
-	@: 
+	@:
